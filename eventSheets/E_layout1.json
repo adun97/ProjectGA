@@ -1,0 +1,917 @@
+{
+	"name": "E_layout1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "colorSelect",
+			"type": "string",
+			"initialValue": "00ff00",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 151845122533196
+		},
+		{
+			"eventType": "variable",
+			"name": "colorHover",
+			"type": "string",
+			"initialValue": "ffffff",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 504812432751653
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-changed",
+					"objectClass": "SBCost",
+					"sid": 593318957506586
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "txt_Static",
+					"sid": 195701831891623,
+					"parameters": {
+						"text": "SBCost.Value"
+					}
+				}
+			],
+			"sid": 259799253003317,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-changing",
+					"objectClass": "SBCost",
+					"sid": 288914000172939
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "txt_class",
+					"sid": 654232748182766,
+					"parameters": {
+						"text": "(SBCost.Value=-1?\"All\":SBCost.Value>=10?\"9+\":SBCost.Value)"
+					}
+				}
+			],
+			"sid": 763287701591118
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 728395171327799
+				}
+			],
+			"actions": [
+				{
+					"id": "load-stylesheet",
+					"objectClass": "Browser",
+					"sid": 683600643763503,
+					"parameters": {
+						"url": "\"elementCSS.css\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "txt_class",
+					"sid": 349092077793557,
+					"disabled": true,
+					"parameters": {
+						"text": "\"COST : \"&SBCost.Value"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "txt_class",
+					"sid": 640127762369823,
+					"parameters": {
+						"text": "(SBCost.Value=-1?\"All\":SBCost.Value>=10?\"10+\":SBCost.Value)"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Element",
+					"sid": 351440274025319,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"BetterOutline\""
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Element",
+					"sid": 291701334710891,
+					"parameters": {
+						"instance-variable": "Select",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 953316164204632
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 431567198223098,
+					"parameters": {
+						"object": "Element",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Element",
+					"sid": 564731473948056,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"tap\"",
+						"property": "scale",
+						"end-x": "1.8",
+						"end-y": "1.8",
+						"time": "0.1",
+						"ease": "easeinsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Element",
+					"sid": 280625072189588,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetAngle",
+						"end-value": "0",
+						"time": "0.1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Element",
+					"sid": 253401627774183,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 443278329454869,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Element",
+							"sid": 106652038242874,
+							"parameters": {
+								"instance-variable": "Select"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Element",
+							"sid": 786385448209231,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Element",
+							"sid": 102414379492937,
+							"parameters": {
+								"instance-variable": "Select",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 657909804913336
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 800360336676913
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "allunselect",
+							"sid": 238521335008854,
+							"parameters": [
+								"\"element\""
+							]
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Element",
+							"sid": 798446964633251,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						},
+						{
+							"id": "set_hex",
+							"objectClass": "Element",
+							"sid": 226212524020535,
+							"behaviorType": "ColorVariable",
+							"parameters": {
+								"color_hex": "colorSelect"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Element",
+							"sid": 470629019619264,
+							"parameters": {
+								"effect": "\"BetterOutline\"",
+								"parameter-index": "0",
+								"value": "Self.ColorVariable.Get"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Element",
+							"sid": 216811037531019,
+							"parameters": {
+								"instance-variable": "Select",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 217669913451353
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 365402934261371,
+					"parameters": {
+						"object": "iconType",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "iconType",
+					"sid": 624101842095804,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"tap\"",
+						"property": "scale",
+						"end-x": "1.8",
+						"end-y": "1.8",
+						"time": "0.1",
+						"ease": "easeinsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "iconType",
+					"sid": 464255514428170,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetAngle",
+						"end-value": "0",
+						"time": "0.1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 907801364239546,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "iconType",
+							"sid": 746477362513508,
+							"parameters": {
+								"instance-variable": "Select"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "iconType",
+							"sid": 184263680719371,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "iconType",
+							"sid": 102836801302148,
+							"parameters": {
+								"instance-variable": "Select",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 353416529347929
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 189438765107711
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "allunselect",
+							"sid": 881733428323775,
+							"parameters": [
+								"\"type\""
+							]
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "iconType",
+							"sid": 135854116171564,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						},
+						{
+							"id": "set_hex",
+							"objectClass": "iconType",
+							"sid": 335734061054069,
+							"behaviorType": "ColorVariable",
+							"parameters": {
+								"color_hex": "colorSelect"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "iconType",
+							"sid": 936066944053646,
+							"parameters": {
+								"effect": "\"BetterOutline\"",
+								"parameter-index": "0",
+								"value": "Self.ColorVariable.Get"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "iconType",
+							"sid": 492368046557544,
+							"parameters": {
+								"instance-variable": "Select",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 711207793882663
+				}
+			]
+		},
+		{
+			"functionName": "allunselect",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Target",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 908456603028091
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 282126236416605,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 542255121565366,
+							"parameters": {
+								"variable": "Target",
+								"comparison": 0,
+								"value": "\"element\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Element",
+							"sid": 420427165774839,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Element",
+							"sid": 932483638117085,
+							"parameters": {
+								"instance-variable": "Select",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 599611191149031
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 426593445947782,
+							"parameters": {
+								"variable": "Target",
+								"comparison": 0,
+								"value": "\"type\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "iconType",
+							"sid": 568413715378761,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "iconType",
+							"sid": 263441255490128,
+							"parameters": {
+								"instance-variable": "Select",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 380826753139675
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 468867385051239,
+					"parameters": {
+						"object": "Element"
+					}
+				},
+				{
+					"id": "is-playing",
+					"objectClass": "Element",
+					"sid": 259524568941207,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"tap\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Element",
+					"sid": 866012233224101,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"BetterOutline\""
+					}
+				},
+				{
+					"id": "set_hex",
+					"objectClass": "Element",
+					"sid": 226025033660821,
+					"behaviorType": "ColorVariable",
+					"parameters": {
+						"color_hex": "colorHover"
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "Element",
+					"sid": 121628321480495,
+					"parameters": {
+						"effect": "\"BetterOutline\"",
+						"parameter-index": "0",
+						"value": "Self.ColorVariable.Get"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "Element",
+					"sid": 499096789036883,
+					"parameters": {
+						"scale": "2.1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Element",
+					"sid": 442784065389487,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 795271212506977
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 278430026859119,
+					"parameters": {
+						"object": "iconType"
+					}
+				},
+				{
+					"id": "is-playing",
+					"objectClass": "iconType",
+					"sid": 449513657560334,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"tap\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "iconType",
+					"sid": 230257551547635,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"BetterOutline\""
+					}
+				},
+				{
+					"id": "set_hex",
+					"objectClass": "iconType",
+					"sid": 628541238890636,
+					"behaviorType": "ColorVariable",
+					"parameters": {
+						"color_hex": "colorHover"
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "iconType",
+					"sid": 407311535129507,
+					"parameters": {
+						"effect": "\"BetterOutline\"",
+						"parameter-index": "0",
+						"value": "Self.ColorVariable.Get"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "iconType",
+					"sid": 103301739278736,
+					"parameters": {
+						"scale": "2.1"
+					}
+				}
+			],
+			"sid": 467871398455101
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 654345029926423,
+					"parameters": {
+						"object": "Element"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 371545740810033,
+					"parameters": {
+						"object": "Element"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-playing",
+					"objectClass": "Element",
+					"sid": 574091492762277,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"tap\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "Element",
+					"sid": 248211260618808,
+					"parameters": {
+						"scale": "2"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Element",
+					"sid": 224285369326758,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Element",
+					"sid": 413275450037383,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetAngle",
+						"end-value": "0",
+						"time": "0.1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 831630199382618,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Element",
+							"sid": 602875646420772,
+							"parameters": {
+								"instance-variable": "Select"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Element",
+							"sid": 317773018204591,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						},
+						{
+							"id": "set_hex",
+							"objectClass": "Element",
+							"sid": 510771911747281,
+							"behaviorType": "ColorVariable",
+							"parameters": {
+								"color_hex": "colorSelect"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Element",
+							"sid": 760429927689561,
+							"parameters": {
+								"effect": "\"BetterOutline\"",
+								"parameter-index": "0",
+								"value": "Self.ColorVariable.Get"
+							}
+						}
+					],
+					"sid": 885530929318410
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 119729657862853
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Element",
+							"sid": 574138530591958,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 642111080511098
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 903265901441323,
+					"parameters": {
+						"object": "iconType"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 982292417774290,
+					"parameters": {
+						"object": "iconType"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-playing",
+					"objectClass": "iconType",
+					"sid": 760957362697615,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"tap\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "iconType",
+					"sid": 118959260730025,
+					"parameters": {
+						"scale": "2"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "iconType",
+					"sid": 176913123803961,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetAngle",
+						"end-value": "0",
+						"time": "0.1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 489859507599523,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "iconType",
+							"sid": 212683250322570,
+							"parameters": {
+								"instance-variable": "Select"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "iconType",
+							"sid": 155115792821430,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						},
+						{
+							"id": "set_hex",
+							"objectClass": "iconType",
+							"sid": 387032251547217,
+							"behaviorType": "ColorVariable",
+							"parameters": {
+								"color_hex": "colorSelect"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "iconType",
+							"sid": 205804197533472,
+							"parameters": {
+								"effect": "\"BetterOutline\"",
+								"parameter-index": "0",
+								"value": "Self.ColorVariable.Get"
+							}
+						}
+					],
+					"sid": 557850086419363
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 186276674433061
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "iconType",
+							"sid": 218076825762185,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 838177698401016
+				}
+			]
+		}
+	],
+	"sid": 484960243300908
+}

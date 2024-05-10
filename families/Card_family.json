@@ -1,0 +1,116 @@
+{
+	"name": "Card_family",
+	"plugin-id": "Sprite",
+	"sid": 438826512690728,
+	"instanceVariables": [
+		{
+			"name": "nameCard",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 101942646980772
+		},
+		{
+			"name": "idCard",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 535016502403191
+		},
+		{
+			"name": "imageCard",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 286191362117172
+		},
+		{
+			"name": "rarityCard",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 333166112400909
+		},
+		{
+			"name": "afterLoad",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 477408544137056
+		},
+		{
+			"name": "costCard",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 249259419461973
+		},
+		{
+			"name": "elementCard",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 603721842726526
+		},
+		{
+			"name": "typeCard",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 641907406228153
+		},
+		{
+			"name": "classCard",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 344114446618158
+		},
+		{
+			"name": "speedCard",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 347160276974861
+		},
+		{
+			"name": "posX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 915906200775090
+		},
+		{
+			"name": "posY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 284192728949568
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 908847545921402
+		},
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 440785015673298
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutlineFamily"
+		}
+	],
+	"members": [
+		"CardOnChampion",
+		"CardOnDeck",
+		"CardOnSearch",
+		"CardOnExtra",
+		"CardOnExtra2"
+	]
+}

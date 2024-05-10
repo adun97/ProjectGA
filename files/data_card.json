@@ -1,0 +1,14 @@
+{
+	"data": {
+		"total_card": 281,
+		"type": [
+			"action",
+			"ally",
+			"attack",
+			"domain",
+			"champion",
+			"item",
+			"weapon"
+		]
+	}
+}
