@@ -10,6 +10,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 451617140687972
+		},
+		{
+			"name": "nameType",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 573321907218527
 		}
 	],
 	"behaviorTypes": [

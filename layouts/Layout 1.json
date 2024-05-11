@@ -237,6 +237,147 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "txtCek",
+					"properties": {
+						"text": "Text",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 50,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 221,
+					"instanceVariables": {
+						"type": "element"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 768,
+						"y": 48,
+						"width": 400,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "txtCek",
+					"properties": {
+						"text": "Text",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 50,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 222,
+					"instanceVariables": {
+						"type": "type"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 768,
+						"y": 160,
+						"width": 400,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "txtCek",
+					"properties": {
+						"text": "Text",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 50,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 223,
+					"instanceVariables": {
+						"type": "cost"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 768,
+						"y": 272,
+						"width": 400,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 616415114560624,
@@ -6400,7 +6541,8 @@
 					},
 					"uid": 194,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameElement": "luxem"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6471,7 +6613,8 @@
 					},
 					"uid": 196,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameElement": "astra"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6542,7 +6685,8 @@
 					},
 					"uid": 197,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameElement": "neos"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6613,7 +6757,8 @@
 					},
 					"uid": 198,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameElement": "umbra"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6684,7 +6829,8 @@
 					},
 					"uid": 199,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameElement": "water"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6755,7 +6901,8 @@
 					},
 					"uid": 200,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameElement": "fire"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6826,7 +6973,8 @@
 					},
 					"uid": 201,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameElement": "wind"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6897,7 +7045,8 @@
 					},
 					"uid": 202,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameElement": "tera"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6968,7 +7117,8 @@
 					},
 					"uid": 203,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameElement": "arcane"
 					},
 					"behaviors": {
 						"Tween": {
@@ -7039,7 +7189,8 @@
 					},
 					"uid": 204,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameElement": "crux"
 					},
 					"behaviors": {
 						"Tween": {
@@ -7110,7 +7261,8 @@
 					},
 					"uid": 205,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameElement": "norm"
 					},
 					"behaviors": {
 						"Tween": {
@@ -7212,7 +7364,8 @@
 					},
 					"uid": 209,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameType": "action"
 					},
 					"behaviors": {
 						"Tween": {
@@ -7275,7 +7428,8 @@
 					},
 					"uid": 210,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameType": "ally"
 					},
 					"behaviors": {
 						"Tween": {
@@ -7338,7 +7492,8 @@
 					},
 					"uid": 211,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameType": "attack"
 					},
 					"behaviors": {
 						"Tween": {
@@ -7401,7 +7556,8 @@
 					},
 					"uid": 212,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameType": "domain"
 					},
 					"behaviors": {
 						"Tween": {
@@ -7464,7 +7620,8 @@
 					},
 					"uid": 213,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameType": "champion"
 					},
 					"behaviors": {
 						"Tween": {
@@ -7527,7 +7684,8 @@
 					},
 					"uid": 214,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameType": "item"
 					},
 					"behaviors": {
 						"Tween": {
@@ -7590,7 +7748,8 @@
 					},
 					"uid": 215,
 					"instanceVariables": {
-						"Select": false
+						"Select": false,
+						"nameType": "weapon"
 					},
 					"behaviors": {
 						"Tween": {

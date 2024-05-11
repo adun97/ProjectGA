@@ -97,10 +97,10 @@
   display: inline-block;
   margin-right: 10px;
   position: relative;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: inherit;
 	border-radius: 6px;
-	padding: 8px 16px;
+	padding: 8px 8px;
 	color: var(--input-color);
 	border: 1px solid var(--input-border);
     background: var(--input-background);
@@ -109,8 +109,9 @@
   display: none;
 }
 .dropdown > a, .dropdown.toggle > label {
-  border-radius: 10px;
+  	border-radius: 10px;
 	background: var(--input-color);
+	color:var(--input-border);
   /*box-shadow: 0 6px 5px -5px rgba(0,0,0,0.3);*/
 }
 .dropdown > a::after, .dropdown.toggle > label::after {

@@ -157,7 +157,8 @@
 			"btn_search",
 			"Mouse",
 			"iconType",
-			"ListClass"
+			"ListClass",
+			"txtCek"
 		],
 		"subfolders": [
 			{
@@ -198,7 +199,8 @@
 					"AJAX",
 					"BinaryData",
 					"Browser",
-					"JSON"
+					"JSON",
+					"JSONdata"
 				],
 				"subfolders": [],
 				"name": "Object"

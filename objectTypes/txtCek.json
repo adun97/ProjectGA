@@ -1,0 +1,17 @@
+{
+	"name": "txtCek",
+	"plugin-id": "Text",
+	"sid": 156279289821757,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "type",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 408928680002498
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -6382,6 +6382,12 @@
 			},
 			"uid": 99,
 			"instanceVariables": {}
+		},
+		{
+			"type": "JSONdata",
+			"properties": {},
+			"uid": 224,
+			"instanceVariables": {}
 		}
 	],
 	"effectTypes": [],

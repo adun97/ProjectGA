@@ -1,14 +1,102 @@
 {
 	"data": {
 		"total_card": 281,
-		"type": [
-			"action",
-			"ally",
-			"attack",
-			"domain",
-			"champion",
-			"item",
-			"weapon"
-		]
+		"type": {
+			"action": [
+				"assassin",
+				"cleric",
+				"craft",
+				"guardian",
+				"harmony",
+				"mage",
+				"melody",
+				"ranger",
+				"reaction",
+				"skill",
+				"spell",
+				"tamer",
+				"warrior"
+			],
+			"ally": [
+				"angel",
+				"animal",
+				"ape",
+				"assassin",
+				"beast",
+				"bird",
+				"boar",
+				"bull",
+				"cleric",
+				"construct",
+				"dog",
+				"dryad",
+				"elemental",
+				"golem",
+				"guardian",
+				"horse",
+				"human",
+				"lion",
+				"mage",
+				"phoenix",
+				"rabbit",
+				"ranger",
+				"selkie",
+				"servent",
+				"slime",
+				"spirit",
+				"squirrel",
+				"tamer",
+				"turtle",
+				"warrior",
+				"wolf"
+			],
+			"attack": [
+				"assassin",
+				"dagger",
+				"flute",
+				"guardian",
+				"ranger",
+				"sword",
+				"tamer",
+				"warrior"
+			],
+			"champion": [
+				"assassin",
+				"human",
+				"mage",
+				"spirit",
+				"tamer",
+				"warrior"
+			],
+			"domain": [
+				"castle",
+				"mage",
+				"isle",
+				"warrior"
+			],
+			"item": [
+				"assassin",
+				"artifact",
+				"accessory",
+				"bauble",
+				"book",
+				"cleric",
+				"crystal",
+				"dagger",
+				"instrument",
+				"map",
+				"ring",
+				"warrior",
+				"tamer"
+			],
+			"weapon": [
+				"assassin",
+				"dagger",
+				"guardian",
+				"mage",
+				"sword",
+				"warrior"
+			]
+		}
 	}
 }
