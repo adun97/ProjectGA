@@ -6388,6 +6388,16 @@
 			"properties": {},
 			"uid": 224,
 			"instanceVariables": {}
+		},
+		{
+			"type": "Array_card_display",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 232,
+			"instanceVariables": {}
 		}
 	],
 	"effectTypes": [],

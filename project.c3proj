@@ -151,15 +151,7 @@
 	],
 	"uniqueId": "06xsuvfnrhr",
 	"objectTypes": {
-		"items": [
-			"Element",
-			"Touch",
-			"btn_search",
-			"Mouse",
-			"iconType",
-			"ListClass",
-			"txtCek"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -179,7 +171,8 @@
 					{
 						"items": [
 							"Array_card_image",
-							"Array_card_list"
+							"Array_card_list",
+							"Array_card_display"
 						],
 						"subfolders": [],
 						"name": "Array"
@@ -200,7 +193,9 @@
 					"BinaryData",
 					"Browser",
 					"JSON",
-					"JSONdata"
+					"JSONdata",
+					"Mouse",
+					"Touch"
 				],
 				"subfolders": [],
 				"name": "Object"
@@ -208,7 +203,8 @@
 			{
 				"items": [
 					"txt_Static",
-					"txt_class"
+					"txt_class",
+					"txtCek"
 				],
 				"subfolders": [],
 				"name": "Text"
@@ -232,6 +228,16 @@
 				],
 				"subfolders": [],
 				"name": "Other"
+			},
+			{
+				"items": [
+					"btn_search",
+					"Element",
+					"iconType",
+					"ListClass"
+				],
+				"subfolders": [],
+				"name": "UI Editor"
 			}
 		]
 	},

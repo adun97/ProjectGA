@@ -180,9 +180,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 759838136044040,
+							"sid": 347443118929423,
 							"parameters": {
-								"layout": "Deck Editor"
+								"layout": "Layout 1"
 							}
 						}
 					],
