@@ -76,7 +76,14 @@
 		}
 	],
 	"sid": 490793960860737,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "Dict_save",
+			"properties": {},
+			"uid": 227,
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 3840,
 	"height": 2160,

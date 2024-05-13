@@ -151,7 +151,9 @@
 	],
 	"uniqueId": "06xsuvfnrhr",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"borderSlideRight"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -179,7 +181,8 @@
 					},
 					{
 						"items": [
-							"Dict_card_image"
+							"Dict_card_image",
+							"Dict_save"
 						],
 						"subfolders": [],
 						"name": "Dictionary"
@@ -251,18 +254,16 @@
 	},
 	"layouts": {
 		"items": [
-			"Deck Editor",
 			"Loader",
-			"Layout 1"
+			"Deck Editor"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"E_Deck_Editor",
 			"Global",
 			"E_Loader",
-			"E_layout1"
+			"E_Deck_Editor"
 		],
 		"subfolders": []
 	},
@@ -2776,5 +2777,5 @@
 	},
 	"viewportWidth": 3840,
 	"viewportHeight": 2160,
-	"firstLayout": "Layout 1"
+	"firstLayout": "Deck Editor"
 }
