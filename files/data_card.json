@@ -149,6 +149,65 @@
 				"sword",
 				"warrior"
 			]
+		},
+		"sort": {
+			"all": [
+				"Name",
+				"Cost",
+				"Element",
+				"Type",
+				"Attack",
+				"Health/Durability",
+				"Class"
+			],
+			"action": [
+				"Name",
+				"Cost",
+				"Element",
+				"Class"
+			],
+			"ally": [
+				"Name",
+				"Cost",
+				"Element",
+				"Attack",
+				"Health/Durability",
+				"Class"
+			],
+			"attack": [
+				"Name",
+				"Cost",
+				"Element",
+				"Attack",
+				"Class"
+			],
+			"champion": [
+				"Name",
+				"Cost",
+				"Element",
+				"Health/Durability",
+				"Class"
+			],
+			"domain": [
+				"Name",
+				"Cost",
+				"Element",
+				"Class"
+			],
+			"item": [
+				"Name",
+				"Cost",
+				"Element",
+				"Class"
+			],
+			"weapon": [
+				"Name",
+				"Cost",
+				"Element",
+				"Attack",
+				"Health/Durability",
+				"Class"
+			]
 		}
 	}
 }

@@ -135,9 +135,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 912.0167131713021,
+						"x": 496.01671317130206,
 						"y": 248.05838086033998,
-						"width": 1760,
+						"width": 928,
 						"height": 432,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -164,7 +164,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2144,
+						"x": 1312,
 						"y": 248,
 						"width": 640,
 						"height": 432,
@@ -222,9 +222,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2720,
+						"x": 1872,
 						"y": 248,
-						"width": 448,
+						"width": 416,
 						"height": 432,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -269,8 +269,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 768,
-						"y": 48,
+						"x": 128,
+						"y": 32,
 						"width": 400,
 						"height": 96,
 						"originX": 0,
@@ -316,8 +316,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 768,
-						"y": 160,
+						"x": 128,
+						"y": 144,
 						"width": 400,
 						"height": 96,
 						"originX": 0,
@@ -363,8 +363,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 768,
-						"y": 272,
+						"x": 128,
+						"y": 256,
 						"width": 400,
 						"height": 96,
 						"originX": 0,
@@ -410,8 +410,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1296,
-						"y": 48,
+						"x": 656,
+						"y": 32,
 						"width": 400,
 						"height": 96,
 						"originX": 0,
@@ -457,12 +457,41 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1312,
-						"y": 160,
+						"x": 672,
+						"y": 144,
 						"width": 400,
 						"height": 96,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "layout1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 5,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2528,
+						"y": 248,
+						"width": 832,
+						"height": 432,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -559,7 +588,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -630,7 +661,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -701,7 +734,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -772,7 +807,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -843,7 +880,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -914,7 +953,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -985,7 +1026,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1056,7 +1099,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1127,7 +1172,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1198,7 +1245,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1269,7 +1318,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1340,7 +1391,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1411,7 +1464,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1482,7 +1537,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1553,7 +1610,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1624,7 +1683,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1695,7 +1756,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1766,7 +1829,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1837,7 +1902,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1908,7 +1975,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1979,7 +2048,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -2050,7 +2121,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -2121,7 +2194,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -2192,7 +2267,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -2263,7 +2340,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -2334,7 +2413,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -2405,7 +2486,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -2476,7 +2559,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -2547,7 +2632,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -2618,7 +2705,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -2689,7 +2778,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -2760,7 +2851,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -2831,7 +2924,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -2902,7 +2997,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -2973,7 +3070,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -3044,7 +3143,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -3115,7 +3216,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -3186,7 +3289,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -3257,7 +3362,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -3328,7 +3435,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -3399,7 +3508,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -3470,7 +3581,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -3541,7 +3654,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -3612,7 +3727,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -3683,7 +3800,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -3754,7 +3873,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -3825,7 +3946,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -3896,7 +4019,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -3967,7 +4092,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -4038,7 +4165,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -4109,7 +4238,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -4180,7 +4311,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -4251,7 +4384,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -4322,7 +4457,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -4393,7 +4530,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -4464,7 +4603,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -4535,7 +4676,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -4606,7 +4749,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -4677,7 +4822,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -4748,7 +4895,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -4819,7 +4968,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -4890,7 +5041,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -4961,7 +5114,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -5032,7 +5187,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -5103,7 +5260,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -5174,7 +5333,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -5245,7 +5406,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -5316,7 +5479,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -5387,7 +5552,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -5458,7 +5625,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -5529,7 +5698,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -5600,7 +5771,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -5671,7 +5844,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -5742,7 +5917,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -5813,7 +5990,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -5884,7 +6063,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -5955,7 +6136,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -6026,7 +6209,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -6097,7 +6282,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -6168,7 +6355,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -6239,7 +6428,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -6310,7 +6501,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -6381,7 +6574,9 @@
 						"classCard": "",
 						"speedCard": "",
 						"posX": 0,
-						"posY": 0
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -6562,7 +6757,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 3248,
+						"x": 2400,
 						"y": 64,
 						"width": 400,
 						"height": 80,
@@ -6602,11 +6797,13 @@
 						"read-aloud": false
 					},
 					"uid": 192,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"id": ""
+					},
 					"behaviors": {},
 					"world": {
-						"x": 3008,
-						"y": 112,
+						"x": 2144,
+						"y": 96,
 						"width": 208,
 						"height": 96,
 						"originX": 0,
@@ -6710,8 +6907,8 @@
 						}
 					},
 					"world": {
-						"x": 1904,
-						"y": 384,
+						"x": 1072,
+						"y": 392,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -6782,8 +6979,8 @@
 						}
 					},
 					"world": {
-						"x": 2064,
-						"y": 384,
+						"x": 1232,
+						"y": 392,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -6854,8 +7051,8 @@
 						}
 					},
 					"world": {
-						"x": 2224,
-						"y": 384,
+						"x": 1392,
+						"y": 392,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -6926,8 +7123,8 @@
 						}
 					},
 					"world": {
-						"x": 2384,
-						"y": 384,
+						"x": 1552,
+						"y": 392,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -6998,8 +7195,8 @@
 						}
 					},
 					"world": {
-						"x": 2224,
-						"y": 112,
+						"x": 1392,
+						"y": 120,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -7070,8 +7267,8 @@
 						}
 					},
 					"world": {
-						"x": 2064,
-						"y": 112,
+						"x": 1232,
+						"y": 120,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -7142,8 +7339,8 @@
 						}
 					},
 					"world": {
-						"x": 2384,
-						"y": 112,
+						"x": 1552,
+						"y": 120,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -7214,7 +7411,7 @@
 						}
 					},
 					"world": {
-						"x": 2304,
+						"x": 1472,
 						"y": 248,
 						"width": 100,
 						"height": 100,
@@ -7286,7 +7483,7 @@
 						}
 					},
 					"world": {
-						"x": 2144,
+						"x": 1312,
 						"y": 248,
 						"width": 100,
 						"height": 100,
@@ -7358,7 +7555,7 @@
 						}
 					},
 					"world": {
-						"x": 1984,
+						"x": 1152,
 						"y": 248,
 						"width": 100,
 						"height": 100,
@@ -7430,8 +7627,8 @@
 						}
 					},
 					"world": {
-						"x": 1904,
-						"y": 112,
+						"x": 1072,
+						"y": 120,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -7525,7 +7722,7 @@
 						}
 					},
 					"world": {
-						"x": 2624,
+						"x": 1776,
 						"y": 112,
 						"width": 100,
 						"height": 100,
@@ -7589,7 +7786,7 @@
 						}
 					},
 					"world": {
-						"x": 2800,
+						"x": 1952,
 						"y": 112,
 						"width": 100,
 						"height": 100,
@@ -7653,7 +7850,7 @@
 						}
 					},
 					"world": {
-						"x": 2800,
+						"x": 1952,
 						"y": 400,
 						"width": 100,
 						"height": 100,
@@ -7717,7 +7914,7 @@
 						}
 					},
 					"world": {
-						"x": 2624,
+						"x": 1776,
 						"y": 400,
 						"width": 100,
 						"height": 100,
@@ -7781,7 +7978,7 @@
 						}
 					},
 					"world": {
-						"x": 2576,
+						"x": 1728,
 						"y": 256,
 						"width": 100,
 						"height": 100,
@@ -7845,7 +8042,7 @@
 						}
 					},
 					"world": {
-						"x": 2720,
+						"x": 1872,
 						"y": 256,
 						"width": 100,
 						"height": 100,
@@ -7909,7 +8106,7 @@
 						}
 					},
 					"world": {
-						"x": 2864,
+						"x": 2016,
 						"y": 256,
 						"width": 100,
 						"height": 100,
@@ -7943,7 +8140,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 3248,
-						"y": 192,
+						"y": 200,
 						"width": 528,
 						"height": 96,
 						"originX": 0,
@@ -7957,7 +8154,7 @@
 					}
 				},
 				{
-					"type": "txt_class",
+					"type": "txt_cost",
 					"properties": {
 						"text": "10",
 						"enable-bbcode": true,
@@ -7985,8 +8182,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 3648,
-						"y": 112,
+						"x": 2800,
+						"y": 104,
 						"width": 128,
 						"height": 80,
 						"originX": 0,
@@ -8027,7 +8224,9 @@
 						"read-aloud": false
 					},
 					"uid": 217,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"id": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 3008,
@@ -8080,6 +8279,361 @@
 						],
 						"angle": 0,
 						"zElevation": 0
+					}
+				},
+				{
+					"type": "ListSort",
+					"properties": {
+						"items": "Name\nCost\nElement\nType\nAttack\nHealth/Durability\nClass",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"type": "dropdown-list",
+						"multi-select": false,
+						"auto-font-size": false,
+						"id": "",
+						"class": "dropdown"
+					},
+					"uid": 6,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3248,
+						"y": 56,
+						"width": 528,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "txt_Static",
+					"properties": {
+						"text": "Sort",
+						"enable-bbcode": true,
+						"font": "Verdana",
+						"size": 50,
+						"line-height": 0,
+						"bold": true,
+						"italic": true,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "left",
+						"read-aloud": false
+					},
+					"uid": 7,
+					"instanceVariables": {
+						"id": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3008,
+						"y": 112,
+						"width": 208,
+						"height": 96,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SBATK",
+					"properties": {
+						"value": -1,
+						"minimum": -1,
+						"maximum": 8,
+						"step": 1,
+						"tooltip": "aaa",
+						"initially-visible": true,
+						"enabled": true,
+						"id": "",
+						"class": "slider"
+					},
+					"uid": 8,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2400,
+						"y": 208,
+						"width": 400,
+						"height": 80,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "SBHP",
+					"properties": {
+						"value": -1,
+						"minimum": -1,
+						"maximum": 28,
+						"step": 1,
+						"tooltip": "aaa",
+						"initially-visible": true,
+						"enabled": true,
+						"id": "",
+						"class": "slider"
+					},
+					"uid": 9,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2400,
+						"y": 352,
+						"width": 400,
+						"height": 80,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "txt_Static",
+					"properties": {
+						"text": "Attack",
+						"enable-bbcode": true,
+						"font": "Verdana",
+						"size": 50,
+						"line-height": 0,
+						"bold": true,
+						"italic": true,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "left",
+						"read-aloud": false
+					},
+					"uid": 10,
+					"instanceVariables": {
+						"id": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2144,
+						"y": 256,
+						"width": 256,
+						"height": 96,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "txt_Static",
+					"properties": {
+						"text": "Health",
+						"enable-bbcode": true,
+						"font": "Verdana",
+						"size": 50,
+						"line-height": 0,
+						"bold": true,
+						"italic": true,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "left",
+						"read-aloud": false
+					},
+					"uid": 11,
+					"instanceVariables": {
+						"id": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2144,
+						"y": 400,
+						"width": 256,
+						"height": 96,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "txt_atk",
+					"properties": {
+						"text": "10",
+						"enable-bbcode": true,
+						"font": "Verdana",
+						"size": 50,
+						"line-height": 0,
+						"bold": true,
+						"italic": true,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "left",
+						"read-aloud": false
+					},
+					"uid": 12,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2800,
+						"y": 248,
+						"width": 128,
+						"height": 80,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "txt_hp",
+					"properties": {
+						"text": "10",
+						"enable-bbcode": true,
+						"font": "Verdana",
+						"size": 50,
+						"line-height": 0,
+						"bold": true,
+						"italic": true,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "left",
+						"read-aloud": false
+					},
+					"uid": 13,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2800,
+						"y": 392,
+						"width": 128,
+						"height": 80,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "btn_Reset",
+					"properties": {
+						"type": "button",
+						"text": "RESET",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": "",
+						"class": "button"
+					},
+					"uid": 14,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 720,
+						"y": 344,
+						"width": 208,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
 					}
 				}
 			],

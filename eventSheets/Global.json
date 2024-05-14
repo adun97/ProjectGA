@@ -136,6 +136,16 @@
 			"sid": 974570227518163
 		},
 		{
+			"eventType": "variable",
+			"name": "columnSearch",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 233488210457503
+		},
+		{
 			"eventType": "comment",
 			"text": "Main definition"
 		},

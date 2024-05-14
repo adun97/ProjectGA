@@ -86,6 +86,20 @@
 			"desc": "",
 			"show": true,
 			"sid": 284192728949568
+		},
+		{
+			"name": "atkCard",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 967399995984478
+		},
+		{
+			"name": "hpCard",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 805708882650493
 		}
 	],
 	"behaviorTypes": [

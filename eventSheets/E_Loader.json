@@ -139,10 +139,10 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dict_card_image",
-							"sid": 975770300979880,
+							"sid": 920862270476396,
 							"parameters": {
 								"key": "Array_card_image.At(0,loopindex(\"card\"))",
-								"value": "0"
+								"value": "\"none\""
 							}
 						},
 						{
@@ -152,18 +152,38 @@
 							"parameters": {
 								"destination": "BinaryData"
 							}
-						},
-						{
-							"id": "request-url",
-							"objectClass": "AJAX",
-							"sid": 756371010216471,
-							"parameters": {
-								"tag": "Array_card_image.At(0,loopindex(\"card\"))",
-								"url": "\"Card/\"&Array_card_image.At(0,loopindex(\"card\"))&\".\"&TypeFile"
-							}
 						}
 					],
-					"sid": 556013711141900
+					"sid": 556013711141900,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 565454396633630,
+									"parameters": {
+										"first-value": "loopindex",
+										"comparison": 3,
+										"second-value": "20"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "request-url",
+									"objectClass": "AJAX",
+									"sid": 215859699224816,
+									"parameters": {
+										"tag": "Array_card_image.At(0,loopindex(\"card\"))",
+										"url": "\"Card/\"&Array_card_image.At(0,loopindex(\"card\"))&\".\"&TypeFile"
+									}
+								}
+							],
+							"sid": 624325210045607
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -172,9 +192,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 200213380158857,
+							"sid": 220650580709795,
 							"parameters": {
-								"seconds": "5"
+								"seconds": "2"
 							}
 						},
 						{
