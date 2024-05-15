@@ -100,6 +100,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 805708882650493
+		},
+		{
+			"name": "onDeck",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 610081365047606
 		}
 	],
 	"behaviorTypes": [

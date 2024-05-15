@@ -63,6 +63,26 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "XstartMain",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 353623477415528
+		},
+		{
+			"eventType": "variable",
+			"name": "YstartMain",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 350447274258536
+		},
+		{
+			"eventType": "variable",
 			"name": "Xstart",
 			"type": "number",
 			"initialValue": "2880",
@@ -153,7 +173,7 @@
 			"eventType": "variable",
 			"name": "Xstart_def_main",
 			"type": "number",
-			"initialValue": "864",
+			"initialValue": "1104",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -163,7 +183,7 @@
 			"eventType": "variable",
 			"name": "Ystart_def_main",
 			"type": "number",
-			"initialValue": "672",
+			"initialValue": "640",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -200,6 +220,16 @@
 			"sid": 736081866211089
 		},
 		{
+			"eventType": "variable",
+			"name": "columnMain",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 671400669970567
+		},
+		{
 			"eventType": "comment",
 			"text": "Extra definition"
 		},
@@ -207,7 +237,7 @@
 			"eventType": "variable",
 			"name": "Xstart_def_extra",
 			"type": "number",
-			"initialValue": "160",
+			"initialValue": "144",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -217,7 +247,7 @@
 			"eventType": "variable",
 			"name": "Ystart_def_extra",
 			"type": "number",
-			"initialValue": "672",
+			"initialValue": "1984",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -227,7 +257,7 @@
 			"eventType": "variable",
 			"name": "Xgap_extra",
 			"type": "number",
-			"initialValue": "208",
+			"initialValue": "192",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,

@@ -270,7 +270,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 128,
-						"y": 32,
+						"y": -528,
 						"width": 400,
 						"height": 96,
 						"originX": 0,
@@ -317,7 +317,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 128,
-						"y": 144,
+						"y": -416,
 						"width": 400,
 						"height": 96,
 						"originX": 0,
@@ -364,7 +364,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 128,
-						"y": 256,
+						"y": -304,
 						"width": 400,
 						"height": 96,
 						"originX": 0,
@@ -411,8 +411,8 @@
 					"behaviors": {},
 					"world": {
 						"x": 656,
-						"y": 32,
-						"width": 400,
+						"y": -528,
+						"width": 256,
 						"height": 96,
 						"originX": 0,
 						"originY": 0,
@@ -457,9 +457,9 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 672,
-						"y": 144,
-						"width": 400,
+						"x": 592,
+						"y": -416,
+						"width": 288,
 						"height": 96,
 						"originX": 0,
 						"originY": 0,
@@ -590,7 +590,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -663,7 +664,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -736,7 +738,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -794,1612 +797,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 111,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1872,
-						"y": 640,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 112,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2064,
-						"y": 640,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 113,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2256,
-						"y": 640,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 114,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1296,
-						"y": 640,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 115,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1488,
-						"y": 640,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 116,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1680,
-						"y": 640,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 117,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1104,
-						"y": 640,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 124,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 144,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 121,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 336,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 122,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 528,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 123,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 720,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 118,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 912,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 119,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1104,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 120,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1296,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 125,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1488,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 126,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1680,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 127,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1872,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 128,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2064,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 129,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2256,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 130,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2448,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 131,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2640,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 132,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2832,
-						"y": 1984,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 133,
 					"instanceVariables": {
 						"nameCard": "",
@@ -2415,7 +812,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2488,7 +886,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2561,7 +960,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2634,7 +1034,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2707,7 +1108,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2780,7 +1182,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2853,7 +1256,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2926,7 +1330,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2999,7 +1404,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3072,7 +1478,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3145,7 +1552,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3218,7 +1626,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3291,7 +1700,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3364,7 +1774,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3437,7 +1848,8 @@
 						"posX": 0,
 						"posY": 0,
 						"atkCard": 0,
-						"hpCard": 0
+						"hpCard": 0,
+						"onDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3473,3145 +1885,6 @@
 						"y": 2272,
 						"width": 200,
 						"height": 280,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 176,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2448,
-						"y": 640,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 177,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2640,
-						"y": 640,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 178,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2832,
-						"y": 640,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 101,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1872,
-						"y": 896,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 103,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2064,
-						"y": 896,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 105,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2256,
-						"y": 896,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 106,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1296,
-						"y": 896,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 148,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1488,
-						"y": 896,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 149,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1680,
-						"y": 896,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 150,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1104,
-						"y": 896,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 151,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2448,
-						"y": 896,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 152,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2640,
-						"y": 896,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 153,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2832,
-						"y": 896,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 154,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1872,
-						"y": 1152,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 155,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2064,
-						"y": 1152,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 156,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2256,
-						"y": 1152,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 157,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1296,
-						"y": 1152,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 158,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1488,
-						"y": 1152,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 159,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1680,
-						"y": 1152,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 160,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1104,
-						"y": 1152,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 161,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2448,
-						"y": 1152,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 162,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2640,
-						"y": 1152,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 163,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2832,
-						"y": 1152,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 164,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1872,
-						"y": 1408,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 165,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2064,
-						"y": 1408,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 166,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2256,
-						"y": 1408,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 167,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1296,
-						"y": 1408,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 168,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1488,
-						"y": 1408,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 169,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1680,
-						"y": 1408,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 170,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1104,
-						"y": 1408,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 171,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2448,
-						"y": 1408,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 172,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2640,
-						"y": 1408,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 173,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2832,
-						"y": 1408,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 174,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1872,
-						"y": 1664,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 175,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2064,
-						"y": 1664,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 179,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2256,
-						"y": 1664,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 180,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1296,
-						"y": 1664,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 181,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1488,
-						"y": 1664,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 182,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1680,
-						"y": 1664,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 183,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 1104,
-						"y": 1664,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 184,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2448,
-						"y": 1664,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 185,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2640,
-						"y": 1664,
-						"width": 150,
-						"height": 210,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "source-atop"
-					}
-				},
-				{
-					"type": "CardOnSearch",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 186,
-					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutlineFamily": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 5,
-								"precision-step": 3,
-								"samples": 15
-							}
-						}
-					},
-					"world": {
-						"x": 2832,
-						"y": 1664,
-						"width": 150,
-						"height": 210,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -6693,6 +1966,3729 @@
 						"y": 1120,
 						"width": 850,
 						"height": 1190,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 15,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1104,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 16,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1296,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 17,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1488,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 18,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2832,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 19,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1680,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 20,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1872,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 21,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2064,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 22,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2256,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 23,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2448,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 24,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2640,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 25,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1104,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 26,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1296,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 27,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1488,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 28,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2832,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 29,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1680,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 30,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1872,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 31,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2064,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 32,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2256,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 33,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2448,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 34,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2640,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 35,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1104,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 36,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1296,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 37,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1488,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 38,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2832,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 39,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1680,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 40,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1872,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 41,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2064,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 42,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2256,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 43,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2448,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 44,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2640,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 45,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1104,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 46,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1296,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 47,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1488,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 48,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2832,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 49,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1680,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 50,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1872,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 51,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2064,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 52,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2256,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 53,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2448,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 54,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2640,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 55,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1104,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 56,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1296,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 57,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1488,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 58,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2832,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 59,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1680,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 60,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1872,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 61,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2064,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 62,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2256,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 63,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2448,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 64,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2640,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnExtra",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 65,
+					"instanceVariables": {
+						"nameCard": "",
+						"idCard": 0,
+						"imageCard": "",
+						"rarityCard": "",
+						"afterLoad": false,
+						"costCard": 0,
+						"elementCard": "",
+						"typeCard": "",
+						"classCard": "",
+						"speedCard": "",
+						"posX": 0,
+						"posY": 0,
+						"atkCard": 0,
+						"hpCard": 0,
+						"onDeck": ""
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 5,
+								"precision-step": 3,
+								"samples": 15
+							}
+						}
+					},
+					"world": {
+						"x": 416,
+						"y": 2384,
+						"width": 150,
+						"height": 210,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -8623,7 +7619,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 720,
-						"y": 344,
+						"y": 336,
 						"width": 208,
 						"height": 96,
 						"originX": 0,
