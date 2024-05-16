@@ -28,6 +28,14 @@
 						"tag": "\"cardimage\"",
 						"file": "Array Card Image.json"
 					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 594009578576532,
+					"parameters": {
+						"key": "\"Save\""
+					}
 				}
 			],
 			"sid": 438811091610752
@@ -231,6 +239,30 @@
 				}
 			],
 			"sid": 829064194857190
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 104811087474460,
+					"parameters": {
+						"key": "\"Save\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "Dict_save",
+					"sid": 468245024876824,
+					"parameters": {
+						"json": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 781876907357200
 		}
 	],
 	"sid": 616977034840533

@@ -135,9 +135,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 496.01671317130206,
+						"x": 592.0167131713021,
 						"y": 248.05838086033998,
-						"width": 928,
+						"width": 736,
 						"height": 432,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -500,6 +500,66 @@
 						],
 						"angle": 0,
 						"zElevation": 0
+					}
+				},
+				{
+					"type": "layout1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 72,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 112,
+						"y": 248,
+						"width": 160,
+						"height": 432,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "btn_Back",
+					"properties": {
+						"type": "button",
+						"text": "BACK",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": "",
+						"class": "button"
+					},
+					"uid": 73,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 48,
+						"y": 64,
+						"width": 128,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
 					}
 				}
 			],
@@ -7605,7 +7665,7 @@
 					"type": "btn_Reset",
 					"properties": {
 						"type": "button",
-						"text": "RESET",
+						"text": "RESET FILTER",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -7618,9 +7678,197 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 720,
+						"x": 48,
 						"y": 336,
-						"width": 208,
+						"width": 128,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "TextInputSave",
+					"properties": {
+						"text": "",
+						"placeholder": "Search",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"read-only": false,
+						"spell-check": false,
+						"type": "text",
+						"auto-font-size": false,
+						"id": "",
+						"class": "form-field"
+					},
+					"uid": 66,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 256,
+						"y": 200,
+						"width": 480,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "ListLoad",
+					"properties": {
+						"items": "Name\nCost\nElement\nType\nAttack\nHealth/Durability\nClass",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"type": "dropdown-list",
+						"multi-select": false,
+						"auto-font-size": false,
+						"id": "",
+						"class": "dropdown"
+					},
+					"uid": 67,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 256,
+						"y": 64,
+						"width": 480,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "ListSortDeck",
+					"properties": {
+						"items": "Name\nCost\nElement\nType\nAttack\nHealth/Durability\nClass",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"type": "dropdown-list",
+						"multi-select": false,
+						"auto-font-size": false,
+						"id": "",
+						"class": "dropdown"
+					},
+					"uid": 68,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 256,
+						"y": 336,
+						"width": 480,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "btn_Load",
+					"properties": {
+						"type": "button",
+						"text": "LOAD",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": "",
+						"class": "button"
+					},
+					"uid": 69,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 768,
+						"y": 64,
+						"width": 160,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "btn_Save",
+					"properties": {
+						"type": "button",
+						"text": "SAVE",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": "",
+						"class": "button"
+					},
+					"uid": 70,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 768,
+						"y": 200,
+						"width": 160,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "btn_Sort",
+					"properties": {
+						"type": "button",
+						"text": "SORT",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": "",
+						"class": "button"
+					},
+					"uid": 71,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 768,
+						"y": 336,
+						"width": 160,
 						"height": 96,
 						"originX": 0,
 						"originY": 0,

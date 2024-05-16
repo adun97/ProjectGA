@@ -64,6 +64,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -151,7 +158,9 @@
 	],
 	"uniqueId": "06xsuvfnrhr",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"LocalStorage"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -172,7 +181,9 @@
 						"items": [
 							"Array_card_image",
 							"Array_card_list",
-							"Array_card_display"
+							"Array_card_display",
+							"Array_card_save",
+							"Array_card_load"
 						],
 						"subfolders": [],
 						"name": "Array"
@@ -241,7 +252,14 @@
 					"SBATK",
 					"SBHP",
 					"btn_Reset",
-					"borderSlideRight"
+					"borderSlideRight",
+					"TextInputSave",
+					"ListLoad",
+					"ListSortDeck",
+					"btn_Load",
+					"btn_Save",
+					"btn_Sort",
+					"btn_Back"
 				],
 				"subfolders": [],
 				"name": "UI Editor"

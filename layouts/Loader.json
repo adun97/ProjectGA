@@ -82,6 +82,26 @@
 			"properties": {},
 			"uid": 227,
 			"instanceVariables": {}
+		},
+		{
+			"type": "Array_card_save",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 74,
+			"instanceVariables": {}
+		},
+		{
+			"type": "Array_card_load",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 76,
+			"instanceVariables": {}
 		}
 	],
 	"effectTypes": [],
