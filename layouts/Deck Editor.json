@@ -135,9 +135,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 592.0167131713021,
+						"x": 624.0167131713021,
 						"y": 248.05838086033998,
-						"width": 736,
+						"width": 672,
 						"height": 432,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -164,9 +164,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1312,
+						"x": 1360,
 						"y": 248,
-						"width": 640,
+						"width": 736,
 						"height": 432,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -193,9 +193,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 3392,
+						"x": 3296,
 						"y": 248,
-						"width": 832,
+						"width": 640,
 						"height": 432,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -222,7 +222,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1872,
+						"x": 1968,
 						"y": 248,
 						"width": 416,
 						"height": 432,
@@ -486,9 +486,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2528,
+						"x": 2576,
 						"y": 248,
-						"width": 832,
+						"width": 736,
 						"height": 432,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -515,9 +515,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 112,
+						"x": 144,
 						"y": 248,
-						"width": 160,
+						"width": 230,
 						"height": 432,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -548,9 +548,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 48,
+						"x": 64,
 						"y": 64,
-						"width": 128,
+						"width": 160,
 						"height": 96,
 						"originX": 0,
 						"originY": 0,
@@ -560,6 +560,35 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "layout1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 77,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3728,
+						"y": 248,
+						"width": 160,
+						"height": 432,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],
@@ -5813,9 +5842,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2400,
+						"x": 2480,
 						"y": 64,
-						"width": 400,
+						"width": 336,
 						"height": 80,
 						"originX": 0,
 						"originY": 0,
@@ -5858,8 +5887,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 2144,
-						"y": 96,
+						"x": 2224,
+						"y": 112,
 						"width": 208,
 						"height": 96,
 						"originX": 0,
@@ -5895,7 +5924,7 @@
 					"world": {
 						"x": 3248,
 						"y": 336,
-						"width": 528,
+						"width": 336,
 						"height": 96,
 						"originX": 0,
 						"originY": 0,
@@ -5963,7 +5992,7 @@
 						}
 					},
 					"world": {
-						"x": 1072,
+						"x": 1088,
 						"y": 392,
 						"width": 100,
 						"height": 100,
@@ -6035,7 +6064,7 @@
 						}
 					},
 					"world": {
-						"x": 1232,
+						"x": 1264,
 						"y": 392,
 						"width": 100,
 						"height": 100,
@@ -6107,7 +6136,7 @@
 						}
 					},
 					"world": {
-						"x": 1392,
+						"x": 1456,
 						"y": 392,
 						"width": 100,
 						"height": 100,
@@ -6179,7 +6208,7 @@
 						}
 					},
 					"world": {
-						"x": 1552,
+						"x": 1632,
 						"y": 392,
 						"width": 100,
 						"height": 100,
@@ -6251,8 +6280,8 @@
 						}
 					},
 					"world": {
-						"x": 1392,
-						"y": 120,
+						"x": 1456,
+						"y": 104,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -6323,8 +6352,8 @@
 						}
 					},
 					"world": {
-						"x": 1232,
-						"y": 120,
+						"x": 1264,
+						"y": 104,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -6395,8 +6424,8 @@
 						}
 					},
 					"world": {
-						"x": 1552,
-						"y": 120,
+						"x": 1632,
+						"y": 104,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -6467,7 +6496,7 @@
 						}
 					},
 					"world": {
-						"x": 1472,
+						"x": 1536,
 						"y": 248,
 						"width": 100,
 						"height": 100,
@@ -6539,7 +6568,7 @@
 						}
 					},
 					"world": {
-						"x": 1312,
+						"x": 1360,
 						"y": 248,
 						"width": 100,
 						"height": 100,
@@ -6611,7 +6640,7 @@
 						}
 					},
 					"world": {
-						"x": 1152,
+						"x": 1184,
 						"y": 248,
 						"width": 100,
 						"height": 100,
@@ -6683,8 +6712,8 @@
 						}
 					},
 					"world": {
-						"x": 1072,
-						"y": 120,
+						"x": 1088,
+						"y": 104,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -6778,7 +6807,7 @@
 						}
 					},
 					"world": {
-						"x": 1776,
+						"x": 1872,
 						"y": 112,
 						"width": 100,
 						"height": 100,
@@ -6842,7 +6871,7 @@
 						}
 					},
 					"world": {
-						"x": 1952,
+						"x": 2048,
 						"y": 112,
 						"width": 100,
 						"height": 100,
@@ -6906,7 +6935,7 @@
 						}
 					},
 					"world": {
-						"x": 1952,
+						"x": 2048,
 						"y": 400,
 						"width": 100,
 						"height": 100,
@@ -6970,7 +6999,7 @@
 						}
 					},
 					"world": {
-						"x": 1776,
+						"x": 1872,
 						"y": 400,
 						"width": 100,
 						"height": 100,
@@ -7034,7 +7063,7 @@
 						}
 					},
 					"world": {
-						"x": 1728,
+						"x": 1840,
 						"y": 256,
 						"width": 100,
 						"height": 100,
@@ -7098,7 +7127,7 @@
 						}
 					},
 					"world": {
-						"x": 1872,
+						"x": 1968,
 						"y": 256,
 						"width": 100,
 						"height": 100,
@@ -7162,7 +7191,7 @@
 						}
 					},
 					"world": {
-						"x": 2016,
+						"x": 2096,
 						"y": 256,
 						"width": 100,
 						"height": 100,
@@ -7197,7 +7226,7 @@
 					"world": {
 						"x": 3248,
 						"y": 200,
-						"width": 528,
+						"width": 336,
 						"height": 96,
 						"originX": 0,
 						"originY": 0,
@@ -7238,7 +7267,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2800,
+						"x": 2816,
 						"y": 104,
 						"width": 128,
 						"height": 80,
@@ -7356,7 +7385,7 @@
 					"world": {
 						"x": 3248,
 						"y": 56,
-						"width": 528,
+						"width": 336,
 						"height": 96,
 						"originX": 0,
 						"originY": 0,
@@ -7432,9 +7461,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2400,
+						"x": 2480,
 						"y": 208,
-						"width": 400,
+						"width": 336,
 						"height": 80,
 						"originX": 0,
 						"originY": 0,
@@ -7463,9 +7492,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2400,
+						"x": 2480,
 						"y": 352,
-						"width": 400,
+						"width": 336,
 						"height": 80,
 						"originX": 0,
 						"originY": 0,
@@ -7508,7 +7537,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 2144,
+						"x": 2224,
 						"y": 256,
 						"width": 256,
 						"height": 96,
@@ -7555,7 +7584,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 2144,
+						"x": 2224,
 						"y": 400,
 						"width": 256,
 						"height": 96,
@@ -7600,7 +7629,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2800,
+						"x": 2816,
 						"y": 248,
 						"width": 128,
 						"height": 80,
@@ -7645,7 +7674,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2800,
+						"x": 2816,
 						"y": 392,
 						"width": 128,
 						"height": 80,
@@ -7665,7 +7694,7 @@
 					"type": "btn_Reset",
 					"properties": {
 						"type": "button",
-						"text": "RESET FILTER",
+						"text": "RESET",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -7678,10 +7707,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 48,
-						"y": 336,
+						"x": 3664,
+						"y": 328,
 						"width": 128,
-						"height": 96,
+						"height": 104,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7711,9 +7740,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 256,
+						"x": 320,
 						"y": 200,
-						"width": 480,
+						"width": 416,
 						"height": 96,
 						"originX": 0,
 						"originY": 0,
@@ -7742,9 +7771,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 256,
+						"x": 320,
 						"y": 64,
-						"width": 480,
+						"width": 416,
 						"height": 96,
 						"originX": 0,
 						"originY": 0,
@@ -7759,7 +7788,7 @@
 				{
 					"type": "ListSortDeck",
 					"properties": {
-						"items": "Name\nCost\nElement\nType\nAttack\nHealth/Durability\nClass",
+						"items": "Name\nCost\nElement\nType\nClass",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -7773,9 +7802,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 256,
+						"x": 320,
 						"y": 336,
-						"width": 480,
+						"width": 416,
 						"height": 96,
 						"originX": 0,
 						"originY": 0,

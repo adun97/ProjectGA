@@ -156,8 +156,6 @@
 				"Cost",
 				"Element",
 				"Type",
-				"Attack",
-				"Health/Durability",
 				"Class"
 			],
 			"action": [
@@ -171,7 +169,7 @@
 				"Cost",
 				"Element",
 				"Attack",
-				"Health/Durability",
+				"Health",
 				"Class"
 			],
 			"attack": [
@@ -185,7 +183,7 @@
 				"Name",
 				"Cost",
 				"Element",
-				"Health/Durability",
+				"Health",
 				"Class"
 			],
 			"domain": [
@@ -205,7 +203,7 @@
 				"Cost",
 				"Element",
 				"Attack",
-				"Health/Durability",
+				"Durability",
 				"Class"
 			]
 		}

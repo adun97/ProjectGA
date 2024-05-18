@@ -1734,6 +1734,101 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"functionName": "allunselect",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "Target",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 908456603028091
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 456741969217533,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 517286460805499,
+									"parameters": {
+										"variable": "Target",
+										"comparison": 0,
+										"value": "\"element\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "Element",
+									"sid": 298239308991430,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Element",
+									"sid": 897006089758097,
+									"parameters": {
+										"instance-variable": "Select",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 599825994548165
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 906687747428573,
+									"parameters": {
+										"variable": "Target",
+										"comparison": 0,
+										"value": "\"type\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "iconType",
+									"sid": 645553032374676,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "iconType",
+									"sid": 517274670955941,
+									"parameters": {
+										"instance-variable": "Select",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 159728879851665
+						}
+					]
+				},
+				{
 					"functionName": "cardOnDeck",
 					"functionDescription": "",
 					"functionCategory": "",
@@ -1762,14 +1857,14 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 947722235641526,
+							"sid": 890032124183081,
 							"parameters": {
 								"variable": "count",
 								"value": "0"
 							}
 						}
 					],
-					"sid": 445262769406098,
+					"sid": 468585635760622,
 					"children": [
 						{
 							"eventType": "block",
@@ -1777,7 +1872,7 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 179780836289167,
+									"sid": 901860795024649,
 									"parameters": {
 										"first-value": "onDeck",
 										"comparison": 0,
@@ -1786,7 +1881,7 @@
 								}
 							],
 							"actions": [],
-							"sid": 251869668477417,
+							"sid": 525005498354935,
 							"children": [
 								{
 									"eventType": "block",
@@ -1794,7 +1889,7 @@
 										{
 											"id": "for-each",
 											"objectClass": "System",
-											"sid": 737029464858537,
+											"sid": 512120648359233,
 											"parameters": {
 												"object": "CardOnDeck"
 											}
@@ -1802,7 +1897,7 @@
 										{
 											"id": "compare-instance-variable",
 											"objectClass": "CardOnDeck",
-											"sid": 432794408841661,
+											"sid": 817625237595421,
 											"parameters": {
 												"instance-variable": "nameCard",
 												"comparison": 0,
@@ -1814,14 +1909,14 @@
 										{
 											"id": "add-to-eventvar",
 											"objectClass": "System",
-											"sid": 880760562559018,
+											"sid": 988785205019627,
 											"parameters": {
 												"variable": "count",
 												"value": "1"
 											}
 										}
 									],
-									"sid": 172782997784643
+									"sid": 455145946538056
 								},
 								{
 									"eventType": "block",
@@ -1830,7 +1925,7 @@
 										{
 											"id": "log",
 											"objectClass": "Browser",
-											"sid": 666150391723485,
+											"sid": 943490201936297,
 											"parameters": {
 												"type": "log",
 												"message": "\"157 - \"&count"
@@ -1839,13 +1934,13 @@
 										{
 											"id": "set-function-return-value",
 											"objectClass": "Functions",
-											"sid": 649772367208186,
+											"sid": 649600746888367,
 											"parameters": {
 												"value": "count"
 											}
 										}
 									],
-									"sid": 369024494170357
+									"sid": 801694993516546
 								}
 							]
 						},
@@ -1855,11 +1950,11 @@
 								{
 									"id": "else",
 									"objectClass": "System",
-									"sid": 235947412870321
+									"sid": 437749454833552
 								}
 							],
 							"actions": [],
-							"sid": 233177881401220,
+							"sid": 191658833336312,
 							"children": [
 								{
 									"eventType": "block",
@@ -1867,7 +1962,7 @@
 										{
 											"id": "for-each",
 											"objectClass": "System",
-											"sid": 453687409589323,
+											"sid": 791527613550300,
 											"parameters": {
 												"object": "CardOnExtra"
 											}
@@ -1875,7 +1970,7 @@
 										{
 											"id": "compare-instance-variable",
 											"objectClass": "CardOnExtra",
-											"sid": 588437970683386,
+											"sid": 358356998029038,
 											"parameters": {
 												"instance-variable": "nameCard",
 												"comparison": 0,
@@ -1887,14 +1982,14 @@
 										{
 											"id": "add-to-eventvar",
 											"objectClass": "System",
-											"sid": 354805905205589,
+											"sid": 211489628296874,
 											"parameters": {
 												"variable": "count",
 												"value": "1"
 											}
 										}
 									],
-									"sid": 716562708502898
+									"sid": 769477792528180
 								},
 								{
 									"eventType": "block",
@@ -1903,7 +1998,7 @@
 										{
 											"id": "log",
 											"objectClass": "Browser",
-											"sid": 332218413197389,
+											"sid": 755000457493944,
 											"parameters": {
 												"type": "log",
 												"message": "\"157 - \"&count"
@@ -1912,15 +2007,1646 @@
 										{
 											"id": "set-function-return-value",
 											"objectClass": "Functions",
-											"sid": 355091112648325,
+											"sid": 558959597613720,
 											"parameters": {
 												"value": "count"
 											}
 										}
 									],
-									"sid": 967718867960856
+									"sid": 544291604261706
 								}
 							]
+						}
+					]
+				},
+				{
+					"functionName": "cardSearch",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "Array_card_display",
+							"sid": 459875610092371,
+							"parameters": {
+								"width": "0",
+								"height": "1",
+								"depth": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 656796120353077,
+							"parameters": {
+								"variable": "count",
+								"value": "0"
+							}
+						},
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 919910105961737,
+							"disabled": true,
+							"parameters": {
+								"type": "log",
+								"message": "Array_card_list.Height"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 481500065330012,
+							"parameters": {
+								"variable": "Xstart",
+								"value": "Xstart_def_search"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 736626712832665,
+							"parameters": {
+								"variable": "Ystart",
+								"value": "Ystart_def_search"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 936786873649676,
+							"parameters": {
+								"variable": "onCreateSearch",
+								"value": "0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "CardOnSearch",
+							"sid": 835562384360753
+						},
+						{
+							"id": "destroy",
+							"objectClass": "borderSlideRight",
+							"sid": 925074416825827
+						}
+					],
+					"sid": 702506401953661,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "repeat",
+									"objectClass": "System",
+									"sid": 936592137333866,
+									"parameters": {
+										"count": "Array_card_list.Height"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 892381530578030,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 190835473945983,
+											"parameters": {
+												"first-value": "titleSelect<>\"\"?find(str(Array_card_list.At(0,count)),titleSelect):find(str(Array_card_list.At(0,count)),str(Array_card_list.At(0,count)))",
+												"comparison": 1,
+												"second-value": "-1"
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 976496813245956,
+											"parameters": {
+												"first-value": "costSelect<>\"All\"?find(str(Array_card_list.At(1,count)),costSelect):find(str(Array_card_list.At(1,count)),str(Array_card_list.At(1,count)))",
+												"comparison": 1,
+												"second-value": "-1"
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 680735976930413,
+											"parameters": {
+												"first-value": "ElementSelect<>\"All\"?find(Array_card_list.At(3,count),ElementSelect):find(Array_card_list.At(3,count),Array_card_list.At(3,count))",
+												"comparison": 1,
+												"second-value": "-1"
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 670229262273910,
+											"parameters": {
+												"first-value": "TypeSelect<>\"All\"?find(Array_card_list.At(4,count),TypeSelect):find(Array_card_list.At(4,count),Array_card_list.At(4,count))",
+												"comparison": 1,
+												"second-value": "-1"
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 659959310027656,
+											"parameters": {
+												"first-value": "atkSelect<>\"All\"?find(str(Array_card_list.At(5,count)),atkSelect):find(str(Array_card_list.At(5,count)),str(Array_card_list.At(5,count)))",
+												"comparison": 1,
+												"second-value": "-1"
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 145294414660912,
+											"parameters": {
+												"first-value": "hpSelect<>\"All\"?find(str(Array_card_list.At(6,count)),hpSelect):find(str(Array_card_list.At(6,count)),str(Array_card_list.At(6,count)))",
+												"comparison": 1,
+												"second-value": "-1"
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 341343525904927,
+											"parameters": {
+												"first-value": "classSelect<>\"All\"?find(str(Array_card_list.At(8,count)),classSelect):find(str(Array_card_list.At(8,count)),str(Array_card_list.At(8,count)))",
+												"comparison": 1,
+												"second-value": "-1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "push",
+											"objectClass": "Array_card_display",
+											"sid": 308056475663907,
+											"parameters": {
+												"where": "back",
+												"value": "Array_card_list.At(0,count)",
+												"axis": "x"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 679770864529752,
+											"parameters": {
+												"object-to-create": "CardOnSearch",
+												"layer": "\"Main\"",
+												"x": "Xstart",
+												"y": "Ystart",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "CardOnSearch",
+											"sid": 945064666608308,
+											"parameters": {
+												"instance-variable": "afterLoad",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CardOnSearch",
+											"sid": 687877529509543,
+											"parameters": {
+												"instance-variable": "nameCard",
+												"value": "Array_card_list.At(0,count)"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CardOnSearch",
+											"sid": 203902170712130,
+											"parameters": {
+												"instance-variable": "costCard",
+												"value": "Array_card_list.At(1,count)"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CardOnSearch",
+											"sid": 128842665489600,
+											"parameters": {
+												"instance-variable": "elementCard",
+												"value": "Array_card_list.At(3,count)"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CardOnSearch",
+											"sid": 533790815634338,
+											"parameters": {
+												"instance-variable": "typeCard",
+												"value": "Array_card_list.At(4,count)"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CardOnSearch",
+											"sid": 676075050455969,
+											"parameters": {
+												"instance-variable": "atkCard",
+												"value": "Array_card_list.At(5,count)"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CardOnSearch",
+											"sid": 505508050396587,
+											"parameters": {
+												"instance-variable": "hpCard",
+												"value": "Array_card_list.At(6,count)"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CardOnSearch",
+											"sid": 549626002342742,
+											"parameters": {
+												"instance-variable": "classCard",
+												"value": "Array_card_list.At(8,count)"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CardOnSearch",
+											"sid": 382222670831862,
+											"parameters": {
+												"instance-variable": "onDeck",
+												"value": "Array_card_list.At(9,count)"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CardOnSearch",
+											"sid": 201981286765508,
+											"parameters": {
+												"instance-variable": "imageCard",
+												"value": "Array_card_list.At(10,count)"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CardOnSearch",
+											"sid": 575425865097649,
+											"parameters": {
+												"instance-variable": "idCard",
+												"value": "count"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "CardOnSearch",
+											"sid": 806843923754821,
+											"parameters": {
+												"frame-number": "count"
+											}
+										},
+										{
+											"id": "set-blend-mode",
+											"objectClass": "CardOnSearch",
+											"sid": 997175283439259,
+											"parameters": {
+												"blend-mode": "source-atop"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "CardOnSearch",
+											"sid": 174978574043052,
+											"behaviorType": "DragDrop",
+											"parameters": {
+												"state": "disabled"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 165241712810921,
+											"parameters": {
+												"variable": "onCreateSearch",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 301483148838563,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "CardOnSearch",
+													"sid": 792588921666744,
+													"parameters": {
+														"object": "BorderBlend"
+													}
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "CardOnSearch",
+													"sid": 532904982194448,
+													"parameters": {
+														"instance-variable": "afterLoad"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [],
+											"sid": 693266358446419,
+											"disabled": true,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 735586426253871,
+															"parameters": {
+																"first-value": "Dict_card_image.Get(CardOnSearch.imageCard)",
+																"comparison": 0,
+																"second-value": "\"none\""
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-response-binary",
+															"objectClass": "AJAX",
+															"sid": 531274379699983,
+															"parameters": {
+																"destination": "BinaryData"
+															}
+														},
+														{
+															"id": "request-url",
+															"objectClass": "AJAX",
+															"sid": 994293268962190,
+															"parameters": {
+																"tag": "CardOnSearch.imageCard",
+																"url": "\"Card/\"&CardOnSearch.imageCard&\".\"&TypeFile"
+															}
+														},
+														{
+															"id": "wait",
+															"objectClass": "System",
+															"sid": 165068998854477,
+															"parameters": {
+																"seconds": "0.001"
+															}
+														},
+														{
+															"id": "load-image-from-url",
+															"objectClass": "CardOnSearch",
+															"sid": 691913362326837,
+															"parameters": {
+																"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+																"size": "keep-current-size",
+																"cross-origin": "anonymous"
+															}
+														},
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "CardOnSearch",
+															"sid": 932895188935431,
+															"parameters": {
+																"instance-variable": "afterLoad",
+																"value": "true"
+															}
+														}
+													],
+													"sid": 600291666843241,
+													"disabled": true
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 571288762672468
+														}
+													],
+													"actions": [
+														{
+															"id": "load-image-from-url",
+															"objectClass": "CardOnSearch",
+															"sid": 819273184160754,
+															"parameters": {
+																"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+																"size": "keep-current-size",
+																"cross-origin": "anonymous"
+															}
+														},
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "CardOnSearch",
+															"sid": 298683606839231,
+															"parameters": {
+																"instance-variable": "afterLoad",
+																"value": "true"
+															}
+														}
+													],
+													"sid": 949533286170531,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 245906852100066,
+													"parameters": {
+														"first-value": "onCreateSearch%rowSearch",
+														"comparison": 0,
+														"second-value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 712467018085759,
+													"parameters": {
+														"variable": "Xstart",
+														"value": "Xstart_def_search"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 937026709740302,
+													"parameters": {
+														"variable": "Ystart",
+														"value": "Ygap_search"
+													}
+												}
+											],
+											"sid": 992193426720119
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 360712157010118
+												}
+											],
+											"actions": [
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 267103443145796,
+													"parameters": {
+														"variable": "Xstart",
+														"value": "Xgap_search"
+													}
+												}
+											],
+											"sid": 720240985922895
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 724045455976528,
+											"parameters": {
+												"variable": "count",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 646950908943839
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 710900224149773,
+									"parameters": {
+										"group-name": "\"Sliding\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 798136007261813,
+									"parameters": {
+										"seconds": "0.01"
+									}
+								},
+								{
+									"callFunction": "cekLagi",
+									"sid": 523982292944032
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 809485037709787,
+									"parameters": {
+										"object-to-create": "borderSlideRight",
+										"layer": "\"Main\"",
+										"x": "BorderBlend.X",
+										"y": "BorderBlend.Y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "move-to-bottom",
+									"objectClass": "borderSlideRight",
+									"sid": 236500392186328
+								},
+								{
+									"id": "set-height",
+									"objectClass": "borderSlideRight",
+									"sid": 553194222715012,
+									"parameters": {
+										"height": "ceil(CardOnSearch.Count/rowSearch)*320"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 589402668579030,
+									"parameters": {
+										"variable": "columnSearch",
+										"value": "ceil(CardOnSearch.Count/rowSearch)"
+									}
+								}
+							],
+							"sid": 341623892676607,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 494676574213411,
+											"parameters": {
+												"variable": "columnSearch",
+												"comparison": 3,
+												"value": "5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 831410700829292,
+											"parameters": {
+												"group-name": "\"Sliding\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "borderSlideRight",
+											"sid": 240214982244388,
+											"behaviorType": "DragDrop",
+											"parameters": {
+												"state": "disabled"
+											}
+										}
+									],
+									"sid": 826893798909419
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 368602235292674
+										}
+									],
+									"actions": [
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 721781397674181,
+											"parameters": {
+												"group-name": "\"Sliding\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "borderSlideRight",
+											"sid": 298901555480505,
+											"behaviorType": "DragDrop",
+											"parameters": {
+												"state": "enabled"
+											}
+										}
+									],
+									"sid": 738861026460525
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 770081164772634,
+											"parameters": {
+												"object": "CardOnSearch"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-child",
+											"objectClass": "borderSlideRight",
+											"sid": 925829066492237,
+											"parameters": {
+												"child": "CardOnSearch",
+												"transform-x": true,
+												"transform-y": true,
+												"transform-w": true,
+												"transform-h": true,
+												"transform-a": true,
+												"transform-o": false,
+												"transform-z-elevation": true,
+												"transform-visibility": false,
+												"destroy-with-parent": false
+											}
+										}
+									],
+									"sid": 145940337230273
+								}
+							]
+						}
+					]
+				},
+				{
+					"functionName": "cekLagi",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 222112535613186,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 615306566115985,
+									"parameters": {
+										"object": "CardOnSearch"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "CardOnSearch",
+									"sid": 871075414735231,
+									"parameters": {
+										"object": "BorderBlend"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "load-image-from-url",
+									"objectClass": "CardOnSearch",
+									"sid": 115324729031145,
+									"parameters": {
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+										"size": "keep-current-size",
+										"cross-origin": "anonymous"
+									}
+								}
+							],
+							"sid": 971388032493505,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 357685023294749,
+											"parameters": {
+												"first-value": "Dict_card_image.Get(CardOnSearch.imageCard)",
+												"comparison": 0,
+												"second-value": "\"none\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-response-binary",
+											"objectClass": "AJAX",
+											"sid": 985787026686290,
+											"parameters": {
+												"destination": "BinaryData"
+											}
+										},
+										{
+											"id": "request-url",
+											"objectClass": "AJAX",
+											"sid": 210526339349679,
+											"parameters": {
+												"tag": "CardOnSearch.imageCard",
+												"url": "\"Card/\"&CardOnSearch.imageCard&\".\"&TypeFile"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 679879515904166,
+											"parameters": {
+												"seconds": "0.001"
+											}
+										},
+										{
+											"id": "load-image-from-url",
+											"objectClass": "CardOnSearch",
+											"sid": 123886110194237,
+											"parameters": {
+												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+												"size": "keep-current-size",
+												"cross-origin": "anonymous"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "CardOnSearch",
+											"sid": 825685733353027,
+											"parameters": {
+												"instance-variable": "afterLoad",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 785045181463950
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 217808457070837
+										}
+									],
+									"actions": [
+										{
+											"id": "load-image-from-url",
+											"objectClass": "CardOnSearch",
+											"sid": 116746579906222,
+											"parameters": {
+												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+												"size": "keep-current-size",
+												"cross-origin": "anonymous"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "CardOnSearch",
+											"sid": 379374216682202,
+											"parameters": {
+												"instance-variable": "afterLoad",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 482916866204986
+								}
+							]
+						}
+					]
+				},
+				{
+					"functionName": "ChangeListSave",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "clear",
+							"objectClass": "ListLoad",
+							"sid": 759002163338049
+						}
+					],
+					"sid": 672028987405369,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each-key",
+									"objectClass": "Dict_save",
+									"sid": 700697555253027
+								}
+							],
+							"actions": [
+								{
+									"id": "add-item",
+									"objectClass": "ListLoad",
+									"sid": 588576492725833,
+									"parameters": {
+										"text": "Dict_save.CurrentKey"
+									}
+								}
+							],
+							"sid": 780009207572053
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-selection",
+									"objectClass": "ListLoad",
+									"sid": 921237473458461,
+									"parameters": {
+										"index": "0"
+									}
+								}
+							],
+							"sid": 706015264080327
+						}
+					]
+				},
+				{
+					"functionName": "changeType",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "clear",
+							"objectClass": "ListClass",
+							"sid": 729014739375297
+						},
+						{
+							"id": "clear",
+							"objectClass": "ListSort",
+							"sid": 373789622989481
+						},
+						{
+							"id": "add-item",
+							"objectClass": "ListClass",
+							"sid": 288553085222715,
+							"parameters": {
+								"text": "\"All\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 132749438991515,
+							"parameters": {
+								"variable": "classSelect",
+								"value": "\"All\""
+							}
+						}
+					],
+					"sid": 303869012372216,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "JSON",
+									"sid": 434846792754324,
+									"parameters": {
+										"path": "\"data.type.\"&lowercase(TypeSelect)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-item",
+									"objectClass": "ListClass",
+									"sid": 666286173219531,
+									"parameters": {
+										"text": "uppercase(left(JSON.CurrentValue,1))&lowercase(right(JSON.CurrentValue,len(JSON.CurrentValue)-1))"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 521388377581440,
+									"parameters": {
+										"variable": "count",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 603733707207733
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "JSON",
+									"sid": 395749997173572,
+									"parameters": {
+										"path": "\"data.sort.\"&lowercase(TypeSelect)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-item",
+									"objectClass": "ListSort",
+									"sid": 710144389716873,
+									"parameters": {
+										"text": "uppercase(left(JSON.CurrentValue,1))&lowercase(right(JSON.CurrentValue,len(JSON.CurrentValue)-1))"
+									}
+								}
+							],
+							"sid": 264999769902920
+						}
+					]
+				},
+				{
+					"functionName": "createFromLoad",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "CardOnDeck",
+							"sid": 960750600454019
+						},
+						{
+							"id": "destroy",
+							"objectClass": "CardOnExtra",
+							"sid": 145100384380009
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 457136669186378,
+							"parameters": {
+								"variable": "count",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 939282688914896,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 124704447580146,
+									"parameters": {
+										"name": "\"x\"",
+										"start-index": "0",
+										"end-index": "Array_card_list.Height"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 126151546212448,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each-element",
+											"objectClass": "Array_card_load",
+											"sid": 309019864188114,
+											"parameters": {
+												"axes": "x"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 117376818470984,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 202091729701851,
+													"parameters": {
+														"first-value": "Array_card_load.CurValue",
+														"comparison": 0,
+														"second-value": "Array_card_list.At(0,loopindex(\"x\"))"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 491640884093487,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 705111689260903,
+															"parameters": {
+																"first-value": "Array_card_list.At(9,loopindex(\"x\"))",
+																"comparison": 0,
+																"second-value": "\"main\""
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "create-object",
+															"objectClass": "System",
+															"sid": 330347107783783,
+															"parameters": {
+																"object-to-create": "CardOnDeck",
+																"layer": "\"card\"",
+																"x": "Xstart_def_main",
+																"y": "Ystart_def_main",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "CardOnDeck",
+															"sid": 103536006413262,
+															"parameters": {
+																"instance-variable": "nameCard",
+																"value": "Array_card_list.At(0,loopindex(\"x\"))"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "CardOnDeck",
+															"sid": 826055949467388,
+															"parameters": {
+																"instance-variable": "costCard",
+																"value": "Array_card_list.At(1,loopindex(\"x\"))"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "CardOnDeck",
+															"sid": 718432295236478,
+															"parameters": {
+																"instance-variable": "elementCard",
+																"value": "Array_card_list.At(3,loopindex(\"x\"))"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "CardOnDeck",
+															"sid": 677239779687410,
+															"parameters": {
+																"instance-variable": "typeCard",
+																"value": "Array_card_list.At(4,loopindex(\"x\"))"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "CardOnDeck",
+															"sid": 781688332665074,
+															"parameters": {
+																"instance-variable": "classCard",
+																"value": "Array_card_list.At(8,loopindex(\"x\"))"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "CardOnDeck",
+															"sid": 143103114624488,
+															"parameters": {
+																"instance-variable": "imageCard",
+																"value": "Array_card_list.At(10,loopindex(\"x\"))"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "CardOnDeck",
+															"sid": 352523132682104,
+															"parameters": {
+																"instance-variable": "idCard",
+																"value": "count"
+															}
+														},
+														{
+															"id": "set-animation-frame",
+															"objectClass": "CardOnDeck",
+															"sid": 590010929981698,
+															"parameters": {
+																"frame-number": "count"
+															}
+														},
+														{
+															"id": "load-image-from-url",
+															"objectClass": "CardOnDeck",
+															"sid": 506971060037300,
+															"parameters": {
+																"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.imageCard)",
+																"size": "keep-current-size",
+																"cross-origin": "anonymous"
+															}
+														},
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 155976745009620,
+															"parameters": {
+																"variable": "count",
+																"value": "1"
+															}
+														}
+													],
+													"sid": 187090494367127
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 508152253805528
+														}
+													],
+													"actions": [
+														{
+															"id": "create-object",
+															"objectClass": "System",
+															"sid": 803879116036861,
+															"parameters": {
+																"object-to-create": "CardOnExtra",
+																"layer": "\"card\"",
+																"x": "Xstart_def_extra",
+																"y": "Ystart_def_extra",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "CardOnExtra",
+															"sid": 566917355716936,
+															"parameters": {
+																"instance-variable": "nameCard",
+																"value": "Array_card_list.At(0,loopindex(\"x\"))"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "CardOnExtra",
+															"sid": 248406851790039,
+															"parameters": {
+																"instance-variable": "costCard",
+																"value": "Array_card_list.At(1,loopindex(\"x\"))"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "CardOnExtra",
+															"sid": 402674902524903,
+															"parameters": {
+																"instance-variable": "elementCard",
+																"value": "Array_card_list.At(3,loopindex(\"x\"))"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "CardOnExtra",
+															"sid": 376271667343448,
+															"parameters": {
+																"instance-variable": "typeCard",
+																"value": "Array_card_list.At(4,loopindex(\"x\"))"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "CardOnExtra",
+															"sid": 645231440069503,
+															"parameters": {
+																"instance-variable": "classCard",
+																"value": "Array_card_list.At(8,loopindex(\"x\"))"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "CardOnExtra",
+															"sid": 813858363770148,
+															"parameters": {
+																"instance-variable": "imageCard",
+																"value": "Array_card_list.At(10,loopindex(\"x\"))"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "CardOnExtra",
+															"sid": 846938159761415,
+															"parameters": {
+																"instance-variable": "idCard",
+																"value": "count"
+															}
+														},
+														{
+															"id": "set-animation-frame",
+															"objectClass": "CardOnExtra",
+															"sid": 189801765833548,
+															"parameters": {
+																"frame-number": "count"
+															}
+														},
+														{
+															"id": "load-image-from-url",
+															"objectClass": "CardOnExtra",
+															"sid": 413330922942616,
+															"disabled": true,
+															"parameters": {
+																"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.imageCard)",
+																"size": "keep-current-size",
+																"cross-origin": "anonymous"
+															}
+														},
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 609588734796207,
+															"parameters": {
+																"variable": "count",
+																"value": "1"
+															}
+														}
+													],
+													"sid": 421302422128478
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 655509065041802,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"callFunction": "SortDeck",
+									"sid": 683276241187215,
+									"parameters": [
+										"\"\"",
+										"\"\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 387981810548566,
+									"parameters": {
+										"seconds": "1"
+									}
+								}
+							],
+							"sid": 150259983118000,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"functionName": "CreateMain",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "IDcard",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 185868783006191
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 399365281869657,
+							"parameters": {
+								"object-to-create": "CardOnDeck",
+								"layer": "\"card\"",
+								"x": "lastX_main",
+								"y": "lastY_main",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 395262279950693,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CardOnSearch",
+									"sid": 976218931665026,
+									"parameters": {
+										"instance-variable": "idCard",
+										"comparison": 0,
+										"value": "IDcard"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 561728535906276,
+									"parameters": {
+										"instance-variable": "nameCard",
+										"value": "CardOnSearch.nameCard"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 225873981478721,
+									"parameters": {
+										"instance-variable": "costCard",
+										"value": "CardOnSearch.costCard"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 104079632349325,
+									"parameters": {
+										"instance-variable": "elementCard",
+										"value": "CardOnSearch.elementCard"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 970664014178166,
+									"parameters": {
+										"instance-variable": "typeCard",
+										"value": "CardOnSearch.typeCard"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 938752713683943,
+									"parameters": {
+										"instance-variable": "classCard",
+										"value": "CardOnSearch.classCard"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 780093764755498,
+									"parameters": {
+										"instance-variable": "imageCard",
+										"value": "CardOnSearch.imageCard"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 200055297262693,
+									"parameters": {
+										"instance-variable": "idCard",
+										"value": "CardOnSearch.idCard"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "CardOnDeck",
+									"sid": 416945184242210,
+									"parameters": {
+										"frame-number": "IDcard"
+									}
+								},
+								{
+									"id": "load-image-from-url",
+									"objectClass": "CardOnDeck",
+									"sid": 549628825284813,
+									"parameters": {
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.imageCard)",
+										"size": "keep-current-size",
+										"cross-origin": "anonymous"
+									}
+								}
+							],
+							"sid": 537227356791844
+						}
+					]
+				},
+				{
+					"functionName": "CreateExtra",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "IDcard",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 455795196696288
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 998246599267200,
+							"parameters": {
+								"object-to-create": "CardOnExtra",
+								"layer": "\"card\"",
+								"x": "lastX_extra",
+								"y": "Ystart_def_extra",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 406620423425284,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CardOnSearch",
+									"sid": 238211858033815,
+									"parameters": {
+										"instance-variable": "idCard",
+										"comparison": 0,
+										"value": "IDcard"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 477974888918323,
+									"parameters": {
+										"instance-variable": "nameCard",
+										"value": "CardOnSearch.nameCard"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 808824015194895,
+									"parameters": {
+										"instance-variable": "costCard",
+										"value": "CardOnSearch.costCard"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 553327936752982,
+									"parameters": {
+										"instance-variable": "elementCard",
+										"value": "CardOnSearch.elementCard"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 786843859268142,
+									"parameters": {
+										"instance-variable": "typeCard",
+										"value": "CardOnSearch.typeCard"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 794959484114904,
+									"parameters": {
+										"instance-variable": "classCard",
+										"value": "CardOnSearch.classCard"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 911537139832095,
+									"parameters": {
+										"instance-variable": "imageCard",
+										"value": "CardOnSearch.imageCard"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 116113996717080,
+									"parameters": {
+										"instance-variable": "idCard",
+										"value": "CardOnSearch.idCard"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "CardOnExtra",
+									"sid": 709318936651202,
+									"parameters": {
+										"frame-number": "IDcard"
+									}
+								},
+								{
+									"id": "load-image-from-url",
+									"objectClass": "CardOnExtra",
+									"sid": 724990002517313,
+									"parameters": {
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.imageCard)",
+										"size": "keep-current-size",
+										"cross-origin": "anonymous"
+									}
+								}
+							],
+							"sid": 320628419689753
 						}
 					]
 				},
@@ -1960,6 +3686,90 @@
 							"parameters": {
 								"variable": "hpSelect",
 								"value": "SBHP.Value=-1?\"All\":SBHP.Value"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "Element",
+							"sid": 182268011560145,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Element",
+							"sid": 840120780494275,
+							"parameters": {
+								"instance-variable": "Select",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "iconType",
+							"sid": 363621654985073,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "iconType",
+							"sid": 848111275645374,
+							"parameters": {
+								"instance-variable": "Select",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-value",
+							"objectClass": "SBATK",
+							"sid": 408393080519585,
+							"parameters": {
+								"value": "-1"
+							}
+						},
+						{
+							"id": "set-value",
+							"objectClass": "SBCost",
+							"sid": 960253931064759,
+							"parameters": {
+								"value": "-1"
+							}
+						},
+						{
+							"id": "set-value",
+							"objectClass": "SBHP",
+							"sid": 548664835437442,
+							"parameters": {
+								"value": "-1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "txt_atk",
+							"sid": 522117473128595,
+							"parameters": {
+								"text": "\"All\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "txt_hp",
+							"sid": 113583292230796,
+							"parameters": {
+								"text": "\"All\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "txt_cost",
+							"sid": 954838506263415,
+							"parameters": {
+								"text": "\"All\""
 							}
 						},
 						{
@@ -3071,7 +4881,7 @@
 					]
 				},
 				{
-					"functionName": "allunselect",
+					"functionName": "SortDeck",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -3079,1296 +4889,20 @@
 					"functionIsAsync": false,
 					"functionParameters": [
 						{
-							"name": "Target",
+							"name": "onSort",
 							"type": "string",
 							"initialValue": "",
 							"comment": "",
-							"sid": 908456603028091
-						}
-					],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [],
-					"sid": 780634454266952,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 319492899720623,
-									"parameters": {
-										"variable": "Target",
-										"comparison": 0,
-										"value": "\"element\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-effect-enabled",
-									"objectClass": "Element",
-									"sid": 866560976569350,
-									"parameters": {
-										"mode": "disable",
-										"effect": "\"BetterOutline\""
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "Element",
-									"sid": 582851702225940,
-									"parameters": {
-										"instance-variable": "Select",
-										"value": "false"
-									}
-								}
-							],
-							"sid": 574375008019371
+							"sid": 499733176185997
 						},
 						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 522202488161850,
-									"parameters": {
-										"variable": "Target",
-										"comparison": 0,
-										"value": "\"type\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-effect-enabled",
-									"objectClass": "iconType",
-									"sid": 349401362441037,
-									"parameters": {
-										"mode": "disable",
-										"effect": "\"BetterOutline\""
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "iconType",
-									"sid": 846696107209428,
-									"parameters": {
-										"instance-variable": "Select",
-										"value": "false"
-									}
-								}
-							],
-							"sid": 592107421922669
-						}
-					]
-				},
-				{
-					"functionName": "cardSearch",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionCopyPicked": false,
-					"functionIsAsync": false,
-					"functionParameters": [],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-size",
-							"objectClass": "Array_card_display",
-							"sid": 373869433842820,
-							"parameters": {
-								"width": "0",
-								"height": "1",
-								"depth": "1"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 301018570678393,
-							"parameters": {
-								"variable": "count",
-								"value": "0"
-							}
-						},
-						{
-							"id": "log",
-							"objectClass": "Browser",
-							"sid": 768278611189320,
-							"disabled": true,
-							"parameters": {
-								"type": "log",
-								"message": "Array_card_list.Height"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 440590494570361,
-							"parameters": {
-								"variable": "Xstart",
-								"value": "Xstart_def_search"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 131729954639185,
-							"parameters": {
-								"variable": "Ystart",
-								"value": "Ystart_def_search"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 389276162280862,
-							"parameters": {
-								"variable": "onCreateSearch",
-								"value": "0"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "CardOnSearch",
-							"sid": 365695813412777
-						},
-						{
-							"id": "destroy",
-							"objectClass": "borderSlideRight",
-							"sid": 150631943252394
-						}
-					],
-					"sid": 781866648209518,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "repeat",
-									"objectClass": "System",
-									"sid": 826011425292607,
-									"parameters": {
-										"count": "Array_card_list.Height"
-									}
-								}
-							],
-							"actions": [],
-							"sid": 881812369820670,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-two-values",
-											"objectClass": "System",
-											"sid": 546936586093851,
-											"parameters": {
-												"first-value": "titleSelect<>\"\"?find(str(Array_card_list.At(0,count)),titleSelect):find(str(Array_card_list.At(0,count)),str(Array_card_list.At(0,count)))",
-												"comparison": 1,
-												"second-value": "-1"
-											}
-										},
-										{
-											"id": "compare-two-values",
-											"objectClass": "System",
-											"sid": 430459934673045,
-											"parameters": {
-												"first-value": "costSelect<>\"All\"?find(str(Array_card_list.At(1,count)),costSelect):find(str(Array_card_list.At(1,count)),str(Array_card_list.At(1,count)))",
-												"comparison": 1,
-												"second-value": "-1"
-											}
-										},
-										{
-											"id": "compare-two-values",
-											"objectClass": "System",
-											"sid": 703777787684688,
-											"parameters": {
-												"first-value": "ElementSelect<>\"All\"?find(Array_card_list.At(3,count),ElementSelect):find(Array_card_list.At(3,count),Array_card_list.At(3,count))",
-												"comparison": 1,
-												"second-value": "-1"
-											}
-										},
-										{
-											"id": "compare-two-values",
-											"objectClass": "System",
-											"sid": 805169188675175,
-											"parameters": {
-												"first-value": "TypeSelect<>\"All\"?find(Array_card_list.At(4,count),TypeSelect):find(Array_card_list.At(4,count),Array_card_list.At(4,count))",
-												"comparison": 1,
-												"second-value": "-1"
-											}
-										},
-										{
-											"id": "compare-two-values",
-											"objectClass": "System",
-											"sid": 205877146604162,
-											"parameters": {
-												"first-value": "atkSelect<>\"All\"?find(str(Array_card_list.At(5,count)),atkSelect):find(str(Array_card_list.At(5,count)),str(Array_card_list.At(5,count)))",
-												"comparison": 1,
-												"second-value": "-1"
-											}
-										},
-										{
-											"id": "compare-two-values",
-											"objectClass": "System",
-											"sid": 550910038761491,
-											"parameters": {
-												"first-value": "hpSelect<>\"All\"?find(str(Array_card_list.At(6,count)),hpSelect):find(str(Array_card_list.At(6,count)),str(Array_card_list.At(6,count)))",
-												"comparison": 1,
-												"second-value": "-1"
-											}
-										},
-										{
-											"id": "compare-two-values",
-											"objectClass": "System",
-											"sid": 695104977915114,
-											"parameters": {
-												"first-value": "classSelect<>\"All\"?find(str(Array_card_list.At(8,count)),classSelect):find(str(Array_card_list.At(8,count)),str(Array_card_list.At(8,count)))",
-												"comparison": 1,
-												"second-value": "-1"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "push",
-											"objectClass": "Array_card_display",
-											"sid": 503529763758772,
-											"parameters": {
-												"where": "back",
-												"value": "Array_card_list.At(0,count)",
-												"axis": "x"
-											}
-										},
-										{
-											"id": "create-object",
-											"objectClass": "System",
-											"sid": 932800267309213,
-											"parameters": {
-												"object-to-create": "CardOnSearch",
-												"layer": "\"Main\"",
-												"x": "Xstart",
-												"y": "Ystart",
-												"create-hierarchy": false,
-												"template-name": "\"\""
-											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "CardOnSearch",
-											"sid": 625911977558887,
-											"parameters": {
-												"instance-variable": "afterLoad",
-												"value": "false"
-											}
-										},
-										{
-											"id": "set-instvar-value",
-											"objectClass": "CardOnSearch",
-											"sid": 945003209361896,
-											"parameters": {
-												"instance-variable": "nameCard",
-												"value": "Array_card_list.At(0,count)"
-											}
-										},
-										{
-											"id": "set-instvar-value",
-											"objectClass": "CardOnSearch",
-											"sid": 793025081838031,
-											"parameters": {
-												"instance-variable": "costCard",
-												"value": "Array_card_list.At(1,count)"
-											}
-										},
-										{
-											"id": "set-instvar-value",
-											"objectClass": "CardOnSearch",
-											"sid": 105879708929072,
-											"parameters": {
-												"instance-variable": "elementCard",
-												"value": "Array_card_list.At(3,count)"
-											}
-										},
-										{
-											"id": "set-instvar-value",
-											"objectClass": "CardOnSearch",
-											"sid": 123637287135283,
-											"parameters": {
-												"instance-variable": "typeCard",
-												"value": "Array_card_list.At(4,count)"
-											}
-										},
-										{
-											"id": "set-instvar-value",
-											"objectClass": "CardOnSearch",
-											"sid": 634533705992653,
-											"parameters": {
-												"instance-variable": "classCard",
-												"value": "Array_card_list.At(8,count)"
-											}
-										},
-										{
-											"id": "set-instvar-value",
-											"objectClass": "CardOnSearch",
-											"sid": 731224260102245,
-											"parameters": {
-												"instance-variable": "onDeck",
-												"value": "Array_card_list.At(9,count)"
-											}
-										},
-										{
-											"id": "set-instvar-value",
-											"objectClass": "CardOnSearch",
-											"sid": 632560209854030,
-											"parameters": {
-												"instance-variable": "imageCard",
-												"value": "Array_card_list.At(10,count)"
-											}
-										},
-										{
-											"id": "set-instvar-value",
-											"objectClass": "CardOnSearch",
-											"sid": 766075646138833,
-											"parameters": {
-												"instance-variable": "idCard",
-												"value": "count"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "CardOnSearch",
-											"sid": 372714306393251,
-											"parameters": {
-												"frame-number": "count"
-											}
-										},
-										{
-											"id": "set-blend-mode",
-											"objectClass": "CardOnSearch",
-											"sid": 807730161369430,
-											"parameters": {
-												"blend-mode": "source-atop"
-											}
-										},
-										{
-											"id": "set-enabled",
-											"objectClass": "CardOnSearch",
-											"sid": 826585307670506,
-											"behaviorType": "DragDrop",
-											"parameters": {
-												"state": "disabled"
-											}
-										},
-										{
-											"id": "add-to-eventvar",
-											"objectClass": "System",
-											"sid": 576553828652568,
-											"parameters": {
-												"variable": "onCreateSearch",
-												"value": "1"
-											}
-										}
-									],
-									"sid": 374270252871016,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "is-overlapping-another-object",
-													"objectClass": "CardOnSearch",
-													"sid": 243614280792365,
-													"parameters": {
-														"object": "BorderBlend"
-													}
-												},
-												{
-													"id": "is-boolean-instance-variable-set",
-													"objectClass": "CardOnSearch",
-													"sid": 426318753285318,
-													"parameters": {
-														"instance-variable": "afterLoad"
-													},
-													"isInverted": true
-												}
-											],
-											"actions": [],
-											"sid": 144048824205314,
-											"disabled": true,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-two-values",
-															"objectClass": "System",
-															"sid": 987283316832844,
-															"parameters": {
-																"first-value": "Dict_card_image.Get(CardOnSearch.imageCard)",
-																"comparison": 0,
-																"second-value": "\"none\""
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-response-binary",
-															"objectClass": "AJAX",
-															"sid": 946680589643419,
-															"parameters": {
-																"destination": "BinaryData"
-															}
-														},
-														{
-															"id": "request-url",
-															"objectClass": "AJAX",
-															"sid": 576589703969824,
-															"parameters": {
-																"tag": "CardOnSearch.imageCard",
-																"url": "\"Card/\"&CardOnSearch.imageCard&\".\"&TypeFile"
-															}
-														},
-														{
-															"id": "wait",
-															"objectClass": "System",
-															"sid": 159189305929861,
-															"parameters": {
-																"seconds": "0.001"
-															}
-														},
-														{
-															"id": "load-image-from-url",
-															"objectClass": "CardOnSearch",
-															"sid": 585436067786432,
-															"parameters": {
-																"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
-																"size": "keep-current-size",
-																"cross-origin": "anonymous"
-															}
-														},
-														{
-															"id": "set-boolean-instvar",
-															"objectClass": "CardOnSearch",
-															"sid": 798847257504701,
-															"parameters": {
-																"instance-variable": "afterLoad",
-																"value": "true"
-															}
-														}
-													],
-													"sid": 121590080216855,
-													"disabled": true
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "else",
-															"objectClass": "System",
-															"sid": 837073820454143
-														}
-													],
-													"actions": [
-														{
-															"id": "load-image-from-url",
-															"objectClass": "CardOnSearch",
-															"sid": 942691698526046,
-															"parameters": {
-																"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
-																"size": "keep-current-size",
-																"cross-origin": "anonymous"
-															}
-														},
-														{
-															"id": "set-boolean-instvar",
-															"objectClass": "CardOnSearch",
-															"sid": 134020206771970,
-															"parameters": {
-																"instance-variable": "afterLoad",
-																"value": "true"
-															}
-														}
-													],
-													"sid": 153318389080776,
-													"disabled": true
-												}
-											]
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 278068153264121,
-													"parameters": {
-														"first-value": "onCreateSearch%rowSearch",
-														"comparison": 0,
-														"second-value": "0"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-eventvar-value",
-													"objectClass": "System",
-													"sid": 908836870952589,
-													"parameters": {
-														"variable": "Xstart",
-														"value": "Xstart_def_search"
-													}
-												},
-												{
-													"id": "add-to-eventvar",
-													"objectClass": "System",
-													"sid": 771224418783224,
-													"parameters": {
-														"variable": "Ystart",
-														"value": "Ygap_search"
-													}
-												}
-											],
-											"sid": 782970684934659
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "else",
-													"objectClass": "System",
-													"sid": 404532001968403
-												}
-											],
-											"actions": [
-												{
-													"id": "add-to-eventvar",
-													"objectClass": "System",
-													"sid": 742178602960841,
-													"parameters": {
-														"variable": "Xstart",
-														"value": "Xgap_search"
-													}
-												}
-											],
-											"sid": 298412148861838
-										}
-									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [],
-									"actions": [
-										{
-											"id": "add-to-eventvar",
-											"objectClass": "System",
-											"sid": 261679592586940,
-											"parameters": {
-												"variable": "count",
-												"value": "1"
-											}
-										}
-									],
-									"sid": 896335841303403
-								}
-							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "set-group-active",
-									"objectClass": "System",
-									"sid": 672255766706846,
-									"parameters": {
-										"group-name": "\"Sliding\"",
-										"state": "deactivated"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 694975822267985,
-									"parameters": {
-										"seconds": "0.01"
-									}
-								},
-								{
-									"callFunction": "cekLagi",
-									"sid": 724013095898056
-								},
-								{
-									"id": "create-object",
-									"objectClass": "System",
-									"sid": 891886345522378,
-									"parameters": {
-										"object-to-create": "borderSlideRight",
-										"layer": "\"Main\"",
-										"x": "BorderBlend.X",
-										"y": "BorderBlend.Y",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "move-to-bottom",
-									"objectClass": "borderSlideRight",
-									"sid": 485840315203051
-								},
-								{
-									"id": "set-height",
-									"objectClass": "borderSlideRight",
-									"sid": 523892744161948,
-									"parameters": {
-										"height": "ceil(CardOnSearch.Count/rowSearch)*320"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 994336714133881,
-									"parameters": {
-										"variable": "columnSearch",
-										"value": "ceil(CardOnSearch.Count/rowSearch)"
-									}
-								}
-							],
-							"sid": 564210721093456,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-eventvar",
-											"objectClass": "System",
-											"sid": 365535886465389,
-											"parameters": {
-												"variable": "columnSearch",
-												"comparison": 3,
-												"value": "5"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-group-active",
-											"objectClass": "System",
-											"sid": 593766620378551,
-											"parameters": {
-												"group-name": "\"Sliding\"",
-												"state": "deactivated"
-											}
-										},
-										{
-											"id": "set-enabled",
-											"objectClass": "borderSlideRight",
-											"sid": 795440403367764,
-											"behaviorType": "DragDrop",
-											"parameters": {
-												"state": "disabled"
-											}
-										}
-									],
-									"sid": 502682102849534
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "else",
-											"objectClass": "System",
-											"sid": 709261871820815
-										}
-									],
-									"actions": [
-										{
-											"id": "set-group-active",
-											"objectClass": "System",
-											"sid": 617500222273330,
-											"parameters": {
-												"group-name": "\"Sliding\"",
-												"state": "activated"
-											}
-										},
-										{
-											"id": "set-enabled",
-											"objectClass": "borderSlideRight",
-											"sid": 677563755576737,
-											"behaviorType": "DragDrop",
-											"parameters": {
-												"state": "enabled"
-											}
-										}
-									],
-									"sid": 770097343603302
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "for-each",
-											"objectClass": "System",
-											"sid": 425467396912018,
-											"parameters": {
-												"object": "CardOnSearch"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "add-child",
-											"objectClass": "borderSlideRight",
-											"sid": 653450886219649,
-											"parameters": {
-												"child": "CardOnSearch",
-												"transform-x": true,
-												"transform-y": true,
-												"transform-w": true,
-												"transform-h": true,
-												"transform-a": true,
-												"transform-o": false,
-												"transform-z-elevation": true,
-												"transform-visibility": false,
-												"destroy-with-parent": false
-											}
-										}
-									],
-									"sid": 181651443675534
-								}
-							]
-						}
-					]
-				},
-				{
-					"functionName": "changeType",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionCopyPicked": false,
-					"functionIsAsync": false,
-					"functionParameters": [],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "clear",
-							"objectClass": "ListClass",
-							"sid": 785149056252633
-						},
-						{
-							"id": "clear",
-							"objectClass": "ListSort",
-							"sid": 382052126952715
-						},
-						{
-							"id": "add-item",
-							"objectClass": "ListClass",
-							"sid": 478086131050615,
-							"parameters": {
-								"text": "\"All\""
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 680176490295973,
-							"parameters": {
-								"variable": "classSelect",
-								"value": "\"All\""
-							}
-						}
-					],
-					"sid": 592365870204698,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "for-each",
-									"objectClass": "JSON",
-									"sid": 380398109199243,
-									"parameters": {
-										"path": "\"data.type.\"&lowercase(TypeSelect)"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "add-item",
-									"objectClass": "ListClass",
-									"sid": 190896050672488,
-									"parameters": {
-										"text": "uppercase(left(JSON.CurrentValue,1))&lowercase(right(JSON.CurrentValue,len(JSON.CurrentValue)-1))"
-									}
-								},
-								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 609098401921857,
-									"parameters": {
-										"variable": "count",
-										"value": "1"
-									}
-								}
-							],
-							"sid": 272409099496781
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "for-each",
-									"objectClass": "JSON",
-									"sid": 117647633958943,
-									"parameters": {
-										"path": "\"data.sort.\"&lowercase(TypeSelect)"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "add-item",
-									"objectClass": "ListSort",
-									"sid": 962562419885417,
-									"parameters": {
-										"text": "uppercase(left(JSON.CurrentValue,1))&lowercase(right(JSON.CurrentValue,len(JSON.CurrentValue)-1))"
-									}
-								}
-							],
-							"sid": 331471405944561
-						}
-					]
-				},
-				{
-					"functionName": "cekLagi",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionCopyPicked": false,
-					"functionIsAsync": false,
-					"functionParameters": [],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [],
-					"sid": 990474488951446,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "for-each",
-									"objectClass": "System",
-									"sid": 239337704545418,
-									"parameters": {
-										"object": "CardOnSearch"
-									}
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "CardOnSearch",
-									"sid": 362610391178883,
-									"parameters": {
-										"object": "BorderBlend"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "load-image-from-url",
-									"objectClass": "CardOnSearch",
-									"sid": 208123639713517,
-									"parameters": {
-										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
-										"size": "keep-current-size",
-										"cross-origin": "anonymous"
-									}
-								}
-							],
-							"sid": 776162408205876,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-two-values",
-											"objectClass": "System",
-											"sid": 167260530765239,
-											"parameters": {
-												"first-value": "Dict_card_image.Get(CardOnSearch.imageCard)",
-												"comparison": 0,
-												"second-value": "\"none\""
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-response-binary",
-											"objectClass": "AJAX",
-											"sid": 250479974701455,
-											"parameters": {
-												"destination": "BinaryData"
-											}
-										},
-										{
-											"id": "request-url",
-											"objectClass": "AJAX",
-											"sid": 654166418214547,
-											"parameters": {
-												"tag": "CardOnSearch.imageCard",
-												"url": "\"Card/\"&CardOnSearch.imageCard&\".\"&TypeFile"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 499757589409862,
-											"parameters": {
-												"seconds": "0.001"
-											}
-										},
-										{
-											"id": "load-image-from-url",
-											"objectClass": "CardOnSearch",
-											"sid": 448555834920657,
-											"parameters": {
-												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
-												"size": "keep-current-size",
-												"cross-origin": "anonymous"
-											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "CardOnSearch",
-											"sid": 673416704303483,
-											"parameters": {
-												"instance-variable": "afterLoad",
-												"value": "true"
-											}
-										}
-									],
-									"sid": 341491153018564
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "else",
-											"objectClass": "System",
-											"sid": 659646754386961
-										}
-									],
-									"actions": [
-										{
-											"id": "load-image-from-url",
-											"objectClass": "CardOnSearch",
-											"sid": 752236380077743,
-											"parameters": {
-												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
-												"size": "keep-current-size",
-												"cross-origin": "anonymous"
-											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "CardOnSearch",
-											"sid": 132978108843345,
-											"parameters": {
-												"instance-variable": "afterLoad",
-												"value": "true"
-											}
-										}
-									],
-									"sid": 540650942608871
-								}
-							]
-						}
-					]
-				},
-				{
-					"functionName": "CreateMain",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionCopyPicked": false,
-					"functionIsAsync": false,
-					"functionParameters": [
-						{
-							"name": "IDcard",
-							"type": "number",
-							"initialValue": "0",
+							"name": "onDeck",
+							"type": "string",
+							"initialValue": "",
 							"comment": "",
-							"sid": 185868783006191
+							"sid": 583239814303175
 						}
 					],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 332627254420359,
-							"parameters": {
-								"object-to-create": "CardOnDeck",
-								"layer": "\"card\"",
-								"x": "lastX_main",
-								"y": "lastY_main",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						}
-					],
-					"sid": 900338505023265,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "CardOnSearch",
-									"sid": 119279993918260,
-									"parameters": {
-										"instance-variable": "idCard",
-										"comparison": 0,
-										"value": "IDcard"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-instvar-value",
-									"objectClass": "CardOnDeck",
-									"sid": 730814437943300,
-									"parameters": {
-										"instance-variable": "nameCard",
-										"value": "CardOnSearch.nameCard"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "CardOnDeck",
-									"sid": 883255919228792,
-									"parameters": {
-										"instance-variable": "costCard",
-										"value": "CardOnSearch.costCard"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "CardOnDeck",
-									"sid": 485589623190753,
-									"parameters": {
-										"instance-variable": "elementCard",
-										"value": "CardOnSearch.elementCard"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "CardOnDeck",
-									"sid": 164838553033088,
-									"parameters": {
-										"instance-variable": "typeCard",
-										"value": "CardOnSearch.typeCard"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "CardOnDeck",
-									"sid": 516225328965815,
-									"parameters": {
-										"instance-variable": "classCard",
-										"value": "CardOnSearch.classCard"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "CardOnDeck",
-									"sid": 358672851900288,
-									"parameters": {
-										"instance-variable": "imageCard",
-										"value": "CardOnSearch.imageCard"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "CardOnDeck",
-									"sid": 746267301109091,
-									"parameters": {
-										"instance-variable": "idCard",
-										"value": "CardOnSearch.idCard"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "CardOnDeck",
-									"sid": 431838944499324,
-									"parameters": {
-										"frame-number": "IDcard"
-									}
-								},
-								{
-									"id": "load-image-from-url",
-									"objectClass": "CardOnDeck",
-									"sid": 722188360550163,
-									"parameters": {
-										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.imageCard)",
-										"size": "keep-current-size",
-										"cross-origin": "anonymous"
-									}
-								}
-							],
-							"sid": 811061262184907
-						}
-					]
-				},
-				{
-					"functionName": "CreateExtra",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionCopyPicked": false,
-					"functionIsAsync": false,
-					"functionParameters": [
-						{
-							"name": "IDcard",
-							"type": "number",
-							"initialValue": "0",
-							"comment": "",
-							"sid": 455795196696288
-						}
-					],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 893943379435010,
-							"parameters": {
-								"object-to-create": "CardOnExtra",
-								"layer": "\"card\"",
-								"x": "lastX_extra",
-								"y": "Ystart_def_extra",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						}
-					],
-					"sid": 372232673179012,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "CardOnSearch",
-									"sid": 351162170337631,
-									"parameters": {
-										"instance-variable": "idCard",
-										"comparison": 0,
-										"value": "IDcard"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-instvar-value",
-									"objectClass": "CardOnExtra",
-									"sid": 565293388407427,
-									"parameters": {
-										"instance-variable": "nameCard",
-										"value": "CardOnSearch.nameCard"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "CardOnExtra",
-									"sid": 443092053135729,
-									"parameters": {
-										"instance-variable": "costCard",
-										"value": "CardOnSearch.costCard"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "CardOnExtra",
-									"sid": 837130103694808,
-									"parameters": {
-										"instance-variable": "elementCard",
-										"value": "CardOnSearch.elementCard"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "CardOnExtra",
-									"sid": 638790199952805,
-									"parameters": {
-										"instance-variable": "typeCard",
-										"value": "CardOnSearch.typeCard"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "CardOnExtra",
-									"sid": 341206171346498,
-									"parameters": {
-										"instance-variable": "classCard",
-										"value": "CardOnSearch.classCard"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "CardOnExtra",
-									"sid": 130478517840350,
-									"parameters": {
-										"instance-variable": "imageCard",
-										"value": "CardOnSearch.imageCard"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "CardOnExtra",
-									"sid": 483980712026094,
-									"parameters": {
-										"instance-variable": "idCard",
-										"value": "CardOnSearch.idCard"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "CardOnExtra",
-									"sid": 110598188134836,
-									"parameters": {
-										"frame-number": "IDcard"
-									}
-								},
-								{
-									"id": "load-image-from-url",
-									"objectClass": "CardOnExtra",
-									"sid": 557096556507891,
-									"parameters": {
-										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.imageCard)",
-										"size": "keep-current-size",
-										"cross-origin": "anonymous"
-									}
-								}
-							],
-							"sid": 462008693248276
-						}
-					]
-				},
-				{
-					"functionName": "SortMain",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionCopyPicked": false,
-					"functionIsAsync": false,
-					"functionParameters": [],
 					"eventType": "function-block",
 					"conditions": [],
 					"actions": [
@@ -4380,6 +4914,24 @@
 								"variable": "onCreateMain",
 								"value": "0"
 							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 630578123650812,
+							"parameters": {
+								"variable": "Xstart",
+								"value": "onDeck=\"main\"?Xstart_def_main:Xstart_def_extra"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 899272916285793,
+							"parameters": {
+								"variable": "Ystart",
+								"value": "onDeck=\"main\"?Ystart_def_main:Ystart_def_extra"
+							}
 						}
 					],
 					"sid": 336889487434042,
@@ -4388,49 +4940,30 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "for-each-ordered",
+									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 768515620814630,
+									"sid": 109786355311405,
 									"parameters": {
-										"object": "CardOnDeck",
-										"expression": "CardOnDeck.nameCard",
-										"order": "ascending"
+										"variable": "onSort",
+										"comparison": 0,
+										"value": "\"Name\""
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "CardOnDeck",
-									"sid": 158621565172445,
-									"parameters": {
-										"x": "Xstart",
-										"y": "Ystart"
-									}
-								},
-								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 815726997473754,
-									"parameters": {
-										"variable": "onCreateMain",
-										"value": "1"
-									}
-								}
-							],
-							"sid": 781452462727331,
+							"actions": [],
+							"sid": 952587741770004,
 							"children": [
 								{
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "compare-two-values",
+											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 463668581773072,
+											"sid": 417027616204988,
 											"parameters": {
-												"first-value": "onCreateMain%rowMain",
+												"variable": "onDeck",
 												"comparison": 0,
-												"second-value": "0"
+												"value": "\"main\""
 											}
 										}
 									],
@@ -4438,41 +4971,159 @@
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 130894043870590,
+											"sid": 300586260052841,
+											"disabled": true,
 											"parameters": {
 												"variable": "Xstart",
 												"value": "Xstart_def_main"
 											}
 										},
 										{
-											"id": "add-to-eventvar",
+											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 829573612749865,
+											"sid": 682460642614500,
+											"disabled": true,
 											"parameters": {
 												"variable": "Ystart",
-												"value": "Ygap_main"
-											}
-										},
-										{
-											"id": "set-eventvar-value",
-											"objectClass": "System",
-											"sid": 736973137813763,
-											"parameters": {
-												"variable": "lastX_main",
-												"value": "Xstart"
-											}
-										},
-										{
-											"id": "set-eventvar-value",
-											"objectClass": "System",
-											"sid": 237322037147445,
-											"parameters": {
-												"variable": "lastY_main",
-												"value": "Ystart"
+												"value": "Ystart_def_main"
 											}
 										}
 									],
-									"sid": 534592822921291
+									"sid": 754871813900203,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for-each-ordered",
+													"objectClass": "System",
+													"sid": 364820933506204,
+													"parameters": {
+														"object": "CardOnDeck",
+														"expression": "CardOnDeck.nameCard",
+														"order": "ascending"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "CardOnDeck",
+													"sid": 976169177708025,
+													"parameters": {
+														"x": "Xstart",
+														"y": "Ystart"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 810450295149080,
+													"parameters": {
+														"variable": "onCreateMain",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 967913888080624,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 873904690544280,
+															"parameters": {
+																"first-value": "onCreateMain%rowMain",
+																"comparison": 0,
+																"second-value": "0"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 254093032960658,
+															"parameters": {
+																"variable": "Xstart",
+																"value": "Xstart_def_main"
+															}
+														},
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 492016402829759,
+															"parameters": {
+																"variable": "Ystart",
+																"value": "Ygap_main"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 418393448621541,
+															"parameters": {
+																"variable": "lastX_main",
+																"value": "Xstart"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 972728831171938,
+															"parameters": {
+																"variable": "lastY_main",
+																"value": "Ystart"
+															}
+														}
+													],
+													"sid": 689754163633963
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 220548981059125
+														}
+													],
+													"actions": [
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 263762978242879,
+															"parameters": {
+																"variable": "Xstart",
+																"value": "Xgap_main"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 712935576350503,
+															"parameters": {
+																"variable": "lastX_main",
+																"value": "Xstart"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 121371588672384,
+															"parameters": {
+																"variable": "lastY_main",
+																"value": "Ystart"
+															}
+														}
+													],
+													"sid": 294949750452983
+												}
+											]
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -4480,101 +5131,1164 @@
 										{
 											"id": "else",
 											"objectClass": "System",
-											"sid": 979989049136453
+											"sid": 795121874586544
 										}
 									],
 									"actions": [
 										{
-											"id": "add-to-eventvar",
+											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 732093396808715,
+											"sid": 200756575324572,
+											"disabled": true,
 											"parameters": {
 												"variable": "Xstart",
-												"value": "Xgap_main"
+												"value": "Xstart_def_extra"
 											}
 										},
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 530933615665659,
+											"sid": 708635865054781,
+											"disabled": true,
 											"parameters": {
-												"variable": "lastX_main",
-												"value": "Xstart"
-											}
-										},
-										{
-											"id": "set-eventvar-value",
-											"objectClass": "System",
-											"sid": 180363708782278,
-											"parameters": {
-												"variable": "lastY_main",
-												"value": "Ystart"
+												"variable": "Ystart",
+												"value": "Ystart_def_extra"
 											}
 										}
 									],
-									"sid": 185175690782924
+									"sid": 101205783471578,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for-each-ordered",
+													"objectClass": "System",
+													"sid": 541010222304641,
+													"parameters": {
+														"object": "CardOnExtra",
+														"expression": "CardOnExtra.nameCard",
+														"order": "ascending"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "CardOnExtra",
+													"sid": 903326032636686,
+													"parameters": {
+														"x": "Xstart",
+														"y": "Ystart"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 464365072081831,
+													"parameters": {
+														"variable": "Xstart",
+														"value": "Xgap_extra"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 532908067853708,
+													"parameters": {
+														"variable": "lastX_extra",
+														"value": "Xstart"
+													}
+												}
+											],
+											"sid": 323816230965970
+										}
+									]
 								}
 							]
-						}
-					]
-				},
-				{
-					"functionName": "SortExtra",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionCopyPicked": false,
-					"functionIsAsync": false,
-					"functionParameters": [],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [],
-					"sid": 968903512619726,
-					"children": [
+						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "for-each-ordered",
+									"id": "else",
 									"objectClass": "System",
-									"sid": 313145977782509,
+									"sid": 958657780023686
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 857635933769805,
 									"parameters": {
-										"object": "CardOnExtra",
-										"expression": "CardOnExtra.nameCard",
-										"order": "ascending"
+										"variable": "onSort",
+										"comparison": 0,
+										"value": "\"Cost\""
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 963884223077583,
+							"children": [
 								{
-									"id": "set-position",
-									"objectClass": "CardOnExtra",
-									"sid": 930522216299571,
-									"parameters": {
-										"x": "Xstart",
-										"y": "Ystart"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 741908521623370,
+											"parameters": {
+												"variable": "onDeck",
+												"comparison": 0,
+												"value": "\"main\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 626829316339336,
+											"disabled": true,
+											"parameters": {
+												"variable": "Xstart",
+												"value": "Xstart_def_main"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 365305789614919,
+											"disabled": true,
+											"parameters": {
+												"variable": "Ystart",
+												"value": "Ystart_def_main"
+											}
+										}
+									],
+									"sid": 799825811777929,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for-each-ordered",
+													"objectClass": "System",
+													"sid": 561628312197863,
+													"parameters": {
+														"object": "CardOnDeck",
+														"expression": "CardOnDeck.costCard",
+														"order": "ascending"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "CardOnDeck",
+													"sid": 670204271472719,
+													"parameters": {
+														"x": "Xstart",
+														"y": "Ystart"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 231543075285012,
+													"parameters": {
+														"variable": "onCreateMain",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 244461095068107,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 804697260534740,
+															"parameters": {
+																"first-value": "onCreateMain%rowMain",
+																"comparison": 0,
+																"second-value": "0"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 625066641031158,
+															"parameters": {
+																"variable": "Xstart",
+																"value": "Xstart_def_main"
+															}
+														},
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 902635458485224,
+															"parameters": {
+																"variable": "Ystart",
+																"value": "Ygap_main"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 703021064004606,
+															"parameters": {
+																"variable": "lastX_main",
+																"value": "Xstart"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 348983789847971,
+															"parameters": {
+																"variable": "lastY_main",
+																"value": "Ystart"
+															}
+														}
+													],
+													"sid": 423253009871016
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 715202998244648
+														}
+													],
+													"actions": [
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 264960181211687,
+															"parameters": {
+																"variable": "Xstart",
+																"value": "Xgap_main"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 945848334738560,
+															"parameters": {
+																"variable": "lastX_main",
+																"value": "Xstart"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 878758067337478,
+															"parameters": {
+																"variable": "lastY_main",
+																"value": "Ystart"
+															}
+														}
+													],
+													"sid": 780956563426216
+												}
+											]
+										}
+									]
 								},
 								{
-									"id": "add-to-eventvar",
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 929648509279171
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 964426976206429,
+											"disabled": true,
+											"parameters": {
+												"variable": "Xstart",
+												"value": "Xstart_def_extra"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 929102007459556,
+											"disabled": true,
+											"parameters": {
+												"variable": "Ystart",
+												"value": "Ystart_def_extra"
+											}
+										}
+									],
+									"sid": 206205513108582,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for-each-ordered",
+													"objectClass": "System",
+													"sid": 398670037910878,
+													"parameters": {
+														"object": "CardOnExtra",
+														"expression": "CardOnExtra.costCard",
+														"order": "ascending"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "CardOnExtra",
+													"sid": 222466633903622,
+													"parameters": {
+														"x": "Xstart",
+														"y": "Ystart"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 572112981537682,
+													"parameters": {
+														"variable": "Xstart",
+														"value": "Xgap_extra"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 715127145308762,
+													"parameters": {
+														"variable": "lastX_extra",
+														"value": "Xstart"
+													}
+												}
+											],
+											"sid": 516822485795888
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
 									"objectClass": "System",
-									"sid": 802467767350281,
-									"parameters": {
-										"variable": "Xstart",
-										"value": "Xgap_extra"
-									}
+									"sid": 421778027906556
 								},
 								{
-									"id": "set-eventvar-value",
+									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 177123888733530,
+									"sid": 707738659701195,
 									"parameters": {
-										"variable": "lastX_extra",
-										"value": "Xstart"
+										"variable": "onSort",
+										"comparison": 0,
+										"value": "\"Element\""
 									}
 								}
 							],
-							"sid": 563203150141232
+							"actions": [],
+							"sid": 777797121921393,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 918880659047861,
+											"parameters": {
+												"variable": "onDeck",
+												"comparison": 0,
+												"value": "\"main\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 608862982897149,
+											"disabled": true,
+											"parameters": {
+												"variable": "Xstart",
+												"value": "Xstart_def_main"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 404923559618767,
+											"disabled": true,
+											"parameters": {
+												"variable": "Ystart",
+												"value": "Ystart_def_main"
+											}
+										}
+									],
+									"sid": 850801957664209,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for-each-ordered",
+													"objectClass": "System",
+													"sid": 272917179202500,
+													"parameters": {
+														"object": "CardOnDeck",
+														"expression": "CardOnDeck.elementCard",
+														"order": "ascending"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "CardOnDeck",
+													"sid": 137802786921023,
+													"parameters": {
+														"x": "Xstart",
+														"y": "Ystart"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 560477354183759,
+													"parameters": {
+														"variable": "onCreateMain",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 335555465353828,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 251392795864334,
+															"parameters": {
+																"first-value": "onCreateMain%rowMain",
+																"comparison": 0,
+																"second-value": "0"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 517396470883750,
+															"parameters": {
+																"variable": "Xstart",
+																"value": "Xstart_def_main"
+															}
+														},
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 678875992971327,
+															"parameters": {
+																"variable": "Ystart",
+																"value": "Ygap_main"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 973585728906409,
+															"parameters": {
+																"variable": "lastX_main",
+																"value": "Xstart"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 178575689722782,
+															"parameters": {
+																"variable": "lastY_main",
+																"value": "Ystart"
+															}
+														}
+													],
+													"sid": 352359482799518
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 225094453243580
+														}
+													],
+													"actions": [
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 895868307137642,
+															"parameters": {
+																"variable": "Xstart",
+																"value": "Xgap_main"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 928287260343058,
+															"parameters": {
+																"variable": "lastX_main",
+																"value": "Xstart"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 998415938019500,
+															"parameters": {
+																"variable": "lastY_main",
+																"value": "Ystart"
+															}
+														}
+													],
+													"sid": 612729613312369
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 495964461650545
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 793149896905711,
+											"disabled": true,
+											"parameters": {
+												"variable": "Xstart",
+												"value": "Xstart_def_extra"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 559452304591590,
+											"disabled": true,
+											"parameters": {
+												"variable": "Ystart",
+												"value": "Ystart_def_extra"
+											}
+										}
+									],
+									"sid": 832206189239671,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for-each-ordered",
+													"objectClass": "System",
+													"sid": 597655942702670,
+													"parameters": {
+														"object": "CardOnExtra",
+														"expression": "CardOnExtra.elementCard",
+														"order": "ascending"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "CardOnExtra",
+													"sid": 690104815825950,
+													"parameters": {
+														"x": "Xstart",
+														"y": "Ystart"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 141947753967917,
+													"parameters": {
+														"variable": "Xstart",
+														"value": "Xgap_extra"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 737766322528037,
+													"parameters": {
+														"variable": "lastX_extra",
+														"value": "Xstart"
+													}
+												}
+											],
+											"sid": 490043797713311
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 757179478086139
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 388076819711124,
+									"parameters": {
+										"variable": "onSort",
+										"comparison": 0,
+										"value": "\"Type\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 363419451550133,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 934337589010505,
+											"parameters": {
+												"variable": "onDeck",
+												"comparison": 0,
+												"value": "\"main\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 615543302694230,
+											"disabled": true,
+											"parameters": {
+												"variable": "Xstart",
+												"value": "Xstart_def_main"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 726426195660529,
+											"disabled": true,
+											"parameters": {
+												"variable": "Ystart",
+												"value": "Ystart_def_main"
+											}
+										}
+									],
+									"sid": 334734234736838,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for-each-ordered",
+													"objectClass": "System",
+													"sid": 766652724091493,
+													"parameters": {
+														"object": "CardOnDeck",
+														"expression": "CardOnDeck.typeCard",
+														"order": "ascending"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "CardOnDeck",
+													"sid": 682035997540550,
+													"parameters": {
+														"x": "Xstart",
+														"y": "Ystart"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 540909185262971,
+													"parameters": {
+														"variable": "onCreateMain",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 581821495691052,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 788745328487711,
+															"parameters": {
+																"first-value": "onCreateMain%rowMain",
+																"comparison": 0,
+																"second-value": "0"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 806549245865120,
+															"parameters": {
+																"variable": "Xstart",
+																"value": "Xstart_def_main"
+															}
+														},
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 177971488931578,
+															"parameters": {
+																"variable": "Ystart",
+																"value": "Ygap_main"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 837633643624632,
+															"parameters": {
+																"variable": "lastX_main",
+																"value": "Xstart"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 706619884686590,
+															"parameters": {
+																"variable": "lastY_main",
+																"value": "Ystart"
+															}
+														}
+													],
+													"sid": 577945760627971
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 207045528140957
+														}
+													],
+													"actions": [
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 631677421905148,
+															"parameters": {
+																"variable": "Xstart",
+																"value": "Xgap_main"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 468726354171229,
+															"parameters": {
+																"variable": "lastX_main",
+																"value": "Xstart"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 100293868197814,
+															"parameters": {
+																"variable": "lastY_main",
+																"value": "Ystart"
+															}
+														}
+													],
+													"sid": 755432075315675
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 376208085712939
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 285506153463864,
+											"disabled": true,
+											"parameters": {
+												"variable": "Xstart",
+												"value": "Xstart_def_extra"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 476780094068392,
+											"disabled": true,
+											"parameters": {
+												"variable": "Ystart",
+												"value": "Ystart_def_extra"
+											}
+										}
+									],
+									"sid": 309605822340186,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for-each-ordered",
+													"objectClass": "System",
+													"sid": 863083155350392,
+													"parameters": {
+														"object": "CardOnExtra",
+														"expression": "CardOnExtra.typeCard",
+														"order": "ascending"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "CardOnExtra",
+													"sid": 666031627464674,
+													"parameters": {
+														"x": "Xstart",
+														"y": "Ystart"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 507816247529645,
+													"parameters": {
+														"variable": "Xstart",
+														"value": "Xgap_extra"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 577862398005877,
+													"parameters": {
+														"variable": "lastX_extra",
+														"value": "Xstart"
+													}
+												}
+											],
+											"sid": 442669367246846
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 283660381906257
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 545486859130439,
+									"parameters": {
+										"variable": "onSort",
+										"comparison": 0,
+										"value": "\"Class\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 386691339822236,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 172370917588848,
+											"parameters": {
+												"variable": "onDeck",
+												"comparison": 0,
+												"value": "\"main\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 641037797810934,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for-each-ordered",
+													"objectClass": "System",
+													"sid": 921579187187381,
+													"parameters": {
+														"object": "CardOnDeck",
+														"expression": "CardOnDeck.classCard",
+														"order": "ascending"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "CardOnDeck",
+													"sid": 413664679877572,
+													"parameters": {
+														"x": "Xstart",
+														"y": "Ystart"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 559199257471222,
+													"parameters": {
+														"variable": "onCreateMain",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 858119289761618,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 504898732332234,
+															"parameters": {
+																"first-value": "onCreateMain%rowMain",
+																"comparison": 0,
+																"second-value": "0"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 890102623636421,
+															"parameters": {
+																"variable": "Xstart",
+																"value": "Xstart_def_main"
+															}
+														},
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 798066035252589,
+															"parameters": {
+																"variable": "Ystart",
+																"value": "Ygap_main"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 773043713624489,
+															"parameters": {
+																"variable": "lastX_main",
+																"value": "Xstart"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 989809860487282,
+															"parameters": {
+																"variable": "lastY_main",
+																"value": "Ystart"
+															}
+														}
+													],
+													"sid": 444327492468926
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 801438696873497
+														}
+													],
+													"actions": [
+														{
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 776353506279334,
+															"parameters": {
+																"variable": "Xstart",
+																"value": "Xgap_main"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 490738299320035,
+															"parameters": {
+																"variable": "lastX_main",
+																"value": "Xstart"
+															}
+														},
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 442459122030422,
+															"parameters": {
+																"variable": "lastY_main",
+																"value": "Ystart"
+															}
+														}
+													],
+													"sid": 613114563374098
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 320503643557650
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 521022043448087,
+											"disabled": true,
+											"parameters": {
+												"variable": "Xstart",
+												"value": "Xstart_def_extra"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 828026255795413,
+											"disabled": true,
+											"parameters": {
+												"variable": "Ystart",
+												"value": "Ystart_def_extra"
+											}
+										}
+									],
+									"sid": 799273106348557,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for-each-ordered",
+													"objectClass": "System",
+													"sid": 463066106693112,
+													"parameters": {
+														"object": "CardOnExtra",
+														"expression": "CardOnExtra.classCard",
+														"order": "ascending"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "CardOnExtra",
+													"sid": 912700538393352,
+													"parameters": {
+														"x": "Xstart",
+														"y": "Ystart"
+													}
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 602413354839992,
+													"parameters": {
+														"variable": "Xstart",
+														"value": "Xgap_extra"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 608170002209794,
+													"parameters": {
+														"variable": "lastX_extra",
+														"value": "Xstart"
+													}
+												}
+											],
+											"sid": 712134252530555
+										}
+									]
+								}
+							]
 						}
 					]
 				}
@@ -6224,8 +7938,12 @@
 									}
 								},
 								{
-									"callFunction": "SortMain",
-									"sid": 191207797245759
+									"callFunction": "SortDeck",
+									"sid": 583032000724129,
+									"parameters": [
+										"ListSortDeck.SelectedText",
+										"\"main\""
+									]
 								}
 							],
 							"sid": 427154797979165
@@ -6304,17 +8022,15 @@
 									}
 								},
 								{
-									"callFunction": "SortExtra",
-									"sid": 403952724343088
+									"callFunction": "SortDeck",
+									"sid": 801842878800769,
+									"parameters": [
+										"ListSortDeck.SelectedText",
+										"\"extra\""
+									]
 								}
 							],
 							"sid": 852862860329376
-						},
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [],
-							"sid": 326517537602008
 						}
 					]
 				},
@@ -6404,8 +8120,12 @@
 									}
 								},
 								{
-									"callFunction": "SortMain",
-									"sid": 690885924025692
+									"callFunction": "SortDeck",
+									"sid": 231298617558906,
+									"parameters": [
+										"ListSortDeck.SelectedText",
+										"\"main\""
+									]
 								}
 							],
 							"sid": 249414352319404
@@ -6484,8 +8204,12 @@
 									}
 								},
 								{
-									"callFunction": "SortExtra",
-									"sid": 164127498911172
+									"callFunction": "SortDeck",
+									"sid": 839831175841831,
+									"parameters": [
+										"ListSortDeck.SelectedText",
+										"\"extra\""
+									]
 								}
 							],
 							"sid": 966633563715162
@@ -6516,6 +8240,7 @@
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 607837912145828,
+							"disabled": true,
 							"parameters": {
 								"variable": "Xstart",
 								"value": "Xstart_def_main"
@@ -6525,6 +8250,7 @@
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 170209301882912,
+							"disabled": true,
 							"parameters": {
 								"variable": "Ystart",
 								"value": "Ystart_def_main"
@@ -6539,8 +8265,12 @@
 							}
 						},
 						{
-							"callFunction": "SortMain",
-							"sid": 624394538441530
+							"callFunction": "SortDeck",
+							"sid": 112888412034185,
+							"parameters": [
+								"ListSortDeck.SelectedText",
+								"\"main\""
+							]
 						}
 					],
 					"sid": 950720768685167
@@ -6569,6 +8299,7 @@
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 655195110606108,
+							"disabled": true,
 							"parameters": {
 								"variable": "Xstart",
 								"value": "Xstart_def_main"
@@ -6578,6 +8309,7 @@
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 711182455870111,
+							"disabled": true,
 							"parameters": {
 								"variable": "Ystart",
 								"value": "Ystart_def_main"
@@ -6592,8 +8324,12 @@
 							}
 						},
 						{
-							"callFunction": "SortMain",
-							"sid": 294583399316608
+							"callFunction": "SortDeck",
+							"sid": 771868211005987,
+							"parameters": [
+								"ListSortDeck.SelectedText",
+								"\"main\""
+							]
 						}
 					],
 					"sid": 188168183833119
@@ -6619,24 +8355,6 @@
 							"sid": 800729317194048
 						},
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 450754540738065,
-							"parameters": {
-								"variable": "Xstart",
-								"value": "Xstart_def_extra"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 378059128317531,
-							"parameters": {
-								"variable": "Ystart",
-								"value": "Ystart_def_extra"
-							}
-						},
-						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 700835760813068,
@@ -6645,8 +8363,12 @@
 							}
 						},
 						{
-							"callFunction": "SortExtra",
-							"sid": 697890407930917
+							"callFunction": "SortDeck",
+							"sid": 684155929478178,
+							"parameters": [
+								"ListSortDeck.SelectedText",
+								"\"extra\""
+							]
 						}
 					],
 					"sid": 915893757890606
@@ -6672,24 +8394,6 @@
 							"sid": 338472522841925
 						},
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 296146547795769,
-							"parameters": {
-								"variable": "Xstart",
-								"value": "Xstart_def_extra"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 198795041679238,
-							"parameters": {
-								"variable": "Ystart",
-								"value": "Ystart_def_extra"
-							}
-						},
-						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 894966190579522,
@@ -6698,8 +8402,12 @@
 							}
 						},
 						{
-							"callFunction": "SortExtra",
-							"sid": 408421645871226
+							"callFunction": "SortDeck",
+							"sid": 675515013238965,
+							"parameters": [
+								"ListSortDeck.SelectedText",
+								"\"extra\""
+							]
 						}
 					],
 					"sid": 648632066309960
@@ -6708,910 +8416,551 @@
 			"sid": 950741830792032
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "btn_Save",
-					"sid": 102936115411858
-				},
-				{
-					"id": "compare-text",
-					"objectClass": "TextInputSave",
-					"sid": 736397455635466,
-					"parameters": {
-						"text": "\"\"",
-						"case": "case-insensitive"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-size",
-					"objectClass": "Array_card_save",
-					"sid": 808942192437947,
-					"parameters": {
-						"width": "0",
-						"height": "1",
-						"depth": "1"
-					}
-				}
-			],
-			"sid": 924999688079447,
+			"eventType": "group",
+			"disabled": false,
+			"title": "Save and Load",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "for-each",
-							"objectClass": "System",
-							"sid": 982918091077798,
+							"id": "on-clicked",
+							"objectClass": "btn_Save",
+							"sid": 402130581490978
+						},
+						{
+							"id": "compare-text",
+							"objectClass": "TextInputSave",
+							"sid": 879812961930090,
 							"parameters": {
-								"object": "CardOnDeck"
-							}
+								"text": "\"\"",
+								"case": "case-insensitive"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
-							"id": "push",
+							"id": "set-size",
 							"objectClass": "Array_card_save",
-							"sid": 780161594720470,
+							"sid": 494522879076832,
 							"parameters": {
-								"where": "back",
-								"value": "CardOnDeck.nameCard",
-								"axis": "x"
+								"width": "0",
+								"height": "1",
+								"depth": "1"
 							}
 						}
 					],
-					"sid": 898531135740456
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for-each",
-							"objectClass": "System",
-							"sid": 882017521333599,
-							"parameters": {
-								"object": "CardOnExtra"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "push",
-							"objectClass": "Array_card_save",
-							"sid": 524675143137081,
-							"parameters": {
-								"where": "back",
-								"value": "CardOnExtra.nameCard",
-								"axis": "x"
-							}
-						}
-					],
-					"sid": 178016436451012
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 753705487812540,
-							"parameters": {
-								"seconds": "0.01"
-							}
-						},
-						{
-							"id": "add-key",
-							"objectClass": "Dict_save",
-							"sid": 453116667556558,
-							"parameters": {
-								"key": "TextInputSave.Text",
-								"value": "Array_card_save.AsJSON"
-							}
-						},
-						{
-							"id": "set-item",
-							"objectClass": "LocalStorage",
-							"sid": 556394127288153,
-							"parameters": {
-								"key": "\"Save\"",
-								"value": "Dict_save.AsJSON"
-							}
-						},
-						{
-							"callFunction": "ChangeListSave",
-							"sid": 129682592644508
-						}
-					],
-					"sid": 499204900892914
-				}
-			]
-		},
-		{
-			"functionName": "ChangeListSave",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "clear",
-					"objectClass": "ListLoad",
-					"sid": 434836534837035
-				}
-			],
-			"sid": 459878204444638,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for-each-key",
-							"objectClass": "Dict_save",
-							"sid": 863820035035535
-						}
-					],
-					"actions": [
-						{
-							"id": "add-item",
-							"objectClass": "ListLoad",
-							"sid": 544816934085952,
-							"parameters": {
-								"text": "Dict_save.CurrentKey"
-							}
-						}
-					],
-					"sid": 358841042160296
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-selection",
-							"objectClass": "ListLoad",
-							"sid": 326442908015373,
-							"parameters": {
-								"index": "0"
-							}
-						}
-					],
-					"sid": 396938844390944
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "btn_Load",
-					"sid": 320455175237902
-				}
-			],
-			"actions": [
-				{
-					"id": "load",
-					"objectClass": "Array_card_load",
-					"sid": 691203609386578,
-					"parameters": {
-						"json": "Dict_save.Get(ListLoad.SelectedText)"
-					}
-				},
-				{
-					"callFunction": "createFromLoad",
-					"sid": 983838689995021
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 685502461637285,
-					"parameters": {
-						"variable": "Xstart",
-						"value": "Xstart_def_main"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 331455348923535,
-					"parameters": {
-						"variable": "Ystart",
-						"value": "Ystart_def_main"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 870089876423355,
-					"parameters": {
-						"seconds": "0.0001"
-					}
-				},
-				{
-					"callFunction": "SortMain",
-					"sid": 842444903222255
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 952889902379190,
-					"parameters": {
-						"seconds": "0.0001"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 930192648104662,
-					"parameters": {
-						"variable": "Xstart",
-						"value": "Xstart_def_extra"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 875464505198766,
-					"parameters": {
-						"variable": "Ystart",
-						"value": "Ystart_def_extra"
-					}
-				},
-				{
-					"callFunction": "SortExtra",
-					"sid": 358737573956710
-				}
-			],
-			"sid": 966873491039059
-		},
-		{
-			"functionName": "createFromLoad",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "CardOnDeck",
-					"sid": 975435951640013
-				},
-				{
-					"id": "destroy",
-					"objectClass": "CardOnExtra",
-					"sid": 145198660346382
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 511839030156178,
-					"parameters": {
-						"variable": "count",
-						"value": "0"
-					}
-				}
-			],
-			"sid": 335513690898537,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for",
-							"objectClass": "System",
-							"sid": 459316832643559,
-							"parameters": {
-								"name": "\"x\"",
-								"start-index": "0",
-								"end-index": "Array_card_list.Height"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 422080104772260,
+					"sid": 403954847332811,
 					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "for-each-element",
-									"objectClass": "Array_card_load",
-									"sid": 535336813956405,
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 588547669468019,
 									"parameters": {
-										"axes": "x"
+										"object": "CardOnDeck"
 									}
 								}
 							],
-							"actions": [],
-							"sid": 537961783957692,
-							"children": [
+							"actions": [
 								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-two-values",
-											"objectClass": "System",
-											"sid": 948232081219395,
-											"parameters": {
-												"first-value": "Array_card_load.CurValue",
-												"comparison": 0,
-												"second-value": "Array_card_list.At(0,loopindex(\"x\"))"
-											}
-										}
-									],
-									"actions": [],
-									"sid": 705754137712482,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-two-values",
-													"objectClass": "System",
-													"sid": 167236131703282,
-													"parameters": {
-														"first-value": "Array_card_list.At(9,loopindex(\"x\"))",
-														"comparison": 0,
-														"second-value": "\"main\""
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "create-object",
-													"objectClass": "System",
-													"sid": 619820654055091,
-													"parameters": {
-														"object-to-create": "CardOnDeck",
-														"layer": "\"card\"",
-														"x": "Xstart_def_main",
-														"y": "Ystart_def_main",
-														"create-hierarchy": false,
-														"template-name": "\"\""
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "CardOnDeck",
-													"sid": 703247578355804,
-													"parameters": {
-														"instance-variable": "nameCard",
-														"value": "Array_card_list.At(0,loopindex(\"x\"))"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "CardOnDeck",
-													"sid": 778480212591458,
-													"parameters": {
-														"instance-variable": "costCard",
-														"value": "Array_card_list.At(1,loopindex(\"x\"))"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "CardOnDeck",
-													"sid": 339990651853563,
-													"parameters": {
-														"instance-variable": "elementCard",
-														"value": "Array_card_list.At(3,loopindex(\"x\"))"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "CardOnDeck",
-													"sid": 360917229482525,
-													"parameters": {
-														"instance-variable": "typeCard",
-														"value": "Array_card_list.At(4,loopindex(\"x\"))"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "CardOnDeck",
-													"sid": 887269495717301,
-													"parameters": {
-														"instance-variable": "classCard",
-														"value": "Array_card_list.At(8,loopindex(\"x\"))"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "CardOnDeck",
-													"sid": 455382008757784,
-													"parameters": {
-														"instance-variable": "imageCard",
-														"value": "Array_card_list.At(10,loopindex(\"x\"))"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "CardOnDeck",
-													"sid": 959601370460658,
-													"parameters": {
-														"instance-variable": "idCard",
-														"value": "count"
-													}
-												},
-												{
-													"id": "set-animation-frame",
-													"objectClass": "CardOnDeck",
-													"sid": 790273983880319,
-													"parameters": {
-														"frame-number": "count"
-													}
-												},
-												{
-													"id": "load-image-from-url",
-													"objectClass": "CardOnDeck",
-													"sid": 177979094678566,
-													"parameters": {
-														"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.imageCard)",
-														"size": "keep-current-size",
-														"cross-origin": "anonymous"
-													}
-												},
-												{
-													"id": "add-to-eventvar",
-													"objectClass": "System",
-													"sid": 367707588918698,
-													"parameters": {
-														"variable": "count",
-														"value": "1"
-													}
-												}
-											],
-											"sid": 649657691954110
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "else",
-													"objectClass": "System",
-													"sid": 198372961713888
-												}
-											],
-											"actions": [
-												{
-													"id": "create-object",
-													"objectClass": "System",
-													"sid": 422566807384799,
-													"parameters": {
-														"object-to-create": "CardOnExtra",
-														"layer": "\"card\"",
-														"x": "Xstart_def_extra",
-														"y": "Ystart_def_extra",
-														"create-hierarchy": false,
-														"template-name": "\"\""
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "CardOnExtra",
-													"sid": 284491055848695,
-													"parameters": {
-														"instance-variable": "nameCard",
-														"value": "Array_card_list.At(0,loopindex(\"x\"))"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "CardOnExtra",
-													"sid": 895304487642514,
-													"parameters": {
-														"instance-variable": "costCard",
-														"value": "Array_card_list.At(1,loopindex(\"x\"))"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "CardOnExtra",
-													"sid": 119976296794372,
-													"parameters": {
-														"instance-variable": "elementCard",
-														"value": "Array_card_list.At(3,loopindex(\"x\"))"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "CardOnExtra",
-													"sid": 718124153836807,
-													"parameters": {
-														"instance-variable": "typeCard",
-														"value": "Array_card_list.At(4,loopindex(\"x\"))"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "CardOnExtra",
-													"sid": 846679936983191,
-													"parameters": {
-														"instance-variable": "classCard",
-														"value": "Array_card_list.At(8,loopindex(\"x\"))"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "CardOnExtra",
-													"sid": 799717184920825,
-													"parameters": {
-														"instance-variable": "imageCard",
-														"value": "Array_card_list.At(10,loopindex(\"x\"))"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "CardOnExtra",
-													"sid": 361227196352904,
-													"parameters": {
-														"instance-variable": "idCard",
-														"value": "count"
-													}
-												},
-												{
-													"id": "set-animation-frame",
-													"objectClass": "CardOnExtra",
-													"sid": 301121751052291,
-													"parameters": {
-														"frame-number": "count"
-													}
-												},
-												{
-													"id": "load-image-from-url",
-													"objectClass": "CardOnExtra",
-													"sid": 153568078699520,
-													"disabled": true,
-													"parameters": {
-														"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.imageCard)",
-														"size": "keep-current-size",
-														"cross-origin": "anonymous"
-													}
-												},
-												{
-													"id": "add-to-eventvar",
-													"objectClass": "System",
-													"sid": 659467709522420,
-													"parameters": {
-														"variable": "count",
-														"value": "1"
-													}
-												}
-											],
-											"sid": 430163982239247
-										}
-									]
+									"id": "push",
+									"objectClass": "Array_card_save",
+									"sid": 916992442832837,
+									"parameters": {
+										"where": "back",
+										"value": "CardOnDeck.nameCard",
+										"axis": "x"
+									}
 								}
-							]
+							],
+							"sid": 821626056759226
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 656014305331072,
+									"parameters": {
+										"object": "CardOnExtra"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "push",
+									"objectClass": "Array_card_save",
+									"sid": 151213478250152,
+									"parameters": {
+										"where": "back",
+										"value": "CardOnExtra.nameCard",
+										"axis": "x"
+									}
+								}
+							],
+							"sid": 163604295607692
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 561057558118907,
+									"parameters": {
+										"seconds": "0.01"
+									}
+								},
+								{
+									"id": "add-key",
+									"objectClass": "Dict_save",
+									"sid": 639792495244094,
+									"parameters": {
+										"key": "TextInputSave.Text",
+										"value": "Array_card_save.AsJSON"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 210646920597791,
+									"parameters": {
+										"key": "\"Save\"",
+										"value": "Dict_save.AsJSON"
+									}
+								},
+								{
+									"callFunction": "ChangeListSave",
+									"sid": 799845728235694
+								}
+							],
+							"sid": 466213864131523
 						}
 					]
 				},
 				{
 					"eventType": "block",
-					"conditions": [],
-					"actions": [
+					"conditions": [
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 317393429135402,
-							"parameters": {
-								"seconds": "1"
-							}
-						},
-						{
-							"callFunction": "SortMain",
-							"sid": 255020532147637
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 123779661916556,
-							"parameters": {
-								"seconds": "1"
-							}
-						},
-						{
-							"callFunction": "SortExtra",
-							"sid": 774778530870970
+							"id": "on-clicked",
+							"objectClass": "btn_Load",
+							"sid": 689201564006512
 						}
 					],
-					"sid": 362578340117854,
-					"disabled": true
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "Array_card_load",
+							"sid": 749211976418072,
+							"parameters": {
+								"json": "Dict_save.Get(ListLoad.SelectedText)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 325057994209028,
+							"parameters": {
+								"variable": "Xstart",
+								"value": "Xstart_def_main"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 951015348088443,
+							"parameters": {
+								"variable": "Ystart",
+								"value": "Ystart_def_main"
+							}
+						},
+						{
+							"callFunction": "createFromLoad",
+							"sid": 616275416691160
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 790909645851246,
+							"disabled": true,
+							"parameters": {
+								"variable": "Xstart",
+								"value": "Xstart_def_main"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 947805949407134,
+							"disabled": true,
+							"parameters": {
+								"variable": "Ystart",
+								"value": "Ystart_def_main"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 814009820735413,
+							"parameters": {
+								"seconds": "0.0001"
+							}
+						},
+						{
+							"callFunction": "SortDeck",
+							"sid": 894537482689570,
+							"parameters": [
+								"ListSortDeck.SelectedText",
+								"\"main\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 477091464057966,
+							"parameters": {
+								"seconds": "0.0001"
+							}
+						},
+						{
+							"callFunction": "SortDeck",
+							"sid": 880467241957742,
+							"parameters": [
+								"ListSortDeck.SelectedText",
+								"\"extra\""
+							]
+						}
+					],
+					"sid": 357557554197207
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "CardOnDeck",
+							"sid": 117457200284390
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 503223158776328,
+							"parameters": {
+								"variable": "Xstart",
+								"value": "Xstart_def_main"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 754569969811208,
+							"parameters": {
+								"variable": "Ystart",
+								"value": "Ystart_def_main"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 693324577113680,
+							"parameters": {
+								"seconds": "0.01"
+							}
+						},
+						{
+							"callFunction": "SortDeck",
+							"sid": 687621386349226,
+							"disabled": true,
+							"parameters": [
+								"\"\"",
+								"\"\""
+							]
+						}
+					],
+					"sid": 431084342474188,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 286074690829835,
+									"parameters": {
+										"first-value": "Dict_card_image.Get(CardOnDeck.imageCard)",
+										"comparison": 0,
+										"second-value": "\"none\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-response-binary",
+									"objectClass": "AJAX",
+									"sid": 925337342337671,
+									"parameters": {
+										"destination": "BinaryData"
+									}
+								},
+								{
+									"id": "request-url",
+									"objectClass": "AJAX",
+									"sid": 607874455138414,
+									"parameters": {
+										"tag": "CardOnDeck.imageCard",
+										"url": "\"Card/\"&CardOnDeck.imageCard&\".\"&TypeFile"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 306693879519562,
+									"parameters": {
+										"seconds": "0.001"
+									}
+								},
+								{
+									"id": "load-image-from-url",
+									"objectClass": "CardOnDeck",
+									"sid": 971522328217131,
+									"parameters": {
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.imageCard)",
+										"size": "keep-current-size",
+										"cross-origin": "anonymous"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "CardOnDeck",
+									"sid": 736172601972087,
+									"parameters": {
+										"instance-variable": "afterLoad",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 146669118707510
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 227487754335019
+								}
+							],
+							"actions": [
+								{
+									"id": "load-image-from-url",
+									"objectClass": "CardOnDeck",
+									"sid": 667899266903684,
+									"parameters": {
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.imageCard)",
+										"size": "keep-current-size",
+										"cross-origin": "anonymous"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "CardOnDeck",
+									"sid": 413516615920629,
+									"parameters": {
+										"instance-variable": "afterLoad",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 481021406711516
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "CardOnExtra",
+							"sid": 330565957058798
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 235179039301276,
+							"parameters": {
+								"variable": "Xstart",
+								"value": "Xstart_def_extra"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 750237356395777,
+							"parameters": {
+								"variable": "Ystart",
+								"value": "Ystart_def_extra"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 878605614432752,
+							"parameters": {
+								"seconds": "0.01"
+							}
+						}
+					],
+					"sid": 185498078129694,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 905105395777824,
+									"parameters": {
+										"first-value": "Dict_card_image.Get(CardOnExtra.imageCard)",
+										"comparison": 0,
+										"second-value": "\"none\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-response-binary",
+									"objectClass": "AJAX",
+									"sid": 204007939384563,
+									"parameters": {
+										"destination": "BinaryData"
+									}
+								},
+								{
+									"id": "request-url",
+									"objectClass": "AJAX",
+									"sid": 259948692072786,
+									"parameters": {
+										"tag": "CardOnExtra.imageCard",
+										"url": "\"Card/\"&CardOnExtra.imageCard&\".\"&TypeFile"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 367412450498678,
+									"parameters": {
+										"seconds": "0.001"
+									}
+								},
+								{
+									"id": "load-image-from-url",
+									"objectClass": "CardOnExtra",
+									"sid": 843348855990502,
+									"parameters": {
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.imageCard)",
+										"size": "keep-current-size",
+										"cross-origin": "anonymous"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "CardOnExtra",
+									"sid": 851928738811534,
+									"parameters": {
+										"instance-variable": "afterLoad",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 673587278836092
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 539299884902312
+								}
+							],
+							"actions": [
+								{
+									"id": "load-image-from-url",
+									"objectClass": "CardOnExtra",
+									"sid": 134958043709031,
+									"parameters": {
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.imageCard)",
+										"size": "keep-current-size",
+										"cross-origin": "anonymous"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "CardOnExtra",
+									"sid": 746472077978334,
+									"parameters": {
+										"instance-variable": "afterLoad",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 748070694503485
+						}
+					]
 				}
-			]
+			],
+			"sid": 821003538450991
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-created",
-					"objectClass": "CardOnDeck",
-					"sid": 905796888319437
+					"id": "on-selection-changed",
+					"objectClass": "ListSortDeck",
+					"sid": 280672527451333
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 715103519412217,
+					"parameters": {
+						"first-value": "CardOnDeck.Count",
+						"comparison": 4,
+						"second-value": "0"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 127869045549860,
-					"parameters": {
-						"variable": "Xstart",
-						"value": "Xstart_def_main"
-					}
+					"callFunction": "SortDeck",
+					"sid": 909916063444403,
+					"parameters": [
+						"ListSortDeck.SelectedText",
+						"\"main\""
+					]
 				},
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 582599753535914,
-					"parameters": {
-						"variable": "Ystart",
-						"value": "Ystart_def_main"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 180953633027101,
-					"parameters": {
-						"seconds": "0.01"
-					}
-				},
-				{
-					"callFunction": "SortMain",
-					"sid": 994846695070285,
-					"disabled": true
+					"callFunction": "SortDeck",
+					"sid": 851055972343400,
+					"parameters": [
+						"ListSortDeck.SelectedText",
+						"\"extra\""
+					]
 				}
 			],
-			"sid": 818407727272147,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 958769339061312,
-							"parameters": {
-								"first-value": "Dict_card_image.Get(CardOnDeck.imageCard)",
-								"comparison": 0,
-								"second-value": "\"none\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-response-binary",
-							"objectClass": "AJAX",
-							"sid": 265453267186845,
-							"parameters": {
-								"destination": "BinaryData"
-							}
-						},
-						{
-							"id": "request-url",
-							"objectClass": "AJAX",
-							"sid": 575008137807310,
-							"parameters": {
-								"tag": "CardOnDeck.imageCard",
-								"url": "\"Card/\"&CardOnDeck.imageCard&\".\"&TypeFile"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 355018683132485,
-							"parameters": {
-								"seconds": "0.001"
-							}
-						},
-						{
-							"id": "load-image-from-url",
-							"objectClass": "CardOnDeck",
-							"sid": 567367489416376,
-							"parameters": {
-								"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.imageCard)",
-								"size": "keep-current-size",
-								"cross-origin": "anonymous"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "CardOnDeck",
-							"sid": 960617939140248,
-							"parameters": {
-								"instance-variable": "afterLoad",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 421893192662410
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 624758024135488
-						}
-					],
-					"actions": [
-						{
-							"id": "load-image-from-url",
-							"objectClass": "CardOnDeck",
-							"sid": 687741057057994,
-							"parameters": {
-								"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.imageCard)",
-								"size": "keep-current-size",
-								"cross-origin": "anonymous"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "CardOnDeck",
-							"sid": 585304335748060,
-							"parameters": {
-								"instance-variable": "afterLoad",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 262291731229987
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-created",
-					"objectClass": "CardOnExtra",
-					"sid": 383324529051393
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 974726856653639,
-					"parameters": {
-						"variable": "Xstart",
-						"value": "Xstart_def_extra"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 869603393493516,
-					"parameters": {
-						"variable": "Ystart",
-						"value": "Ystart_def_extra"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 545855213901333,
-					"parameters": {
-						"seconds": "0.01"
-					}
-				},
-				{
-					"callFunction": "SortExtra",
-					"sid": 222636643835728,
-					"disabled": true
-				}
-			],
-			"sid": 150912400286359,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 634907768155350,
-							"parameters": {
-								"first-value": "Dict_card_image.Get(CardOnExtra.imageCard)",
-								"comparison": 0,
-								"second-value": "\"none\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-response-binary",
-							"objectClass": "AJAX",
-							"sid": 748212051512710,
-							"parameters": {
-								"destination": "BinaryData"
-							}
-						},
-						{
-							"id": "request-url",
-							"objectClass": "AJAX",
-							"sid": 435219730535748,
-							"parameters": {
-								"tag": "CardOnExtra.imageCard",
-								"url": "\"Card/\"&CardOnExtra.imageCard&\".\"&TypeFile"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 326453961368315,
-							"parameters": {
-								"seconds": "0.001"
-							}
-						},
-						{
-							"id": "load-image-from-url",
-							"objectClass": "CardOnExtra",
-							"sid": 454521766272513,
-							"parameters": {
-								"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.imageCard)",
-								"size": "keep-current-size",
-								"cross-origin": "anonymous"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "CardOnExtra",
-							"sid": 565136633356185,
-							"parameters": {
-								"instance-variable": "afterLoad",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 458458346062676
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 180251980504080
-						}
-					],
-					"actions": [
-						{
-							"id": "load-image-from-url",
-							"objectClass": "CardOnExtra",
-							"sid": 921819793621433,
-							"parameters": {
-								"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.imageCard)",
-								"size": "keep-current-size",
-								"cross-origin": "anonymous"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "CardOnExtra",
-							"sid": 632244962910854,
-							"parameters": {
-								"instance-variable": "afterLoad",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 651033165784510
-				}
-			]
+			"sid": 265823839928328
 		}
 	],
 	"sid": 484960243300908
