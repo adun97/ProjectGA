@@ -258,8 +258,9 @@
 					"ListSortDeck",
 					"btn_Load",
 					"btn_Save",
-					"btn_Sort",
-					"btn_Back"
+					"btn_sort_deck",
+					"btn_Back",
+					"btn_sort_search"
 				],
 				"subfolders": [],
 				"name": "UI Editor"

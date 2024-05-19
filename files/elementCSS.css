@@ -84,12 +84,30 @@
 	overflow-wrap: break-word;
 }
 
+.button-sort{
+	align-items: center;
+	border: 2px solid var(--input-border);
+	color: var(--input-color);
+	font-size: 100%;
+	font-family: inherit;
+	border-radius: 48px;
+	overflow-wrap: break-word;
+}
+
 .button:hover {
   	background-color: var(--group-background-focus);
   	border-color: var(--group-color-focus);
 	color: var(--group-color-focus);
   	fill: #06f;
 	border-radius: 10px;
+}
+
+.button-sort:hover {
+  	background-color: var(--group-background-focus);
+  	border-color: var(--group-color-focus);
+	color: var(--group-color-focus);
+  	fill: #06f;
+	border-radius: 48px;
 }
 
 /*dropdown*/
