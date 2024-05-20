@@ -24,6 +24,7 @@
 					"id": "request-project-file",
 					"objectClass": "AJAX",
 					"sid": 161928083246798,
+					"disabled": true,
 					"parameters": {
 						"tag": "\"cardimage\"",
 						"file": "Array Card Image.json"
@@ -60,15 +61,6 @@
 					"parameters": {
 						"json": "AJAX.LastData"
 					}
-				},
-				{
-					"id": "request-project-file",
-					"objectClass": "AJAX",
-					"sid": 414559011868678,
-					"parameters": {
-						"tag": "\"datalist\"",
-						"file": "data_card.json"
-					}
 				}
 			],
 			"sid": 430253643314705
@@ -97,9 +89,18 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 840170981201547,
+					"sid": 994906283663417,
 					"parameters": {
-						"seconds": "0.5"
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 286209655640357,
+					"parameters": {
+						"tag": "\"datalist\"",
+						"file": "data_card.json"
 					}
 				}
 			],
@@ -148,8 +149,18 @@
 							"id": "add-key",
 							"objectClass": "Dict_card_image",
 							"sid": 920862270476396,
+							"disabled": true,
 							"parameters": {
 								"key": "Array_card_image.At(0,loopindex(\"card\"))",
+								"value": "\"none\""
+							}
+						},
+						{
+							"id": "add-key",
+							"objectClass": "Dict_card_image",
+							"sid": 945515179924080,
+							"parameters": {
+								"key": "Array_card_list.At(10,loopindex(\"card\"))",
 								"value": "\"none\""
 							}
 						},
@@ -157,6 +168,7 @@
 							"id": "set-response-binary",
 							"objectClass": "AJAX",
 							"sid": 588338860004331,
+							"disabled": true,
 							"parameters": {
 								"destination": "BinaryData"
 							}
@@ -189,7 +201,8 @@
 									}
 								}
 							],
-							"sid": 624325210045607
+							"sid": 624325210045607,
+							"disabled": true
 						}
 					]
 				},
@@ -200,9 +213,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 220650580709795,
+							"sid": 733770670680306,
 							"parameters": {
-								"seconds": "2"
+								"seconds": "1"
 							}
 						},
 						{

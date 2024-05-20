@@ -3,7 +3,7 @@
 	"savedWithRelease": 38802,
 	"name": "GA Play",
 	"runtime": "c3",
-	"useWorker": "auto",
+	"useWorker": "dom",
 	"bundleAddons": false,
 	"usedAddons": [
 		{
