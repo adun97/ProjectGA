@@ -2,280 +2,566 @@
 	"name": "E_Loader",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 803733999761221
-				}
-			],
-			"actions": [
-				{
-					"id": "request-project-file",
-					"objectClass": "AJAX",
-					"sid": 275321884864010,
-					"parameters": {
-						"tag": "\"cardList\"",
-						"file": "Array Card List.json"
-					}
-				},
-				{
-					"id": "request-project-file",
-					"objectClass": "AJAX",
-					"sid": 161928083246798,
-					"disabled": true,
-					"parameters": {
-						"tag": "\"cardimage\"",
-						"file": "Array Card Image.json"
-					}
-				},
-				{
-					"id": "check-item-exists",
-					"objectClass": "LocalStorage",
-					"sid": 594009578576532,
-					"parameters": {
-						"key": "\"Save\""
-					}
-				}
-			],
-			"sid": 438811091610752
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-completed",
-					"objectClass": "AJAX",
-					"sid": 209813316137152,
-					"parameters": {
-						"tag": "\"cardimage\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "load",
-					"objectClass": "Array_card_image",
-					"sid": 709926269457405,
-					"parameters": {
-						"json": "AJAX.LastData"
-					}
-				}
-			],
-			"sid": 430253643314705
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-completed",
-					"objectClass": "AJAX",
-					"sid": 690380822058283,
-					"parameters": {
-						"tag": "\"cardList\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "load",
-					"objectClass": "Array_card_list",
-					"sid": 481773316566990,
-					"parameters": {
-						"json": "AJAX.LastData"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 994906283663417,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "request-project-file",
-					"objectClass": "AJAX",
-					"sid": 286209655640357,
-					"parameters": {
-						"tag": "\"datalist\"",
-						"file": "data_card.json"
-					}
-				}
-			],
-			"sid": 325794547391325
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-completed",
-					"objectClass": "AJAX",
-					"sid": 836420688711280,
-					"parameters": {
-						"tag": "\"datalist\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "parse",
-					"objectClass": "JSON",
-					"sid": 597114577926440,
-					"parameters": {
-						"data": "AJAX.LastData"
-					}
-				}
-			],
-			"sid": 640945342429873,
+			"eventType": "group",
+			"disabled": false,
+			"title": "test1",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "for",
+							"id": "on-start-of-layout",
 							"objectClass": "System",
-							"sid": 485798888066005,
+							"sid": 281116036717773
+						}
+					],
+					"actions": [
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 807453809219861,
 							"parameters": {
-								"name": "\"card\"",
-								"start-index": "0",
-								"end-index": "JSON.Get(\"data.total_card\")-1"
+								"tag": "\"cardList\"",
+								"file": "Array Card List.json"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 182746761691762,
+							"disabled": true,
+							"parameters": {
+								"tag": "\"cardimage\"",
+								"file": "Array Card Image.json"
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 394461436720879,
+							"parameters": {
+								"key": "\"Save\""
+							}
+						}
+					],
+					"sid": 883937133595264
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 678189686074222,
+							"parameters": {
+								"tag": "\"cardimage\""
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "add-key",
-							"objectClass": "Dict_card_image",
-							"sid": 920862270476396,
-							"disabled": true,
+							"id": "load",
+							"objectClass": "Array_card_image",
+							"sid": 316255253092710,
 							"parameters": {
-								"key": "Array_card_image.At(0,loopindex(\"card\"))",
-								"value": "\"none\""
-							}
-						},
-						{
-							"id": "add-key",
-							"objectClass": "Dict_card_image",
-							"sid": 945515179924080,
-							"parameters": {
-								"key": "Array_card_list.At(10,loopindex(\"card\"))",
-								"value": "\"none\""
-							}
-						},
-						{
-							"id": "set-response-binary",
-							"objectClass": "AJAX",
-							"sid": 588338860004331,
-							"disabled": true,
-							"parameters": {
-								"destination": "BinaryData"
+								"json": "AJAX.LastData"
 							}
 						}
 					],
-					"sid": 556013711141900,
+					"sid": 203278710298648
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 630635113589595,
+							"parameters": {
+								"tag": "\"cardList\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "Array_card_list",
+							"sid": 255709149651469,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 694733596591856,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 218715088090344,
+							"parameters": {
+								"tag": "\"datalist\"",
+								"file": "data_card.json"
+							}
+						}
+					],
+					"sid": 690709003432450
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 652008477313144,
+							"parameters": {
+								"tag": "\"datalist\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "parse",
+							"objectClass": "JSON",
+							"sid": 815004282225910,
+							"parameters": {
+								"data": "AJAX.LastData"
+							}
+						}
+					],
+					"sid": 951083129668699,
 					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-two-values",
+									"id": "for",
 									"objectClass": "System",
-									"sid": 565454396633630,
+									"sid": 558910279825171,
 									"parameters": {
-										"first-value": "loopindex",
-										"comparison": 3,
-										"second-value": "20"
+										"name": "\"card\"",
+										"start-index": "0",
+										"end-index": "JSON.Get(\"data.total_card\")-1"
 									}
 								}
 							],
 							"actions": [
 								{
-									"id": "request-url",
-									"objectClass": "AJAX",
-									"sid": 215859699224816,
+									"id": "add-key",
+									"objectClass": "Dict_card_image",
+									"sid": 789425658135125,
+									"disabled": true,
 									"parameters": {
-										"tag": "Array_card_image.At(0,loopindex(\"card\"))",
-										"url": "\"Card/\"&Array_card_image.At(0,loopindex(\"card\"))&\".\"&TypeFile"
+										"key": "Array_card_image.At(0,loopindex(\"card\"))",
+										"value": "\"none\""
+									}
+								},
+								{
+									"id": "add-key",
+									"objectClass": "Dict_card_image",
+									"sid": 768981492461349,
+									"parameters": {
+										"key": "Array_card_list.At(10,loopindex(\"card\"))",
+										"value": "\"none\""
+									}
+								},
+								{
+									"id": "set-response-binary",
+									"objectClass": "AJAX",
+									"sid": 808020872029584,
+									"disabled": true,
+									"parameters": {
+										"destination": "BinaryData"
 									}
 								}
 							],
-							"sid": 624325210045607,
-							"disabled": true
+							"sid": 312733535903633,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 700144533217300,
+											"parameters": {
+												"first-value": "loopindex",
+												"comparison": 3,
+												"second-value": "20"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "request-url",
+											"objectClass": "AJAX",
+											"sid": 475751290007361,
+											"parameters": {
+												"tag": "Array_card_image.At(0,loopindex(\"card\"))",
+												"url": "\"Card/\"&Array_card_image.At(0,loopindex(\"card\"))&\".\"&TypeFile"
+											}
+										}
+									],
+									"sid": 450092059290751,
+									"disabled": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 824938925646546,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 316110886799194,
+									"parameters": {
+										"layout": "Deck Editor"
+									}
+								}
+							],
+							"sid": 364166425535132
 						}
 					]
 				},
 				{
 					"eventType": "block",
-					"conditions": [],
+					"conditions": [
+						{
+							"id": "on-any-completed",
+							"objectClass": "AJAX",
+							"sid": 284159906492415
+						}
+					],
 					"actions": [
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 733770670680306,
+							"id": "set-key",
+							"objectClass": "Dict_card_image",
+							"sid": 894012700788166,
 							"parameters": {
-								"seconds": "1"
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 347443118929423,
-							"parameters": {
-								"layout": "Deck Editor"
+								"key": "AJAX.Tag",
+								"value": "BinaryData.GetBase64"
 							}
 						}
 					],
-					"sid": 315176728775086
+					"sid": 916355058601579
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 757855472087028,
+							"parameters": {
+								"key": "\"Save\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "Dict_save",
+							"sid": 330638488789985,
+							"parameters": {
+								"json": "LocalStorage.ItemValue"
+							}
+						}
+					],
+					"sid": 287175662133451
 				}
-			]
+			],
+			"sid": 655992989012846
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "test2",
+			"description": "",
+			"isActiveOnStart": false,
+			"children": [
 				{
-					"id": "on-any-completed",
-					"objectClass": "AJAX",
-					"sid": 497174065595874
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 768473554174490
+						}
+					],
+					"actions": [
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 725319084266111,
+							"parameters": {
+								"tag": "\"cardList\"",
+								"file": "Array Card List.json"
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 772488676583170,
+							"parameters": {
+								"key": "\"Save\""
+							}
+						}
+					],
+					"sid": 861538366703398
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 221634633512217,
+							"parameters": {
+								"tag": "\"cardimage\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "Array_card_image",
+							"sid": 959423496533495,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						}
+					],
+					"sid": 824983005341618
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 107136141372042,
+							"parameters": {
+								"tag": "\"cardList\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "Array_card_list",
+							"sid": 552682517173048,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 718959238780871,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 925798957625676,
+							"parameters": {
+								"tag": "\"datalist\"",
+								"file": "data_card.json"
+							}
+						}
+					],
+					"sid": 324449606295700
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 926601595718040,
+							"parameters": {
+								"tag": "\"datalist\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "parse",
+							"objectClass": "JSON",
+							"sid": 155215138906774,
+							"parameters": {
+								"data": "AJAX.LastData"
+							}
+						}
+					],
+					"sid": 947741070800890,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 924849796869952,
+									"parameters": {
+										"name": "\"card\"",
+										"start-index": "0",
+										"end-index": "JSON.Get(\"data.total_card\")-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-key",
+									"objectClass": "Dict_card_image",
+									"sid": 199890485567875,
+									"disabled": true,
+									"parameters": {
+										"key": "Array_card_image.At(0,loopindex(\"card\"))",
+										"value": "\"none\""
+									}
+								},
+								{
+									"id": "add-key",
+									"objectClass": "Dict_card_image",
+									"sid": 986734845898355,
+									"parameters": {
+										"key": "Array_card_list.At(10,loopindex(\"card\"))",
+										"value": "\"none\""
+									}
+								},
+								{
+									"id": "set-response-binary",
+									"objectClass": "AJAX",
+									"sid": 558350586701493,
+									"disabled": true,
+									"parameters": {
+										"destination": "BinaryData"
+									}
+								}
+							],
+							"sid": 665157286602032,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 491865906587238,
+											"parameters": {
+												"first-value": "loopindex",
+												"comparison": 3,
+												"second-value": "20"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "request-url",
+											"objectClass": "AJAX",
+											"sid": 742986788715134,
+											"parameters": {
+												"tag": "Array_card_image.At(0,loopindex(\"card\"))",
+												"url": "\"Card/\"&Array_card_image.At(0,loopindex(\"card\"))&\".\"&TypeFile"
+											}
+										}
+									],
+									"sid": 387507143273408,
+									"disabled": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 914278769301514,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 757439271796755,
+									"parameters": {
+										"layout": "Deck Editor"
+									}
+								}
+							],
+							"sid": 291818666653077
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-any-completed",
+							"objectClass": "AJAX",
+							"sid": 767739822123299
+						}
+					],
+					"actions": [
+						{
+							"id": "set-key",
+							"objectClass": "Dict_card_image",
+							"sid": 575201958279301,
+							"parameters": {
+								"key": "AJAX.Tag",
+								"value": "BinaryData.GetBase64"
+							}
+						}
+					],
+					"sid": 435305660517650
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 752494538737282,
+							"parameters": {
+								"key": "\"Save\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "Dict_save",
+							"sid": 709053161466870,
+							"parameters": {
+								"json": "LocalStorage.ItemValue"
+							}
+						}
+					],
+					"sid": 134599653255545
 				}
 			],
-			"actions": [
-				{
-					"id": "set-key",
-					"objectClass": "Dict_card_image",
-					"sid": 241637091158921,
-					"parameters": {
-						"key": "AJAX.Tag",
-						"value": "BinaryData.GetBase64"
-					}
-				}
-			],
-			"sid": 829064194857190
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-item-exists",
-					"objectClass": "LocalStorage",
-					"sid": 104811087474460,
-					"parameters": {
-						"key": "\"Save\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "load",
-					"objectClass": "Dict_save",
-					"sid": 468245024876824,
-					"parameters": {
-						"json": "LocalStorage.ItemValue"
-					}
-				}
-			],
-			"sid": 781876907357200
+			"sid": 535696931192401
 		}
 	],
 	"sid": 616977034840533

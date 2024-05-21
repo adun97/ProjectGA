@@ -2238,7 +2238,7 @@
 										{
 											"id": "set-boolean-instvar",
 											"objectClass": "CardOnSearch",
-											"sid": 945064666608308,
+											"sid": 589620694990777,
 											"parameters": {
 												"instance-variable": "I_CardAfterLoad",
 												"value": "false"
@@ -2340,6 +2340,25 @@
 											"sid": 806843923754821,
 											"parameters": {
 												"frame-number": "V_count"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "CardOnSearch",
+											"sid": 949725400529068,
+											"disabled": true,
+											"parameters": {
+												"animation": "\"DOA\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "CardOnSearch",
+											"sid": 991589009107333,
+											"disabled": true,
+											"parameters": {
+												"frame-number": "Array_card_list.At(11,V_count)"
 											}
 										},
 										{
@@ -6986,6 +7005,55 @@
 							]
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "CardOnSearch",
+							"sid": 925530524054701,
+							"parameters": {
+								"instance-variable": "I_CardAfterLoad"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "CardOnSearch",
+							"sid": 197422119818535,
+							"parameters": {
+								"opacity": "100"
+							}
+						}
+					],
+					"sid": 551029464704715
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "CardOnSearch",
+							"sid": 726921260421514,
+							"parameters": {
+								"instance-variable": "I_CardAfterLoad"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "CardOnSearch",
+							"sid": 528351433267891,
+							"parameters": {
+								"opacity": "0"
+							}
+						}
+					],
+					"sid": 563599336962607
 				}
 			],
 			"sid": 360469580454794

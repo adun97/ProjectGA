@@ -107,6 +107,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 610081365047606
+		},
+		{
+			"name": "I_CardImageByID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 438193264014667
 		}
 	],
 	"behaviorTypes": [
@@ -131,7 +138,6 @@
 		"CardOnChampion",
 		"CardOnDeck",
 		"CardOnSearch",
-		"CardOnExtra",
-		"CardOnExtra2"
+		"CardOnExtra"
 	]
 }
