@@ -4,105 +4,105 @@
 	"sid": 438826512690728,
 	"instanceVariables": [
 		{
-			"name": "nameCard",
+			"name": "I_CardName",
 			"type": "string",
 			"desc": "",
 			"show": true,
 			"sid": 101942646980772
 		},
 		{
-			"name": "idCard",
+			"name": "I_CardID",
 			"type": "number",
 			"desc": "",
 			"show": true,
 			"sid": 535016502403191
 		},
 		{
-			"name": "imageCard",
+			"name": "I_CardImage",
 			"type": "string",
 			"desc": "",
 			"show": true,
 			"sid": 286191362117172
 		},
 		{
-			"name": "rarityCard",
+			"name": "I_CardRarity",
 			"type": "string",
 			"desc": "",
 			"show": true,
 			"sid": 333166112400909
 		},
 		{
-			"name": "afterLoad",
+			"name": "I_CardAfterLoad",
 			"type": "boolean",
 			"desc": "",
 			"show": true,
 			"sid": 477408544137056
 		},
 		{
-			"name": "costCard",
+			"name": "I_CardCost",
 			"type": "number",
 			"desc": "",
 			"show": true,
 			"sid": 249259419461973
 		},
 		{
-			"name": "elementCard",
+			"name": "I_CardElement",
 			"type": "string",
 			"desc": "",
 			"show": true,
 			"sid": 603721842726526
 		},
 		{
-			"name": "typeCard",
+			"name": "I_CardType",
 			"type": "string",
 			"desc": "",
 			"show": true,
 			"sid": 641907406228153
 		},
 		{
-			"name": "classCard",
+			"name": "I_CardClass",
 			"type": "string",
 			"desc": "",
 			"show": true,
 			"sid": 344114446618158
 		},
 		{
-			"name": "speedCard",
+			"name": "I_CardSpeed",
 			"type": "string",
 			"desc": "",
 			"show": true,
 			"sid": 347160276974861
 		},
 		{
-			"name": "posX",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 915906200775090
-		},
-		{
-			"name": "posY",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 284192728949568
-		},
-		{
-			"name": "atkCard",
+			"name": "I_CardAtk",
 			"type": "number",
 			"desc": "",
 			"show": true,
 			"sid": 967399995984478
 		},
 		{
-			"name": "hpCard",
+			"name": "I_CardHp",
 			"type": "number",
 			"desc": "",
 			"show": true,
 			"sid": 805708882650493
 		},
 		{
-			"name": "onDeck",
+			"name": "I_CardPosX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 915906200775090
+		},
+		{
+			"name": "I_CardPosY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 284192728949568
+		},
+		{
+			"name": "I_CardOnDeck",
 			"type": "string",
 			"desc": "",
 			"show": true,

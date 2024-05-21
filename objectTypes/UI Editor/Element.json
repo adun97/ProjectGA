@@ -5,14 +5,14 @@
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "Select",
+			"name": "I_Select",
 			"type": "boolean",
 			"desc": "",
 			"show": true,
 			"sid": 712672478899876
 		},
 		{
-			"name": "nameElement",
+			"name": "I_NameElement",
 			"type": "string",
 			"desc": "",
 			"show": true,

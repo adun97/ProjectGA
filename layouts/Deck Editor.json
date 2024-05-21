@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "layout1",
+					"type": "Layout_main",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -16,7 +16,9 @@
 						"live-preview": false
 					},
 					"uid": 102,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"idName": "main"
+					},
 					"behaviors": {},
 					"world": {
 						"x": 1968,
@@ -36,7 +38,7 @@
 					}
 				},
 				{
-					"type": "layout1",
+					"type": "Layout_main",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -45,7 +47,9 @@
 						"live-preview": false
 					},
 					"uid": 104,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"idName": "extra"
+					},
 					"behaviors": {},
 					"world": {
 						"x": 1488,
@@ -65,7 +69,7 @@
 					}
 				},
 				{
-					"type": "layout1",
+					"type": "Layout_main",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -74,7 +78,9 @@
 						"live-preview": false
 					},
 					"uid": 107,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"idName": "search"
+					},
 					"behaviors": {},
 					"world": {
 						"x": 3392,
@@ -94,7 +100,7 @@
 					}
 				},
 				{
-					"type": "layout1",
+					"type": "Layout_main",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -103,7 +109,9 @@
 						"live-preview": false
 					},
 					"uid": 188,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"idName": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 496,
@@ -123,7 +131,7 @@
 					}
 				},
 				{
-					"type": "layout1",
+					"type": "Layout_main",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -132,7 +140,9 @@
 						"live-preview": false
 					},
 					"uid": 189,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"idName": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 624.0167131713021,
@@ -152,7 +162,7 @@
 					}
 				},
 				{
-					"type": "layout1",
+					"type": "Layout_main",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -161,7 +171,9 @@
 						"live-preview": false
 					},
 					"uid": 190,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"idName": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 1360,
@@ -181,7 +193,7 @@
 					}
 				},
 				{
-					"type": "layout1",
+					"type": "Layout_main",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -190,7 +202,9 @@
 						"live-preview": false
 					},
 					"uid": 219,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"idName": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 3296,
@@ -210,7 +224,7 @@
 					}
 				},
 				{
-					"type": "layout1",
+					"type": "Layout_main",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -219,7 +233,9 @@
 						"live-preview": false
 					},
 					"uid": 220,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"idName": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 1968,
@@ -474,7 +490,7 @@
 					}
 				},
 				{
-					"type": "layout1",
+					"type": "Layout_main",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -483,7 +499,9 @@
 						"live-preview": false
 					},
 					"uid": 5,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"idName": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 2576,
@@ -503,7 +521,7 @@
 					}
 				},
 				{
-					"type": "layout1",
+					"type": "Layout_main",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -512,7 +530,9 @@
 						"live-preview": false
 					},
 					"uid": 72,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"idName": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 144,
@@ -563,7 +583,7 @@
 					}
 				},
 				{
-					"type": "layout1",
+					"type": "Layout_main",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -572,7 +592,9 @@
 						"live-preview": false
 					},
 					"uid": 77,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"idName": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 3728,
@@ -666,21 +688,21 @@
 					},
 					"uid": 108,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -740,21 +762,21 @@
 					},
 					"uid": 109,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -814,21 +836,21 @@
 					},
 					"uid": 110,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -888,21 +910,21 @@
 					},
 					"uid": 133,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -962,21 +984,21 @@
 					},
 					"uid": 134,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -1036,21 +1058,21 @@
 					},
 					"uid": 135,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -1110,21 +1132,21 @@
 					},
 					"uid": 136,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -1184,21 +1206,21 @@
 					},
 					"uid": 137,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -1258,21 +1280,21 @@
 					},
 					"uid": 138,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -1332,21 +1354,21 @@
 					},
 					"uid": 139,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -1406,21 +1428,21 @@
 					},
 					"uid": 140,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -1480,21 +1502,21 @@
 					},
 					"uid": 141,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -1554,21 +1576,21 @@
 					},
 					"uid": 142,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -1628,21 +1650,21 @@
 					},
 					"uid": 143,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -1702,21 +1724,21 @@
 					},
 					"uid": 144,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -1776,21 +1798,21 @@
 					},
 					"uid": 145,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -1850,21 +1872,21 @@
 					},
 					"uid": 146,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -1924,21 +1946,21 @@
 					},
 					"uid": 147,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2078,21 +2100,21 @@
 					},
 					"uid": 15,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2151,21 +2173,21 @@
 					},
 					"uid": 16,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2224,21 +2246,21 @@
 					},
 					"uid": 17,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2297,21 +2319,21 @@
 					},
 					"uid": 18,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2370,21 +2392,21 @@
 					},
 					"uid": 19,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2443,21 +2465,21 @@
 					},
 					"uid": 20,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2516,21 +2538,21 @@
 					},
 					"uid": 21,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2589,21 +2611,21 @@
 					},
 					"uid": 22,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2662,21 +2684,21 @@
 					},
 					"uid": 23,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2735,21 +2757,21 @@
 					},
 					"uid": 24,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2808,21 +2830,21 @@
 					},
 					"uid": 25,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2881,21 +2903,21 @@
 					},
 					"uid": 26,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -2954,21 +2976,21 @@
 					},
 					"uid": 27,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3027,21 +3049,21 @@
 					},
 					"uid": 28,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3100,21 +3122,21 @@
 					},
 					"uid": 29,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3173,21 +3195,21 @@
 					},
 					"uid": 30,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3246,21 +3268,21 @@
 					},
 					"uid": 31,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3319,21 +3341,21 @@
 					},
 					"uid": 32,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3392,21 +3414,21 @@
 					},
 					"uid": 33,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3465,21 +3487,21 @@
 					},
 					"uid": 34,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3538,21 +3560,21 @@
 					},
 					"uid": 35,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3611,21 +3633,21 @@
 					},
 					"uid": 36,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3684,21 +3706,21 @@
 					},
 					"uid": 37,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3757,21 +3779,21 @@
 					},
 					"uid": 38,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3830,21 +3852,21 @@
 					},
 					"uid": 39,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3903,21 +3925,21 @@
 					},
 					"uid": 40,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -3976,21 +3998,21 @@
 					},
 					"uid": 41,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -4049,21 +4071,21 @@
 					},
 					"uid": 42,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -4122,21 +4144,21 @@
 					},
 					"uid": 43,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -4195,21 +4217,21 @@
 					},
 					"uid": 44,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -4268,21 +4290,21 @@
 					},
 					"uid": 45,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -4341,21 +4363,21 @@
 					},
 					"uid": 46,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -4414,21 +4436,21 @@
 					},
 					"uid": 47,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -4487,21 +4509,21 @@
 					},
 					"uid": 48,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -4560,21 +4582,21 @@
 					},
 					"uid": 49,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -4633,21 +4655,21 @@
 					},
 					"uid": 50,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -4706,21 +4728,21 @@
 					},
 					"uid": 51,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -4779,21 +4801,21 @@
 					},
 					"uid": 52,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -4852,21 +4874,21 @@
 					},
 					"uid": 53,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -4925,21 +4947,21 @@
 					},
 					"uid": 54,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -4998,21 +5020,21 @@
 					},
 					"uid": 55,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -5071,21 +5093,21 @@
 					},
 					"uid": 56,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -5144,21 +5166,21 @@
 					},
 					"uid": 57,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -5217,21 +5239,21 @@
 					},
 					"uid": 58,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -5290,21 +5312,21 @@
 					},
 					"uid": 59,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -5363,21 +5385,21 @@
 					},
 					"uid": 60,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -5436,21 +5458,21 @@
 					},
 					"uid": 61,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -5509,21 +5531,21 @@
 					},
 					"uid": 62,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -5582,21 +5604,21 @@
 					},
 					"uid": 63,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -5655,21 +5677,21 @@
 					},
 					"uid": 64,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -5728,21 +5750,21 @@
 					},
 					"uid": 65,
 					"instanceVariables": {
-						"nameCard": "",
-						"idCard": 0,
-						"imageCard": "",
-						"rarityCard": "",
-						"afterLoad": false,
-						"costCard": 0,
-						"elementCard": "",
-						"typeCard": "",
-						"classCard": "",
-						"speedCard": "",
-						"posX": 0,
-						"posY": 0,
-						"atkCard": 0,
-						"hpCard": 0,
-						"onDeck": ""
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": ""
 					},
 					"behaviors": {
 						"Tween": {
@@ -5978,8 +6000,8 @@
 					},
 					"uid": 194,
 					"instanceVariables": {
-						"Select": false,
-						"nameElement": "luxem"
+						"I_Select": false,
+						"I_NameElement": "luxem"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6050,8 +6072,8 @@
 					},
 					"uid": 196,
 					"instanceVariables": {
-						"Select": false,
-						"nameElement": "astra"
+						"I_Select": false,
+						"I_NameElement": "astra"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6122,8 +6144,8 @@
 					},
 					"uid": 197,
 					"instanceVariables": {
-						"Select": false,
-						"nameElement": "neos"
+						"I_Select": false,
+						"I_NameElement": "neos"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6194,8 +6216,8 @@
 					},
 					"uid": 198,
 					"instanceVariables": {
-						"Select": false,
-						"nameElement": "umbra"
+						"I_Select": false,
+						"I_NameElement": "umbra"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6266,8 +6288,8 @@
 					},
 					"uid": 199,
 					"instanceVariables": {
-						"Select": false,
-						"nameElement": "water"
+						"I_Select": false,
+						"I_NameElement": "water"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6338,8 +6360,8 @@
 					},
 					"uid": 200,
 					"instanceVariables": {
-						"Select": false,
-						"nameElement": "fire"
+						"I_Select": false,
+						"I_NameElement": "fire"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6410,8 +6432,8 @@
 					},
 					"uid": 201,
 					"instanceVariables": {
-						"Select": false,
-						"nameElement": "wind"
+						"I_Select": false,
+						"I_NameElement": "wind"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6482,8 +6504,8 @@
 					},
 					"uid": 202,
 					"instanceVariables": {
-						"Select": false,
-						"nameElement": "tera"
+						"I_Select": false,
+						"I_NameElement": "tera"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6554,8 +6576,8 @@
 					},
 					"uid": 203,
 					"instanceVariables": {
-						"Select": false,
-						"nameElement": "arcane"
+						"I_Select": false,
+						"I_NameElement": "arcane"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6626,8 +6648,8 @@
 					},
 					"uid": 204,
 					"instanceVariables": {
-						"Select": false,
-						"nameElement": "crux"
+						"I_Select": false,
+						"I_NameElement": "crux"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6698,8 +6720,8 @@
 					},
 					"uid": 205,
 					"instanceVariables": {
-						"Select": false,
-						"nameElement": "norm"
+						"I_Select": false,
+						"I_NameElement": "norm"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6801,8 +6823,8 @@
 					},
 					"uid": 209,
 					"instanceVariables": {
-						"Select": false,
-						"nameType": "action"
+						"I_Select": false,
+						"I_NameType": "action"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6865,8 +6887,8 @@
 					},
 					"uid": 210,
 					"instanceVariables": {
-						"Select": false,
-						"nameType": "ally"
+						"I_Select": false,
+						"I_NameType": "ally"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6929,8 +6951,8 @@
 					},
 					"uid": 211,
 					"instanceVariables": {
-						"Select": false,
-						"nameType": "attack"
+						"I_Select": false,
+						"I_NameType": "attack"
 					},
 					"behaviors": {
 						"Tween": {
@@ -6993,8 +7015,8 @@
 					},
 					"uid": 212,
 					"instanceVariables": {
-						"Select": false,
-						"nameType": "domain"
+						"I_Select": false,
+						"I_NameType": "domain"
 					},
 					"behaviors": {
 						"Tween": {
@@ -7057,8 +7079,8 @@
 					},
 					"uid": 213,
 					"instanceVariables": {
-						"Select": false,
-						"nameType": "champion"
+						"I_Select": false,
+						"I_NameType": "champion"
 					},
 					"behaviors": {
 						"Tween": {
@@ -7121,8 +7143,8 @@
 					},
 					"uid": 214,
 					"instanceVariables": {
-						"Select": false,
-						"nameType": "item"
+						"I_Select": false,
+						"I_NameType": "item"
 					},
 					"behaviors": {
 						"Tween": {
@@ -7185,8 +7207,8 @@
 					},
 					"uid": 215,
 					"instanceVariables": {
-						"Select": false,
-						"nameType": "weapon"
+						"I_Select": false,
+						"I_NameType": "weapon"
 					},
 					"behaviors": {
 						"Tween": {
@@ -7976,6 +7998,40 @@
 			"subLayers": [],
 			"instances": [],
 			"sid": 297881905343082,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "UP",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 152471046263654,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,

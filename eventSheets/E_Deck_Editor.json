@@ -7,7 +7,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "count",
+			"name": "V_count",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -17,7 +17,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "colorSelect",
+			"name": "V_colorSelect",
 			"type": "string",
 			"initialValue": "00ff00",
 			"comment": "",
@@ -27,7 +27,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "colorHover",
+			"name": "V_colorHover",
 			"type": "string",
 			"initialValue": "ffffff",
 			"comment": "",
@@ -37,7 +37,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "TypeSelect",
+			"name": "V_SelectType",
 			"type": "string",
 			"initialValue": "",
 			"comment": "",
@@ -47,7 +47,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "ElementSelect",
+			"name": "V_SelectElement",
 			"type": "string",
 			"initialValue": "",
 			"comment": "",
@@ -57,7 +57,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "costSelect",
+			"name": "V_SelectCost",
 			"type": "string",
 			"initialValue": "",
 			"comment": "",
@@ -67,7 +67,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "atkSelect",
+			"name": "V_SelectAtk",
 			"type": "string",
 			"initialValue": "",
 			"comment": "",
@@ -77,7 +77,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "hpSelect",
+			"name": "V_SelectHp",
 			"type": "string",
 			"initialValue": "",
 			"comment": "",
@@ -87,7 +87,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "classSelect",
+			"name": "V_SelectClass",
 			"type": "string",
 			"initialValue": "",
 			"comment": "",
@@ -97,7 +97,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "sortBy",
+			"name": "V_sortBy",
 			"type": "string",
 			"initialValue": "",
 			"comment": "",
@@ -107,7 +107,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "titleSelect",
+			"name": "V_SelectTitle",
 			"type": "string",
 			"initialValue": "",
 			"comment": "",
@@ -117,7 +117,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "lastX_main",
+			"name": "V_lastX_main",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -127,7 +127,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "lastX_extra",
+			"name": "V_lastX_extra",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -137,7 +137,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "lastY_main",
+			"name": "V_lastY_main",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -147,7 +147,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "lastY_extra",
+			"name": "V_lastY_extra",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -214,7 +214,7 @@
 							"objectClass": "System",
 							"sid": 879724946093263,
 							"parameters": {
-								"variable": "sortBy",
+								"variable": "V_sortBy",
 								"value": "\"asc\""
 							}
 						},
@@ -273,7 +273,7 @@
 							"objectClass": "System",
 							"sid": 633572845671565,
 							"parameters": {
-								"variable": "costSelect",
+								"variable": "V_SelectCost",
 								"value": "SBCost.Value=-1?\"All\":SBCost.Value"
 							}
 						},
@@ -282,7 +282,7 @@
 							"objectClass": "System",
 							"sid": 187909968932214,
 							"parameters": {
-								"variable": "atkSelect",
+								"variable": "V_SelectAtk",
 								"value": "SBATK.Value=-1?\"All\":SBATK.Value"
 							}
 						},
@@ -291,7 +291,7 @@
 							"objectClass": "System",
 							"sid": 720549430086865,
 							"parameters": {
-								"variable": "hpSelect",
+								"variable": "V_SelectHp",
 								"value": "SBHP.Value=-1?\"All\":SBHP.Value"
 							}
 						},
@@ -300,7 +300,7 @@
 							"objectClass": "System",
 							"sid": 387830629543273,
 							"parameters": {
-								"variable": "ElementSelect",
+								"variable": "V_SelectElement",
 								"value": "\"All\""
 							}
 						},
@@ -309,7 +309,7 @@
 							"objectClass": "System",
 							"sid": 540223853738538,
 							"parameters": {
-								"variable": "TypeSelect",
+								"variable": "V_SelectType",
 								"value": "\"All\""
 							}
 						},
@@ -318,7 +318,7 @@
 							"objectClass": "System",
 							"sid": 530566847464742,
 							"parameters": {
-								"variable": "costSelect",
+								"variable": "V_SelectCost",
 								"value": "\"All\""
 							}
 						},
@@ -336,7 +336,7 @@
 							"objectClass": "Element",
 							"sid": 276981073465336,
 							"parameters": {
-								"instance-variable": "Select",
+								"instance-variable": "I_Select",
 								"value": "false"
 							}
 						},
@@ -345,7 +345,7 @@
 							"objectClass": "System",
 							"sid": 261954824263548,
 							"parameters": {
-								"variable": "lastX_main",
+								"variable": "V_lastX_main",
 								"value": "Xstart_def_main"
 							}
 						},
@@ -354,16 +354,16 @@
 							"objectClass": "System",
 							"sid": 574398180089704,
 							"parameters": {
-								"variable": "lastY_main",
+								"variable": "V_lastY_main",
 								"value": "Ystart_def_main"
 							}
 						},
 						{
-							"callFunction": "ChangeListSave",
+							"callFunction": "F_change_list_save",
 							"sid": 965433050812526
 						},
 						{
-							"callFunction": "changeType",
+							"callFunction": "F_change_type",
 							"sid": 256279400943156
 						},
 						{
@@ -410,12 +410,12 @@
 							"objectClass": "System",
 							"sid": 490736290889896,
 							"parameters": {
-								"variable": "costSelect",
+								"variable": "V_SelectCost",
 								"value": "SBCost.Value=-1?\"All\":SBCost.Value"
 							}
 						},
 						{
-							"callFunction": "cardSearch",
+							"callFunction": "F_card_search",
 							"sid": 330029163855202
 						},
 						{
@@ -427,7 +427,7 @@
 							}
 						},
 						{
-							"callFunction": "Sorting",
+							"callFunction": "F_sorting",
 							"sid": 388636818697690
 						}
 					],
@@ -456,12 +456,12 @@
 							"objectClass": "System",
 							"sid": 732677874203790,
 							"parameters": {
-								"variable": "atkSelect",
+								"variable": "V_SelectAtk",
 								"value": "SBATK.Value=-1?\"All\":SBATK.Value"
 							}
 						},
 						{
-							"callFunction": "cardSearch",
+							"callFunction": "F_card_search",
 							"sid": 733236223749790
 						},
 						{
@@ -473,7 +473,7 @@
 							}
 						},
 						{
-							"callFunction": "Sorting",
+							"callFunction": "F_sorting",
 							"sid": 664722276542647
 						}
 					],
@@ -502,12 +502,12 @@
 							"objectClass": "System",
 							"sid": 435796422860384,
 							"parameters": {
-								"variable": "hpSelect",
+								"variable": "V_SelectHp",
 								"value": "SBHP.Value=-1?\"All\":SBHP.Value"
 							}
 						},
 						{
-							"callFunction": "cardSearch",
+							"callFunction": "F_card_search",
 							"sid": 311507091214480
 						},
 						{
@@ -519,7 +519,7 @@
 							}
 						},
 						{
-							"callFunction": "Sorting",
+							"callFunction": "F_sorting",
 							"sid": 429159395412633
 						}
 					],
@@ -604,7 +604,7 @@
 									"objectClass": "Element",
 									"sid": 554956970775847,
 									"parameters": {
-										"instance-variable": "Select"
+										"instance-variable": "I_Select"
 									}
 								}
 							],
@@ -623,7 +623,7 @@
 									"objectClass": "Element",
 									"sid": 353878842127490,
 									"parameters": {
-										"instance-variable": "Select",
+										"instance-variable": "I_Select",
 										"value": "false"
 									}
 								},
@@ -632,12 +632,12 @@
 									"objectClass": "System",
 									"sid": 276839736438838,
 									"parameters": {
-										"variable": "ElementSelect",
+										"variable": "V_SelectElement",
 										"value": "\"All\""
 									}
 								},
 								{
-									"callFunction": "cardSearch",
+									"callFunction": "F_card_search",
 									"sid": 643029653035252
 								},
 								{
@@ -649,7 +649,7 @@
 									}
 								},
 								{
-									"callFunction": "Sorting",
+									"callFunction": "F_sorting",
 									"sid": 965040213436507
 								}
 							],
@@ -666,7 +666,7 @@
 							],
 							"actions": [
 								{
-									"callFunction": "allunselect",
+									"callFunction": "F_all_unselect",
 									"sid": 512379009697252,
 									"parameters": [
 										"\"element\""
@@ -687,7 +687,7 @@
 									"sid": 519508746041046,
 									"behaviorType": "ColorVariable",
 									"parameters": {
-										"color_hex": "colorSelect"
+										"color_hex": "V_colorSelect"
 									}
 								},
 								{
@@ -705,7 +705,7 @@
 									"objectClass": "Element",
 									"sid": 492233100906163,
 									"parameters": {
-										"instance-variable": "Select",
+										"instance-variable": "I_Select",
 										"value": "true"
 									}
 								},
@@ -714,12 +714,12 @@
 									"objectClass": "System",
 									"sid": 858620401409741,
 									"parameters": {
-										"variable": "ElementSelect",
-										"value": "Element.nameElement"
+										"variable": "V_SelectElement",
+										"value": "Element.I_NameElement"
 									}
 								},
 								{
-									"callFunction": "cardSearch",
+									"callFunction": "F_card_search",
 									"sid": 810190636616639
 								},
 								{
@@ -731,7 +731,7 @@
 									}
 								},
 								{
-									"callFunction": "Sorting",
+									"callFunction": "F_sorting",
 									"sid": 156477481287066
 								}
 							],
@@ -777,7 +777,7 @@
 							"sid": 853541399817464,
 							"behaviorType": "ColorVariable",
 							"parameters": {
-								"color_hex": "colorHover"
+								"color_hex": "V_colorHover"
 							}
 						},
 						{
@@ -887,7 +887,7 @@
 									"objectClass": "Element",
 									"sid": 126765147738221,
 									"parameters": {
-										"instance-variable": "Select"
+										"instance-variable": "I_Select"
 									}
 								}
 							],
@@ -907,7 +907,7 @@
 									"sid": 144555617024255,
 									"behaviorType": "ColorVariable",
 									"parameters": {
-										"color_hex": "colorSelect"
+										"color_hex": "V_colorSelect"
 									}
 								},
 								{
@@ -1017,7 +1017,7 @@
 									"objectClass": "iconType",
 									"sid": 348941099756992,
 									"parameters": {
-										"instance-variable": "Select"
+										"instance-variable": "I_Select"
 									}
 								}
 							],
@@ -1036,7 +1036,7 @@
 									"objectClass": "iconType",
 									"sid": 710317102515394,
 									"parameters": {
-										"instance-variable": "Select",
+										"instance-variable": "I_Select",
 										"value": "false"
 									}
 								},
@@ -1045,16 +1045,16 @@
 									"objectClass": "System",
 									"sid": 826802937086413,
 									"parameters": {
-										"variable": "TypeSelect",
+										"variable": "V_SelectType",
 										"value": "\"All\""
 									}
 								},
 								{
-									"callFunction": "changeType",
+									"callFunction": "F_change_type",
 									"sid": 748735692300896
 								},
 								{
-									"callFunction": "cardSearch",
+									"callFunction": "F_card_search",
 									"sid": 621376422622846
 								},
 								{
@@ -1066,7 +1066,7 @@
 									}
 								},
 								{
-									"callFunction": "Sorting",
+									"callFunction": "F_sorting",
 									"sid": 254756686818086
 								}
 							],
@@ -1083,7 +1083,7 @@
 							],
 							"actions": [
 								{
-									"callFunction": "allunselect",
+									"callFunction": "F_all_unselect",
 									"sid": 581482869322075,
 									"parameters": [
 										"\"type\""
@@ -1104,7 +1104,7 @@
 									"sid": 593312844563845,
 									"behaviorType": "ColorVariable",
 									"parameters": {
-										"color_hex": "colorSelect"
+										"color_hex": "V_colorSelect"
 									}
 								},
 								{
@@ -1122,7 +1122,7 @@
 									"objectClass": "iconType",
 									"sid": 455235747468570,
 									"parameters": {
-										"instance-variable": "Select",
+										"instance-variable": "I_Select",
 										"value": "true"
 									}
 								},
@@ -1131,16 +1131,16 @@
 									"objectClass": "System",
 									"sid": 687122584096342,
 									"parameters": {
-										"variable": "TypeSelect",
-										"value": "iconType.nameType"
+										"variable": "V_SelectType",
+										"value": "iconType.I_NameType"
 									}
 								},
 								{
-									"callFunction": "changeType",
+									"callFunction": "F_change_type",
 									"sid": 691042699333924
 								},
 								{
-									"callFunction": "cardSearch",
+									"callFunction": "F_card_search",
 									"sid": 556047840763010
 								},
 								{
@@ -1152,7 +1152,7 @@
 									}
 								},
 								{
-									"callFunction": "Sorting",
+									"callFunction": "F_sorting",
 									"sid": 659489448044426
 								}
 							],
@@ -1166,7 +1166,7 @@
 									"objectClass": "System",
 									"sid": 922724067338830,
 									"parameters": {
-										"variable": "TypeSelect",
+										"variable": "V_SelectType",
 										"comparison": 0,
 										"value": "\"All\""
 									}
@@ -1176,7 +1176,7 @@
 									"objectClass": "System",
 									"sid": 380042318661528,
 									"parameters": {
-										"variable": "TypeSelect",
+										"variable": "V_SelectType",
 										"comparison": 0,
 										"value": "\"ally\""
 									}
@@ -1186,7 +1186,7 @@
 									"objectClass": "System",
 									"sid": 454170364057500,
 									"parameters": {
-										"variable": "TypeSelect",
+										"variable": "V_SelectType",
 										"comparison": 0,
 										"value": "\"attack\""
 									}
@@ -1196,7 +1196,7 @@
 									"objectClass": "System",
 									"sid": 811141317918895,
 									"parameters": {
-										"variable": "TypeSelect",
+										"variable": "V_SelectType",
 										"comparison": 0,
 										"value": "\"weapon\""
 									}
@@ -1232,7 +1232,7 @@
 									"objectClass": "System",
 									"sid": 469089449543761,
 									"parameters": {
-										"variable": "costSelect",
+										"variable": "V_SelectCost",
 										"value": "SBATK.Value=-1?\"All\":SBATK.Value"
 									}
 								},
@@ -1314,7 +1314,7 @@
 									"objectClass": "System",
 									"sid": 251102819720163,
 									"parameters": {
-										"variable": "costSelect",
+										"variable": "V_SelectCost",
 										"value": "SBATK.Value=-1?\"All\":SBATK.Value"
 									}
 								},
@@ -1364,7 +1364,7 @@
 									"objectClass": "System",
 									"sid": 530200935783405,
 									"parameters": {
-										"variable": "TypeSelect",
+										"variable": "V_SelectType",
 										"comparison": 0,
 										"value": "\"All\""
 									}
@@ -1374,7 +1374,7 @@
 									"objectClass": "System",
 									"sid": 780611583544997,
 									"parameters": {
-										"variable": "TypeSelect",
+										"variable": "V_SelectType",
 										"comparison": 0,
 										"value": "\"ally\""
 									}
@@ -1384,7 +1384,7 @@
 									"objectClass": "System",
 									"sid": 289770046505597,
 									"parameters": {
-										"variable": "TypeSelect",
+										"variable": "V_SelectType",
 										"comparison": 0,
 										"value": "\"weapon\""
 									}
@@ -1394,7 +1394,7 @@
 									"objectClass": "System",
 									"sid": 245921151607750,
 									"parameters": {
-										"variable": "TypeSelect",
+										"variable": "V_SelectType",
 										"comparison": 0,
 										"value": "\"champion\""
 									}
@@ -1430,7 +1430,7 @@
 									"objectClass": "System",
 									"sid": 512430630962793,
 									"parameters": {
-										"variable": "costSelect",
+										"variable": "V_SelectCost",
 										"value": "SBHP.Value=-1?\"All\":SBHP.Value"
 									}
 								},
@@ -1512,7 +1512,7 @@
 									"objectClass": "System",
 									"sid": 572698732310136,
 									"parameters": {
-										"variable": "costSelect",
+										"variable": "V_SelectCost",
 										"value": "SBHP.Value=-1?\"All\":SBHP.Value"
 									}
 								},
@@ -1594,7 +1594,7 @@
 							"sid": 216534901870171,
 							"behaviorType": "ColorVariable",
 							"parameters": {
-								"color_hex": "colorHover"
+								"color_hex": "V_colorHover"
 							}
 						},
 						{
@@ -1686,7 +1686,7 @@
 									"objectClass": "iconType",
 									"sid": 143498444537213,
 									"parameters": {
-										"instance-variable": "Select"
+										"instance-variable": "I_Select"
 									}
 								}
 							],
@@ -1706,7 +1706,7 @@
 									"sid": 295615955105177,
 									"behaviorType": "ColorVariable",
 									"parameters": {
-										"color_hex": "colorSelect"
+										"color_hex": "V_colorSelect"
 									}
 								},
 								{
@@ -1757,7 +1757,7 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"functionName": "allunselect",
+					"functionName": "F_all_unselect",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -1806,7 +1806,7 @@
 									"objectClass": "Element",
 									"sid": 897006089758097,
 									"parameters": {
-										"instance-variable": "Select",
+										"instance-variable": "I_Select",
 										"value": "false"
 									}
 								}
@@ -1842,7 +1842,7 @@
 									"objectClass": "iconType",
 									"sid": 517274670955941,
 									"parameters": {
-										"instance-variable": "Select",
+										"instance-variable": "I_Select",
 										"value": "false"
 									}
 								}
@@ -1852,7 +1852,7 @@
 					]
 				},
 				{
-					"functionName": "cardOnDeck",
+					"functionName": "F_card_on_deck",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "number",
@@ -1882,7 +1882,7 @@
 							"objectClass": "System",
 							"sid": 890032124183081,
 							"parameters": {
-								"variable": "count",
+								"variable": "V_count",
 								"value": "0"
 							}
 						}
@@ -1922,7 +1922,7 @@
 											"objectClass": "CardOnDeck",
 											"sid": 817625237595421,
 											"parameters": {
-												"instance-variable": "nameCard",
+												"instance-variable": "I_CardName",
 												"comparison": 0,
 												"value": "nameCard"
 											}
@@ -1934,7 +1934,7 @@
 											"objectClass": "System",
 											"sid": 988785205019627,
 											"parameters": {
-												"variable": "count",
+												"variable": "V_count",
 												"value": "1"
 											}
 										}
@@ -1951,7 +1951,7 @@
 											"sid": 943490201936297,
 											"parameters": {
 												"type": "log",
-												"message": "\"157 - \"&count"
+												"message": "\"157 - \"&V_count"
 											}
 										},
 										{
@@ -1959,7 +1959,7 @@
 											"objectClass": "Functions",
 											"sid": 649600746888367,
 											"parameters": {
-												"value": "count"
+												"value": "V_count"
 											}
 										}
 									],
@@ -1995,7 +1995,7 @@
 											"objectClass": "CardOnExtra",
 											"sid": 358356998029038,
 											"parameters": {
-												"instance-variable": "nameCard",
+												"instance-variable": "I_CardName",
 												"comparison": 0,
 												"value": "nameCard"
 											}
@@ -2007,7 +2007,7 @@
 											"objectClass": "System",
 											"sid": 211489628296874,
 											"parameters": {
-												"variable": "count",
+												"variable": "V_count",
 												"value": "1"
 											}
 										}
@@ -2024,7 +2024,7 @@
 											"sid": 755000457493944,
 											"parameters": {
 												"type": "log",
-												"message": "\"157 - \"&count"
+												"message": "\"157 - \"&V_count"
 											}
 										},
 										{
@@ -2032,7 +2032,7 @@
 											"objectClass": "Functions",
 											"sid": 558959597613720,
 											"parameters": {
-												"value": "count"
+												"value": "V_count"
 											}
 										}
 									],
@@ -2043,7 +2043,7 @@
 					]
 				},
 				{
-					"functionName": "cardSearch",
+					"functionName": "F_card_search",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -2068,7 +2068,7 @@
 							"objectClass": "System",
 							"sid": 656796120353077,
 							"parameters": {
-								"variable": "count",
+								"variable": "V_count",
 								"value": "0"
 							}
 						},
@@ -2145,7 +2145,7 @@
 											"objectClass": "System",
 											"sid": 190835473945983,
 											"parameters": {
-												"first-value": "titleSelect<>\"\"?find(str(Array_card_list.At(0,count)),titleSelect):find(str(Array_card_list.At(0,count)),str(Array_card_list.At(0,count)))",
+												"first-value": "V_SelectTitle<>\"\"?find(str(Array_card_list.At(0,V_count)),V_SelectTitle):find(str(Array_card_list.At(0,V_count)),str(Array_card_list.At(0,V_count)))",
 												"comparison": 1,
 												"second-value": "-1"
 											}
@@ -2155,7 +2155,7 @@
 											"objectClass": "System",
 											"sid": 976496813245956,
 											"parameters": {
-												"first-value": "costSelect<>\"All\"?find(str(Array_card_list.At(1,count)),costSelect):find(str(Array_card_list.At(1,count)),str(Array_card_list.At(1,count)))",
+												"first-value": "V_SelectCost<>\"All\"?find(str(Array_card_list.At(1,V_count)),V_SelectCost):find(str(Array_card_list.At(1,V_count)),str(Array_card_list.At(1,V_count)))",
 												"comparison": 1,
 												"second-value": "-1"
 											}
@@ -2165,7 +2165,7 @@
 											"objectClass": "System",
 											"sid": 680735976930413,
 											"parameters": {
-												"first-value": "ElementSelect<>\"All\"?find(Array_card_list.At(3,count),ElementSelect):find(Array_card_list.At(3,count),Array_card_list.At(3,count))",
+												"first-value": "V_SelectElement<>\"All\"?find(Array_card_list.At(3,V_count),V_SelectElement):find(Array_card_list.At(3,V_count),Array_card_list.At(3,V_count))",
 												"comparison": 1,
 												"second-value": "-1"
 											}
@@ -2175,7 +2175,7 @@
 											"objectClass": "System",
 											"sid": 670229262273910,
 											"parameters": {
-												"first-value": "TypeSelect<>\"All\"?find(Array_card_list.At(4,count),TypeSelect):find(Array_card_list.At(4,count),Array_card_list.At(4,count))",
+												"first-value": "V_SelectType<>\"All\"?find(Array_card_list.At(4,V_count),V_SelectType):find(Array_card_list.At(4,V_count),Array_card_list.At(4,V_count))",
 												"comparison": 1,
 												"second-value": "-1"
 											}
@@ -2185,7 +2185,7 @@
 											"objectClass": "System",
 											"sid": 659959310027656,
 											"parameters": {
-												"first-value": "atkSelect<>\"All\"?find(str(Array_card_list.At(5,count)),atkSelect):find(str(Array_card_list.At(5,count)),str(Array_card_list.At(5,count)))",
+												"first-value": "V_SelectAtk<>\"All\"?find(str(Array_card_list.At(5,V_count)),V_SelectAtk):find(str(Array_card_list.At(5,V_count)),str(Array_card_list.At(5,V_count)))",
 												"comparison": 1,
 												"second-value": "-1"
 											}
@@ -2195,7 +2195,7 @@
 											"objectClass": "System",
 											"sid": 145294414660912,
 											"parameters": {
-												"first-value": "hpSelect<>\"All\"?find(str(Array_card_list.At(6,count)),hpSelect):find(str(Array_card_list.At(6,count)),str(Array_card_list.At(6,count)))",
+												"first-value": "V_SelectHp<>\"All\"?find(str(Array_card_list.At(6,V_count)),V_SelectHp):find(str(Array_card_list.At(6,V_count)),str(Array_card_list.At(6,V_count)))",
 												"comparison": 1,
 												"second-value": "-1"
 											}
@@ -2205,7 +2205,7 @@
 											"objectClass": "System",
 											"sid": 341343525904927,
 											"parameters": {
-												"first-value": "classSelect<>\"All\"?find(str(Array_card_list.At(8,count)),classSelect):find(str(Array_card_list.At(8,count)),str(Array_card_list.At(8,count)))",
+												"first-value": "V_SelectClass<>\"All\"?find(str(Array_card_list.At(8,V_count)),V_SelectClass):find(str(Array_card_list.At(8,V_count)),str(Array_card_list.At(8,V_count)))",
 												"comparison": 1,
 												"second-value": "-1"
 											}
@@ -2218,7 +2218,7 @@
 											"sid": 308056475663907,
 											"parameters": {
 												"where": "back",
-												"value": "Array_card_list.At(0,count)",
+												"value": "Array_card_list.At(0,V_count)",
 												"axis": "x"
 											}
 										},
@@ -2240,7 +2240,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 945064666608308,
 											"parameters": {
-												"instance-variable": "afterLoad",
+												"instance-variable": "I_CardAfterLoad",
 												"value": "false"
 											}
 										},
@@ -2249,8 +2249,8 @@
 											"objectClass": "CardOnSearch",
 											"sid": 687877529509543,
 											"parameters": {
-												"instance-variable": "nameCard",
-												"value": "Array_card_list.At(0,count)"
+												"instance-variable": "I_CardName",
+												"value": "Array_card_list.At(0,V_count)"
 											}
 										},
 										{
@@ -2258,8 +2258,8 @@
 											"objectClass": "CardOnSearch",
 											"sid": 203902170712130,
 											"parameters": {
-												"instance-variable": "costCard",
-												"value": "Array_card_list.At(1,count)"
+												"instance-variable": "I_CardCost",
+												"value": "Array_card_list.At(1,V_count)"
 											}
 										},
 										{
@@ -2267,8 +2267,8 @@
 											"objectClass": "CardOnSearch",
 											"sid": 128842665489600,
 											"parameters": {
-												"instance-variable": "elementCard",
-												"value": "Array_card_list.At(3,count)"
+												"instance-variable": "I_CardElement",
+												"value": "Array_card_list.At(3,V_count)"
 											}
 										},
 										{
@@ -2276,8 +2276,8 @@
 											"objectClass": "CardOnSearch",
 											"sid": 533790815634338,
 											"parameters": {
-												"instance-variable": "typeCard",
-												"value": "Array_card_list.At(4,count)"
+												"instance-variable": "I_CardType",
+												"value": "Array_card_list.At(4,V_count)"
 											}
 										},
 										{
@@ -2285,8 +2285,8 @@
 											"objectClass": "CardOnSearch",
 											"sid": 676075050455969,
 											"parameters": {
-												"instance-variable": "atkCard",
-												"value": "Array_card_list.At(5,count)"
+												"instance-variable": "I_CardAtk",
+												"value": "Array_card_list.At(5,V_count)"
 											}
 										},
 										{
@@ -2294,8 +2294,8 @@
 											"objectClass": "CardOnSearch",
 											"sid": 505508050396587,
 											"parameters": {
-												"instance-variable": "hpCard",
-												"value": "Array_card_list.At(6,count)"
+												"instance-variable": "I_CardHp",
+												"value": "Array_card_list.At(6,V_count)"
 											}
 										},
 										{
@@ -2303,8 +2303,8 @@
 											"objectClass": "CardOnSearch",
 											"sid": 549626002342742,
 											"parameters": {
-												"instance-variable": "classCard",
-												"value": "Array_card_list.At(8,count)"
+												"instance-variable": "I_CardClass",
+												"value": "Array_card_list.At(8,V_count)"
 											}
 										},
 										{
@@ -2312,8 +2312,8 @@
 											"objectClass": "CardOnSearch",
 											"sid": 382222670831862,
 											"parameters": {
-												"instance-variable": "onDeck",
-												"value": "Array_card_list.At(9,count)"
+												"instance-variable": "I_CardOnDeck",
+												"value": "Array_card_list.At(9,V_count)"
 											}
 										},
 										{
@@ -2321,8 +2321,8 @@
 											"objectClass": "CardOnSearch",
 											"sid": 201981286765508,
 											"parameters": {
-												"instance-variable": "imageCard",
-												"value": "Array_card_list.At(10,count)"
+												"instance-variable": "I_CardImage",
+												"value": "Array_card_list.At(10,V_count)"
 											}
 										},
 										{
@@ -2330,8 +2330,8 @@
 											"objectClass": "CardOnSearch",
 											"sid": 575425865097649,
 											"parameters": {
-												"instance-variable": "idCard",
-												"value": "count"
+												"instance-variable": "I_CardID",
+												"value": "V_count"
 											}
 										},
 										{
@@ -2339,7 +2339,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 806843923754821,
 											"parameters": {
-												"frame-number": "count"
+												"frame-number": "V_count"
 											}
 										},
 										{
@@ -2399,7 +2399,7 @@
 											"objectClass": "System",
 											"sid": 724045455976528,
 											"parameters": {
-												"variable": "count",
+												"variable": "V_count",
 												"value": "1"
 											}
 										}
@@ -2430,7 +2430,7 @@
 									}
 								},
 								{
-									"callFunction": "cekLagi",
+									"callFunction": "F_cek_lagi",
 									"sid": 880034029145155
 								},
 								{
@@ -2576,7 +2576,7 @@
 					]
 				},
 				{
-					"functionName": "cekLagi",
+					"functionName": "F_cek_lagi",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -2607,7 +2607,7 @@
 									"sid": 115324729031145,
 									"disabled": true,
 									"parameters": {
-										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -2638,7 +2638,7 @@
 													"objectClass": "System",
 													"sid": 109184693590412,
 													"parameters": {
-														"first-value": "Dict_card_image.Get(CardOnSearch.imageCard)",
+														"first-value": "Dict_card_image.Get(CardOnSearch.I_CardImage)",
 														"comparison": 0,
 														"second-value": "\"none\""
 													}
@@ -2658,8 +2658,8 @@
 													"objectClass": "AJAX",
 													"sid": 129497152209496,
 													"parameters": {
-														"tag": "CardOnSearch.imageCard",
-														"url": "\"Card/\"&CardOnSearch.imageCard&\".\"&TypeFile"
+														"tag": "CardOnSearch.I_CardImage",
+														"url": "\"Card/\"&CardOnSearch.I_CardImage&\".\"&TypeFile"
 													}
 												},
 												{
@@ -2675,7 +2675,7 @@
 													"objectClass": "CardOnSearch",
 													"sid": 558154003869701,
 													"parameters": {
-														"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+														"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 														"size": "keep-current-size",
 														"cross-origin": "anonymous"
 													}
@@ -2685,7 +2685,7 @@
 													"objectClass": "CardOnSearch",
 													"sid": 696519002623988,
 													"parameters": {
-														"instance-variable": "afterLoad",
+														"instance-variable": "I_CardAfterLoad",
 														"value": "true"
 													}
 												}
@@ -2707,7 +2707,7 @@
 													"objectClass": "CardOnSearch",
 													"sid": 301741490631407,
 													"parameters": {
-														"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+														"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 														"size": "keep-current-size",
 														"cross-origin": "anonymous"
 													}
@@ -2717,7 +2717,7 @@
 													"objectClass": "CardOnSearch",
 													"sid": 272044825586857,
 													"parameters": {
-														"instance-variable": "afterLoad",
+														"instance-variable": "I_CardAfterLoad",
 														"value": "true"
 													}
 												}
@@ -2741,7 +2741,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 796869399564585,
 											"parameters": {
-												"instance-variable": "afterLoad",
+												"instance-variable": "I_CardAfterLoad",
 												"value": "false"
 											}
 										}
@@ -2755,7 +2755,7 @@
 							"conditions": [],
 							"actions": [
 								{
-									"callFunction": "Sorting",
+									"callFunction": "F_sorting",
 									"sid": 993128024953953
 								}
 							],
@@ -2765,7 +2765,7 @@
 					]
 				},
 				{
-					"functionName": "ChangeListSave",
+					"functionName": "F_change_list_save",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -2822,7 +2822,7 @@
 					]
 				},
 				{
-					"functionName": "changeType",
+					"functionName": "F_change_type",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -2855,7 +2855,7 @@
 							"objectClass": "System",
 							"sid": 132749438991515,
 							"parameters": {
-								"variable": "classSelect",
+								"variable": "V_SelectClass",
 								"value": "\"All\""
 							}
 						}
@@ -2870,7 +2870,7 @@
 									"objectClass": "JSON",
 									"sid": 434846792754324,
 									"parameters": {
-										"path": "\"data.type.\"&lowercase(TypeSelect)"
+										"path": "\"data.type.\"&lowercase(V_SelectType)"
 									}
 								}
 							],
@@ -2889,7 +2889,7 @@
 									"sid": 521388377581440,
 									"disabled": true,
 									"parameters": {
-										"variable": "count",
+										"variable": "V_count",
 										"value": "1"
 									}
 								},
@@ -2912,7 +2912,7 @@
 									"objectClass": "JSON",
 									"sid": 395749997173572,
 									"parameters": {
-										"path": "\"data.sort.\"&lowercase(TypeSelect)"
+										"path": "\"data.sort.\"&lowercase(V_SelectType)"
 									}
 								}
 							],
@@ -2939,7 +2939,7 @@
 					]
 				},
 				{
-					"functionName": "createFromLoad",
+					"functionName": "F_create_from_load",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -2964,7 +2964,7 @@
 							"objectClass": "System",
 							"sid": 457136669186378,
 							"parameters": {
-								"variable": "count",
+								"variable": "V_count",
 								"value": "0"
 							}
 						}
@@ -3053,7 +3053,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 103536006413262,
 															"parameters": {
-																"instance-variable": "nameCard",
+																"instance-variable": "I_CardName",
 																"value": "Array_card_list.At(0,loopindex(\"x\"))"
 															}
 														},
@@ -3062,7 +3062,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 826055949467388,
 															"parameters": {
-																"instance-variable": "costCard",
+																"instance-variable": "I_CardCost",
 																"value": "Array_card_list.At(1,loopindex(\"x\"))"
 															}
 														},
@@ -3071,7 +3071,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 718432295236478,
 															"parameters": {
-																"instance-variable": "elementCard",
+																"instance-variable": "I_CardElement",
 																"value": "Array_card_list.At(3,loopindex(\"x\"))"
 															}
 														},
@@ -3080,7 +3080,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 677239779687410,
 															"parameters": {
-																"instance-variable": "typeCard",
+																"instance-variable": "I_CardType",
 																"value": "Array_card_list.At(4,loopindex(\"x\"))"
 															}
 														},
@@ -3089,7 +3089,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 781688332665074,
 															"parameters": {
-																"instance-variable": "classCard",
+																"instance-variable": "I_CardClass",
 																"value": "Array_card_list.At(8,loopindex(\"x\"))"
 															}
 														},
@@ -3098,7 +3098,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 143103114624488,
 															"parameters": {
-																"instance-variable": "imageCard",
+																"instance-variable": "I_CardImage",
 																"value": "Array_card_list.At(10,loopindex(\"x\"))"
 															}
 														},
@@ -3107,8 +3107,8 @@
 															"objectClass": "CardOnDeck",
 															"sid": 352523132682104,
 															"parameters": {
-																"instance-variable": "idCard",
-																"value": "count"
+																"instance-variable": "I_CardID",
+																"value": "V_count"
 															}
 														},
 														{
@@ -3116,7 +3116,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 590010929981698,
 															"parameters": {
-																"frame-number": "count"
+																"frame-number": "V_count"
 															}
 														},
 														{
@@ -3124,7 +3124,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 506971060037300,
 															"parameters": {
-																"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.imageCard)",
+																"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -3134,7 +3134,7 @@
 															"objectClass": "System",
 															"sid": 155976745009620,
 															"parameters": {
-																"variable": "count",
+																"variable": "V_count",
 																"value": "1"
 															}
 														}
@@ -3169,7 +3169,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 566917355716936,
 															"parameters": {
-																"instance-variable": "nameCard",
+																"instance-variable": "I_CardName",
 																"value": "Array_card_list.At(0,loopindex(\"x\"))"
 															}
 														},
@@ -3178,7 +3178,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 248406851790039,
 															"parameters": {
-																"instance-variable": "costCard",
+																"instance-variable": "I_CardCost",
 																"value": "Array_card_list.At(1,loopindex(\"x\"))"
 															}
 														},
@@ -3187,7 +3187,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 402674902524903,
 															"parameters": {
-																"instance-variable": "elementCard",
+																"instance-variable": "I_CardElement",
 																"value": "Array_card_list.At(3,loopindex(\"x\"))"
 															}
 														},
@@ -3196,7 +3196,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 376271667343448,
 															"parameters": {
-																"instance-variable": "typeCard",
+																"instance-variable": "I_CardType",
 																"value": "Array_card_list.At(4,loopindex(\"x\"))"
 															}
 														},
@@ -3205,7 +3205,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 645231440069503,
 															"parameters": {
-																"instance-variable": "classCard",
+																"instance-variable": "I_CardClass",
 																"value": "Array_card_list.At(8,loopindex(\"x\"))"
 															}
 														},
@@ -3214,7 +3214,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 813858363770148,
 															"parameters": {
-																"instance-variable": "imageCard",
+																"instance-variable": "I_CardImage",
 																"value": "Array_card_list.At(10,loopindex(\"x\"))"
 															}
 														},
@@ -3223,8 +3223,8 @@
 															"objectClass": "CardOnExtra",
 															"sid": 846938159761415,
 															"parameters": {
-																"instance-variable": "idCard",
-																"value": "count"
+																"instance-variable": "I_CardID",
+																"value": "V_count"
 															}
 														},
 														{
@@ -3232,7 +3232,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 189801765833548,
 															"parameters": {
-																"frame-number": "count"
+																"frame-number": "V_count"
 															}
 														},
 														{
@@ -3241,7 +3241,7 @@
 															"sid": 413330922942616,
 															"disabled": true,
 															"parameters": {
-																"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.imageCard)",
+																"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -3251,7 +3251,7 @@
 															"objectClass": "System",
 															"sid": 609588734796207,
 															"parameters": {
-																"variable": "count",
+																"variable": "V_count",
 																"value": "1"
 															}
 														}
@@ -3277,7 +3277,7 @@
 									}
 								},
 								{
-									"callFunction": "SortDeck",
+									"callFunction": "F_sort_deck",
 									"sid": 683276241187215,
 									"parameters": [
 										"\"\"",
@@ -3299,7 +3299,7 @@
 					]
 				},
 				{
-					"functionName": "CreateMain",
+					"functionName": "F_create_main",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -3324,8 +3324,8 @@
 							"parameters": {
 								"object-to-create": "CardOnDeck",
 								"layer": "\"card\"",
-								"x": "lastX_main",
-								"y": "lastY_main",
+								"x": "V_lastX_main",
+								"y": "V_lastY_main",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
@@ -3341,7 +3341,7 @@
 									"objectClass": "CardOnSearch",
 									"sid": 976218931665026,
 									"parameters": {
-										"instance-variable": "idCard",
+										"instance-variable": "I_CardID",
 										"comparison": 0,
 										"value": "IDcard"
 									}
@@ -3353,8 +3353,8 @@
 									"objectClass": "CardOnDeck",
 									"sid": 561728535906276,
 									"parameters": {
-										"instance-variable": "nameCard",
-										"value": "CardOnSearch.nameCard"
+										"instance-variable": "I_CardName",
+										"value": "CardOnSearch.I_CardName"
 									}
 								},
 								{
@@ -3362,8 +3362,8 @@
 									"objectClass": "CardOnDeck",
 									"sid": 225873981478721,
 									"parameters": {
-										"instance-variable": "costCard",
-										"value": "CardOnSearch.costCard"
+										"instance-variable": "I_CardCost",
+										"value": "CardOnSearch.I_CardCost"
 									}
 								},
 								{
@@ -3371,8 +3371,8 @@
 									"objectClass": "CardOnDeck",
 									"sid": 104079632349325,
 									"parameters": {
-										"instance-variable": "elementCard",
-										"value": "CardOnSearch.elementCard"
+										"instance-variable": "I_CardElement",
+										"value": "CardOnSearch.I_CardElement"
 									}
 								},
 								{
@@ -3380,8 +3380,8 @@
 									"objectClass": "CardOnDeck",
 									"sid": 970664014178166,
 									"parameters": {
-										"instance-variable": "typeCard",
-										"value": "CardOnSearch.typeCard"
+										"instance-variable": "I_CardType",
+										"value": "CardOnSearch.I_CardType"
 									}
 								},
 								{
@@ -3389,8 +3389,8 @@
 									"objectClass": "CardOnDeck",
 									"sid": 938752713683943,
 									"parameters": {
-										"instance-variable": "classCard",
-										"value": "CardOnSearch.classCard"
+										"instance-variable": "I_CardClass",
+										"value": "CardOnSearch.I_CardClass"
 									}
 								},
 								{
@@ -3398,8 +3398,8 @@
 									"objectClass": "CardOnDeck",
 									"sid": 780093764755498,
 									"parameters": {
-										"instance-variable": "imageCard",
-										"value": "CardOnSearch.imageCard"
+										"instance-variable": "I_CardImage",
+										"value": "CardOnSearch.I_CardImage"
 									}
 								},
 								{
@@ -3407,8 +3407,8 @@
 									"objectClass": "CardOnDeck",
 									"sid": 200055297262693,
 									"parameters": {
-										"instance-variable": "idCard",
-										"value": "CardOnSearch.idCard"
+										"instance-variable": "I_CardID",
+										"value": "CardOnSearch.I_CardID"
 									}
 								},
 								{
@@ -3424,7 +3424,7 @@
 									"objectClass": "CardOnDeck",
 									"sid": 549628825284813,
 									"parameters": {
-										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.imageCard)",
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -3435,7 +3435,7 @@
 					]
 				},
 				{
-					"functionName": "CreateExtra",
+					"functionName": "F_create_extra",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -3460,7 +3460,7 @@
 							"parameters": {
 								"object-to-create": "CardOnExtra",
 								"layer": "\"card\"",
-								"x": "lastX_extra",
+								"x": "V_lastX_extra",
 								"y": "Ystart_def_extra",
 								"create-hierarchy": false,
 								"template-name": "\"\""
@@ -3477,7 +3477,7 @@
 									"objectClass": "CardOnSearch",
 									"sid": 238211858033815,
 									"parameters": {
-										"instance-variable": "idCard",
+										"instance-variable": "I_CardID",
 										"comparison": 0,
 										"value": "IDcard"
 									}
@@ -3489,8 +3489,8 @@
 									"objectClass": "CardOnExtra",
 									"sid": 477974888918323,
 									"parameters": {
-										"instance-variable": "nameCard",
-										"value": "CardOnSearch.nameCard"
+										"instance-variable": "I_CardName",
+										"value": "CardOnSearch.I_CardName"
 									}
 								},
 								{
@@ -3498,8 +3498,8 @@
 									"objectClass": "CardOnExtra",
 									"sid": 808824015194895,
 									"parameters": {
-										"instance-variable": "costCard",
-										"value": "CardOnSearch.costCard"
+										"instance-variable": "I_CardCost",
+										"value": "CardOnSearch.I_CardCost"
 									}
 								},
 								{
@@ -3507,8 +3507,8 @@
 									"objectClass": "CardOnExtra",
 									"sid": 553327936752982,
 									"parameters": {
-										"instance-variable": "elementCard",
-										"value": "CardOnSearch.elementCard"
+										"instance-variable": "I_CardElement",
+										"value": "CardOnSearch.I_CardElement"
 									}
 								},
 								{
@@ -3516,8 +3516,8 @@
 									"objectClass": "CardOnExtra",
 									"sid": 786843859268142,
 									"parameters": {
-										"instance-variable": "typeCard",
-										"value": "CardOnSearch.typeCard"
+										"instance-variable": "I_CardType",
+										"value": "CardOnSearch.I_CardType"
 									}
 								},
 								{
@@ -3525,8 +3525,8 @@
 									"objectClass": "CardOnExtra",
 									"sid": 794959484114904,
 									"parameters": {
-										"instance-variable": "classCard",
-										"value": "CardOnSearch.classCard"
+										"instance-variable": "I_CardClass",
+										"value": "CardOnSearch.I_CardClass"
 									}
 								},
 								{
@@ -3534,8 +3534,8 @@
 									"objectClass": "CardOnExtra",
 									"sid": 911537139832095,
 									"parameters": {
-										"instance-variable": "imageCard",
-										"value": "CardOnSearch.imageCard"
+										"instance-variable": "I_CardImage",
+										"value": "CardOnSearch.I_CardImage"
 									}
 								},
 								{
@@ -3543,8 +3543,8 @@
 									"objectClass": "CardOnExtra",
 									"sid": 116113996717080,
 									"parameters": {
-										"instance-variable": "idCard",
-										"value": "CardOnSearch.idCard"
+										"instance-variable": "I_CardID",
+										"value": "CardOnSearch.I_CardID"
 									}
 								},
 								{
@@ -3560,7 +3560,7 @@
 									"objectClass": "CardOnExtra",
 									"sid": 724990002517313,
 									"parameters": {
-										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.imageCard)",
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -3571,7 +3571,7 @@
 					]
 				},
 				{
-					"functionName": "reset",
+					"functionName": "F_reset",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -3580,170 +3580,178 @@
 					"functionParameters": [],
 					"eventType": "function-block",
 					"conditions": [],
-					"actions": [
+					"actions": [],
+					"sid": 529523480438434,
+					"children": [
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 586369415422709,
-							"parameters": {
-								"variable": "costSelect",
-								"value": "SBCost.Value=-1?\"All\":SBCost.Value"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 300362377330612,
-							"parameters": {
-								"variable": "atkSelect",
-								"value": "SBATK.Value=-1?\"All\":SBATK.Value"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 946300695391310,
-							"parameters": {
-								"variable": "hpSelect",
-								"value": "SBHP.Value=-1?\"All\":SBHP.Value"
-							}
-						},
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "Element",
-							"sid": 182268011560145,
-							"parameters": {
-								"mode": "disable",
-								"effect": "\"BetterOutline\""
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "Element",
-							"sid": 840120780494275,
-							"parameters": {
-								"instance-variable": "Select",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "iconType",
-							"sid": 363621654985073,
-							"parameters": {
-								"mode": "disable",
-								"effect": "\"BetterOutline\""
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "iconType",
-							"sid": 848111275645374,
-							"parameters": {
-								"instance-variable": "Select",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-value",
-							"objectClass": "SBATK",
-							"sid": 408393080519585,
-							"parameters": {
-								"value": "-1"
-							}
-						},
-						{
-							"id": "set-value",
-							"objectClass": "SBCost",
-							"sid": 960253931064759,
-							"parameters": {
-								"value": "-1"
-							}
-						},
-						{
-							"id": "set-value",
-							"objectClass": "SBHP",
-							"sid": 548664835437442,
-							"parameters": {
-								"value": "-1"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "txt_atk",
-							"sid": 522117473128595,
-							"parameters": {
-								"text": "\"All\""
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "txt_hp",
-							"sid": 113583292230796,
-							"parameters": {
-								"text": "\"All\""
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "txt_cost",
-							"sid": 954838506263415,
-							"parameters": {
-								"text": "\"All\""
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 867726132651793,
-							"parameters": {
-								"variable": "ElementSelect",
-								"value": "\"All\""
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 397765032259515,
-							"parameters": {
-								"variable": "TypeSelect",
-								"value": "\"All\""
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 944287904185306,
-							"parameters": {
-								"variable": "costSelect",
-								"value": "\"All\""
-							}
-						},
-						{
-							"callFunction": "changeType",
-							"sid": 356236359623667
-						},
-						{
-							"callFunction": "cardSearch",
-							"sid": 578430833917311
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 756416864052148,
-							"parameters": {
-								"seconds": "1"
-							}
-						},
-						{
-							"callFunction": "Sorting",
-							"sid": 141828563771842
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 255017966711204,
+									"parameters": {
+										"variable": "V_SelectCost",
+										"value": "SBCost.Value=-1?\"All\":SBCost.Value"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 456769914222550,
+									"parameters": {
+										"variable": "V_SelectAtk",
+										"value": "SBATK.Value=-1?\"All\":SBATK.Value"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 862018059628142,
+									"parameters": {
+										"variable": "V_SelectHp",
+										"value": "SBHP.Value=-1?\"All\":SBHP.Value"
+									}
+								},
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "Element",
+									"sid": 817947268228578,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Element",
+									"sid": 992928066138631,
+									"parameters": {
+										"instance-variable": "I_Select",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "iconType",
+									"sid": 567042602412626,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"BetterOutline\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "iconType",
+									"sid": 513313651280345,
+									"parameters": {
+										"instance-variable": "I_Select",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-value",
+									"objectClass": "SBATK",
+									"sid": 439003850695040,
+									"parameters": {
+										"value": "-1"
+									}
+								},
+								{
+									"id": "set-value",
+									"objectClass": "SBCost",
+									"sid": 600880898631129,
+									"parameters": {
+										"value": "-1"
+									}
+								},
+								{
+									"id": "set-value",
+									"objectClass": "SBHP",
+									"sid": 443634194396034,
+									"parameters": {
+										"value": "-1"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "txt_atk",
+									"sid": 397733298539612,
+									"parameters": {
+										"text": "\"All\""
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "txt_hp",
+									"sid": 597536015417010,
+									"parameters": {
+										"text": "\"All\""
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "txt_cost",
+									"sid": 978410110606706,
+									"parameters": {
+										"text": "\"All\""
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 239050914012717,
+									"parameters": {
+										"variable": "V_SelectElement",
+										"value": "\"All\""
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 868398518503700,
+									"parameters": {
+										"variable": "V_SelectType",
+										"value": "\"All\""
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 571204889595404,
+									"parameters": {
+										"variable": "V_SelectCost",
+										"value": "\"All\""
+									}
+								},
+								{
+									"callFunction": "F_change_type",
+									"sid": 328227773391756
+								},
+								{
+									"callFunction": "F_card_search",
+									"sid": 311683916439718
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 619769155499968,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"callFunction": "F_sorting",
+									"sid": 360690691246946
+								}
+							],
+							"sid": 567550771343525
 						}
-					],
-					"sid": 529523480438434
+					]
 				},
 				{
-					"functionName": "Sorting",
+					"functionName": "F_sorting",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -3841,7 +3849,7 @@
 											"objectClass": "System",
 											"sid": 630498195707576,
 											"parameters": {
-												"variable": "sortBy",
+												"variable": "V_sortBy",
 												"comparison": 0,
 												"value": "\"asc\""
 											}
@@ -3859,7 +3867,7 @@
 													"sid": 234444470644728,
 													"parameters": {
 														"object": "CardOnSearch",
-														"expression": "CardOnSearch.nameCard",
+														"expression": "CardOnSearch.I_CardName",
 														"order": "ascending"
 													}
 												}
@@ -3944,7 +3952,7 @@
 													"sid": 729197853779949,
 													"parameters": {
 														"object": "CardOnSearch",
-														"expression": "CardOnSearch.nameCard",
+														"expression": "CardOnSearch.I_CardName",
 														"order": "descending"
 													}
 												}
@@ -4043,7 +4051,7 @@
 											"objectClass": "System",
 											"sid": 983302851645543,
 											"parameters": {
-												"variable": "sortBy",
+												"variable": "V_sortBy",
 												"comparison": 0,
 												"value": "\"asc\""
 											}
@@ -4061,7 +4069,7 @@
 													"sid": 370167930389785,
 													"parameters": {
 														"object": "CardOnSearch",
-														"expression": "str(CardOnSearch.costCard)",
+														"expression": "str(CardOnSearch.I_CardCost)",
 														"order": "ascending"
 													}
 												}
@@ -4146,7 +4154,7 @@
 													"sid": 541785070417566,
 													"parameters": {
 														"object": "CardOnSearch",
-														"expression": "str(CardOnSearch.costCard)",
+														"expression": "str(CardOnSearch.I_CardCost)",
 														"order": "descending"
 													}
 												}
@@ -4246,7 +4254,7 @@
 											"sid": 701465312244165,
 											"parameters": {
 												"object": "CardOnSearch",
-												"expression": "CardOnSearch.elementCard",
+												"expression": "CardOnSearch.I_CardElement",
 												"order": "ascending"
 											}
 										}
@@ -4343,7 +4351,7 @@
 											"objectClass": "System",
 											"sid": 531184274769320,
 											"parameters": {
-												"variable": "sortBy",
+												"variable": "V_sortBy",
 												"comparison": 0,
 												"value": "\"asc\""
 											}
@@ -4361,7 +4369,7 @@
 													"sid": 217339099055619,
 													"parameters": {
 														"object": "CardOnSearch",
-														"expression": "CardOnSearch.typeCard",
+														"expression": "CardOnSearch.I_CardType",
 														"order": "ascending"
 													}
 												}
@@ -4446,7 +4454,7 @@
 													"sid": 576961030274050,
 													"parameters": {
 														"object": "CardOnSearch",
-														"expression": "CardOnSearch.typeCard",
+														"expression": "CardOnSearch.I_CardType",
 														"order": "descending"
 													}
 												}
@@ -4545,7 +4553,7 @@
 											"objectClass": "System",
 											"sid": 654698089291680,
 											"parameters": {
-												"variable": "sortBy",
+												"variable": "V_sortBy",
 												"comparison": 0,
 												"value": "\"asc\""
 											}
@@ -4563,7 +4571,7 @@
 													"sid": 716174450817453,
 													"parameters": {
 														"object": "CardOnSearch",
-														"expression": "CardOnSearch.atkCard",
+														"expression": "CardOnSearch.I_CardAtk",
 														"order": "ascending"
 													}
 												}
@@ -4648,7 +4656,7 @@
 													"sid": 407923470343865,
 													"parameters": {
 														"object": "CardOnSearch",
-														"expression": "CardOnSearch.atkCard",
+														"expression": "CardOnSearch.I_CardAtk",
 														"order": "descending"
 													}
 												}
@@ -4747,7 +4755,7 @@
 											"objectClass": "System",
 											"sid": 183517489591747,
 											"parameters": {
-												"variable": "sortBy",
+												"variable": "V_sortBy",
 												"comparison": 0,
 												"value": "\"asc\""
 											}
@@ -4765,7 +4773,7 @@
 													"sid": 500470730654775,
 													"parameters": {
 														"object": "CardOnSearch",
-														"expression": "CardOnSearch.classCard",
+														"expression": "CardOnSearch.I_CardClass",
 														"order": "ascending"
 													}
 												}
@@ -4850,7 +4858,7 @@
 													"sid": 762615039418336,
 													"parameters": {
 														"object": "CardOnSearch",
-														"expression": "CardOnSearch.classCard",
+														"expression": "CardOnSearch.I_CardClass",
 														"order": "descending"
 													}
 												}
@@ -4965,7 +4973,7 @@
 													"objectClass": "System",
 													"sid": 781637810241837,
 													"parameters": {
-														"variable": "sortBy",
+														"variable": "V_sortBy",
 														"comparison": 0,
 														"value": "\"asc\""
 													}
@@ -4983,7 +4991,7 @@
 															"sid": 117588764718798,
 															"parameters": {
 																"object": "CardOnSearch",
-																"expression": "CardOnSearch.hpCard",
+																"expression": "CardOnSearch.I_CardHp",
 																"order": "ascending"
 															}
 														}
@@ -5068,7 +5076,7 @@
 															"sid": 220855075505356,
 															"parameters": {
 																"object": "CardOnSearch",
-																"expression": "CardOnSearch.hpCard",
+																"expression": "CardOnSearch.I_CardHp",
 																"order": "descending"
 															}
 														}
@@ -5150,7 +5158,7 @@
 									}
 								},
 								{
-									"callFunction": "cekLagi",
+									"callFunction": "F_cek_lagi",
 									"sid": 339203792674902
 								}
 							],
@@ -5159,7 +5167,7 @@
 					]
 				},
 				{
-					"functionName": "SortDeck",
+					"functionName": "F_sort_deck",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -5222,7 +5230,7 @@
 									"objectClass": "System",
 									"sid": 681515769196426,
 									"parameters": {
-										"variable": "sortBy",
+										"variable": "V_sortBy",
 										"comparison": 0,
 										"value": "\"asc\""
 									}
@@ -5274,7 +5282,7 @@
 															"sid": 694615321325359,
 															"parameters": {
 																"object": "CardOnDeck",
-																"expression": "CardOnDeck.nameCard",
+																"expression": "CardOnDeck.I_CardName",
 																"order": "ascending"
 															}
 														}
@@ -5321,7 +5329,7 @@
 															"objectClass": "System",
 															"sid": 793638070576798,
 															"parameters": {
-																"variable": "lastX_main",
+																"variable": "V_lastX_main",
 																"value": "Xstart"
 															}
 														},
@@ -5330,7 +5338,7 @@
 															"objectClass": "System",
 															"sid": 288668679871263,
 															"parameters": {
-																"variable": "lastY_main",
+																"variable": "V_lastY_main",
 																"value": "Ystart"
 															}
 														}
@@ -5360,7 +5368,7 @@
 															"sid": 492952136841322,
 															"parameters": {
 																"object": "CardOnExtra",
-																"expression": "CardOnExtra.nameCard",
+																"expression": "CardOnExtra.I_CardName",
 																"order": "ascending"
 															}
 														}
@@ -5389,7 +5397,7 @@
 															"objectClass": "System",
 															"sid": 565276523554113,
 															"parameters": {
-																"variable": "lastX_extra",
+																"variable": "V_lastX_extra",
 																"value": "Xstart"
 															}
 														}
@@ -5448,7 +5456,7 @@
 															"sid": 538746050332908,
 															"parameters": {
 																"object": "CardOnDeck",
-																"expression": "CardOnDeck.costCard",
+																"expression": "CardOnDeck.I_CardCost",
 																"order": "ascending"
 															}
 														}
@@ -5495,7 +5503,7 @@
 															"objectClass": "System",
 															"sid": 894026199147394,
 															"parameters": {
-																"variable": "lastX_main",
+																"variable": "V_lastX_main",
 																"value": "Xstart"
 															}
 														},
@@ -5504,7 +5512,7 @@
 															"objectClass": "System",
 															"sid": 277043012035744,
 															"parameters": {
-																"variable": "lastY_main",
+																"variable": "V_lastY_main",
 																"value": "Ystart"
 															}
 														}
@@ -5534,7 +5542,7 @@
 															"sid": 177925694621108,
 															"parameters": {
 																"object": "CardOnExtra",
-																"expression": "CardOnExtra.costCard",
+																"expression": "CardOnExtra.I_CardCost",
 																"order": "ascending"
 															}
 														}
@@ -5563,7 +5571,7 @@
 															"objectClass": "System",
 															"sid": 959421221711338,
 															"parameters": {
-																"variable": "lastX_extra",
+																"variable": "V_lastX_extra",
 																"value": "Xstart"
 															}
 														}
@@ -5622,7 +5630,7 @@
 															"sid": 907749864698315,
 															"parameters": {
 																"object": "CardOnDeck",
-																"expression": "CardOnDeck.elementCard",
+																"expression": "CardOnDeck.I_CardElement",
 																"order": "ascending"
 															}
 														}
@@ -5669,7 +5677,7 @@
 															"objectClass": "System",
 															"sid": 687824981808452,
 															"parameters": {
-																"variable": "lastX_main",
+																"variable": "V_lastX_main",
 																"value": "Xstart"
 															}
 														},
@@ -5678,7 +5686,7 @@
 															"objectClass": "System",
 															"sid": 746982268149640,
 															"parameters": {
-																"variable": "lastY_main",
+																"variable": "V_lastY_main",
 																"value": "Ystart"
 															}
 														}
@@ -5708,7 +5716,7 @@
 															"sid": 606027536933917,
 															"parameters": {
 																"object": "CardOnExtra",
-																"expression": "CardOnExtra.elementCard",
+																"expression": "CardOnExtra.I_CardElement",
 																"order": "ascending"
 															}
 														}
@@ -5737,7 +5745,7 @@
 															"objectClass": "System",
 															"sid": 495623017017843,
 															"parameters": {
-																"variable": "lastX_extra",
+																"variable": "V_lastX_extra",
 																"value": "Xstart"
 															}
 														}
@@ -5796,7 +5804,7 @@
 															"sid": 600442777500717,
 															"parameters": {
 																"object": "CardOnDeck",
-																"expression": "CardOnDeck.typeCard",
+																"expression": "CardOnDeck.I_CardType",
 																"order": "ascending"
 															}
 														}
@@ -5843,7 +5851,7 @@
 															"objectClass": "System",
 															"sid": 434719623797276,
 															"parameters": {
-																"variable": "lastX_main",
+																"variable": "V_lastX_main",
 																"value": "Xstart"
 															}
 														},
@@ -5852,7 +5860,7 @@
 															"objectClass": "System",
 															"sid": 541306244512136,
 															"parameters": {
-																"variable": "lastY_main",
+																"variable": "V_lastY_main",
 																"value": "Ystart"
 															}
 														}
@@ -5882,7 +5890,7 @@
 															"sid": 266832234942747,
 															"parameters": {
 																"object": "CardOnExtra",
-																"expression": "CardOnExtra.typeCard",
+																"expression": "CardOnExtra.I_CardType",
 																"order": "ascending"
 															}
 														}
@@ -5911,7 +5919,7 @@
 															"objectClass": "System",
 															"sid": 329777098415350,
 															"parameters": {
-																"variable": "lastX_extra",
+																"variable": "V_lastX_extra",
 																"value": "Xstart"
 															}
 														}
@@ -5970,7 +5978,7 @@
 															"sid": 373399257161349,
 															"parameters": {
 																"object": "CardOnDeck",
-																"expression": "CardOnDeck.classCard",
+																"expression": "CardOnDeck.I_CardClass",
 																"order": "ascending"
 															}
 														}
@@ -6017,7 +6025,7 @@
 															"objectClass": "System",
 															"sid": 110171308853362,
 															"parameters": {
-																"variable": "lastX_main",
+																"variable": "V_lastX_main",
 																"value": "Xstart"
 															}
 														},
@@ -6026,7 +6034,7 @@
 															"objectClass": "System",
 															"sid": 662275253896920,
 															"parameters": {
-																"variable": "lastY_main",
+																"variable": "V_lastY_main",
 																"value": "Ystart"
 															}
 														}
@@ -6056,7 +6064,7 @@
 															"sid": 385236625051126,
 															"parameters": {
 																"object": "CardOnExtra",
-																"expression": "CardOnExtra.classCard",
+																"expression": "CardOnExtra.I_CardClass",
 																"order": "ascending"
 															}
 														}
@@ -6085,7 +6093,7 @@
 															"objectClass": "System",
 															"sid": 536357249203622,
 															"parameters": {
-																"variable": "lastX_extra",
+																"variable": "V_lastX_extra",
 																"value": "Xstart"
 															}
 														}
@@ -6153,7 +6161,7 @@
 															"sid": 465019033522276,
 															"parameters": {
 																"object": "CardOnDeck",
-																"expression": "CardOnDeck.nameCard",
+																"expression": "CardOnDeck.I_CardName",
 																"order": "descending"
 															}
 														}
@@ -6200,7 +6208,7 @@
 															"objectClass": "System",
 															"sid": 637753760398183,
 															"parameters": {
-																"variable": "lastX_main",
+																"variable": "V_lastX_main",
 																"value": "Xstart"
 															}
 														},
@@ -6209,7 +6217,7 @@
 															"objectClass": "System",
 															"sid": 465112299011145,
 															"parameters": {
-																"variable": "lastY_main",
+																"variable": "V_lastY_main",
 																"value": "Ystart"
 															}
 														}
@@ -6239,7 +6247,7 @@
 															"sid": 855438292083753,
 															"parameters": {
 																"object": "CardOnExtra",
-																"expression": "CardOnExtra.nameCard",
+																"expression": "CardOnExtra.I_CardName",
 																"order": "descending"
 															}
 														}
@@ -6268,7 +6276,7 @@
 															"objectClass": "System",
 															"sid": 152760238472028,
 															"parameters": {
-																"variable": "lastX_extra",
+																"variable": "V_lastX_extra",
 																"value": "Xstart"
 															}
 														}
@@ -6327,7 +6335,7 @@
 															"sid": 923768078587169,
 															"parameters": {
 																"object": "CardOnDeck",
-																"expression": "CardOnDeck.costCard",
+																"expression": "CardOnDeck.I_CardCost",
 																"order": "descending"
 															}
 														}
@@ -6374,7 +6382,7 @@
 															"objectClass": "System",
 															"sid": 513332537805074,
 															"parameters": {
-																"variable": "lastX_main",
+																"variable": "V_lastX_main",
 																"value": "Xstart"
 															}
 														},
@@ -6383,7 +6391,7 @@
 															"objectClass": "System",
 															"sid": 861086240988892,
 															"parameters": {
-																"variable": "lastY_main",
+																"variable": "V_lastY_main",
 																"value": "Ystart"
 															}
 														}
@@ -6413,7 +6421,7 @@
 															"sid": 693346519073620,
 															"parameters": {
 																"object": "CardOnExtra",
-																"expression": "CardOnExtra.costCard",
+																"expression": "CardOnExtra.I_CardCost",
 																"order": "descending"
 															}
 														}
@@ -6442,7 +6450,7 @@
 															"objectClass": "System",
 															"sid": 795627700352092,
 															"parameters": {
-																"variable": "lastX_extra",
+																"variable": "V_lastX_extra",
 																"value": "Xstart"
 															}
 														}
@@ -6501,7 +6509,7 @@
 															"sid": 463566631076876,
 															"parameters": {
 																"object": "CardOnDeck",
-																"expression": "CardOnDeck.elementCard",
+																"expression": "CardOnDeck.I_CardElement",
 																"order": "descending"
 															}
 														}
@@ -6548,7 +6556,7 @@
 															"objectClass": "System",
 															"sid": 503112102302500,
 															"parameters": {
-																"variable": "lastX_main",
+																"variable": "V_lastX_main",
 																"value": "Xstart"
 															}
 														},
@@ -6557,7 +6565,7 @@
 															"objectClass": "System",
 															"sid": 637973551276155,
 															"parameters": {
-																"variable": "lastY_main",
+																"variable": "V_lastY_main",
 																"value": "Ystart"
 															}
 														}
@@ -6587,7 +6595,7 @@
 															"sid": 791618491081397,
 															"parameters": {
 																"object": "CardOnExtra",
-																"expression": "CardOnExtra.elementCard",
+																"expression": "CardOnExtra.I_CardElement",
 																"order": "descending"
 															}
 														}
@@ -6616,7 +6624,7 @@
 															"objectClass": "System",
 															"sid": 547094490763748,
 															"parameters": {
-																"variable": "lastX_extra",
+																"variable": "V_lastX_extra",
 																"value": "Xstart"
 															}
 														}
@@ -6675,7 +6683,7 @@
 															"sid": 211019063575431,
 															"parameters": {
 																"object": "CardOnDeck",
-																"expression": "CardOnDeck.typeCard",
+																"expression": "CardOnDeck.I_CardType",
 																"order": "descending"
 															}
 														}
@@ -6722,7 +6730,7 @@
 															"objectClass": "System",
 															"sid": 845580527821734,
 															"parameters": {
-																"variable": "lastX_main",
+																"variable": "V_lastX_main",
 																"value": "Xstart"
 															}
 														},
@@ -6731,7 +6739,7 @@
 															"objectClass": "System",
 															"sid": 701716205952581,
 															"parameters": {
-																"variable": "lastY_main",
+																"variable": "V_lastY_main",
 																"value": "Ystart"
 															}
 														}
@@ -6761,7 +6769,7 @@
 															"sid": 579949046262701,
 															"parameters": {
 																"object": "CardOnExtra",
-																"expression": "CardOnExtra.typeCard",
+																"expression": "CardOnExtra.I_CardType",
 																"order": "descending"
 															}
 														}
@@ -6790,7 +6798,7 @@
 															"objectClass": "System",
 															"sid": 447276382954708,
 															"parameters": {
-																"variable": "lastX_extra",
+																"variable": "V_lastX_extra",
 																"value": "Xstart"
 															}
 														}
@@ -6849,7 +6857,7 @@
 															"sid": 494966336463249,
 															"parameters": {
 																"object": "CardOnDeck",
-																"expression": "CardOnDeck.classCard",
+																"expression": "CardOnDeck.I_CardClass",
 																"order": "descending"
 															}
 														}
@@ -6896,7 +6904,7 @@
 															"objectClass": "System",
 															"sid": 289570944247420,
 															"parameters": {
-																"variable": "lastX_main",
+																"variable": "V_lastX_main",
 																"value": "Xstart"
 															}
 														},
@@ -6905,7 +6913,7 @@
 															"objectClass": "System",
 															"sid": 469920332890115,
 															"parameters": {
-																"variable": "lastY_main",
+																"variable": "V_lastY_main",
 																"value": "Ystart"
 															}
 														}
@@ -6935,7 +6943,7 @@
 															"sid": 950100855100715,
 															"parameters": {
 																"object": "CardOnExtra",
-																"expression": "CardOnExtra.classCard",
+																"expression": "CardOnExtra.I_CardClass",
 																"order": "descending"
 															}
 														}
@@ -6964,7 +6972,7 @@
 															"objectClass": "System",
 															"sid": 391343310866793,
 															"parameters": {
-																"variable": "lastX_extra",
+																"variable": "V_lastX_extra",
 																"value": "Xstart"
 															}
 														}
@@ -7004,12 +7012,12 @@
 							"objectClass": "System",
 							"sid": 851678548344669,
 							"parameters": {
-								"variable": "classSelect",
+								"variable": "V_SelectClass",
 								"value": "ListClass.SelectedText<>\"All\"?lowercase(ListClass.SelectedText):ListClass.SelectedText"
 							}
 						},
 						{
-							"callFunction": "cardSearch",
+							"callFunction": "F_card_search",
 							"sid": 221567908613470
 						}
 					],
@@ -7036,7 +7044,7 @@
 					],
 					"actions": [
 						{
-							"callFunction": "cardSearch",
+							"callFunction": "F_card_search",
 							"sid": 886917023028464
 						},
 						{
@@ -7048,7 +7056,7 @@
 							}
 						},
 						{
-							"callFunction": "Sorting",
+							"callFunction": "F_sorting",
 							"sid": 914353095217026,
 							"disabled": true
 						}
@@ -7070,7 +7078,7 @@
 							"objectClass": "System",
 							"sid": 408940765604947,
 							"parameters": {
-								"variable": "titleSelect",
+								"variable": "V_SelectTitle",
 								"value": "TextInput.Text"
 							}
 						}
@@ -7119,7 +7127,7 @@
 									"objectClass": "txtCek",
 									"sid": 272812201782984,
 									"parameters": {
-										"text": "ElementSelect"
+										"text": "V_SelectElement"
 									}
 								}
 							],
@@ -7145,7 +7153,7 @@
 									"objectClass": "txtCek",
 									"sid": 979835028957299,
 									"parameters": {
-										"text": "TypeSelect"
+										"text": "V_SelectType"
 									}
 								}
 							],
@@ -7171,7 +7179,7 @@
 									"objectClass": "txtCek",
 									"sid": 755072975180621,
 									"parameters": {
-										"text": "costSelect"
+										"text": "V_SelectCost"
 									}
 								}
 							],
@@ -7197,7 +7205,7 @@
 									"objectClass": "txtCek",
 									"sid": 290829909832929,
 									"parameters": {
-										"text": "classSelect"
+										"text": "V_SelectClass"
 									}
 								}
 							],
@@ -7223,7 +7231,7 @@
 									"objectClass": "txtCek",
 									"sid": 396437129057112,
 									"parameters": {
-										"text": "titleSelect"
+										"text": "V_SelectTitle"
 									}
 								}
 							],
@@ -7316,7 +7324,7 @@
 							"sid": 857884966419365,
 							"disabled": true,
 							"parameters": {
-								"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(Card_family.imageCard)",
+								"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(Card_family.I_CardImage)",
 								"size": "keep-current-size",
 								"cross-origin": "anonymous"
 							}
@@ -7385,7 +7393,7 @@
 							"callFunction": "hoverCard",
 							"sid": 274556742156187,
 							"parameters": [
-								"CardOnSearch.nameCard"
+								"CardOnSearch.I_CardName"
 							]
 						},
 						{
@@ -7393,7 +7401,7 @@
 							"objectClass": "Preview",
 							"sid": 113122818597718,
 							"parameters": {
-								"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+								"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 								"size": "keep-current-size",
 								"cross-origin": "anonymous"
 							}
@@ -7468,7 +7476,7 @@
 							"objectClass": "Preview",
 							"sid": 619658916862058,
 							"parameters": {
-								"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.imageCard)",
+								"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 								"size": "keep-current-size",
 								"cross-origin": "anonymous"
 							}
@@ -7543,7 +7551,7 @@
 							"objectClass": "Preview",
 							"sid": 503677703595919,
 							"parameters": {
-								"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.imageCard)",
+								"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 								"size": "keep-current-size",
 								"cross-origin": "anonymous"
 							}
@@ -7599,7 +7607,7 @@
 									"objectClass": "CardOnSearch",
 									"sid": 346242632358247,
 									"parameters": {
-										"instance-variable": "afterLoad"
+										"instance-variable": "I_CardAfterLoad"
 									},
 									"isInverted": true
 								}
@@ -7611,7 +7619,7 @@
 									"sid": 745326622128444,
 									"disabled": true,
 									"parameters": {
-										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -7622,7 +7630,7 @@
 									"sid": 792569641440222,
 									"disabled": true,
 									"parameters": {
-										"instance-variable": "afterLoad",
+										"instance-variable": "I_CardAfterLoad",
 										"value": "true"
 									}
 								}
@@ -7637,7 +7645,7 @@
 											"objectClass": "System",
 											"sid": 903313594032695,
 											"parameters": {
-												"first-value": "Dict_card_image.Get(CardOnSearch.imageCard)",
+												"first-value": "Dict_card_image.Get(CardOnSearch.I_CardImage)",
 												"comparison": 0,
 												"second-value": "\"none\""
 											}
@@ -7657,8 +7665,8 @@
 											"objectClass": "AJAX",
 											"sid": 160569542788491,
 											"parameters": {
-												"tag": "CardOnSearch.imageCard",
-												"url": "\"Card/\"&CardOnSearch.imageCard&\".\"&TypeFile"
+												"tag": "CardOnSearch.I_CardImage",
+												"url": "\"Card/\"&CardOnSearch.I_CardImage&\".\"&TypeFile"
 											}
 										},
 										{
@@ -7674,7 +7682,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 785894580808122,
 											"parameters": {
-												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -7684,7 +7692,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 315956301745588,
 											"parameters": {
-												"instance-variable": "afterLoad",
+												"instance-variable": "I_CardAfterLoad",
 												"value": "true"
 											}
 										}
@@ -7706,7 +7714,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 794508165753488,
 											"parameters": {
-												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -7716,7 +7724,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 341667722650437,
 											"parameters": {
-												"instance-variable": "afterLoad",
+												"instance-variable": "I_CardAfterLoad",
 												"value": "true"
 											}
 										}
@@ -7775,7 +7783,7 @@
 									"objectClass": "CardOnSearch",
 									"sid": 781306331236250,
 									"parameters": {
-										"instance-variable": "afterLoad"
+										"instance-variable": "I_CardAfterLoad"
 									},
 									"isInverted": true
 								}
@@ -7791,7 +7799,7 @@
 											"objectClass": "System",
 											"sid": 814316813534199,
 											"parameters": {
-												"first-value": "Dict_card_image.Get(CardOnSearch.imageCard)",
+												"first-value": "Dict_card_image.Get(CardOnSearch.I_CardImage)",
 												"comparison": 0,
 												"second-value": "\"none\""
 											}
@@ -7811,8 +7819,8 @@
 											"objectClass": "AJAX",
 											"sid": 657947428348485,
 											"parameters": {
-												"tag": "CardOnSearch.imageCard",
-												"url": "\"Card/\"&CardOnSearch.imageCard&\".\"&TypeFile"
+												"tag": "CardOnSearch.I_CardImage",
+												"url": "\"Card/\"&CardOnSearch.I_CardImage&\".\"&TypeFile"
 											}
 										},
 										{
@@ -7828,7 +7836,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 130481209926769,
 											"parameters": {
-												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -7838,7 +7846,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 323462156225674,
 											"parameters": {
-												"instance-variable": "afterLoad",
+												"instance-variable": "I_CardAfterLoad",
 												"value": "true"
 											}
 										}
@@ -7860,7 +7868,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 125110125070749,
 											"parameters": {
-												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -7870,7 +7878,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 924425287578517,
 											"parameters": {
-												"instance-variable": "afterLoad",
+												"instance-variable": "I_CardAfterLoad",
 												"value": "true"
 											}
 										}
@@ -7920,7 +7928,7 @@
 									"objectClass": "Card_family",
 									"sid": 968200440010130,
 									"parameters": {
-										"instance-variable": "nameCard",
+										"instance-variable": "I_CardName",
 										"comparison": 0,
 										"value": "nameCard"
 									}
@@ -8241,7 +8249,7 @@
 									"objectClass": "CardOnSearch",
 									"sid": 306218916890375,
 									"parameters": {
-										"instance-variable": "afterLoad"
+										"instance-variable": "I_CardAfterLoad"
 									},
 									"isInverted": true
 								}
@@ -8257,7 +8265,7 @@
 											"objectClass": "System",
 											"sid": 543649869301384,
 											"parameters": {
-												"first-value": "Dict_card_image.Get(CardOnSearch.imageCard)",
+												"first-value": "Dict_card_image.Get(CardOnSearch.I_CardImage)",
 												"comparison": 0,
 												"second-value": "\"none\""
 											}
@@ -8277,8 +8285,8 @@
 											"objectClass": "AJAX",
 											"sid": 450298118288003,
 											"parameters": {
-												"tag": "CardOnSearch.imageCard",
-												"url": "\"Card/\"&CardOnSearch.imageCard&\".\"&TypeFile"
+												"tag": "CardOnSearch.I_CardImage",
+												"url": "\"Card/\"&CardOnSearch.I_CardImage&\".\"&TypeFile"
 											}
 										},
 										{
@@ -8294,7 +8302,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 943917308549241,
 											"parameters": {
-												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -8304,7 +8312,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 347120822334499,
 											"parameters": {
-												"instance-variable": "afterLoad",
+												"instance-variable": "I_CardAfterLoad",
 												"value": "true"
 											}
 										}
@@ -8326,7 +8334,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 519160309934110,
 											"parameters": {
-												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -8336,7 +8344,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 875429952565297,
 											"parameters": {
-												"instance-variable": "afterLoad",
+												"instance-variable": "I_CardAfterLoad",
 												"value": "true"
 											}
 										}
@@ -8436,7 +8444,7 @@
 									"objectClass": "CardOnSearch",
 									"sid": 635274153413775,
 									"parameters": {
-										"instance-variable": "afterLoad"
+										"instance-variable": "I_CardAfterLoad"
 									},
 									"isInverted": true
 								}
@@ -8448,7 +8456,7 @@
 									"sid": 290873274034970,
 									"disabled": true,
 									"parameters": {
-										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -8459,7 +8467,7 @@
 									"sid": 400608926710590,
 									"disabled": true,
 									"parameters": {
-										"instance-variable": "afterLoad",
+										"instance-variable": "I_CardAfterLoad",
 										"value": "true"
 									}
 								}
@@ -8474,7 +8482,7 @@
 											"objectClass": "System",
 											"sid": 586939048989776,
 											"parameters": {
-												"first-value": "Dict_card_image.Get(CardOnSearch.imageCard)",
+												"first-value": "Dict_card_image.Get(CardOnSearch.I_CardImage)",
 												"comparison": 0,
 												"second-value": "\"none\""
 											}
@@ -8494,8 +8502,8 @@
 											"objectClass": "AJAX",
 											"sid": 767534512297924,
 											"parameters": {
-												"tag": "CardOnSearch.imageCard",
-												"url": "\"Card/\"&CardOnSearch.imageCard&\".\"&TypeFile"
+												"tag": "CardOnSearch.I_CardImage",
+												"url": "\"Card/\"&CardOnSearch.I_CardImage&\".\"&TypeFile"
 											}
 										},
 										{
@@ -8511,7 +8519,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 952442576669529,
 											"parameters": {
-												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -8521,7 +8529,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 847035321108039,
 											"parameters": {
-												"instance-variable": "afterLoad",
+												"instance-variable": "I_CardAfterLoad",
 												"value": "true"
 											}
 										}
@@ -8543,7 +8551,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 932743202248207,
 											"parameters": {
-												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -8553,7 +8561,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 715404953040430,
 											"parameters": {
-												"instance-variable": "afterLoad",
+												"instance-variable": "I_CardAfterLoad",
 												"value": "true"
 											}
 										}
@@ -8601,7 +8609,7 @@
 									"objectClass": "CardOnSearch",
 									"sid": 807312163190718,
 									"parameters": {
-										"instance-variable": "afterLoad"
+										"instance-variable": "I_CardAfterLoad"
 									},
 									"isInverted": true
 								}
@@ -8613,7 +8621,7 @@
 									"sid": 267502203743934,
 									"disabled": true,
 									"parameters": {
-										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -8624,7 +8632,7 @@
 									"sid": 872393866602788,
 									"disabled": true,
 									"parameters": {
-										"instance-variable": "afterLoad",
+										"instance-variable": "I_CardAfterLoad",
 										"value": "true"
 									}
 								}
@@ -8639,7 +8647,7 @@
 											"objectClass": "System",
 											"sid": 447051568899667,
 											"parameters": {
-												"first-value": "Dict_card_image.Get(CardOnSearch.imageCard)",
+												"first-value": "Dict_card_image.Get(CardOnSearch.I_CardImage)",
 												"comparison": 0,
 												"second-value": "\"none\""
 											}
@@ -8659,8 +8667,8 @@
 											"objectClass": "AJAX",
 											"sid": 978749936947247,
 											"parameters": {
-												"tag": "CardOnSearch.imageCard",
-												"url": "\"Card/\"&CardOnSearch.imageCard&\".\"&TypeFile"
+												"tag": "CardOnSearch.I_CardImage",
+												"url": "\"Card/\"&CardOnSearch.I_CardImage&\".\"&TypeFile"
 											}
 										},
 										{
@@ -8676,7 +8684,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 542556365044529,
 											"parameters": {
-												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -8686,7 +8694,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 463593832957299,
 											"parameters": {
-												"instance-variable": "afterLoad",
+												"instance-variable": "I_CardAfterLoad",
 												"value": "true"
 											}
 										}
@@ -8708,7 +8716,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 534475006537404,
 											"parameters": {
-												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.imageCard)",
+												"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -8718,7 +8726,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 554867056136947,
 											"parameters": {
-												"instance-variable": "afterLoad",
+												"instance-variable": "I_CardAfterLoad",
 												"value": "true"
 											}
 										}
@@ -8760,7 +8768,7 @@
 					],
 					"actions": [
 						{
-							"callFunction": "SortDeck",
+							"callFunction": "F_sort_deck",
 							"sid": 511908214104159,
 							"parameters": [
 								"ListSortDeck.SelectedText",
@@ -8768,7 +8776,7 @@
 							]
 						},
 						{
-							"callFunction": "SortDeck",
+							"callFunction": "F_sort_deck",
 							"sid": 359961281457474,
 							"parameters": [
 								"ListSortDeck.SelectedText",
@@ -8809,7 +8817,7 @@
 									"objectClass": "System",
 									"sid": 164472487578956,
 									"parameters": {
-										"variable": "sortBy",
+										"variable": "V_sortBy",
 										"value": "\"des\""
 									}
 								},
@@ -8822,7 +8830,7 @@
 									}
 								},
 								{
-									"callFunction": "Sorting",
+									"callFunction": "F_sorting",
 									"sid": 635615466750312
 								}
 							],
@@ -8843,7 +8851,7 @@
 									"objectClass": "System",
 									"sid": 177564315118697,
 									"parameters": {
-										"variable": "sortBy",
+										"variable": "V_sortBy",
 										"value": "\"asc\""
 									}
 								},
@@ -8856,7 +8864,7 @@
 									}
 								},
 								{
-									"callFunction": "Sorting",
+									"callFunction": "F_sorting",
 									"sid": 755802008768770
 								}
 							],
@@ -8895,7 +8903,7 @@
 									"objectClass": "System",
 									"sid": 844737510349728,
 									"parameters": {
-										"variable": "sortBy",
+										"variable": "V_sortBy",
 										"value": "\"des\""
 									}
 								},
@@ -8908,7 +8916,7 @@
 									}
 								},
 								{
-									"callFunction": "SortDeck",
+									"callFunction": "F_sort_deck",
 									"sid": 972927696006696,
 									"parameters": [
 										"ListSortDeck.SelectedText",
@@ -8916,7 +8924,7 @@
 									]
 								},
 								{
-									"callFunction": "SortDeck",
+									"callFunction": "F_sort_deck",
 									"sid": 949552046375009,
 									"parameters": [
 										"ListSortDeck.SelectedText",
@@ -8941,7 +8949,7 @@
 									"objectClass": "System",
 									"sid": 173029638791758,
 									"parameters": {
-										"variable": "sortBy",
+										"variable": "V_sortBy",
 										"value": "\"asc\""
 									}
 								},
@@ -8954,7 +8962,7 @@
 									}
 								},
 								{
-									"callFunction": "SortDeck",
+									"callFunction": "F_sort_deck",
 									"sid": 298668716326392,
 									"parameters": [
 										"ListSortDeck.SelectedText",
@@ -8962,7 +8970,7 @@
 									]
 								},
 								{
-									"callFunction": "SortDeck",
+									"callFunction": "F_sort_deck",
 									"sid": 794992038942793,
 									"parameters": [
 										"ListSortDeck.SelectedText",
@@ -8985,7 +8993,7 @@
 					],
 					"actions": [
 						{
-							"callFunction": "cardSearch",
+							"callFunction": "F_card_search",
 							"sid": 762564992364948
 						},
 						{
@@ -8997,7 +9005,7 @@
 							}
 						},
 						{
-							"callFunction": "Sorting",
+							"callFunction": "F_sorting",
 							"sid": 746012983419290
 						}
 					],
@@ -9024,7 +9032,7 @@
 					],
 					"actions": [
 						{
-							"callFunction": "reset",
+							"callFunction": "F_reset",
 							"sid": 805121245341010
 						}
 					],
@@ -9065,7 +9073,7 @@
 									"objectClass": "CardOnSearch",
 									"sid": 365127908703150,
 									"parameters": {
-										"instance-variable": "onDeck",
+										"instance-variable": "I_CardOnDeck",
 										"comparison": 0,
 										"value": "\"main\""
 									}
@@ -9085,7 +9093,7 @@
 									"objectClass": "System",
 									"sid": 731302085756294,
 									"parameters": {
-										"first-value": "Functions.cardOnDeck(CardOnSearch.nameCard, CardOnExtra.onDeck)",
+										"first-value": "Functions.F_card_on_deck(CardOnSearch.I_CardName, CardOnExtra.I_CardOnDeck)",
 										"comparison": 2,
 										"second-value": "4"
 									}
@@ -9111,10 +9119,10 @@
 									}
 								},
 								{
-									"callFunction": "CreateMain",
+									"callFunction": "F_create_main",
 									"sid": 406944045397246,
 									"parameters": [
-										"CardOnSearch.idCard"
+										"CardOnSearch.I_CardID"
 									]
 								},
 								{
@@ -9126,7 +9134,7 @@
 									}
 								},
 								{
-									"callFunction": "SortDeck",
+									"callFunction": "F_sort_deck",
 									"sid": 583032000724129,
 									"parameters": [
 										"ListSortDeck.SelectedText",
@@ -9149,7 +9157,7 @@
 									"objectClass": "CardOnSearch",
 									"sid": 995773309316244,
 									"parameters": {
-										"instance-variable": "onDeck",
+										"instance-variable": "I_CardOnDeck",
 										"comparison": 0,
 										"value": "\"extra\""
 									}
@@ -9169,7 +9177,7 @@
 									"objectClass": "System",
 									"sid": 774767085467751,
 									"parameters": {
-										"first-value": "Functions.cardOnDeck(CardOnSearch.nameCard, CardOnExtra.onDeck)",
+										"first-value": "Functions.F_card_on_deck(CardOnSearch.I_CardName, CardOnExtra.I_CardOnDeck)",
 										"comparison": 2,
 										"second-value": "1"
 									}
@@ -9195,10 +9203,10 @@
 									}
 								},
 								{
-									"callFunction": "CreateExtra",
+									"callFunction": "F_create_extra",
 									"sid": 632815878861271,
 									"parameters": [
-										"CardOnSearch.idCard"
+										"CardOnSearch.I_CardID"
 									]
 								},
 								{
@@ -9210,7 +9218,7 @@
 									}
 								},
 								{
-									"callFunction": "SortDeck",
+									"callFunction": "F_sort_deck",
 									"sid": 801842878800769,
 									"parameters": [
 										"ListSortDeck.SelectedText",
@@ -9247,7 +9255,7 @@
 									"objectClass": "CardOnSearch",
 									"sid": 330711661920628,
 									"parameters": {
-										"instance-variable": "onDeck",
+										"instance-variable": "I_CardOnDeck",
 										"comparison": 0,
 										"value": "\"main\""
 									}
@@ -9267,7 +9275,7 @@
 									"objectClass": "System",
 									"sid": 623257935933372,
 									"parameters": {
-										"first-value": "Functions.cardOnDeck(CardOnSearch.nameCard, CardOnSearch.onDeck)",
+										"first-value": "Functions.F_card_on_deck(CardOnSearch.I_CardName, CardOnSearch.I_CardOnDeck)",
 										"comparison": 2,
 										"second-value": "4"
 									}
@@ -9293,10 +9301,10 @@
 									}
 								},
 								{
-									"callFunction": "CreateMain",
+									"callFunction": "F_create_main",
 									"sid": 679594017472104,
 									"parameters": [
-										"CardOnSearch.idCard"
+										"CardOnSearch.I_CardID"
 									]
 								},
 								{
@@ -9308,7 +9316,7 @@
 									}
 								},
 								{
-									"callFunction": "SortDeck",
+									"callFunction": "F_sort_deck",
 									"sid": 231298617558906,
 									"parameters": [
 										"ListSortDeck.SelectedText",
@@ -9331,7 +9339,7 @@
 									"objectClass": "CardOnSearch",
 									"sid": 743131384619016,
 									"parameters": {
-										"instance-variable": "onDeck",
+										"instance-variable": "I_CardOnDeck",
 										"comparison": 0,
 										"value": "\"extra\""
 									}
@@ -9351,7 +9359,7 @@
 									"objectClass": "System",
 									"sid": 362743611621181,
 									"parameters": {
-										"first-value": "Functions.cardOnDeck(CardOnSearch.nameCard, CardOnExtra.onDeck)",
+										"first-value": "Functions.F_card_on_deck(CardOnSearch.I_CardName, CardOnExtra.I_CardOnDeck)",
 										"comparison": 2,
 										"second-value": "1"
 									}
@@ -9377,10 +9385,10 @@
 									}
 								},
 								{
-									"callFunction": "CreateExtra",
+									"callFunction": "F_create_extra",
 									"sid": 498845863578539,
 									"parameters": [
-										"CardOnSearch.idCard"
+										"CardOnSearch.I_CardID"
 									]
 								},
 								{
@@ -9392,7 +9400,7 @@
 									}
 								},
 								{
-									"callFunction": "SortDeck",
+									"callFunction": "F_sort_deck",
 									"sid": 839831175841831,
 									"parameters": [
 										"ListSortDeck.SelectedText",
@@ -9453,7 +9461,7 @@
 							}
 						},
 						{
-							"callFunction": "SortDeck",
+							"callFunction": "F_sort_deck",
 							"sid": 112888412034185,
 							"parameters": [
 								"ListSortDeck.SelectedText",
@@ -9512,7 +9520,7 @@
 							}
 						},
 						{
-							"callFunction": "SortDeck",
+							"callFunction": "F_sort_deck",
 							"sid": 771868211005987,
 							"parameters": [
 								"ListSortDeck.SelectedText",
@@ -9551,7 +9559,7 @@
 							}
 						},
 						{
-							"callFunction": "SortDeck",
+							"callFunction": "F_sort_deck",
 							"sid": 684155929478178,
 							"parameters": [
 								"ListSortDeck.SelectedText",
@@ -9590,7 +9598,7 @@
 							}
 						},
 						{
-							"callFunction": "SortDeck",
+							"callFunction": "F_sort_deck",
 							"sid": 675515013238965,
 							"parameters": [
 								"ListSortDeck.SelectedText",
@@ -9662,7 +9670,7 @@
 									"sid": 916992442832837,
 									"parameters": {
 										"where": "back",
-										"value": "CardOnDeck.nameCard",
+										"value": "CardOnDeck.I_CardName",
 										"axis": "x"
 									}
 								}
@@ -9688,7 +9696,7 @@
 									"sid": 151213478250152,
 									"parameters": {
 										"where": "back",
-										"value": "CardOnExtra.nameCard",
+										"value": "CardOnExtra.I_CardName",
 										"axis": "x"
 									}
 								}
@@ -9726,7 +9734,7 @@
 									}
 								},
 								{
-									"callFunction": "ChangeListSave",
+									"callFunction": "F_change_list_save",
 									"sid": 799845728235694
 								}
 							],
@@ -9771,7 +9779,7 @@
 							}
 						},
 						{
-							"callFunction": "createFromLoad",
+							"callFunction": "F_create_from_load",
 							"sid": 616275416691160
 						},
 						{
@@ -9803,7 +9811,7 @@
 							}
 						},
 						{
-							"callFunction": "SortDeck",
+							"callFunction": "F_sort_deck",
 							"sid": 894537482689570,
 							"parameters": [
 								"ListSortDeck.SelectedText",
@@ -9819,7 +9827,7 @@
 							}
 						},
 						{
-							"callFunction": "SortDeck",
+							"callFunction": "F_sort_deck",
 							"sid": 880467241957742,
 							"parameters": [
 								"ListSortDeck.SelectedText",
@@ -9862,7 +9870,7 @@
 							"objectClass": "CardOnDeck",
 							"sid": 325055692779774,
 							"parameters": {
-								"instance-variable": "afterLoad",
+								"instance-variable": "I_CardAfterLoad",
 								"value": "false"
 							}
 						},
@@ -9875,7 +9883,7 @@
 							}
 						},
 						{
-							"callFunction": "SortDeck",
+							"callFunction": "F_sort_deck",
 							"sid": 687621386349226,
 							"disabled": true,
 							"parameters": [
@@ -9894,7 +9902,7 @@
 									"objectClass": "System",
 									"sid": 286074690829835,
 									"parameters": {
-										"first-value": "Dict_card_image.Get(CardOnDeck.imageCard)",
+										"first-value": "Dict_card_image.Get(CardOnDeck.I_CardImage)",
 										"comparison": 0,
 										"second-value": "\"none\""
 									}
@@ -9914,8 +9922,8 @@
 									"objectClass": "AJAX",
 									"sid": 607874455138414,
 									"parameters": {
-										"tag": "CardOnDeck.imageCard",
-										"url": "\"Card/\"&CardOnDeck.imageCard&\".\"&TypeFile"
+										"tag": "CardOnDeck.I_CardImage",
+										"url": "\"Card/\"&CardOnDeck.I_CardImage&\".\"&TypeFile"
 									}
 								},
 								{
@@ -9931,7 +9939,7 @@
 									"objectClass": "CardOnDeck",
 									"sid": 971522328217131,
 									"parameters": {
-										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.imageCard)",
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -9941,7 +9949,7 @@
 									"objectClass": "CardOnDeck",
 									"sid": 736172601972087,
 									"parameters": {
-										"instance-variable": "afterLoad",
+										"instance-variable": "I_CardAfterLoad",
 										"value": "true"
 									}
 								}
@@ -9963,7 +9971,7 @@
 									"objectClass": "CardOnDeck",
 									"sid": 667899266903684,
 									"parameters": {
-										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.imageCard)",
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -9973,7 +9981,7 @@
 									"objectClass": "CardOnDeck",
 									"sid": 413516615920629,
 									"parameters": {
-										"instance-variable": "afterLoad",
+										"instance-variable": "I_CardAfterLoad",
 										"value": "true"
 									}
 								}
@@ -10029,7 +10037,7 @@
 									"objectClass": "System",
 									"sid": 905105395777824,
 									"parameters": {
-										"first-value": "Dict_card_image.Get(CardOnExtra.imageCard)",
+										"first-value": "Dict_card_image.Get(CardOnExtra.I_CardImage)",
 										"comparison": 0,
 										"second-value": "\"none\""
 									}
@@ -10049,8 +10057,8 @@
 									"objectClass": "AJAX",
 									"sid": 259948692072786,
 									"parameters": {
-										"tag": "CardOnExtra.imageCard",
-										"url": "\"Card/\"&CardOnExtra.imageCard&\".\"&TypeFile"
+										"tag": "CardOnExtra.I_CardImage",
+										"url": "\"Card/\"&CardOnExtra.I_CardImage&\".\"&TypeFile"
 									}
 								},
 								{
@@ -10066,7 +10074,7 @@
 									"objectClass": "CardOnExtra",
 									"sid": 843348855990502,
 									"parameters": {
-										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.imageCard)",
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -10076,7 +10084,7 @@
 									"objectClass": "CardOnExtra",
 									"sid": 851928738811534,
 									"parameters": {
-										"instance-variable": "afterLoad",
+										"instance-variable": "I_CardAfterLoad",
 										"value": "true"
 									}
 								}
@@ -10098,7 +10106,7 @@
 									"objectClass": "CardOnExtra",
 									"sid": 134958043709031,
 									"parameters": {
-										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.imageCard)",
+										"uri": "\"data:image/\"&imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -10108,7 +10116,7 @@
 									"objectClass": "CardOnExtra",
 									"sid": 746472077978334,
 									"parameters": {
-										"instance-variable": "afterLoad",
+										"instance-variable": "I_CardAfterLoad",
 										"value": "true"
 									}
 								}
@@ -10119,6 +10127,326 @@
 				}
 			],
 			"sid": 821003538450991
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "DeckMove",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-dragging",
+							"objectClass": "CardOnDeck",
+							"sid": 908282286862176,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-layer",
+							"objectClass": "CardOnDeck",
+							"sid": 764930100444952,
+							"parameters": {
+								"layer": "\"UP\""
+							}
+						}
+					],
+					"sid": 409274415899742
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "CardOnDeck",
+							"sid": 991600870532834,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [],
+					"sid": 170534830116641,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "CardOnDeck",
+									"sid": 398502959953020,
+									"parameters": {
+										"object": "Layout_main"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Layout_main",
+									"sid": 747755458271157,
+									"parameters": {
+										"instance-variable": "idName",
+										"comparison": 0,
+										"value": "\"main\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-two-properties",
+									"objectClass": "CardOnDeck",
+									"sid": 319327323819169,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"back\"",
+										"property": "position",
+										"end-x": "Self.I_CardPosX",
+										"end-y": "Self.I_CardPosY",
+										"time": "0.2",
+										"ease": "noease",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "move-to-layer",
+									"objectClass": "CardOnDeck",
+									"sid": 821775429486821,
+									"parameters": {
+										"layer": "\"card\""
+									}
+								}
+							],
+							"sid": 704595739153004
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 248970246611068
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "CardOnDeck",
+									"sid": 242031103008603
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 808181921832261,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"callFunction": "F_sort_deck",
+									"sid": 902090485674261,
+									"parameters": [
+										"ListSortDeck.SelectedText",
+										"\"main\""
+									]
+								}
+							],
+							"sid": 696332393383205
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drag-start",
+							"objectClass": "CardOnDeck",
+							"sid": 683488162355170,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "CardOnDeck",
+							"sid": 351957137585302,
+							"parameters": {
+								"instance-variable": "I_CardPosX",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "CardOnDeck",
+							"sid": 603845720049707,
+							"parameters": {
+								"instance-variable": "I_CardPosY",
+								"value": "Self.Y"
+							}
+						}
+					],
+					"sid": 425287499561515
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-dragging",
+							"objectClass": "CardOnExtra",
+							"sid": 840197700520594,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-layer",
+							"objectClass": "CardOnExtra",
+							"sid": 519145232838685,
+							"parameters": {
+								"layer": "\"UP\""
+							}
+						}
+					],
+					"sid": 581141060949241
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "CardOnExtra",
+							"sid": 827385442107722,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [],
+					"sid": 940608961886280,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "CardOnExtra",
+									"sid": 898246312911263,
+									"parameters": {
+										"object": "Layout_main"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Layout_main",
+									"sid": 780196637615057,
+									"parameters": {
+										"instance-variable": "idName",
+										"comparison": 0,
+										"value": "\"extra\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-two-properties",
+									"objectClass": "CardOnExtra",
+									"sid": 360284761910733,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"back\"",
+										"property": "position",
+										"end-x": "Self.I_CardPosX",
+										"end-y": "Self.I_CardPosY",
+										"time": "0.2",
+										"ease": "noease",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "move-to-layer",
+									"objectClass": "CardOnExtra",
+									"sid": 641299941171603,
+									"parameters": {
+										"layer": "\"card\""
+									}
+								}
+							],
+							"sid": 367467708657578
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 368185144889320
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "CardOnExtra",
+									"sid": 363640864662548
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 374349314857957,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"callFunction": "F_sort_deck",
+									"sid": 119256059397751,
+									"parameters": [
+										"ListSortDeck.SelectedText",
+										"\"extra\""
+									]
+								}
+							],
+							"sid": 865234555751746
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drag-start",
+							"objectClass": "CardOnExtra",
+							"sid": 486647859865564,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "CardOnExtra",
+							"sid": 487533339971025,
+							"parameters": {
+								"instance-variable": "I_CardPosX",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "CardOnExtra",
+							"sid": 550502635608862,
+							"parameters": {
+								"instance-variable": "I_CardPosY",
+								"value": "Self.Y"
+							}
+						}
+					],
+					"sid": 327848540511887
+				}
+			],
+			"sid": 793101890623158
 		}
 	],
 	"sid": 484960243300908
