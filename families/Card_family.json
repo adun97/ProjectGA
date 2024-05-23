@@ -114,6 +114,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 438193264014667
+		},
+		{
+			"name": "I_CardImageID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 765134109730026
 		}
 	],
 	"behaviorTypes": [

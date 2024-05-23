@@ -4,7 +4,13 @@
 	"sid": 920979104334566,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Mitsuhashish_ColorVariable",
+			"name": "ColorVariable",
+			"sid": 574756124475284
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,7 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 783155,
+						"imageSpriteId": 12290,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

@@ -74,7 +74,7 @@
 }
 
 /*Button*/
-.button{
+.button,.button-add,.button-minus{
 	align-items: center;
 	border: 2px solid var(--input-border);
 	color: var(--input-color);
@@ -83,6 +83,16 @@
 	border-radius: 10px;
 	overflow-wrap: break-word;
 }
+/*
+.button-add{
+	align-items: center;
+	border: 2px solid var(--input-border);
+	color: var(--input-color);
+	font-size: 100%;
+	font-family: inherit;
+	border-radius: 10px;
+	overflow-wrap: break-word;
+}*/
 
 .button-sort{
 	align-items: center;
@@ -101,6 +111,21 @@
   	fill: #06f;
 	border-radius: 10px;
 }
+
+.button-add:hover,.button-minus:hover {
+  	border-color: var(--group-color-focus);
+	color: var(--group-color-focus);
+  	fill: #06f;
+	border-radius: 10px;
+}
+
+.button-add:hover{
+	background-color: #007437;
+}
+.button-minus:hover{
+	background-color: #ed5931;
+}
+
 
 .button-sort:hover {
   	background-color: var(--group-background-focus);

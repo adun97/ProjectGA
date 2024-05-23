@@ -259,7 +259,11 @@
 					"btn_Save",
 					"btn_sort_deck",
 					"btn_Back",
-					"btn_sort_search"
+					"btn_sort_search",
+					"btn_Add",
+					"btn_Minus",
+					"btn_DeleteDeck",
+					"btn_ClearDeck"
 				],
 				"subfolders": [],
 				"name": "UI Editor"

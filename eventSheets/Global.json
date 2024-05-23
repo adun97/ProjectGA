@@ -3,7 +3,7 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "totalSearch",
+			"name": "V_totalSearch",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -13,7 +13,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "onCreateSearch",
+			"name": "V_onCreateSearch",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -23,7 +23,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "onCreateMain",
+			"name": "V_onCreateMain",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -33,7 +33,17 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "TypeFile",
+			"name": "V_onCreateExtra",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 704397854979227
+		},
+		{
+			"eventType": "variable",
+			"name": "V_typeFile",
 			"type": "string",
 			"initialValue": "webp",
 			"comment": "",
@@ -43,17 +53,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "intLoop",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 370902384907631
-		},
-		{
-			"eventType": "variable",
-			"name": "imgFormat",
+			"name": "V_imgFormat",
 			"type": "string",
 			"initialValue": "webp",
 			"comment": "",
@@ -63,7 +63,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "XstartMain",
+			"name": "V_XstartMain",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -73,7 +73,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "YstartMain",
+			"name": "V_YstartMain",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -83,7 +83,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Xstart",
+			"name": "V_Xstart",
 			"type": "number",
 			"initialValue": "2880",
 			"comment": "",
@@ -93,7 +93,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Ystart",
+			"name": "V_Ystart",
 			"type": "number",
 			"initialValue": "832",
 			"comment": "",
@@ -107,7 +107,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Xstart_def_search",
+			"name": "V_Xstart_def_search",
 			"type": "number",
 			"initialValue": "3136",
 			"comment": "",
@@ -117,7 +117,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Ystart_def_search",
+			"name": "V_Ystart_def_search",
 			"type": "number",
 			"initialValue": "672",
 			"comment": "",
@@ -127,7 +127,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Xgap_search",
+			"name": "V_Xgap_search",
 			"type": "number",
 			"initialValue": "256",
 			"comment": "",
@@ -137,7 +137,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Ygap_search",
+			"name": "V_Ygap_search",
 			"type": "number",
 			"initialValue": "320",
 			"comment": "",
@@ -147,7 +147,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "rowSearch",
+			"name": "V_rowSearch",
 			"type": "number",
 			"initialValue": "3",
 			"comment": "",
@@ -157,7 +157,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "columnSearch",
+			"name": "V_columnSearch",
 			"type": "number",
 			"initialValue": "3",
 			"comment": "",
@@ -171,7 +171,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Xstart_def_main",
+			"name": "V_Xstart_def_main",
 			"type": "number",
 			"initialValue": "1104",
 			"comment": "",
@@ -181,7 +181,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Ystart_def_main",
+			"name": "V_Ystart_def_main",
 			"type": "number",
 			"initialValue": "640",
 			"comment": "",
@@ -191,7 +191,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Xgap_main",
+			"name": "V_Xgap_main",
 			"type": "number",
 			"initialValue": "192",
 			"comment": "",
@@ -201,7 +201,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Ygap_main",
+			"name": "V_Ygap_main",
 			"type": "number",
 			"initialValue": "256",
 			"comment": "",
@@ -211,7 +211,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "rowMain",
+			"name": "V_rowMain",
 			"type": "number",
 			"initialValue": "10",
 			"comment": "",
@@ -221,7 +221,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "columnMain",
+			"name": "V_columnMain",
 			"type": "number",
 			"initialValue": "5",
 			"comment": "",
@@ -235,7 +235,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Xstart_def_extra",
+			"name": "V_Xstart_def_extra",
 			"type": "number",
 			"initialValue": "144",
 			"comment": "",
@@ -245,7 +245,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Ystart_def_extra",
+			"name": "V_Ystart_def_extra",
 			"type": "number",
 			"initialValue": "1984",
 			"comment": "",
@@ -255,7 +255,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Xgap_extra",
+			"name": "V_Xgap_extra",
 			"type": "number",
 			"initialValue": "192",
 			"comment": "",
@@ -265,7 +265,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Ygap_extra",
+			"name": "V_Ygap_extra",
 			"type": "number",
 			"initialValue": "304",
 			"comment": "",
@@ -275,7 +275,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "rowExtra",
+			"name": "V_rowExtra",
 			"type": "number",
 			"initialValue": "3",
 			"comment": "",
@@ -289,7 +289,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "toggleDeck",
+			"name": "V_toggleDeck",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -299,7 +299,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "NewY",
+			"name": "V_NewY",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -309,7 +309,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "OldY",
+			"name": "V_OldY",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -319,13 +319,177 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "SwipSpeed",
+			"name": "V_SwipSpeed",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 534853853398801
+			"sid": 717413707751928
+		},
+		{
+			"eventType": "comment",
+			"text": "deckEditor variabel"
+		},
+		{
+			"eventType": "variable",
+			"name": "V_count",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 764465904799892
+		},
+		{
+			"eventType": "variable",
+			"name": "V_colorSelect",
+			"type": "string",
+			"initialValue": "00ff00",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 160533140688919
+		},
+		{
+			"eventType": "variable",
+			"name": "V_colorHover",
+			"type": "string",
+			"initialValue": "ffffff",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 780873894351539
+		},
+		{
+			"eventType": "variable",
+			"name": "V_SelectType",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 253492661773996
+		},
+		{
+			"eventType": "variable",
+			"name": "V_SelectElement",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 562780392889333
+		},
+		{
+			"eventType": "variable",
+			"name": "V_SelectCost",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 210712453132138
+		},
+		{
+			"eventType": "variable",
+			"name": "V_SelectAtk",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 143240058025366
+		},
+		{
+			"eventType": "variable",
+			"name": "V_SelectHp",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 251244690695802
+		},
+		{
+			"eventType": "variable",
+			"name": "V_SelectClass",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 208921427322003
+		},
+		{
+			"eventType": "variable",
+			"name": "V_sortBy",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 378125015386945
+		},
+		{
+			"eventType": "variable",
+			"name": "V_SelectTitle",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 443549776585087
+		},
+		{
+			"eventType": "variable",
+			"name": "V_lastX_main",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 271890801846605
+		},
+		{
+			"eventType": "variable",
+			"name": "V_lastX_extra",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 649137030721920
+		},
+		{
+			"eventType": "variable",
+			"name": "V_lastY_main",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 516355463035661
+		},
+		{
+			"eventType": "variable",
+			"name": "V_lastY_extra",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 906104787309607
+		},
+		{
+			"eventType": "variable",
+			"name": "V_theme",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 850173120066832
 		}
 	],
 	"sid": 771776772624027

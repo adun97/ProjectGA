@@ -12,7 +12,13 @@
 			"sid": 537512331216022
 		}
 	],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Mitsuhashish_ColorVariable",
+			"name": "ColorVariable",
+			"sid": 949703933500281
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -26,7 +32,20 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4522609,
+						"imageSpriteId": 4347394,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9733111,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
