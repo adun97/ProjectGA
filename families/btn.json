@@ -1,0 +1,20 @@
+{
+	"name": "btn",
+	"plugin-id": "Button",
+	"sid": 205264929960096,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"members": [
+		"btn_Add",
+		"btn_sort_search",
+		"btn_sort_deck",
+		"btn_search",
+		"btn_Save",
+		"btn_Reset",
+		"btn_Minus",
+		"btn_Load",
+		"btn_DeleteDeck",
+		"btn_ClearDeck",
+		"btn_Back"
+	]
+}

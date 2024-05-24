@@ -1,0 +1,14 @@
+{
+	"name": "border_family",
+	"plugin-id": "Sprite",
+	"sid": 473023910534293,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Border_N1",
+		"Border_N2",
+		"Border_N3",
+		"Border_N4"
+	]
+}

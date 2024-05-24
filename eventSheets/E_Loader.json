@@ -31,7 +31,6 @@
 							"id": "request-project-file",
 							"objectClass": "AJAX",
 							"sid": 182746761691762,
-							"disabled": true,
 							"parameters": {
 								"tag": "\"cardimage\"",
 								"file": "Array Card Image.json"
@@ -184,6 +183,7 @@
 									"id": "set-response-binary",
 									"objectClass": "AJAX",
 									"sid": 808020872029584,
+									"disabled": true,
 									"parameters": {
 										"destination": "BinaryData"
 									}
@@ -191,10 +191,11 @@
 								{
 									"id": "request-url",
 									"objectClass": "AJAX",
-									"sid": 989902778983214,
+									"sid": 588121077451785,
+									"disabled": true,
 									"parameters": {
-										"tag": "Array_card_image.At(0,loopindex(\"card\"))",
-										"url": "\"Card/\"&Array_card_image.At(0,loopindex(\"card\"))&\".\"&V_typeFile"
+										"tag": "Array_card_image.At(10,loopindex(\"card\"))",
+										"url": "\"Card/\"&Array_card_image.At(10,loopindex(\"card\"))&\".\"&V_typeFile"
 									}
 								}
 							],

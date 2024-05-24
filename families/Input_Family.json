@@ -1,0 +1,11 @@
+{
+	"name": "Input_Family",
+	"plugin-id": "TextBox",
+	"sid": 993901101409497,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"members": [
+		"TextInput",
+		"TextInputSave"
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"name": "list_Family",
+	"plugin-id": "List",
+	"sid": 289012795430265,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"members": [
+		"ListClass",
+		"ListSortDeck",
+		"ListSort",
+		"ListLoad"
+	]
+}

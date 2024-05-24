@@ -57,6 +57,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "List",
 			"name": "List",
 			"author": "Scirra",
@@ -158,9 +165,7 @@
 	],
 	"uniqueId": "06xsuvfnrhr",
 	"objectTypes": {
-		"items": [
-			"LocalStorage"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -206,7 +211,9 @@
 					"JSON",
 					"JSONdata",
 					"Mouse",
-					"Touch"
+					"Touch",
+					"Keyboard",
+					"LocalStorage"
 				],
 				"subfolders": [],
 				"name": "Object"
@@ -217,7 +224,8 @@
 					"txt_cost",
 					"txtCek",
 					"txt_atk",
-					"txt_hp"
+					"txt_hp",
+					"txtNotif"
 				],
 				"subfolders": [],
 				"name": "Text"
@@ -267,6 +275,19 @@
 				],
 				"subfolders": [],
 				"name": "UI Editor"
+			},
+			{
+				"items": [
+					"black",
+					"Border_N1",
+					"Border_N2",
+					"Border_N3",
+					"Border_N4",
+					"btnClose",
+					"btnOk"
+				],
+				"subfolders": [],
+				"name": "notif"
 			}
 		]
 	},
@@ -274,14 +295,20 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"Card_family"
+			"Card_family",
+			"border_family",
+			"btn",
+			"list_Family",
+			"SB_family",
+			"Input_Family"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
 			"Loader",
-			"Deck Editor"
+			"Deck Editor",
+			"Asset"
 		],
 		"subfolders": []
 	},

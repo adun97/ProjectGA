@@ -237,7 +237,7 @@
 			"eventType": "variable",
 			"name": "V_Xstart_def_extra",
 			"type": "number",
-			"initialValue": "144",
+			"initialValue": "1088",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -257,7 +257,7 @@
 			"eventType": "variable",
 			"name": "V_Xgap_extra",
 			"type": "number",
-			"initialValue": "192",
+			"initialValue": "160",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -330,6 +330,26 @@
 		{
 			"eventType": "comment",
 			"text": "deckEditor variabel"
+		},
+		{
+			"eventType": "variable",
+			"name": "V_countDeck",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 935765034795994
+		},
+		{
+			"eventType": "variable",
+			"name": "V_countExtra",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 844187613938156
 		},
 		{
 			"eventType": "variable",

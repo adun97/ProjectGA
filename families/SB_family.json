@@ -1,0 +1,12 @@
+{
+	"name": "SB_family",
+	"plugin-id": "sliderbar",
+	"sid": 478839202652517,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"members": [
+		"SBATK",
+		"SBHP",
+		"SBCost"
+	]
+}
