@@ -102,6 +102,22 @@
 			},
 			"uid": 76,
 			"instanceVariables": {}
+		},
+		{
+			"type": "Dict_card_id",
+			"properties": {},
+			"uid": 47,
+			"instanceVariables": {}
+		},
+		{
+			"type": "Array_handSize",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 93,
+			"instanceVariables": {}
 		}
 	],
 	"effectTypes": [],

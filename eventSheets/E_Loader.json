@@ -180,6 +180,15 @@
 									}
 								},
 								{
+									"id": "add-key",
+									"objectClass": "Dict_card_id",
+									"sid": 448120328731015,
+									"parameters": {
+										"key": "Array_card_list.At(0,loopindex(\"card\"))",
+										"value": "Array_card_list.At(11,loopindex(\"card\"))"
+									}
+								},
+								{
 									"id": "set-response-binary",
 									"objectClass": "AJAX",
 									"sid": 808020872029584,

@@ -165,7 +165,12 @@
 	],
 	"uniqueId": "06xsuvfnrhr",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"cardOnHandSize",
+			"Board_c1bde9cdfd",
+			"PlaceTest",
+			"txt_test"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -187,7 +192,8 @@
 							"Array_card_list",
 							"Array_card_display",
 							"Array_card_save",
-							"Array_card_load"
+							"Array_card_load",
+							"Array_handSize"
 						],
 						"subfolders": [],
 						"name": "Array"
@@ -195,7 +201,8 @@
 					{
 						"items": [
 							"Dict_card_image",
-							"Dict_save"
+							"Dict_save",
+							"Dict_card_id"
 						],
 						"subfolders": [],
 						"name": "Dictionary"
@@ -300,7 +307,8 @@
 			"btn",
 			"list_Family",
 			"SB_family",
-			"Input_Family"
+			"Input_Family",
+			"Card_game"
 		],
 		"subfolders": []
 	},
@@ -308,7 +316,8 @@
 		"items": [
 			"Loader",
 			"Deck Editor",
-			"Asset"
+			"Asset",
+			"Main"
 		],
 		"subfolders": []
 	},
@@ -316,7 +325,8 @@
 		"items": [
 			"Global",
 			"E_Loader",
-			"E_Deck_Editor"
+			"E_Deck_Editor",
+			"E_main"
 		],
 		"subfolders": []
 	},
@@ -434,6 +444,14 @@
 					"sid": 162167987378751,
 					"file-info": {
 						"purpose": "stylesheet"
+					}
+				},
+				{
+					"name": "ArrayHandSize.json",
+					"type": "application/json",
+					"sid": 554314044905614,
+					"file-info": {
+						"purpose": "none"
 					}
 				}
 			],

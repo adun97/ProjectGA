@@ -961,7 +961,11 @@
 						"I_CardPosY": 0,
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
-						"I_CardImageID": 0
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1036,7 +1040,11 @@
 						"I_CardPosY": 0,
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
-						"I_CardImageID": 0
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1111,7 +1119,11 @@
 						"I_CardPosY": 0,
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
-						"I_CardImageID": 0
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1186,7 +1198,11 @@
 						"I_CardPosY": 0,
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
-						"I_CardImageID": 0
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1261,7 +1277,11 @@
 						"I_CardPosY": 0,
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
-						"I_CardImageID": 0
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1336,7 +1356,11 @@
 						"I_CardPosY": 0,
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
-						"I_CardImageID": 0
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1411,7 +1435,11 @@
 						"I_CardPosY": 0,
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
-						"I_CardImageID": 0
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1486,7 +1514,11 @@
 						"I_CardPosY": 0,
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
-						"I_CardImageID": 0
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1561,7 +1593,11 @@
 						"I_CardPosY": 0,
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
-						"I_CardImageID": 0
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1636,7 +1672,11 @@
 						"I_CardPosY": 0,
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
-						"I_CardImageID": 0
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1711,7 +1751,11 @@
 						"I_CardPosY": 0,
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
-						"I_CardImageID": 0
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1786,7 +1830,11 @@
 						"I_CardPosY": 0,
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
-						"I_CardImageID": 0
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1861,7 +1909,11 @@
 						"I_CardPosY": 0,
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
-						"I_CardImageID": 0
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1982,7 +2034,7 @@
 						"minimum": -1,
 						"maximum": 15,
 						"step": 1,
-						"tooltip": "aaa",
+						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
 						"id": "",
@@ -3601,7 +3653,7 @@
 						"minimum": -1,
 						"maximum": 8,
 						"step": 1,
-						"tooltip": "aaa",
+						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
 						"id": "",
@@ -3632,7 +3684,7 @@
 						"minimum": -1,
 						"maximum": 28,
 						"step": 1,
-						"tooltip": "aaa",
+						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
 						"id": "",

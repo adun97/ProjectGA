@@ -1,0 +1,41 @@
+{
+	"name": "Card_game",
+	"plugin-id": "Sprite",
+	"sid": 965077395125002,
+	"instanceVariables": [
+		{
+			"name": "player",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 765542837160319
+		},
+		{
+			"name": "Status",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 231875655935406
+		},
+		{
+			"name": "onPlaceNow",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 702851370589559
+		},
+		{
+			"name": "isOpen",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 314799734238310
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"CardOnDeck",
+		"CardOnExtra"
+	]
+}
