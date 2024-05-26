@@ -169,7 +169,12 @@
 			"cardOnHandSize",
 			"Board_c1bde9cdfd",
 			"PlaceTest",
-			"txt_test"
+			"txt_test",
+			"list_LoadDeck",
+			"btn_Ready",
+			"btn_start",
+			"btn_editor",
+			"btn_play"
 		],
 		"subfolders": [
 			{
@@ -317,7 +322,9 @@
 			"Loader",
 			"Deck Editor",
 			"Asset",
-			"Main"
+			"Main",
+			"SelectDeck",
+			"Menu"
 		],
 		"subfolders": []
 	},
@@ -326,7 +333,9 @@
 			"Global",
 			"E_Loader",
 			"E_Deck_Editor",
-			"E_main"
+			"E_main",
+			"E_SelectDeck",
+			"E_Menu"
 		],
 		"subfolders": []
 	},

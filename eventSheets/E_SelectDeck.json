@@ -1,0 +1,109 @@
+{
+	"name": "E_SelectDeck",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 913720761505796
+				}
+			],
+			"actions": [
+				{
+					"id": "load-stylesheet",
+					"objectClass": "Browser",
+					"sid": 697809336753075,
+					"parameters": {
+						"url": "\"elementCSS.css\""
+					}
+				},
+				{
+					"callFunction": "F_change_list_save_deck",
+					"sid": 901089322994322
+				}
+			],
+			"sid": 210199165111717
+		},
+		{
+			"functionName": "F_change_list_save_deck",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "clear",
+					"objectClass": "ListLoad",
+					"sid": 210863355900149
+				}
+			],
+			"sid": 168544277459417,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each-key",
+							"objectClass": "Dict_save",
+							"sid": 862750797250147
+						}
+					],
+					"actions": [
+						{
+							"id": "add-item",
+							"objectClass": "ListLoad",
+							"sid": 218301203696003,
+							"parameters": {
+								"text": "Dict_save.CurrentKey"
+							}
+						}
+					],
+					"sid": 484482790459990
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-selection",
+							"objectClass": "ListLoad",
+							"sid": 620822557588721,
+							"parameters": {
+								"index": "0"
+							}
+						}
+					],
+					"sid": 584002218482477
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btn_Back",
+					"sid": 346659375846697
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 725874631429705,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 542623966726140
+		}
+	],
+	"sid": 556848847154785
+}

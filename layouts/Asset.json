@@ -687,7 +687,7 @@
 				{
 					"type": "txtNotif",
 					"properties": {
-						"text": "The number of decks is less than 50",
+						"text": "The number of decks is less than 60",
 						"enable-bbcode": true,
 						"font": "Verdana",
 						"size": 50,

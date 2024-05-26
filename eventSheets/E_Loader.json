@@ -229,6 +229,29 @@
 									"disabled": true
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 162660701363694,
+									"parameters": {
+										"seconds": "0.5"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 342418137839531,
+									"parameters": {
+										"layout": "Menu"
+									}
+								}
+							],
+							"sid": 812798516938277
 						}
 					]
 				},
@@ -556,48 +579,6 @@
 				}
 			],
 			"sid": 535696931192401
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 255158136250026,
-					"parameters": {
-						"object": "loading",
-						"type": "start"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 100453520742433,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 504148906517517,
-							"disabled": true,
-							"parameters": {
-								"seconds": "1"
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 752777875359736,
-							"parameters": {
-								"layout": "Deck Editor"
-							}
-						}
-					],
-					"sid": 730828263099657
-				}
-			]
 		}
 	],
 	"sid": 616977034840533

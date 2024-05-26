@@ -303,7 +303,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Funtion",
+			"title": "Funtion Editor",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -321,6 +321,13 @@
 							"initialValue": "",
 							"comment": "",
 							"sid": 255995715246798
+						},
+						{
+							"name": "idCard",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 158583292954303
 						}
 					],
 					"eventType": "function-block",
@@ -349,6 +356,16 @@
 										"instance-variable": "I_CardName",
 										"comparison": 0,
 										"value": "nameCard"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Card_family",
+									"sid": 184439568723152,
+									"parameters": {
+										"instance-variable": "I_CardID",
+										"comparison": 0,
+										"value": "idCard"
 									}
 								}
 							],
@@ -6945,9 +6962,10 @@
 						},
 						{
 							"callFunction": "hoverCard",
-							"sid": 274556742156187,
+							"sid": 732737563809900,
 							"parameters": [
-								"CardOnSearch.I_CardName"
+								"CardOnSearch.I_CardName",
+								"CardOnSearch.I_CardID"
 							]
 						},
 						{
@@ -6977,9 +6995,18 @@
 					],
 					"actions": [
 						{
+							"callFunction": "hoverCard",
+							"sid": 105636622207131,
+							"parameters": [
+								"CardOnDeck.I_CardName",
+								"CardOnDeck.I_CardID"
+							]
+						},
+						{
 							"id": "set-effect-enabled",
 							"objectClass": "CardOnDeck",
 							"sid": 141334884362970,
+							"disabled": true,
 							"parameters": {
 								"mode": "enable",
 								"effect": "\"BetterOutlineFamily\""
@@ -6989,6 +7016,7 @@
 							"id": "set-effect-parameter",
 							"objectClass": "CardOnDeck",
 							"sid": 197550764215362,
+							"disabled": true,
 							"parameters": {
 								"effect": "\"BetterOutlineFamily\"",
 								"parameter-index": "0",
@@ -6999,6 +7027,7 @@
 							"id": "set-effect-parameter",
 							"objectClass": "CardOnDeck",
 							"sid": 711111095104705,
+							"disabled": true,
 							"parameters": {
 								"effect": "\"BetterOutlineFamily\"",
 								"parameter-index": "1",
@@ -7009,6 +7038,7 @@
 							"id": "set-effect-parameter",
 							"objectClass": "CardOnDeck",
 							"sid": 103250277337700,
+							"disabled": true,
 							"parameters": {
 								"effect": "\"BetterOutlineFamily\"",
 								"parameter-index": "2",
@@ -7019,6 +7049,7 @@
 							"id": "set-effect-parameter",
 							"objectClass": "CardOnDeck",
 							"sid": 431911618789449,
+							"disabled": true,
 							"parameters": {
 								"effect": "\"BetterOutlineFamily\"",
 								"parameter-index": "3",
@@ -7052,9 +7083,18 @@
 					],
 					"actions": [
 						{
+							"callFunction": "hoverCard",
+							"sid": 923340521175584,
+							"parameters": [
+								"CardOnExtra.I_CardName",
+								"CardOnExtra.I_CardID"
+							]
+						},
+						{
 							"id": "set-effect-enabled",
 							"objectClass": "CardOnExtra",
 							"sid": 756632387136768,
+							"disabled": true,
 							"parameters": {
 								"mode": "enable",
 								"effect": "\"BetterOutlineFamily\""
@@ -7064,6 +7104,7 @@
 							"id": "set-effect-parameter",
 							"objectClass": "CardOnExtra",
 							"sid": 379004909371908,
+							"disabled": true,
 							"parameters": {
 								"effect": "\"BetterOutlineFamily\"",
 								"parameter-index": "0",
@@ -7074,6 +7115,7 @@
 							"id": "set-effect-parameter",
 							"objectClass": "CardOnExtra",
 							"sid": 812982283878751,
+							"disabled": true,
 							"parameters": {
 								"effect": "\"BetterOutlineFamily\"",
 								"parameter-index": "1",
@@ -7084,6 +7126,7 @@
 							"id": "set-effect-parameter",
 							"objectClass": "CardOnExtra",
 							"sid": 795120858136574,
+							"disabled": true,
 							"parameters": {
 								"effect": "\"BetterOutlineFamily\"",
 								"parameter-index": "2",
@@ -7094,6 +7137,7 @@
 							"id": "set-effect-parameter",
 							"objectClass": "CardOnExtra",
 							"sid": 399572345309563,
+							"disabled": true,
 							"parameters": {
 								"effect": "\"BetterOutlineFamily\"",
 								"parameter-index": "3",
@@ -8269,11 +8313,11 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 144923427348351,
+									"sid": 693922595636832,
 									"parameters": {
 										"first-value": "CardOnDeck.Count",
 										"comparison": 2,
-										"second-value": "50"
+										"second-value": "60"
 									}
 								},
 								{
@@ -8451,11 +8495,11 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 681647817726442,
+									"sid": 528177953460124,
 									"parameters": {
 										"first-value": "CardOnDeck.Count",
 										"comparison": 2,
-										"second-value": "50"
+										"second-value": "60"
 									}
 								},
 								{
@@ -8982,11 +9026,11 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 676922692989822,
+									"sid": 791958036633193,
 									"parameters": {
 										"first-value": "CardOnDeck.Count",
 										"comparison": 2,
-										"second-value": "50"
+										"second-value": "60"
 									}
 								}
 							],
@@ -11874,6 +11918,27 @@
 				}
 			],
 			"sid": 636410478141693
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btn_Back",
+					"sid": 616587620968859
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 369034037690826,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 277516525124976
 		}
 	],
 	"sid": 484960243300908

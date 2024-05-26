@@ -997,7 +997,7 @@
 						}
 					},
 					"world": {
-						"x": 1104,
+						"x": 1088,
 						"y": 640,
 						"width": 150,
 						"height": 210,
@@ -1078,8 +1078,8 @@
 					"world": {
 						"x": 2848,
 						"y": 1984,
-						"width": 125,
-						"height": 175,
+						"width": 150,
+						"height": 210,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1157,8 +1157,8 @@
 					"world": {
 						"x": 2688,
 						"y": 1984,
-						"width": 125,
-						"height": 175,
+						"width": 150,
+						"height": 210,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1236,8 +1236,8 @@
 					"world": {
 						"x": 2528,
 						"y": 1984,
-						"width": 125,
-						"height": 175,
+						"width": 150,
+						"height": 210,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1315,8 +1315,8 @@
 					"world": {
 						"x": 2368,
 						"y": 1984,
-						"width": 125,
-						"height": 175,
+						"width": 150,
+						"height": 210,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1394,8 +1394,8 @@
 					"world": {
 						"x": 2208,
 						"y": 1984,
-						"width": 125,
-						"height": 175,
+						"width": 150,
+						"height": 210,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1473,8 +1473,8 @@
 					"world": {
 						"x": 2048,
 						"y": 1984,
-						"width": 125,
-						"height": 175,
+						"width": 150,
+						"height": 210,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1552,8 +1552,8 @@
 					"world": {
 						"x": 1888,
 						"y": 1984,
-						"width": 125,
-						"height": 175,
+						"width": 150,
+						"height": 210,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1631,8 +1631,8 @@
 					"world": {
 						"x": 1728,
 						"y": 1984,
-						"width": 125,
-						"height": 175,
+						"width": 150,
+						"height": 210,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1710,8 +1710,8 @@
 					"world": {
 						"x": 1568,
 						"y": 1984,
-						"width": 125,
-						"height": 175,
+						"width": 150,
+						"height": 210,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1789,8 +1789,8 @@
 					"world": {
 						"x": 1408,
 						"y": 1984,
-						"width": 125,
-						"height": 175,
+						"width": 150,
+						"height": 210,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1868,8 +1868,8 @@
 					"world": {
 						"x": 1248,
 						"y": 1984,
-						"width": 125,
-						"height": 175,
+						"width": 150,
+						"height": 210,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1947,8 +1947,4669 @@
 					"world": {
 						"x": 1088,
 						"y": 1984,
-						"width": 125,
-						"height": 175,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 105,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1248,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 106,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1408,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 108,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1568,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 109,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1728,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 110,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1888,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 111,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2048,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 112,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2208,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 113,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2368,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 114,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2528,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 115,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2688,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 116,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2848,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 117,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1088,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 118,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1248,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 119,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1408,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 120,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1568,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 121,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1728,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 122,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1888,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 123,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2048,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 124,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2208,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 125,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2368,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 126,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2528,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 127,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2688,
+						"y": 896,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 128,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2848,
+						"y": 640,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 129,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1088,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 130,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1248,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 131,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1408,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 132,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1568,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 134,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1728,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 135,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1888,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 136,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2048,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 137,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2208,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 138,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2368,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 139,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2528,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 140,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2688,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 141,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2848,
+						"y": 1152,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 142,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1088,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 143,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1248,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 144,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1408,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 145,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1568,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 146,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1728,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 147,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1888,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 148,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2048,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 149,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2208,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 150,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2368,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 151,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2528,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 152,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2688,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 153,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2848,
+						"y": 1408,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 154,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1088,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 155,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1248,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 156,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1408,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 157,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1568,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 158,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1728,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 159,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1888,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 160,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2048,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 161,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2208,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 162,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2368,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 163,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2528,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 164,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2688,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CardOnDeck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 165,
+					"instanceVariables": {
+						"I_CardName": "",
+						"I_CardID": 0,
+						"I_CardImage": "",
+						"I_CardRarity": "",
+						"I_CardAfterLoad": false,
+						"I_CardCost": 0,
+						"I_CardElement": "",
+						"I_CardType": "",
+						"I_CardClass": "",
+						"I_CardSpeed": "",
+						"I_CardAtk": 0,
+						"I_CardHp": 0,
+						"I_CardPosX": 0,
+						"I_CardPosY": 0,
+						"I_CardOnDeck": "",
+						"I_CardImageByID": 0,
+						"I_CardImageID": 0,
+						"player": "",
+						"Status": "",
+						"onPlaceNow": "",
+						"isOpen": false
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutlineFamily": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2848,
+						"y": 1664,
+						"width": 150,
+						"height": 210,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

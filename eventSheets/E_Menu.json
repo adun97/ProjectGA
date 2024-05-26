@@ -1,0 +1,72 @@
+{
+	"name": "E_Menu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 756263000974842,
+					"parameters": {
+						"object": "btn_editor",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 395403289931186,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 822026661048415,
+					"parameters": {
+						"layout": "Deck Editor"
+					}
+				}
+			],
+			"sid": 100453520742433
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 457400580748701,
+					"parameters": {
+						"object": "btn_play",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 325688605870605,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 806111448335921,
+					"parameters": {
+						"layout": "SelectDeck"
+					}
+				}
+			],
+			"sid": 333393468726914
+		}
+	],
+	"sid": 627334245080942
+}

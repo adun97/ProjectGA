@@ -1,0 +1,268 @@
+{
+	"name": "SelectDeck",
+	"layers": [
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "btn_Ready",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "ready",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 95,
+					"instanceVariables": {
+						"IsReady": false,
+						"player": "player1"
+					},
+					"behaviors": {},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0.16862745098039217,
+									0,
+									1,
+									1
+								],
+								"width": 5,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1152,
+						"y": 1536,
+						"width": 372,
+						"height": 137,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "btn_Ready",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "ready",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 96,
+					"instanceVariables": {
+						"IsReady": false,
+						"player": "player2"
+					},
+					"behaviors": {},
+					"effects": {
+						"BetterOutline": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 5,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 2560,
+						"y": 1536,
+						"width": 372,
+						"height": 137,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "btn_start",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 101,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1920,
+						"y": 1792,
+						"width": 358,
+						"height": 121,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ListLoad",
+					"properties": {
+						"items": "Name\nCost\nElement\nType\nAttack\nHealth/Durability\nClass",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"type": "dropdown-list",
+						"multi-select": false,
+						"auto-font-size": false,
+						"id": "",
+						"class": "dropdown"
+					},
+					"uid": 84,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 768,
+						"y": 896,
+						"width": 768,
+						"height": 128,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "ListLoad",
+					"properties": {
+						"items": "Name\nCost\nElement\nType\nAttack\nHealth/Durability\nClass",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"type": "dropdown-list",
+						"multi-select": false,
+						"auto-font-size": false,
+						"id": "",
+						"class": "dropdown"
+					},
+					"uid": 94,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2176,
+						"y": 896,
+						"width": 768,
+						"height": 128,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "btn_Back",
+					"properties": {
+						"type": "button",
+						"text": "BACK",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": "",
+						"class": "button"
+					},
+					"uid": 103,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 128,
+						"y": 128,
+						"width": 512,
+						"height": 256,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				}
+			],
+			"sid": 346501141481422,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"sid": 816121960013151,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 3840,
+	"height": 2160,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "E_SelectDeck"
+}
