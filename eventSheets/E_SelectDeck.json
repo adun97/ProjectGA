@@ -103,6 +103,170 @@
 				}
 			],
 			"sid": 542623966726140
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 809220038565153,
+					"parameters": {
+						"object": "btn_start",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 731304934959014,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "ListLoad",
+							"sid": 492102493648853,
+							"parameters": {
+								"instance-variable": "player",
+								"comparison": 0,
+								"value": "\"player1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "Array_deck_player1",
+							"sid": 454856669499828,
+							"parameters": {
+								"json": "Dict_save.Get(ListLoad.SelectedText)"
+							}
+						}
+					],
+					"sid": 895201274676617
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "ListLoad",
+							"sid": 728706236166833,
+							"parameters": {
+								"instance-variable": "player",
+								"comparison": 0,
+								"value": "\"player2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "Array_deck_player2",
+							"sid": 889351942648261,
+							"parameters": {
+								"json": "Dict_save.Get(ListLoad.SelectedText)"
+							}
+						}
+					],
+					"sid": 301247392945263
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 982639284086526,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 734241978996941,
+							"parameters": {
+								"layout": "Main"
+							}
+						}
+					],
+					"sid": 338667678168097
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-selection-changed",
+					"objectClass": "ListLoad",
+					"sid": 110182298083557
+				}
+			],
+			"actions": [],
+			"sid": 222721394380136,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "ListLoad",
+							"sid": 276020268570648,
+							"parameters": {
+								"instance-variable": "player",
+								"comparison": 0,
+								"value": "\"player1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "Array_deck_player1",
+							"sid": 646055815401137,
+							"parameters": {
+								"json": "Dict_save.Get(ListLoad.SelectedText)"
+							}
+						}
+					],
+					"sid": 903814644335297
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 440412101863107
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "ListLoad",
+							"sid": 382021291946989,
+							"parameters": {
+								"instance-variable": "player",
+								"comparison": 0,
+								"value": "\"player2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "Array_deck_player2",
+							"sid": 408193331019516,
+							"parameters": {
+								"json": "Dict_save.Get(ListLoad.SelectedText)"
+							}
+						}
+					],
+					"sid": 632473490608652
+				}
+			]
 		}
 	],
 	"sid": 556848847154785

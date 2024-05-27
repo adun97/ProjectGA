@@ -118,6 +118,26 @@
 			},
 			"uid": 93,
 			"instanceVariables": {}
+		},
+		{
+			"type": "Array_deck_player1",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 35,
+			"instanceVariables": {}
+		},
+		{
+			"type": "Array_deck_player2",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 36,
+			"instanceVariables": {}
 		}
 	],
 	"effectTypes": [],

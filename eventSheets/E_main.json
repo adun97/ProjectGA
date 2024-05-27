@@ -33,6 +33,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "randomize",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 740558497451539
+		},
+		{
+			"eventType": "variable",
 			"name": "currentValue",
 			"type": "number",
 			"initialValue": "0",
@@ -80,6 +90,10 @@
 								"tag": "\"arrayHand\"",
 								"file": "ArrayHandSize.json"
 							}
+						},
+						{
+							"callFunction": "createDeck",
+							"sid": 720456665349208
 						}
 					],
 					"sid": 134882744992020,
@@ -98,6 +112,7 @@
 							],
 							"actions": [],
 							"sid": 593365028345605,
+							"disabled": true,
 							"children": [
 								{
 									"eventType": "block",
@@ -115,6 +130,7 @@
 									],
 									"actions": [],
 									"sid": 971371234836166,
+									"disabled": true,
 									"children": [
 										{
 											"eventType": "block",
@@ -198,7 +214,8 @@
 													}
 												}
 											],
-											"sid": 239536265756040
+											"sid": 239536265756040,
+											"disabled": true
 										},
 										{
 											"eventType": "block",
@@ -290,7 +307,8 @@
 													}
 												}
 											],
-											"sid": 841151864978123
+											"sid": 841151864978123,
+											"disabled": true
 										}
 									]
 								}
@@ -903,6 +921,987 @@
 				}
 			],
 			"sid": 590724907460564
+		},
+		{
+			"functionName": "createDeck",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 514311362656540,
+					"parameters": {
+						"variable": "V_count",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 674776343230375,
+					"parameters": {
+						"variable": "V_count2",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 373647738327094,
+					"parameters": {
+						"variable": "V_countDeck",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 354332846149002,
+					"parameters": {
+						"variable": "V_countExtra",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 690495094934901,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each-element",
+							"objectClass": "Array_deck_player1",
+							"sid": 637659153263581,
+							"parameters": {
+								"axes": "x"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "PlaceTest",
+							"sid": 152339593961305,
+							"parameters": {
+								"instance-variable": "player",
+								"comparison": 0,
+								"value": "V_init_player1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 708668950169214,
+							"parameters": {
+								"variable": "id_load",
+								"value": "Dict_card_id.Get(Array_deck_player1.At(V_count))"
+							}
+						},
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 171226711275256,
+							"parameters": {
+								"type": "log",
+								"message": "\"39 - \"&Dict_card_id.Get(Array_deck_player1.At(V_count))"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 314933249576473,
+							"parameters": {
+								"variable": "V_count",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 117318947207157,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 365589341433139,
+									"parameters": {
+										"first-value": "Array_card_list.At(9,id_load)",
+										"comparison": 0,
+										"second-value": "\"main\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "PlaceTest",
+									"sid": 490519118440849,
+									"parameters": {
+										"instance-variable": "place",
+										"comparison": 0,
+										"value": "\"deck\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 494789367850428,
+									"parameters": {
+										"object-to-create": "CardOnDeck",
+										"layer": "\"Arena\"",
+										"x": "PlaceTest.X",
+										"y": "PlaceTest.Y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 526089544295711,
+									"parameters": {
+										"instance-variable": "I_CardName",
+										"value": "Array_card_list.At(0,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 879204845378446,
+									"parameters": {
+										"instance-variable": "I_CardCost",
+										"value": "Array_card_list.At(1,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 327642256112760,
+									"parameters": {
+										"instance-variable": "I_CardElement",
+										"value": "Array_card_list.At(3,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 811811434986409,
+									"parameters": {
+										"instance-variable": "I_CardType",
+										"value": "Array_card_list.At(4,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 443500753599090,
+									"parameters": {
+										"instance-variable": "I_CardClass",
+										"value": "Array_card_list.At(8,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 722105243700388,
+									"parameters": {
+										"instance-variable": "I_CardImage",
+										"value": "Array_card_list.At(10,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 661716514324438,
+									"parameters": {
+										"instance-variable": "I_CardImageID",
+										"value": "Array_card_list.At(11,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 769710875210572,
+									"parameters": {
+										"instance-variable": "I_CardID",
+										"value": "V_count"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 697387250974321,
+									"parameters": {
+										"instance-variable": "player",
+										"value": "V_init_player1"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 357471040137606,
+									"parameters": {
+										"instance-variable": "onPlaceNow",
+										"value": "\"deck\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "CardOnDeck",
+									"sid": 323284023620280,
+									"parameters": {
+										"instance-variable": "isOpen",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "CardOnDeck",
+									"sid": 108115084999502,
+									"parameters": {
+										"frame-number": "V_countDeck"
+									}
+								},
+								{
+									"id": "load-image-from-url",
+									"objectClass": "CardOnDeck",
+									"sid": 203103623207642,
+									"parameters": {
+										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+										"size": "keep-current-size",
+										"cross-origin": "anonymous"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 190459840298982,
+									"parameters": {
+										"variable": "V_countDeck",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 417793422117323
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 425828892672978
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "PlaceTest",
+									"sid": 238300426406083,
+									"parameters": {
+										"instance-variable": "place",
+										"comparison": 0,
+										"value": "\"extra\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 998163128642209,
+									"parameters": {
+										"object-to-create": "CardOnExtra",
+										"layer": "\"Arena\"",
+										"x": "PlaceTest.X",
+										"y": "PlaceTest.Y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 521717937227792,
+									"parameters": {
+										"instance-variable": "I_CardName",
+										"value": "Array_card_list.At(0,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 302530856881459,
+									"parameters": {
+										"instance-variable": "I_CardCost",
+										"value": "Array_card_list.At(1,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 654693281053601,
+									"parameters": {
+										"instance-variable": "I_CardElement",
+										"value": "Array_card_list.At(3,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 631575328238689,
+									"parameters": {
+										"instance-variable": "I_CardType",
+										"value": "Array_card_list.At(4,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 557970530645912,
+									"parameters": {
+										"instance-variable": "I_CardClass",
+										"value": "Array_card_list.At(8,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 894596653926122,
+									"parameters": {
+										"instance-variable": "I_CardImage",
+										"value": "Array_card_list.At(10,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 636376545418859,
+									"parameters": {
+										"instance-variable": "I_CardImageID",
+										"value": "Array_card_list.At(11,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 857748496766839,
+									"parameters": {
+										"instance-variable": "I_CardID",
+										"value": "V_count"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "CardOnExtra",
+									"sid": 480159555775880,
+									"parameters": {
+										"frame-number": "V_countExtra"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 500277216245890,
+									"parameters": {
+										"instance-variable": "player",
+										"value": "V_init_player1"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 269214684054490,
+									"parameters": {
+										"instance-variable": "onPlaceNow",
+										"value": "\"extra\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "CardOnDeck",
+									"sid": 412159715561603,
+									"parameters": {
+										"instance-variable": "isOpen",
+										"value": "true"
+									}
+								},
+								{
+									"id": "load-image-from-url",
+									"objectClass": "CardOnExtra",
+									"sid": 191104621585016,
+									"parameters": {
+										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+										"size": "keep-current-size",
+										"cross-origin": "anonymous"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 279638460729654,
+									"parameters": {
+										"variable": "V_countExtra",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 565421568653101
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each-element",
+							"objectClass": "Array_deck_player2",
+							"sid": 132187018737336,
+							"parameters": {
+								"axes": "x"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "PlaceTest",
+							"sid": 861901756314936,
+							"parameters": {
+								"instance-variable": "player",
+								"comparison": 0,
+								"value": "V_init_player2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 433918356284879,
+							"parameters": {
+								"variable": "id_load",
+								"value": "Dict_card_id.Get(Array_deck_player2.At(V_count2))"
+							}
+						},
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 158392234083192,
+							"parameters": {
+								"type": "log",
+								"message": "\"39 - \"&Dict_card_id.Get(Array_deck_player2.At(V_count))"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 285308407936381,
+							"parameters": {
+								"variable": "V_count",
+								"value": "1"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 906160873843441,
+							"parameters": {
+								"variable": "V_count2",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 158544728288342,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 497325767233981,
+									"parameters": {
+										"first-value": "Array_card_list.At(9,id_load)",
+										"comparison": 0,
+										"second-value": "\"main\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "PlaceTest",
+									"sid": 109069029706959,
+									"parameters": {
+										"instance-variable": "place",
+										"comparison": 0,
+										"value": "\"deck\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 208981196120046,
+									"parameters": {
+										"object-to-create": "CardOnDeck",
+										"layer": "\"card\"",
+										"x": "PlaceTest.X",
+										"y": "PlaceTest.Y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 896993644382450,
+									"parameters": {
+										"instance-variable": "I_CardName",
+										"value": "Array_card_list.At(0,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 659937241386706,
+									"parameters": {
+										"instance-variable": "I_CardCost",
+										"value": "Array_card_list.At(1,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 908482750510864,
+									"parameters": {
+										"instance-variable": "I_CardElement",
+										"value": "Array_card_list.At(3,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 737320744299230,
+									"parameters": {
+										"instance-variable": "I_CardType",
+										"value": "Array_card_list.At(4,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 427854769144397,
+									"parameters": {
+										"instance-variable": "I_CardClass",
+										"value": "Array_card_list.At(8,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 468525954335469,
+									"parameters": {
+										"instance-variable": "I_CardImage",
+										"value": "Array_card_list.At(10,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 741276591044012,
+									"parameters": {
+										"instance-variable": "I_CardImageID",
+										"value": "Array_card_list.At(11,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 333165296829695,
+									"parameters": {
+										"instance-variable": "I_CardID",
+										"value": "V_count"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 305701658335944,
+									"parameters": {
+										"instance-variable": "player",
+										"value": "V_init_player2"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 533560000431934,
+									"parameters": {
+										"instance-variable": "onPlaceNow",
+										"value": "\"deck\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "CardOnDeck",
+									"sid": 713321485985090,
+									"parameters": {
+										"instance-variable": "isOpen",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "CardOnDeck",
+									"sid": 186022290259211,
+									"parameters": {
+										"frame-number": "V_countDeck"
+									}
+								},
+								{
+									"id": "load-image-from-url",
+									"objectClass": "CardOnDeck",
+									"sid": 129484278017740,
+									"parameters": {
+										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+										"size": "keep-current-size",
+										"cross-origin": "anonymous"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 578842134384002,
+									"parameters": {
+										"variable": "V_countDeck",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 420560868683042
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 852897271482680
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "PlaceTest",
+									"sid": 632387401039914,
+									"parameters": {
+										"instance-variable": "place",
+										"comparison": 0,
+										"value": "\"extra\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 714157235202410,
+									"parameters": {
+										"object-to-create": "CardOnExtra",
+										"layer": "\"card\"",
+										"x": "PlaceTest.X",
+										"y": "PlaceTest.Y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 772057172524258,
+									"parameters": {
+										"instance-variable": "I_CardName",
+										"value": "Array_card_list.At(0,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 330129668307447,
+									"parameters": {
+										"instance-variable": "I_CardCost",
+										"value": "Array_card_list.At(1,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 529949795820331,
+									"parameters": {
+										"instance-variable": "I_CardElement",
+										"value": "Array_card_list.At(3,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 299362605263323,
+									"parameters": {
+										"instance-variable": "I_CardType",
+										"value": "Array_card_list.At(4,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 148970580200673,
+									"parameters": {
+										"instance-variable": "I_CardClass",
+										"value": "Array_card_list.At(8,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 516757453676853,
+									"parameters": {
+										"instance-variable": "I_CardImage",
+										"value": "Array_card_list.At(10,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 319824153065805,
+									"parameters": {
+										"instance-variable": "I_CardImageID",
+										"value": "Array_card_list.At(11,id_load)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnExtra",
+									"sid": 526623089878653,
+									"parameters": {
+										"instance-variable": "I_CardID",
+										"value": "V_count"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "CardOnExtra",
+									"sid": 883009220545488,
+									"parameters": {
+										"frame-number": "V_countExtra"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 491556681757929,
+									"parameters": {
+										"instance-variable": "player",
+										"value": "V_init_player2"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "CardOnDeck",
+									"sid": 421250203248794,
+									"parameters": {
+										"instance-variable": "onPlaceNow",
+										"value": "\"extra\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "CardOnDeck",
+									"sid": 716016682239701,
+									"parameters": {
+										"instance-variable": "isOpen",
+										"value": "true"
+									}
+								},
+								{
+									"id": "load-image-from-url",
+									"objectClass": "CardOnExtra",
+									"sid": 919464195001669,
+									"parameters": {
+										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+										"size": "keep-current-size",
+										"cross-origin": "anonymous"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 741158862719502,
+									"parameters": {
+										"variable": "V_countExtra",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 894223262779987
+						}
+					]
+				}
+			]
+		},
+		{
+			"functionName": "shuffleDeck",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "player",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 502430525808604
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 765640328546940,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "repeat",
+							"objectClass": "System",
+							"sid": 278170655228471,
+							"parameters": {
+								"count": "int(random(100))"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 884016079239340,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 984450586236876,
+									"parameters": {
+										"object": "CardOnDeck"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CardOnDeck",
+									"sid": 324980239715456,
+									"parameters": {
+										"instance-variable": "player",
+										"comparison": 0,
+										"value": "player"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CardOnDeck",
+									"sid": 444690578423689,
+									"parameters": {
+										"instance-variable": "onPlaceNow",
+										"comparison": 0,
+										"value": "\"deck\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 427291135652257,
+									"parameters": {
+										"variable": "randomize",
+										"value": "choose(0,1)"
+									}
+								}
+							],
+							"sid": 601465897537084,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 598481975551386,
+											"parameters": {
+												"variable": "randomize",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-bottom",
+											"objectClass": "CardOnDeck",
+											"sid": 623021400186291
+										}
+									],
+									"sid": 375891493051224
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 383920220284924
+										}
+									],
+									"actions": [
+										{
+											"id": "move-to-top",
+											"objectClass": "CardOnDeck",
+											"sid": 549738215938297
+										}
+									],
+									"sid": 542213885361747
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 363714521973383,
+					"parameters": {
+						"object": "btnShuffle",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "shuffleDeck",
+					"sid": 661379534720326,
+					"parameters": [
+						"V_init_player1"
+					]
+				}
+			],
+			"sid": 142618923385544
 		}
 	],
 	"sid": 261541934514955

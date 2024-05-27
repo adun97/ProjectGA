@@ -166,15 +166,9 @@
 	"uniqueId": "06xsuvfnrhr",
 	"objectTypes": {
 		"items": [
-			"cardOnHandSize",
 			"Board_c1bde9cdfd",
-			"PlaceTest",
 			"txt_test",
-			"list_LoadDeck",
-			"btn_Ready",
-			"btn_start",
-			"btn_editor",
-			"btn_play"
+			"btnShuffle"
 		],
 		"subfolders": [
 			{
@@ -198,7 +192,9 @@
 							"Array_card_display",
 							"Array_card_save",
 							"Array_card_load",
-							"Array_handSize"
+							"Array_handSize",
+							"Array_deck_player1",
+							"Array_deck_player2"
 						],
 						"subfolders": [],
 						"name": "Array"
@@ -300,6 +296,24 @@
 				],
 				"subfolders": [],
 				"name": "notif"
+			},
+			{
+				"items": [
+					"btn_editor",
+					"btn_play",
+					"btn_Ready",
+					"btn_start"
+				],
+				"subfolders": [],
+				"name": "Menu"
+			},
+			{
+				"items": [
+					"cardOnHandSize",
+					"PlaceTest"
+				],
+				"subfolders": [],
+				"name": "gameplay"
 			}
 		]
 	},

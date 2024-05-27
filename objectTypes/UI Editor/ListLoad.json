@@ -3,6 +3,14 @@
 	"plugin-id": "List",
 	"sid": 423275943042465,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "player",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 667256525353190
+		}
+	],
 	"behaviorTypes": []
 }

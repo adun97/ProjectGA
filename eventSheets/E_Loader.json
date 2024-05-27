@@ -21,15 +21,6 @@
 						{
 							"id": "request-project-file",
 							"objectClass": "AJAX",
-							"sid": 807453809219861,
-							"parameters": {
-								"tag": "\"cardList\"",
-								"file": "Array Card List.json"
-							}
-						},
-						{
-							"id": "request-project-file",
-							"objectClass": "AJAX",
 							"sid": 182746761691762,
 							"parameters": {
 								"tag": "\"cardimage\"",
@@ -66,6 +57,15 @@
 							"sid": 316255253092710,
 							"parameters": {
 								"json": "AJAX.LastData"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 739916290401225,
+							"parameters": {
+								"tag": "\"cardList\"",
+								"file": "Array Card List.json"
 							}
 						}
 					],
@@ -192,7 +192,6 @@
 									"id": "set-response-binary",
 									"objectClass": "AJAX",
 									"sid": 808020872029584,
-									"disabled": true,
 									"parameters": {
 										"destination": "BinaryData"
 									}
@@ -200,35 +199,23 @@
 								{
 									"id": "request-url",
 									"objectClass": "AJAX",
-									"sid": 588121077451785,
-									"disabled": true,
+									"sid": 505895468012557,
 									"parameters": {
-										"tag": "Array_card_image.At(10,loopindex(\"card\"))",
-										"url": "\"Card/\"&Array_card_image.At(10,loopindex(\"card\"))&\".\"&V_typeFile"
+										"tag": "Array_card_list.At(10,loopindex(\"card\"))",
+										"url": "\"Card/\"&Array_card_list.At(10,loopindex(\"card\"))&\".\"&V_typeFile"
+									}
+								},
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 154126365117296,
+									"parameters": {
+										"type": "log",
+										"message": "\"Card/\"&Array_card_list.At(10,loopindex(\"card\"))&\".\"&V_typeFile"
 									}
 								}
 							],
-							"sid": 312733535903633,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-two-values",
-											"objectClass": "System",
-											"sid": 700144533217300,
-											"parameters": {
-												"first-value": "loopindex",
-												"comparison": 3,
-												"second-value": "20"
-											}
-										}
-									],
-									"actions": [],
-									"sid": 450092059290751,
-									"disabled": true
-								}
-							]
+							"sid": 312733535903633
 						},
 						{
 							"eventType": "block",

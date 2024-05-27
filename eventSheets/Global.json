@@ -363,6 +363,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "V_count2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 614947413353209
+		},
+		{
+			"eventType": "variable",
 			"name": "V_colorSelect",
 			"type": "string",
 			"initialValue": "00ff00",

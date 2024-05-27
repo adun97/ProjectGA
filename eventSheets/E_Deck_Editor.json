@@ -4289,7 +4289,7 @@
 														{
 															"id": "set-position",
 															"objectClass": "CardOnDeck",
-															"sid": 662209076371248,
+															"sid": 603805766894642,
 															"parameters": {
 																"x": "V_Xstart",
 																"y": "V_Ystart"
@@ -4298,7 +4298,7 @@
 														{
 															"id": "set-instvar-value",
 															"objectClass": "CardOnDeck",
-															"sid": 974006390344065,
+															"sid": 367666127694242,
 															"parameters": {
 																"instance-variable": "I_CardID",
 																"value": "V_onCreateMain"
@@ -4307,7 +4307,7 @@
 														{
 															"id": "set-animation-frame",
 															"objectClass": "CardOnDeck",
-															"sid": 643971147854854,
+															"sid": 598268486547467,
 															"parameters": {
 																"frame-number": "V_onCreateMain"
 															}
@@ -4315,7 +4315,7 @@
 														{
 															"id": "load-image-from-url",
 															"objectClass": "CardOnDeck",
-															"sid": 166757755880318,
+															"sid": 932801160556625,
 															"parameters": {
 																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 																"size": "keep-current-size",
@@ -4323,18 +4323,18 @@
 															}
 														},
 														{
-															"id": "set-instvar-value",
-															"objectClass": "CardOnDeck",
-															"sid": 814180902327563,
+															"id": "add-to-eventvar",
+															"objectClass": "System",
+															"sid": 249461019383043,
 															"parameters": {
-																"instance-variable": "I_CardID",
-																"value": "V_onCreateMain"
+																"variable": "V_onCreateMain",
+																"value": "1"
 															}
 														},
 														{
 															"id": "set-eventvar-value",
 															"objectClass": "System",
-															"sid": 211514031681851,
+															"sid": 157949320743434,
 															"parameters": {
 																"variable": "V_Xstart",
 																"value": "V_onCreateMain%V_rowMain=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
@@ -4343,7 +4343,7 @@
 														{
 															"id": "set-eventvar-value",
 															"objectClass": "System",
-															"sid": 794388381678794,
+															"sid": 366300263142770,
 															"parameters": {
 																"variable": "V_Ystart",
 																"value": "V_onCreateMain%V_rowMain=0?V_Ystart+V_Ygap_main:V_Ystart"
@@ -4352,7 +4352,7 @@
 														{
 															"id": "set-eventvar-value",
 															"objectClass": "System",
-															"sid": 894026199147394,
+															"sid": 624559933236590,
 															"parameters": {
 																"variable": "V_lastX_main",
 																"value": "V_Xstart"
@@ -4361,7 +4361,7 @@
 														{
 															"id": "set-eventvar-value",
 															"objectClass": "System",
-															"sid": 277043012035744,
+															"sid": 663688734132985,
 															"parameters": {
 																"variable": "V_lastY_main",
 																"value": "V_Ystart"

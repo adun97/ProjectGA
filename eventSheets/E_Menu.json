@@ -19,6 +19,7 @@
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 395403289931186,
+					"disabled": true,
 					"parameters": {
 						"seconds": "0.5"
 					}
@@ -52,6 +53,7 @@
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 325688605870605,
+					"disabled": true,
 					"parameters": {
 						"seconds": "0.5"
 					}
