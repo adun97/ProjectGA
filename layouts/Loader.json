@@ -138,6 +138,16 @@
 			},
 			"uid": 36,
 			"instanceVariables": {}
+		},
+		{
+			"type": "Array_deck_id_random",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 38,
+			"instanceVariables": {}
 		}
 	],
 	"effectTypes": [],

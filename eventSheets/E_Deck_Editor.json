@@ -6917,50 +6917,6 @@
 					],
 					"actions": [
 						{
-							"id": "set-effect-parameter",
-							"objectClass": "Card_family",
-							"sid": 403215424396193,
-							"disabled": true,
-							"parameters": {
-								"effect": "\"BetterOutlineFamily\"",
-								"parameter-index": "0",
-								"value": "rgbEx255(255,255,255)"
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "Card_family",
-							"sid": 277544497666994,
-							"disabled": true,
-							"parameters": {
-								"effect": "\"BetterOutlineFamily\"",
-								"parameter-index": "1",
-								"value": "5"
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "Card_family",
-							"sid": 839860898573165,
-							"disabled": true,
-							"parameters": {
-								"effect": "\"BetterOutlineFamily\"",
-								"parameter-index": "2",
-								"value": "3"
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "Card_family",
-							"sid": 198456396256578,
-							"disabled": true,
-							"parameters": {
-								"effect": "\"BetterOutlineFamily\"",
-								"parameter-index": "3",
-								"value": "15"
-							}
-						},
-						{
 							"callFunction": "hoverCard",
 							"sid": 732737563809900,
 							"parameters": [
@@ -7003,60 +6959,6 @@
 							]
 						},
 						{
-							"id": "set-effect-enabled",
-							"objectClass": "CardOnDeck",
-							"sid": 141334884362970,
-							"disabled": true,
-							"parameters": {
-								"mode": "enable",
-								"effect": "\"BetterOutlineFamily\""
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "CardOnDeck",
-							"sid": 197550764215362,
-							"disabled": true,
-							"parameters": {
-								"effect": "\"BetterOutlineFamily\"",
-								"parameter-index": "0",
-								"value": "rgbEx255(255,255,255)"
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "CardOnDeck",
-							"sid": 711111095104705,
-							"disabled": true,
-							"parameters": {
-								"effect": "\"BetterOutlineFamily\"",
-								"parameter-index": "1",
-								"value": "5"
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "CardOnDeck",
-							"sid": 103250277337700,
-							"disabled": true,
-							"parameters": {
-								"effect": "\"BetterOutlineFamily\"",
-								"parameter-index": "2",
-								"value": "3"
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "CardOnDeck",
-							"sid": 431911618789449,
-							"disabled": true,
-							"parameters": {
-								"effect": "\"BetterOutlineFamily\"",
-								"parameter-index": "3",
-								"value": "15"
-							}
-						},
-						{
 							"id": "load-image-from-url",
 							"objectClass": "Preview",
 							"sid": 619658916862058,
@@ -7089,60 +6991,6 @@
 								"CardOnExtra.I_CardName",
 								"CardOnExtra.I_CardID"
 							]
-						},
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "CardOnExtra",
-							"sid": 756632387136768,
-							"disabled": true,
-							"parameters": {
-								"mode": "enable",
-								"effect": "\"BetterOutlineFamily\""
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "CardOnExtra",
-							"sid": 379004909371908,
-							"disabled": true,
-							"parameters": {
-								"effect": "\"BetterOutlineFamily\"",
-								"parameter-index": "0",
-								"value": "rgbEx255(255,255,255)"
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "CardOnExtra",
-							"sid": 812982283878751,
-							"disabled": true,
-							"parameters": {
-								"effect": "\"BetterOutlineFamily\"",
-								"parameter-index": "1",
-								"value": "5"
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "CardOnExtra",
-							"sid": 795120858136574,
-							"disabled": true,
-							"parameters": {
-								"effect": "\"BetterOutlineFamily\"",
-								"parameter-index": "2",
-								"value": "3"
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "CardOnExtra",
-							"sid": 399572345309563,
-							"disabled": true,
-							"parameters": {
-								"effect": "\"BetterOutlineFamily\"",
-								"parameter-index": "3",
-								"value": "15"
-							}
 						},
 						{
 							"id": "load-image-from-url",

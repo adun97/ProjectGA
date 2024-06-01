@@ -1,0 +1,8 @@
+turn order
+-wake up phase
+-Materialize Phase
+-Recollection Phase
+-Draw Phase
+-Main Phase
+--Combat Phase
+-End Phase

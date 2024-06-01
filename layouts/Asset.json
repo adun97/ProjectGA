@@ -1245,7 +1245,8 @@
 						"I_CardPosY": 0,
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
-						"I_CardImageID": 0
+						"I_CardImageID": 0,
+						"I_CardLevel": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1322,10 +1323,13 @@
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
 						"I_CardImageID": 0,
+						"I_CardLevel": 0,
 						"player": "",
 						"Status": "",
 						"onPlaceNow": "",
-						"isOpen": false
+						"isOpen": false,
+						"idOrder": 0,
+						"ImageID": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1401,10 +1405,13 @@
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
 						"I_CardImageID": 0,
+						"I_CardLevel": 0,
 						"player": "",
 						"Status": "",
 						"onPlaceNow": "",
-						"isOpen": false
+						"isOpen": false,
+						"idOrder": 0,
+						"ImageID": 0
 					},
 					"behaviors": {
 						"Tween": {
@@ -1480,10 +1487,13 @@
 						"I_CardOnDeck": "",
 						"I_CardImageByID": 0,
 						"I_CardImageID": 0,
+						"I_CardLevel": 0,
 						"player": "",
 						"Status": "",
 						"onPlaceNow": "",
-						"isOpen": false
+						"isOpen": false,
+						"idOrder": 0,
+						"ImageID": 0
 					},
 					"behaviors": {
 						"Tween": {

@@ -30,6 +30,20 @@
 			"desc": "",
 			"show": true,
 			"sid": 314799734238310
+		},
+		{
+			"name": "idOrder",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 411681646998277
+		},
+		{
+			"name": "ImageID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 551876000065775
 		}
 	],
 	"behaviorTypes": [],

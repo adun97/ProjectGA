@@ -194,7 +194,8 @@
 							"Array_card_load",
 							"Array_handSize",
 							"Array_deck_player1",
-							"Array_deck_player2"
+							"Array_deck_player2",
+							"Array_deck_id_random"
 						],
 						"subfolders": [],
 						"name": "Array"
@@ -338,7 +339,8 @@
 			"Asset",
 			"Main",
 			"SelectDeck",
-			"Menu"
+			"Menu",
+			"Reveal"
 		],
 		"subfolders": []
 	},
@@ -349,7 +351,8 @@
 			"E_Deck_Editor",
 			"E_main",
 			"E_SelectDeck",
-			"E_Menu"
+			"E_Menu",
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},
@@ -473,6 +476,14 @@
 					"name": "ArrayHandSize.json",
 					"type": "application/json",
 					"sid": 554314044905614,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "turn order.txt",
+					"type": "text/plain",
+					"sid": 750345962771466,
 					"file-info": {
 						"purpose": "none"
 					}

@@ -121,6 +121,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 765134109730026
+		},
+		{
+			"name": "I_CardLevel",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 238690950849476
 		}
 	],
 	"behaviorTypes": [
