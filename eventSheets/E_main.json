@@ -2,6 +2,10 @@
 	"name": "E_main",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "Global"
+		},
+		{
 			"eventType": "variable",
 			"name": "V_init_player1",
 			"type": "string",
@@ -122,6 +126,15 @@
 							"parameters": {
 								"variable": "turnOrder",
 								"value": "\"startPhase\""
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 967599153265844,
+							"parameters": {
+								"layer": "\"Reveal\"",
+								"visibility": "invisible"
 							}
 						}
 					],
@@ -446,7 +459,7 @@
 											"sid": 489819871632995,
 											"disabled": true,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -615,7 +628,7 @@
 										},
 										{
 											"id": "set-instvar-value",
-											"objectClass": "CardOnDeck",
+											"objectClass": "CardOnExtra",
 											"sid": 492764455116438,
 											"parameters": {
 												"instance-variable": "ImageID",
@@ -624,7 +637,7 @@
 										},
 										{
 											"id": "set-instvar-value",
-											"objectClass": "CardOnDeck",
+											"objectClass": "CardOnExtra",
 											"sid": 136965741052272,
 											"parameters": {
 												"instance-variable": "player",
@@ -633,7 +646,7 @@
 										},
 										{
 											"id": "set-instvar-value",
-											"objectClass": "CardOnDeck",
+											"objectClass": "CardOnExtra",
 											"sid": 749871141721819,
 											"parameters": {
 												"instance-variable": "onPlaceNow",
@@ -642,7 +655,7 @@
 										},
 										{
 											"id": "set-boolean-instvar",
-											"objectClass": "CardOnDeck",
+											"objectClass": "CardOnExtra",
 											"sid": 340682227151885,
 											"parameters": {
 												"instance-variable": "isOpen",
@@ -664,7 +677,7 @@
 											"sid": 583525183627560,
 											"disabled": true,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -966,7 +979,7 @@
 											"sid": 825693788388617,
 											"disabled": true,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -1036,7 +1049,7 @@
 										},
 										{
 											"id": "set-instvar-value",
-											"objectClass": "CardOnDeck",
+											"objectClass": "CardOnExtra",
 											"sid": 455034464873700,
 											"parameters": {
 												"instance-variable": "I_CardLevel",
@@ -1063,7 +1076,7 @@
 										},
 										{
 											"id": "set-instvar-value",
-											"objectClass": "CardOnDeck",
+											"objectClass": "CardOnExtra",
 											"sid": 545718940964849,
 											"parameters": {
 												"instance-variable": "I_CardAtk",
@@ -1072,7 +1085,7 @@
 										},
 										{
 											"id": "set-instvar-value",
-											"objectClass": "CardOnDeck",
+											"objectClass": "CardOnExtra",
 											"sid": 964640481142145,
 											"parameters": {
 												"instance-variable": "I_CardHp",
@@ -1081,7 +1094,7 @@
 										},
 										{
 											"id": "set-instvar-value",
-											"objectClass": "CardOnDeck",
+											"objectClass": "CardOnExtra",
 											"sid": 780152656458047,
 											"parameters": {
 												"instance-variable": "I_CardSpeed",
@@ -1099,7 +1112,7 @@
 										},
 										{
 											"id": "set-instvar-value",
-											"objectClass": "CardOnDeck",
+											"objectClass": "CardOnExtra",
 											"sid": 470705985741515,
 											"parameters": {
 												"instance-variable": "I_CardOnDeck",
@@ -1135,7 +1148,7 @@
 										},
 										{
 											"id": "set-instvar-value",
-											"objectClass": "CardOnDeck",
+											"objectClass": "CardOnExtra",
 											"sid": 816012235711928,
 											"parameters": {
 												"instance-variable": "player",
@@ -1144,7 +1157,7 @@
 										},
 										{
 											"id": "set-instvar-value",
-											"objectClass": "CardOnDeck",
+											"objectClass": "CardOnExtra",
 											"sid": 568826857157655,
 											"parameters": {
 												"instance-variable": "onPlaceNow",
@@ -1153,7 +1166,7 @@
 										},
 										{
 											"id": "set-boolean-instvar",
-											"objectClass": "CardOnDeck",
+											"objectClass": "CardOnExtra",
 											"sid": 678721970229398,
 											"parameters": {
 												"instance-variable": "isOpen",
@@ -1162,7 +1175,7 @@
 										},
 										{
 											"id": "set-instvar-value",
-											"objectClass": "CardOnDeck",
+											"objectClass": "CardOnExtra",
 											"sid": 949119996468700,
 											"parameters": {
 												"instance-variable": "ImageID",
@@ -1184,7 +1197,7 @@
 											"sid": 607130266295955,
 											"disabled": true,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -1351,6 +1364,24 @@
 											}
 										},
 										{
+											"id": "tween-two-properties",
+											"objectClass": "CardOnDeck",
+											"sid": 576265742153119,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"toHandScale\"",
+												"property": "scale",
+												"end-x": "0.5",
+												"end-y": "0.5",
+												"time": "0.2",
+												"ease": "noease",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										},
+										{
 											"id": "wait",
 											"objectClass": "System",
 											"sid": 142173804724952,
@@ -1447,18 +1478,40 @@
 									}
 								}
 							],
-							"sid": 521391800912855
+							"sid": 521391800912855,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
-							"conditions": [],
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CardOnDeck",
+									"sid": 175230791202392,
+									"parameters": {
+										"instance-variable": "player",
+										"comparison": 0,
+										"value": "player"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CardOnDeck",
+									"sid": 446479568973776,
+									"parameters": {
+										"instance-variable": "onPlaceNow",
+										"comparison": 0,
+										"value": "\"hand\""
+									}
+								}
+							],
 							"actions": [
 								{
 									"id": "set-function-return-value",
 									"objectClass": "Functions",
-									"sid": 929291029546390,
+									"sid": 138895684808645,
 									"parameters": {
-										"value": "V_count"
+										"value": "CardOnDeck.PickedCount"
 									}
 								}
 							],
@@ -1959,7 +2012,7 @@
 							"objectClass": "Preview",
 							"sid": 850367772037214,
 							"parameters": {
-								"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+								"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 								"size": "keep-current-size",
 								"cross-origin": "anonymous"
 							}
@@ -1980,7 +2033,7 @@
 						},
 						{
 							"id": "is-boolean-instance-variable-set",
-							"objectClass": "CardOnDeck",
+							"objectClass": "CardOnExtra",
 							"sid": 877588369906276,
 							"parameters": {
 								"instance-variable": "isOpen"
@@ -1988,7 +2041,7 @@
 						},
 						{
 							"id": "pick-topbottom",
-							"objectClass": "CardOnDeck",
+							"objectClass": "CardOnExtra",
 							"sid": 936085882255602,
 							"parameters": {
 								"which": "top"
@@ -2009,13 +2062,63 @@
 							"objectClass": "Preview",
 							"sid": 525022904737265,
 							"parameters": {
-								"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+								"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 								"size": "keep-current-size",
 								"cross-origin": "anonymous"
 							}
 						}
 					],
 					"sid": 606399941837365
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 277597216543429,
+							"parameters": {
+								"object": "CardOnExtraReveal"
+							}
+						},
+						{
+							"id": "pick-topbottom",
+							"objectClass": "CardOnExtraReveal",
+							"sid": 534909507948789,
+							"parameters": {
+								"which": "top"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 329951277480985,
+							"parameters": {
+								"layer": "\"Reveal\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "hoverCard",
+							"sid": 213938399365930,
+							"parameters": [
+								"CardOnExtraReveal.I_CardName",
+								"CardOnExtraReveal.I_CardID"
+							]
+						},
+						{
+							"id": "load-image-from-url",
+							"objectClass": "Preview",
+							"sid": 659670183260138,
+							"parameters": {
+								"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtraReveal.I_CardImage)",
+								"size": "keep-current-size",
+								"cross-origin": "anonymous"
+							}
+						}
+					],
+					"sid": 510381225394058
 				}
 			],
 			"sid": 868032627099164
@@ -2175,7 +2278,7 @@
 							"objectClass": "CardOnDeck",
 							"sid": 401003776839734,
 							"parameters": {
-								"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+								"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 								"size": "keep-current-size",
 								"cross-origin": "anonymous"
 							}
@@ -2225,7 +2328,6 @@
 							"id": "compare-instance-variable",
 							"objectClass": "PlaceTest",
 							"sid": 871476685739227,
-							"disabled": true,
 							"parameters": {
 								"instance-variable": "place",
 								"comparison": 0,
@@ -2440,6 +2542,83 @@
 				}
 			],
 			"sid": 585989298104962
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 930282382768527,
+					"parameters": {
+						"object": "btnReveal",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 120913247198324,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 159372455240668,
+							"parameters": {
+								"layer": "\"Reveal\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 668172860708619,
+							"parameters": {
+								"layer": "\"Reveal\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "CardOnExtraReveal",
+							"sid": 530636293549063
+						}
+					],
+					"sid": 189731475761167
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 189477183045822
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 979615369706642,
+							"parameters": {
+								"layer": "\"Reveal\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"callFunction": "Choose_champion",
+							"sid": 428137904159210,
+							"parameters": [
+								"V_init_player1"
+							]
+						}
+					],
+					"sid": 169983385975250
+				}
+			]
 		}
 	],
 	"sid": 261541934514955

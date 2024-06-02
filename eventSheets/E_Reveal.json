@@ -1,0 +1,580 @@
+{
+	"name": "E_Reveal",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Reveal extra",
+			"description": "",
+			"isActiveOnStart": false,
+			"children": [],
+			"sid": 298985054681748
+		},
+		{
+			"functionName": "Choose_champion",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "player",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 767952415561967
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "CardOnExtraReveal",
+					"sid": 523923301490738
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 905885006168587,
+					"parameters": {
+						"variable": "V_Xstart",
+						"value": "V_XSTART_DEF_REVEAL"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 237719266108508,
+					"parameters": {
+						"variable": "V_Ystart",
+						"value": "V_YSTART_DEF_REVEAL"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 972448263505664,
+					"parameters": {
+						"variable": "V_count",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "borderSliderHorizontal",
+					"sid": 256973620651092,
+					"parameters": {
+						"x": "1344",
+						"y": "V_Ystart"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "txt_title_reveal",
+					"sid": 945963853879816,
+					"parameters": {
+						"text": "\"Choose Champion\""
+					}
+				}
+			],
+			"sid": 967703181789763,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 182100677976171,
+							"parameters": {
+								"object": "CardOnExtra"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "CardOnExtra",
+							"sid": 131858164240767,
+							"parameters": {
+								"instance-variable": "player",
+								"comparison": 0,
+								"value": "player"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "CardOnExtra",
+							"sid": 106380784352607,
+							"parameters": {
+								"instance-variable": "I_CardType",
+								"comparison": 0,
+								"value": "\"champion\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 849100451628849,
+							"parameters": {
+								"object-to-create": "CardOnExtraReveal",
+								"layer": "\"Reveal\"",
+								"x": "V_Xstart",
+								"y": "V_Ystart",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "borderSliderHorizontal",
+							"sid": 342337996073823,
+							"parameters": {
+								"width": "distance(Self.X,Self.Y,CardOnExtraReveal.BBoxRight,CardOnExtraReveal.Y)"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 595756535696884,
+							"parameters": {
+								"variable": "V_Xstart",
+								"value": "V_XGAP_REVEAL"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "CardOnExtraReveal",
+							"sid": 884995256183969,
+							"parameters": {
+								"instance-variable": "ImageID",
+								"value": "CardOnExtra.ImageID"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "CardOnExtraReveal",
+							"sid": 642230546842233,
+							"parameters": {
+								"instance-variable": "I_CardName",
+								"value": "CardOnExtra.I_CardName"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "CardOnExtraReveal",
+							"sid": 116147674299682,
+							"parameters": {
+								"instance-variable": "I_CardID",
+								"value": "CardOnExtra.I_CardID"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "CardOnExtraReveal",
+							"sid": 279774185184253,
+							"parameters": {
+								"instance-variable": "I_CardImage",
+								"value": "CardOnExtra.I_CardImage"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "CardOnExtraReveal",
+							"sid": 236725712035191,
+							"parameters": {
+								"animation": "\"Default\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "CardOnExtraReveal",
+							"sid": 950199133650388,
+							"parameters": {
+								"frame-number": "Self.ImageID"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "CardOnExtraReveal",
+							"sid": 372849836940764,
+							"parameters": {
+								"scale": "0.5"
+							}
+						},
+						{
+							"id": "load-image-from-url",
+							"objectClass": "CardOnExtraReveal",
+							"sid": 705444474083915,
+							"parameters": {
+								"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtraReveal.I_CardImage)",
+								"size": "keep-current-size",
+								"cross-origin": "anonymous"
+							}
+						},
+						{
+							"id": "set-blend-mode",
+							"objectClass": "CardOnExtraReveal",
+							"sid": 387572988414605,
+							"parameters": {
+								"blend-mode": "source-atop"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "CardOnExtraReveal",
+							"sid": 613789045847324,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "add-child",
+							"objectClass": "borderSliderHorizontal",
+							"sid": 930728634560085,
+							"parameters": {
+								"child": "CardOnExtraReveal",
+								"transform-x": true,
+								"transform-y": false,
+								"transform-w": false,
+								"transform-h": false,
+								"transform-a": true,
+								"transform-o": false,
+								"transform-z-elevation": true,
+								"transform-visibility": false,
+								"destroy-with-parent": false
+							}
+						}
+					],
+					"sid": 664215175759561
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Slider Reveal",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-dragging",
+							"objectClass": "borderSliderHorizontal",
+							"sid": 769816337794316,
+							"behaviorType": "DragDrop",
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 381616412641257,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "borderSliderHorizontal",
+									"sid": 966940071708107,
+									"parameters": {
+										"comparison": 2,
+										"x-co-ordinate": "3392-borderSliderHorizontal.Width"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 931117581180427,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 647372969454085,
+											"parameters": {
+												"first-value": "CardOnExtraReveal.Count",
+												"comparison": 5,
+												"second-value": "9"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-x",
+											"objectClass": "borderSliderHorizontal",
+											"sid": 221448153771172,
+											"parameters": {
+												"x": "lerp(Self.X,3392-borderSliderHorizontal.Width,0.05)"
+											}
+										}
+									],
+									"sid": 756842876467614
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 775988136881240
+										}
+									],
+									"actions": [
+										{
+											"id": "set-x",
+											"objectClass": "borderSliderHorizontal",
+											"sid": 712505549406697,
+											"parameters": {
+												"x": "lerp(Self.X,1344,0.05)"
+											}
+										}
+									],
+									"sid": 203564960100888
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "borderSliderHorizontal",
+									"sid": 999570040562858,
+									"parameters": {
+										"comparison": 5,
+										"x-co-ordinate": "1344"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "borderSliderHorizontal",
+									"sid": 883538349907730,
+									"parameters": {
+										"x": "lerp(Self.X,1344,0.05)"
+									}
+								}
+							],
+							"sid": 126779403874432
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 287368995128180,
+							"parameters": {
+								"object": "borderSliderHorizontal"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 281426664782204,
+							"parameters": {
+								"variable": "V_OldY",
+								"value": "V_NewY"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 192709135316886,
+							"parameters": {
+								"variable": "V_NewY",
+								"value": "Touch.X"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 318487994686904,
+							"parameters": {
+								"variable": "V_SwipSpeed",
+								"value": "round (abs (V_NewY -V_OldY))"
+							}
+						}
+					],
+					"sid": 904002426447011
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 329724903615635,
+							"parameters": {
+								"object": "borderSliderHorizontal"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 969872388354802,
+							"parameters": {
+								"variable": "V_SwipSpeed",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 679746009620341,
+							"parameters": {
+								"variable": "V_SwipSpeed",
+								"value": "0.5"
+							}
+						}
+					],
+					"sid": 806645127799874
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 151469154612245,
+							"parameters": {
+								"object": "borderSliderHorizontal"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 469097155692383,
+							"parameters": {
+								"variable": "V_SwipSpeed",
+								"comparison": 2,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 606804755054321,
+							"parameters": {
+								"variable": "V_SwipSpeed",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 396394342284184
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 651995001673796,
+							"parameters": {
+								"object": "borderSliderHorizontal"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 779051324424298,
+							"parameters": {
+								"variable": "V_SwipSpeed",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 652762577228192,
+							"parameters": {
+								"variable": "V_SwipSpeed",
+								"value": "0.5"
+							}
+						}
+					],
+					"sid": 365396045625409,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 707409907517347,
+									"parameters": {
+										"variable": "V_NewY",
+										"comparison": 4,
+										"value": "V_OldY"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "borderSliderHorizontal",
+									"sid": 153474135166198,
+									"parameters": {
+										"x": "Self.X+V_SwipSpeed"
+									}
+								}
+							],
+							"sid": 610575200324698
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 591055273234248,
+									"parameters": {
+										"variable": "V_NewY",
+										"comparison": 2,
+										"value": "V_OldY"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "borderSliderHorizontal",
+									"sid": 782046026507916,
+									"parameters": {
+										"x": "Self.X-V_SwipSpeed"
+									}
+								}
+							],
+							"sid": 657510098112393
+						}
+					]
+				}
+			],
+			"sid": 659852624668154
+		}
+	],
+	"sid": 646534351449533
+}

@@ -581,6 +581,7 @@
 											"id": "for-each",
 											"objectClass": "System",
 											"sid": 512120648359233,
+											"disabled": true,
 											"parameters": {
 												"object": "CardOnDeck"
 											}
@@ -601,9 +602,19 @@
 											"id": "add-to-eventvar",
 											"objectClass": "System",
 											"sid": 988785205019627,
+											"disabled": true,
 											"parameters": {
 												"variable": "V_count",
 												"value": "1"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 763682438996178,
+											"parameters": {
+												"variable": "V_count",
+												"value": "CardOnDeck.PickedCount"
 											}
 										}
 									],
@@ -654,6 +665,7 @@
 											"id": "for-each",
 											"objectClass": "System",
 											"sid": 791527613550300,
+											"disabled": true,
 											"parameters": {
 												"object": "CardOnExtra"
 											}
@@ -674,9 +686,19 @@
 											"id": "add-to-eventvar",
 											"objectClass": "System",
 											"sid": 211489628296874,
+											"disabled": true,
 											"parameters": {
 												"variable": "V_count",
 												"value": "1"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 141240848595097,
+											"parameters": {
+												"variable": "V_count",
+												"value": "CardOnDeck.PickedCount"
 											}
 										}
 									],
@@ -784,7 +806,7 @@
 						},
 						{
 							"id": "destroy",
-							"objectClass": "borderSlideRight",
+							"objectClass": "borderSliderVertical",
 							"sid": 925074416825827
 						}
 					],
@@ -1090,7 +1112,7 @@
 											"sid": 851109337373431,
 											"parameters": {
 												"variable": "V_Xstart",
-												"value": "V_onCreateSearch%V_rowSearch=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
+												"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
 											}
 										},
 										{
@@ -1099,7 +1121,7 @@
 											"sid": 414424932086380,
 											"parameters": {
 												"variable": "V_Ystart",
-												"value": "V_onCreateSearch%V_rowSearch=0?V_Ystart+V_Ygap_search:V_Ystart"
+												"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Ystart+V_Ygap_search:V_Ystart"
 											}
 										}
 									],
@@ -1153,7 +1175,7 @@
 									"objectClass": "System",
 									"sid": 809485037709787,
 									"parameters": {
-										"object-to-create": "borderSlideRight",
+										"object-to-create": "borderSliderVertical",
 										"layer": "\"Main\"",
 										"x": "BorderBlend.X",
 										"y": "BorderBlend.Y",
@@ -1163,15 +1185,15 @@
 								},
 								{
 									"id": "move-to-bottom",
-									"objectClass": "borderSlideRight",
+									"objectClass": "borderSliderVertical",
 									"sid": 236500392186328
 								},
 								{
 									"id": "set-height",
-									"objectClass": "borderSlideRight",
+									"objectClass": "borderSliderVertical",
 									"sid": 553194222715012,
 									"parameters": {
-										"height": "ceil(CardOnSearch.Count/V_rowSearch)*320"
+										"height": "ceil(CardOnSearch.Count/V_ROW_SEARCH)*320"
 									}
 								},
 								{
@@ -1179,8 +1201,8 @@
 									"objectClass": "System",
 									"sid": 589402668579030,
 									"parameters": {
-										"variable": "V_columnSearch",
-										"value": "ceil(CardOnSearch.Count/V_rowSearch)"
+										"variable": "V_COLUMN_SEARCH",
+										"value": "ceil(CardOnSearch.Count/V_ROW_SEARCH)"
 									}
 								}
 							],
@@ -1194,7 +1216,7 @@
 											"objectClass": "System",
 											"sid": 494676574213411,
 											"parameters": {
-												"variable": "V_columnSearch",
+												"variable": "V_COLUMN_SEARCH",
 												"comparison": 3,
 												"value": "5"
 											}
@@ -1212,7 +1234,7 @@
 										},
 										{
 											"id": "set-enabled",
-											"objectClass": "borderSlideRight",
+											"objectClass": "borderSliderVertical",
 											"sid": 240214982244388,
 											"behaviorType": "DragDrop",
 											"parameters": {
@@ -1243,7 +1265,7 @@
 										},
 										{
 											"id": "set-enabled",
-											"objectClass": "borderSlideRight",
+											"objectClass": "borderSliderVertical",
 											"sid": 298901555480505,
 											"behaviorType": "DragDrop",
 											"parameters": {
@@ -1268,7 +1290,7 @@
 									"actions": [
 										{
 											"id": "add-child",
-											"objectClass": "borderSlideRight",
+											"objectClass": "borderSliderVertical",
 											"sid": 925829066492237,
 											"parameters": {
 												"child": "CardOnSearch",
@@ -1322,7 +1344,7 @@
 									"sid": 115324729031145,
 									"disabled": true,
 									"parameters": {
-										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+										"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -1390,7 +1412,7 @@
 													"objectClass": "CardOnSearch",
 													"sid": 558154003869701,
 													"parameters": {
-														"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+														"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 														"size": "keep-current-size",
 														"cross-origin": "anonymous"
 													}
@@ -1422,7 +1444,7 @@
 													"objectClass": "CardOnSearch",
 													"sid": 301741490631407,
 													"parameters": {
-														"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+														"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 														"size": "keep-current-size",
 														"cross-origin": "anonymous"
 													}
@@ -1869,7 +1891,7 @@
 											"objectClass": "CardOnDeck",
 											"sid": 832037348050513,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -2003,7 +2025,7 @@
 											"objectClass": "CardOnExtra",
 											"sid": 241861616839933,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -2039,7 +2061,7 @@
 									"objectClass": "CardOnDeck",
 									"sid": 552692971004907,
 									"parameters": {
-										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+										"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -2049,7 +2071,7 @@
 									"objectClass": "CardOnExtra",
 									"sid": 214218925988850,
 									"parameters": {
-										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+										"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -2185,7 +2207,7 @@
 									"objectClass": "CardOnDeck",
 									"sid": 549628825284813,
 									"parameters": {
-										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+										"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -2321,7 +2343,7 @@
 									"objectClass": "CardOnExtra",
 									"sid": 724990002517313,
 									"parameters": {
-										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+										"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -2551,7 +2573,7 @@
 						},
 						{
 							"id": "set-position",
-							"objectClass": "borderSlideRight",
+							"objectClass": "borderSliderVertical",
 							"sid": 812088794917674,
 							"parameters": {
 								"x": "BorderBlend.X",
@@ -2654,7 +2676,7 @@
 												},
 												{
 													"id": "add-child",
-													"objectClass": "borderSlideRight",
+													"objectClass": "borderSliderVertical",
 													"sid": 533747707650221,
 													"parameters": {
 														"child": "CardOnSearch",
@@ -2675,7 +2697,7 @@
 													"sid": 411532086861051,
 													"parameters": {
 														"variable": "V_Xstart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
 													}
 												},
 												{
@@ -2684,7 +2706,7 @@
 													"sid": 127453252839006,
 													"parameters": {
 														"variable": "V_Ystart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Ystart+V_Ygap_search:V_Ystart"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Ystart+V_Ygap_search:V_Ystart"
 													}
 												}
 											],
@@ -2739,7 +2761,7 @@
 												},
 												{
 													"id": "add-child",
-													"objectClass": "borderSlideRight",
+													"objectClass": "borderSliderVertical",
 													"sid": 641995519389568,
 													"parameters": {
 														"child": "CardOnSearch",
@@ -2760,7 +2782,7 @@
 													"sid": 959209693529406,
 													"parameters": {
 														"variable": "V_Xstart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
 													}
 												},
 												{
@@ -2769,7 +2791,7 @@
 													"sid": 373848156169372,
 													"parameters": {
 														"variable": "V_Ystart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Ystart+V_Ygap_search:V_Ystart"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Ystart+V_Ygap_search:V_Ystart"
 													}
 												}
 											],
@@ -2856,7 +2878,7 @@
 												},
 												{
 													"id": "add-child",
-													"objectClass": "borderSlideRight",
+													"objectClass": "borderSliderVertical",
 													"sid": 221112874260020,
 													"parameters": {
 														"child": "CardOnSearch",
@@ -2877,7 +2899,7 @@
 													"sid": 736717860433735,
 													"parameters": {
 														"variable": "V_Xstart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
 													}
 												},
 												{
@@ -2886,7 +2908,7 @@
 													"sid": 352524229176300,
 													"parameters": {
 														"variable": "V_Ystart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Ystart+V_Ygap_search:V_Ystart"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Ystart+V_Ygap_search:V_Ystart"
 													}
 												}
 											],
@@ -2941,7 +2963,7 @@
 												},
 												{
 													"id": "add-child",
-													"objectClass": "borderSlideRight",
+													"objectClass": "borderSliderVertical",
 													"sid": 130336238160850,
 													"parameters": {
 														"child": "CardOnSearch",
@@ -2962,7 +2984,7 @@
 													"sid": 144376409179443,
 													"parameters": {
 														"variable": "V_Xstart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
 													}
 												},
 												{
@@ -2971,7 +2993,7 @@
 													"sid": 111795181432193,
 													"parameters": {
 														"variable": "V_Ystart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Ystart+V_Ygap_search:V_Ystart"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Ystart+V_Ygap_search:V_Ystart"
 													}
 												}
 											],
@@ -3041,7 +3063,7 @@
 										},
 										{
 											"id": "add-child",
-											"objectClass": "borderSlideRight",
+											"objectClass": "borderSliderVertical",
 											"sid": 148950654451766,
 											"parameters": {
 												"child": "CardOnSearch",
@@ -3062,7 +3084,7 @@
 											"sid": 132356414168278,
 											"parameters": {
 												"variable": "V_Xstart",
-												"value": "V_onCreateSearch%V_rowSearch=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
+												"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
 											}
 										},
 										{
@@ -3071,7 +3093,7 @@
 											"sid": 642629784994645,
 											"parameters": {
 												"variable": "V_Ystart",
-												"value": "V_onCreateSearch%V_rowSearch=0?V_Ystart+V_Ygap_search:V_Ystart"
+												"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Ystart+V_Ygap_search:V_Ystart"
 											}
 										}
 									],
@@ -3156,7 +3178,7 @@
 												},
 												{
 													"id": "add-child",
-													"objectClass": "borderSlideRight",
+													"objectClass": "borderSliderVertical",
 													"sid": 440475077358240,
 													"parameters": {
 														"child": "CardOnSearch",
@@ -3177,7 +3199,7 @@
 													"sid": 642211263299757,
 													"parameters": {
 														"variable": "V_Xstart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
 													}
 												},
 												{
@@ -3186,7 +3208,7 @@
 													"sid": 818572778854024,
 													"parameters": {
 														"variable": "V_Ystart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Ystart+V_Ygap_search:V_Ystart"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Ystart+V_Ygap_search:V_Ystart"
 													}
 												}
 											],
@@ -3241,7 +3263,7 @@
 												},
 												{
 													"id": "add-child",
-													"objectClass": "borderSlideRight",
+													"objectClass": "borderSliderVertical",
 													"sid": 506902919912711,
 													"parameters": {
 														"child": "CardOnSearch",
@@ -3262,7 +3284,7 @@
 													"sid": 161070020687565,
 													"parameters": {
 														"variable": "V_Xstart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
 													}
 												},
 												{
@@ -3271,7 +3293,7 @@
 													"sid": 352877776545466,
 													"parameters": {
 														"variable": "V_Ystart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Ystart+V_Ygap_search:V_Ystart"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Ystart+V_Ygap_search:V_Ystart"
 													}
 												}
 											],
@@ -3358,7 +3380,7 @@
 												},
 												{
 													"id": "add-child",
-													"objectClass": "borderSlideRight",
+													"objectClass": "borderSliderVertical",
 													"sid": 690860060689002,
 													"parameters": {
 														"child": "CardOnSearch",
@@ -3379,7 +3401,7 @@
 													"sid": 481287332258996,
 													"parameters": {
 														"variable": "V_Xstart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
 													}
 												},
 												{
@@ -3388,7 +3410,7 @@
 													"sid": 213717224066346,
 													"parameters": {
 														"variable": "V_Ystart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Ystart+V_Ygap_search:V_Ystart"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Ystart+V_Ygap_search:V_Ystart"
 													}
 												}
 											],
@@ -3443,7 +3465,7 @@
 												},
 												{
 													"id": "add-child",
-													"objectClass": "borderSlideRight",
+													"objectClass": "borderSliderVertical",
 													"sid": 755270838584579,
 													"parameters": {
 														"child": "CardOnSearch",
@@ -3464,7 +3486,7 @@
 													"sid": 616743820617845,
 													"parameters": {
 														"variable": "V_Xstart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
 													}
 												},
 												{
@@ -3473,7 +3495,7 @@
 													"sid": 219065751207866,
 													"parameters": {
 														"variable": "V_Ystart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Ystart+V_Ygap_search:V_Ystart"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Ystart+V_Ygap_search:V_Ystart"
 													}
 												}
 											],
@@ -3560,7 +3582,7 @@
 												},
 												{
 													"id": "add-child",
-													"objectClass": "borderSlideRight",
+													"objectClass": "borderSliderVertical",
 													"sid": 907038645742104,
 													"parameters": {
 														"child": "CardOnSearch",
@@ -3581,7 +3603,7 @@
 													"sid": 471623776769348,
 													"parameters": {
 														"variable": "V_Xstart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
 													}
 												},
 												{
@@ -3590,7 +3612,7 @@
 													"sid": 455531230229184,
 													"parameters": {
 														"variable": "V_Ystart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Ystart+V_Ygap_search:V_Ystart"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Ystart+V_Ygap_search:V_Ystart"
 													}
 												}
 											],
@@ -3645,7 +3667,7 @@
 												},
 												{
 													"id": "add-child",
-													"objectClass": "borderSlideRight",
+													"objectClass": "borderSliderVertical",
 													"sid": 250087636683229,
 													"parameters": {
 														"child": "CardOnSearch",
@@ -3666,7 +3688,7 @@
 													"sid": 323300045352932,
 													"parameters": {
 														"variable": "V_Xstart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
 													}
 												},
 												{
@@ -3675,7 +3697,7 @@
 													"sid": 541567188970191,
 													"parameters": {
 														"variable": "V_Ystart",
-														"value": "V_onCreateSearch%V_rowSearch=0?V_Ystart+V_Ygap_search:V_Ystart"
+														"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Ystart+V_Ygap_search:V_Ystart"
 													}
 												}
 											],
@@ -3778,7 +3800,7 @@
 														},
 														{
 															"id": "add-child",
-															"objectClass": "borderSlideRight",
+															"objectClass": "borderSliderVertical",
 															"sid": 783367059909029,
 															"parameters": {
 																"child": "CardOnSearch",
@@ -3799,7 +3821,7 @@
 															"sid": 930482804815303,
 															"parameters": {
 																"variable": "V_Xstart",
-																"value": "V_onCreateSearch%V_rowSearch=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
+																"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
 															}
 														},
 														{
@@ -3808,7 +3830,7 @@
 															"sid": 731738102970032,
 															"parameters": {
 																"variable": "V_Ystart",
-																"value": "V_onCreateSearch%V_rowSearch=0?V_Ystart+V_Ygap_search:V_Ystart"
+																"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Ystart+V_Ygap_search:V_Ystart"
 															}
 														}
 													],
@@ -3863,7 +3885,7 @@
 														},
 														{
 															"id": "add-child",
-															"objectClass": "borderSlideRight",
+															"objectClass": "borderSliderVertical",
 															"sid": 854104981184023,
 															"parameters": {
 																"child": "CardOnSearch",
@@ -3884,7 +3906,7 @@
 															"sid": 425749216182007,
 															"parameters": {
 																"variable": "V_Xstart",
-																"value": "V_onCreateSearch%V_rowSearch=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
+																"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Xstart_def_search:V_Xstart+V_Xgap_search"
 															}
 														},
 														{
@@ -3893,7 +3915,7 @@
 															"sid": 171992524820016,
 															"parameters": {
 																"variable": "V_Ystart",
-																"value": "V_onCreateSearch%V_rowSearch=0?V_Ystart+V_Ygap_search:V_Ystart"
+																"value": "V_onCreateSearch%V_ROW_SEARCH=0?V_Ystart+V_Ygap_search:V_Ystart"
 															}
 														}
 													],
@@ -4089,7 +4111,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 539342918482736,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -4109,7 +4131,7 @@
 															"sid": 238947074443649,
 															"parameters": {
 																"variable": "V_Xstart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
 															}
 														},
 														{
@@ -4118,7 +4140,7 @@
 															"sid": 141746301583573,
 															"parameters": {
 																"variable": "V_Ystart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Ystart+V_Ygap_main:V_Ystart"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Ystart+V_Ygap_main:V_Ystart"
 															}
 														},
 														{
@@ -4220,7 +4242,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 867106222816697,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -4317,7 +4339,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 932801160556625,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -4337,7 +4359,7 @@
 															"sid": 157949320743434,
 															"parameters": {
 																"variable": "V_Xstart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
 															}
 														},
 														{
@@ -4346,7 +4368,7 @@
 															"sid": 366300263142770,
 															"parameters": {
 																"variable": "V_Ystart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Ystart+V_Ygap_main:V_Ystart"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Ystart+V_Ygap_main:V_Ystart"
 															}
 														},
 														{
@@ -4448,7 +4470,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 598430281061145,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -4545,7 +4567,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 568756692712526,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -4565,7 +4587,7 @@
 															"sid": 762975408933129,
 															"parameters": {
 																"variable": "V_Xstart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
 															}
 														},
 														{
@@ -4574,7 +4596,7 @@
 															"sid": 797292695031672,
 															"parameters": {
 																"variable": "V_Ystart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Ystart+V_Ygap_main:V_Ystart"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Ystart+V_Ygap_main:V_Ystart"
 															}
 														},
 														{
@@ -4676,7 +4698,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 518497986434350,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -4773,7 +4795,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 160133734714886,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -4793,7 +4815,7 @@
 															"sid": 123818902788312,
 															"parameters": {
 																"variable": "V_Xstart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
 															}
 														},
 														{
@@ -4802,7 +4824,7 @@
 															"sid": 905048881258628,
 															"parameters": {
 																"variable": "V_Ystart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Ystart+V_Ygap_main:V_Ystart"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Ystart+V_Ygap_main:V_Ystart"
 															}
 														},
 														{
@@ -4904,7 +4926,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 313136971956813,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -5001,7 +5023,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 184937865675263,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -5021,7 +5043,7 @@
 															"sid": 837090199091546,
 															"parameters": {
 																"variable": "V_Xstart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
 															}
 														},
 														{
@@ -5030,7 +5052,7 @@
 															"sid": 834908156262398,
 															"parameters": {
 																"variable": "V_Ystart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Ystart+V_Ygap_main:V_Ystart"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Ystart+V_Ygap_main:V_Ystart"
 															}
 														},
 														{
@@ -5132,7 +5154,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 405446494070133,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -5238,7 +5260,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 184483746477413,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -5258,7 +5280,7 @@
 															"sid": 580446094901471,
 															"parameters": {
 																"variable": "V_Xstart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
 															}
 														},
 														{
@@ -5267,7 +5289,7 @@
 															"sid": 196886819661904,
 															"parameters": {
 																"variable": "V_Ystart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Ystart+V_Ygap_main:V_Ystart"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Ystart+V_Ygap_main:V_Ystart"
 															}
 														},
 														{
@@ -5369,7 +5391,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 652664666417200,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -5466,7 +5488,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 751492284243154,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -5486,7 +5508,7 @@
 															"sid": 570415859485242,
 															"parameters": {
 																"variable": "V_Xstart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
 															}
 														},
 														{
@@ -5495,7 +5517,7 @@
 															"sid": 730253367847415,
 															"parameters": {
 																"variable": "V_Ystart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Ystart+V_Ygap_main:V_Ystart"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Ystart+V_Ygap_main:V_Ystart"
 															}
 														},
 														{
@@ -5597,7 +5619,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 228757314163811,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -5694,7 +5716,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 232126873345309,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -5714,7 +5736,7 @@
 															"sid": 898338112122699,
 															"parameters": {
 																"variable": "V_Xstart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
 															}
 														},
 														{
@@ -5723,7 +5745,7 @@
 															"sid": 501795373736990,
 															"parameters": {
 																"variable": "V_Ystart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Ystart+V_Ygap_main:V_Ystart"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Ystart+V_Ygap_main:V_Ystart"
 															}
 														},
 														{
@@ -5825,7 +5847,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 511472463595718,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -5922,7 +5944,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 695197764802090,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -5942,7 +5964,7 @@
 															"sid": 935966693956154,
 															"parameters": {
 																"variable": "V_Xstart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
 															}
 														},
 														{
@@ -5951,7 +5973,7 @@
 															"sid": 764780438800378,
 															"parameters": {
 																"variable": "V_Ystart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Ystart+V_Ygap_main:V_Ystart"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Ystart+V_Ygap_main:V_Ystart"
 															}
 														},
 														{
@@ -6053,7 +6075,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 685906011737527,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -6150,7 +6172,7 @@
 															"objectClass": "CardOnDeck",
 															"sid": 516082661409942,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -6170,7 +6192,7 @@
 															"sid": 638849426963580,
 															"parameters": {
 																"variable": "V_Xstart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Xstart_def_main:V_Xstart+V_Xgap_main"
 															}
 														},
 														{
@@ -6179,7 +6201,7 @@
 															"sid": 794572314937169,
 															"parameters": {
 																"variable": "V_Ystart",
-																"value": "V_onCreateMain%V_rowMain=0?V_Ystart+V_Ygap_main:V_Ystart"
+																"value": "V_onCreateMain%V_ROW_MAIN=0?V_Ystart+V_Ygap_main:V_Ystart"
 															}
 														},
 														{
@@ -6281,7 +6303,7 @@
 															"objectClass": "CardOnExtra",
 															"sid": 722991927284554,
 															"parameters": {
-																"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+																"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 																"size": "keep-current-size",
 																"cross-origin": "anonymous"
 															}
@@ -6895,7 +6917,7 @@
 							"sid": 857884966419365,
 							"disabled": true,
 							"parameters": {
-								"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(Card_family.I_CardImage)",
+								"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(Card_family.I_CardImage)",
 								"size": "keep-current-size",
 								"cross-origin": "anonymous"
 							}
@@ -6929,7 +6951,7 @@
 							"objectClass": "Preview",
 							"sid": 113122818597718,
 							"parameters": {
-								"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+								"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 								"size": "keep-current-size",
 								"cross-origin": "anonymous"
 							}
@@ -6963,7 +6985,7 @@
 							"objectClass": "Preview",
 							"sid": 619658916862058,
 							"parameters": {
-								"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+								"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 								"size": "keep-current-size",
 								"cross-origin": "anonymous"
 							}
@@ -6997,7 +7019,7 @@
 							"objectClass": "Preview",
 							"sid": 503677703595919,
 							"parameters": {
-								"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+								"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 								"size": "keep-current-size",
 								"cross-origin": "anonymous"
 							}
@@ -7020,7 +7042,7 @@
 					"actions": [
 						{
 							"id": "set-y",
-							"objectClass": "borderSlideRight",
+							"objectClass": "borderSliderVertical",
 							"sid": 177437169393299,
 							"parameters": {
 								"y": "Self.Y-50"
@@ -7069,7 +7091,7 @@
 									"sid": 745326622128444,
 									"disabled": true,
 									"parameters": {
-										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+										"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -7132,7 +7154,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 785894580808122,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -7164,7 +7186,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 794508165753488,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -7200,7 +7222,7 @@
 					"actions": [
 						{
 							"id": "set-y",
-							"objectClass": "borderSlideRight",
+							"objectClass": "borderSliderVertical",
 							"sid": 518795140032098,
 							"parameters": {
 								"y": "Self.Y+50"
@@ -7290,7 +7312,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 130481209926769,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -7322,7 +7344,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 125110125070749,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -7358,7 +7380,7 @@
 					"conditions": [
 						{
 							"id": "is-dragging",
-							"objectClass": "borderSlideRight",
+							"objectClass": "borderSliderVertical",
 							"sid": 308866965127689,
 							"behaviorType": "DragDrop",
 							"isInverted": true
@@ -7372,7 +7394,7 @@
 							"conditions": [
 								{
 									"id": "compare-y",
-									"objectClass": "borderSlideRight",
+									"objectClass": "borderSliderVertical",
 									"sid": 942082648538324,
 									"parameters": {
 										"comparison": 2,
@@ -7383,7 +7405,7 @@
 							"actions": [
 								{
 									"id": "set-y",
-									"objectClass": "borderSlideRight",
+									"objectClass": "borderSliderVertical",
 									"sid": 334207809467853,
 									"parameters": {
 										"y": "lerp(Self.Y,BorderBlend.Y-(320*(ceil(CardOnSearch.Count/3)-5)),0.05)"
@@ -7391,7 +7413,7 @@
 								},
 								{
 									"id": "set-y",
-									"objectClass": "borderSlideRight",
+									"objectClass": "borderSliderVertical",
 									"sid": 906619053137639,
 									"disabled": true,
 									"parameters": {
@@ -7406,7 +7428,7 @@
 							"conditions": [
 								{
 									"id": "compare-y",
-									"objectClass": "borderSlideRight",
+									"objectClass": "borderSliderVertical",
 									"sid": 595547744976994,
 									"parameters": {
 										"comparison": 5,
@@ -7417,7 +7439,7 @@
 							"actions": [
 								{
 									"id": "set-y",
-									"objectClass": "borderSlideRight",
+									"objectClass": "borderSliderVertical",
 									"sid": 409347638965978,
 									"parameters": {
 										"y": "lerp(Self.Y,BorderBlend.Y,0.05)"
@@ -7436,7 +7458,7 @@
 							"objectClass": "Touch",
 							"sid": 875236908898928,
 							"parameters": {
-								"object": "borderSlideRight"
+								"object": "borderSliderVertical"
 							}
 						}
 					],
@@ -7479,7 +7501,7 @@
 							"objectClass": "Touch",
 							"sid": 575976824465405,
 							"parameters": {
-								"object": "borderSlideRight"
+								"object": "borderSliderVertical"
 							},
 							"isInverted": true
 						},
@@ -7515,7 +7537,7 @@
 							"objectClass": "Touch",
 							"sid": 768103678433203,
 							"parameters": {
-								"object": "borderSlideRight"
+								"object": "borderSliderVertical"
 							},
 							"isInverted": true
 						},
@@ -7551,7 +7573,7 @@
 							"objectClass": "Touch",
 							"sid": 627740893444040,
 							"parameters": {
-								"object": "borderSlideRight"
+								"object": "borderSliderVertical"
 							},
 							"isInverted": true
 						},
@@ -7656,7 +7678,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 943917308549241,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -7688,7 +7710,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 519160309934110,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -7724,7 +7746,7 @@
 							"actions": [
 								{
 									"id": "set-y",
-									"objectClass": "borderSlideRight",
+									"objectClass": "borderSliderVertical",
 									"sid": 376452233721851,
 									"parameters": {
 										"y": "Self.Y+V_SwipSpeed"
@@ -7750,7 +7772,7 @@
 							"actions": [
 								{
 									"id": "set-y",
-									"objectClass": "borderSlideRight",
+									"objectClass": "borderSliderVertical",
 									"sid": 967887981355882,
 									"parameters": {
 										"y": "Self.Y-V_SwipSpeed"
@@ -7766,7 +7788,7 @@
 					"conditions": [
 						{
 							"id": "is-dragging",
-							"objectClass": "borderSlideRight",
+							"objectClass": "borderSliderVertical",
 							"sid": 622521173652992,
 							"behaviorType": "DragDrop"
 						}
@@ -7810,7 +7832,7 @@
 									"sid": 290873274034970,
 									"disabled": true,
 									"parameters": {
-										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+										"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -7873,7 +7895,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 952442576669529,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -7905,7 +7927,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 932743202248207,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -7931,7 +7953,7 @@
 					"conditions": [
 						{
 							"id": "on-drop",
-							"objectClass": "borderSlideRight",
+							"objectClass": "borderSliderVertical",
 							"sid": 703741000186715,
 							"behaviorType": "DragDrop"
 						}
@@ -7975,7 +7997,7 @@
 									"sid": 267502203743934,
 									"disabled": true,
 									"parameters": {
-										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+										"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -8038,7 +8060,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 542556365044529,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -8070,7 +8092,7 @@
 											"objectClass": "CardOnSearch",
 											"sid": 534475006537404,
 											"parameters": {
-												"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
+												"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnSearch.I_CardImage)",
 												"size": "keep-current-size",
 												"cross-origin": "anonymous"
 											}
@@ -9162,7 +9184,7 @@
 									"objectClass": "CardOnDeck",
 									"sid": 971522328217131,
 									"parameters": {
-										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+										"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -9194,7 +9216,7 @@
 									"objectClass": "CardOnDeck",
 									"sid": 667899266903684,
 									"parameters": {
-										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
+										"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -9297,7 +9319,7 @@
 									"objectClass": "CardOnExtra",
 									"sid": 843348855990502,
 									"parameters": {
-										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+										"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -9329,7 +9351,7 @@
 									"objectClass": "CardOnExtra",
 									"sid": 134958043709031,
 									"parameters": {
-										"uri": "\"data:image/\"&V_imgFormat&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
+										"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnExtra.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
 									}
@@ -10355,7 +10377,7 @@
 											"sid": 345135430239313,
 											"behaviorType": "ColorVariable",
 											"parameters": {
-												"color_hex": "V_colorSelect"
+												"color_hex": "V_COLOR_SELECT"
 											}
 										},
 										{
@@ -10445,7 +10467,7 @@
 									"sid": 702684127072165,
 									"behaviorType": "ColorVariable",
 									"parameters": {
-										"color_hex": "V_colorHover"
+										"color_hex": "V_COLOR_HOVER"
 									}
 								},
 								{
@@ -10575,7 +10597,7 @@
 											"sid": 705401947185507,
 											"behaviorType": "ColorVariable",
 											"parameters": {
-												"color_hex": "V_colorSelect"
+												"color_hex": "V_COLOR_SELECT"
 											}
 										},
 										{
@@ -10772,7 +10794,7 @@
 											"sid": 569866177754385,
 											"behaviorType": "ColorVariable",
 											"parameters": {
-												"color_hex": "V_colorSelect"
+												"color_hex": "V_COLOR_SELECT"
 											}
 										},
 										{
@@ -11262,7 +11284,7 @@
 									"sid": 407172309621188,
 									"behaviorType": "ColorVariable",
 									"parameters": {
-										"color_hex": "V_colorHover"
+										"color_hex": "V_COLOR_HOVER"
 									}
 								},
 								{
@@ -11374,7 +11396,7 @@
 											"sid": 760583527043908,
 											"behaviorType": "ColorVariable",
 											"parameters": {
-												"color_hex": "V_colorSelect"
+												"color_hex": "V_COLOR_SELECT"
 											}
 										},
 										{

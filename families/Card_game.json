@@ -50,6 +50,7 @@
 	"effectTypes": [],
 	"members": [
 		"CardOnDeck",
-		"CardOnExtra"
+		"CardOnExtra",
+		"CardOnExtraReveal"
 	]
 }

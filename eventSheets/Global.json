@@ -2,6 +2,10 @@
 	"name": "Global",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "E_Reveal"
+		},
+		{
 			"eventType": "variable",
 			"name": "V_totalSearch",
 			"type": "number",
@@ -53,7 +57,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_imgFormat",
+			"name": "V_IMG_FORMAT",
 			"type": "string",
 			"initialValue": "webp",
 			"comment": "",
@@ -107,7 +111,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_Xstart_def_search",
+			"name": "V_XSTART_DEF_SEARCH",
 			"type": "number",
 			"initialValue": "3136",
 			"comment": "",
@@ -117,7 +121,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_Ystart_def_search",
+			"name": "V_YSTART_DEF_SEARCH",
 			"type": "number",
 			"initialValue": "672",
 			"comment": "",
@@ -127,7 +131,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_Xgap_search",
+			"name": "V_XGAP_SEARCH",
 			"type": "number",
 			"initialValue": "256",
 			"comment": "",
@@ -137,7 +141,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_Ygap_search",
+			"name": "V_YGAP_SEARCH",
 			"type": "number",
 			"initialValue": "320",
 			"comment": "",
@@ -147,7 +151,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_rowSearch",
+			"name": "V_ROW_SEARCH",
 			"type": "number",
 			"initialValue": "3",
 			"comment": "",
@@ -157,7 +161,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_columnSearch",
+			"name": "V_COLUMN_SEARCH",
 			"type": "number",
 			"initialValue": "3",
 			"comment": "",
@@ -171,7 +175,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_Xstart_def_main",
+			"name": "V_XSTART_DEF_MAIN",
 			"type": "number",
 			"initialValue": "1088",
 			"comment": "",
@@ -181,7 +185,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_Ystart_def_main",
+			"name": "V_YSTART_DEF_MAIN",
 			"type": "number",
 			"initialValue": "640",
 			"comment": "",
@@ -191,7 +195,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_Xgap_main",
+			"name": "V_XGAP_MAIN",
 			"type": "number",
 			"initialValue": "160",
 			"comment": "",
@@ -201,7 +205,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_Ygap_main",
+			"name": "V_YGAP_MAIN",
 			"type": "number",
 			"initialValue": "256",
 			"comment": "",
@@ -211,7 +215,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_rowMain",
+			"name": "V_ROW_MAIN",
 			"type": "number",
 			"initialValue": "12",
 			"comment": "",
@@ -221,7 +225,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_columnMain",
+			"name": "V_COLUMN_MAIN",
 			"type": "number",
 			"initialValue": "5",
 			"comment": "",
@@ -235,7 +239,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_Xstart_def_extra",
+			"name": "V_XSTART_DEF_EXTRA",
 			"type": "number",
 			"initialValue": "1088",
 			"comment": "",
@@ -245,7 +249,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_Ystart_def_extra",
+			"name": "V_YSTART_DEF_EXTRA",
 			"type": "number",
 			"initialValue": "1984",
 			"comment": "",
@@ -255,7 +259,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_Xgap_extra",
+			"name": "V_XGAP_EXTRA",
 			"type": "number",
 			"initialValue": "160",
 			"comment": "",
@@ -265,7 +269,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_Ygap_extra",
+			"name": "V_YGAP_EXTRA",
 			"type": "number",
 			"initialValue": "304",
 			"comment": "",
@@ -275,13 +279,47 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_rowExtra",
+			"name": "V_ROW_EXTRA",
 			"type": "number",
 			"initialValue": "3",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 311897073040199
+		},
+		{
+			"eventType": "comment",
+			"text": "reveal definition"
+		},
+		{
+			"eventType": "variable",
+			"name": "V_XSTART_DEF_REVEAL",
+			"type": "number",
+			"initialValue": "1472",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 484045790066833
+		},
+		{
+			"eventType": "variable",
+			"name": "V_YSTART_DEF_REVEAL",
+			"type": "number",
+			"initialValue": "1024",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 407386880438784
+		},
+		{
+			"eventType": "variable",
+			"name": "V_XGAP_REVEAL",
+			"type": "number",
+			"initialValue": "256",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 602022528627157
 		},
 		{
 			"eventType": "comment",
@@ -373,7 +411,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_colorSelect",
+			"name": "V_COLOR_SELECT",
 			"type": "string",
 			"initialValue": "00ff00",
 			"comment": "",
@@ -383,7 +421,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "V_colorHover",
+			"name": "V_COLOR_HOVER",
 			"type": "string",
 			"initialValue": "ffffff",
 			"comment": "",

@@ -152,6 +152,7 @@
 		"CardOnChampion",
 		"CardOnDeck",
 		"CardOnSearch",
-		"CardOnExtra"
+		"CardOnExtra",
+		"CardOnExtraReveal"
 	]
 }

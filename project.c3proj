@@ -168,7 +168,10 @@
 		"items": [
 			"Board_c1bde9cdfd",
 			"txt_test",
-			"btnShuffle"
+			"btnShuffle",
+			"bg_reveal",
+			"btnReveal",
+			"txt_title_reveal"
 		],
 		"subfolders": [
 			{
@@ -177,7 +180,8 @@
 					"CardOnDeck",
 					"CardOnExtra",
 					"CardOnSearch",
-					"Preview"
+					"Preview",
+					"CardOnExtraReveal"
 				],
 				"subfolders": [],
 				"name": "Card"
@@ -268,7 +272,7 @@
 					"SBATK",
 					"SBHP",
 					"btn_Reset",
-					"borderSlideRight",
+					"borderSliderVertical",
 					"TextInputSave",
 					"ListLoad",
 					"ListSortDeck",
@@ -280,7 +284,8 @@
 					"btn_Add",
 					"btn_Minus",
 					"btn_DeleteDeck",
-					"btn_ClearDeck"
+					"btn_ClearDeck",
+					"borderSliderHorizontal"
 				],
 				"subfolders": [],
 				"name": "UI Editor"
@@ -352,7 +357,7 @@
 			"E_main",
 			"E_SelectDeck",
 			"E_Menu",
-			"Event sheet 1"
+			"E_Reveal"
 		],
 		"subfolders": []
 	},

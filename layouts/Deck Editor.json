@@ -2430,7 +2430,7 @@
 					}
 				},
 				{
-					"type": "borderSlideRight",
+					"type": "borderSliderVertical",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
