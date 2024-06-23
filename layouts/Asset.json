@@ -1329,7 +1329,8 @@
 						"onPlaceNow": "",
 						"isOpen": false,
 						"idOrder": 0,
-						"ImageID": 0
+						"ImageID": 0,
+						"IsSelected": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1411,7 +1412,8 @@
 						"onPlaceNow": "",
 						"isOpen": false,
 						"idOrder": 0,
-						"ImageID": 0
+						"ImageID": 0,
+						"IsSelected": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1493,7 +1495,8 @@
 						"onPlaceNow": "",
 						"isOpen": false,
 						"idOrder": 0,
-						"ImageID": 0
+						"ImageID": 0,
+						"IsSelected": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -1575,7 +1578,8 @@
 						"onPlaceNow": "",
 						"isOpen": false,
 						"idOrder": 0,
-						"ImageID": 0
+						"ImageID": 0,
+						"IsSelected": false
 					},
 					"behaviors": {
 						"Tween": {

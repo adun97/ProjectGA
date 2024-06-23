@@ -2,13 +2,424 @@
 	"name": "E_Reveal",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "statusAction",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 394430796489057
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Reveal extra",
 			"description": "",
 			"isActiveOnStart": false,
-			"children": [],
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 761905292504220,
+							"parameters": {
+								"variable": "statusAction",
+								"comparison": 0,
+								"value": "\"chooseChampion\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 614010519425634,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 237958100139479,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "CardOnExtraReveal"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "btn_play_card",
+									"sid": 538741237836858,
+									"parameters": {
+										"x": "CardOnExtraReveal.X",
+										"y": "CardOnExtraReveal.BBoxTop"
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "btn_play_card",
+									"sid": 286855043283819
+								}
+							],
+							"sid": 238525981262998,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "CardOnExtraReveal",
+											"sid": 797806984145999,
+											"parameters": {
+												"instance-variable": "IsSelected"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "CardOnExtraReveal",
+											"sid": 261578147541714,
+											"parameters": {
+												"instance-variable": "IsSelected",
+												"value": "true"
+											}
+										},
+										{
+											"id": "push",
+											"objectClass": "Array_card_selected",
+											"sid": 622668426385358,
+											"parameters": {
+												"where": "back",
+												"value": "CardOnExtraReveal.I_CardID",
+												"axis": "x"
+											}
+										}
+									],
+									"sid": 589627914087832
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 962666115376597
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "CardOnExtraReveal",
+											"sid": 998670905204660,
+											"parameters": {
+												"instance-variable": "IsSelected"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "CardOnExtraReveal",
+											"sid": 951759421508638,
+											"parameters": {
+												"instance-variable": "IsSelected",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 752628792420603,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for-each-element",
+													"objectClass": "Array_card_selected",
+													"sid": 930723429595114,
+													"parameters": {
+														"axes": "x"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 921493292230071,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-at-x",
+															"objectClass": "Array_card_selected",
+															"sid": 434508847687282,
+															"parameters": {
+																"x": "loopindex",
+																"comparison": 0,
+																"value": "CardOnExtraReveal.UID"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "delete",
+															"objectClass": "Array_card_selected",
+															"sid": 881542617969138,
+															"parameters": {
+																"index": "loopindex",
+																"axis": "x"
+															}
+														}
+													],
+													"sid": 750623953263494
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 110779360703706,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "btn_play_card"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 871174289663874,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each-element",
+											"objectClass": "Array_card_selected",
+											"sid": 494048403611467,
+											"parameters": {
+												"axes": "x"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 941726618950692,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "CardOnExtra",
+													"sid": 129689790152363,
+													"parameters": {
+														"instance-variable": "I_CardID",
+														"comparison": 0,
+														"value": "Array_card_selected.CurValue"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "CardOnExtra",
+													"sid": 238940016547098,
+													"parameters": {
+														"instance-variable": "player",
+														"comparison": 0,
+														"value": "V_playerAktif"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "PlaceTest",
+													"sid": 766571511378202,
+													"parameters": {
+														"instance-variable": "place",
+														"comparison": 0,
+														"value": "\"champion\""
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "PlaceTest",
+													"sid": 802895989890606,
+													"parameters": {
+														"instance-variable": "player",
+														"comparison": 0,
+														"value": "V_playerAktif"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "tween-two-properties",
+													"objectClass": "CardOnExtra",
+													"sid": 617461545809601,
+													"behaviorType": "Tween",
+													"parameters": {
+														"tags": "\"summonChampion\"",
+														"property": "position",
+														"end-x": "PlaceTest.X",
+														"end-y": "PlaceTest.Y",
+														"time": "0.5",
+														"ease": "noease",
+														"destroy-on-complete": "no",
+														"loop": "no",
+														"ping-pong": "no",
+														"repeat-count": "1"
+													}
+												},
+												{
+													"id": "tween-one-property",
+													"objectClass": "CardOnExtra",
+													"sid": 465687203976657,
+													"behaviorType": "Tween",
+													"parameters": {
+														"tags": "\"flipHalf\"",
+														"property": "offsetWidth",
+														"end-value": "0",
+														"time": "0.2",
+														"ease": "default",
+														"destroy-on-complete": "no",
+														"loop": "no",
+														"ping-pong": "no",
+														"repeat-count": "1"
+													}
+												}
+											],
+											"sid": 629906329488901
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
 			"sid": 298985054681748
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "CardOnExtra",
+					"sid": 644719177153354,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"flipHalf\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "CardOnExtra",
+					"sid": 625309895009058,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"flipToOpen\"",
+						"property": "scale",
+						"end-x": "0.5",
+						"end-y": "0.5",
+						"time": "0.3",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"callFunction": "openCard",
+					"sid": 961050450543165,
+					"parameters": [
+						"CardOnExtra.player",
+						"CardOnExtra.I_CardID",
+						"\"open\"",
+						"\"extra\""
+					]
+				}
+			],
+			"sid": 445417608129092
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "CardOnExtra",
+					"sid": 813033443178159,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"flipToOpen\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "CardOnExtra",
+					"sid": 893846632754775,
+					"parameters": {
+						"instance-variable": "onPlaceNow",
+						"value": "PlaceTest.place"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 757760913677418,
+					"parameters": {
+						"layer": "\"Reveal\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 948372086289364,
+					"parameters": {
+						"group-name": "\"Reveal extra\"",
+						"state": "deactivated"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 152262968538856,
+					"parameters": {
+						"variable": "turnOrder",
+						"value": "\"PhaseRecollection\""
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 551542377787433,
+					"parameters": {
+						"group-name": "turnOrder",
+						"state": "activated"
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 860571649448418,
+					"parameters": {
+						"group-name": "\"PhaseMaterialize\"",
+						"state": "deactivated"
+					}
+				}
+			],
+			"sid": 631785414597534
 		},
 		{
 			"functionName": "Choose_champion",
@@ -24,11 +435,28 @@
 					"initialValue": "",
 					"comment": "",
 					"sid": 767952415561967
+				},
+				{
+					"name": "Level",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 212776936496155
 				}
 			],
 			"eventType": "function-block",
 			"conditions": [],
 			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Array_card_selected",
+					"sid": 592913781056288,
+					"parameters": {
+						"width": "0",
+						"height": "1",
+						"depth": "1"
+					}
+				},
 				{
 					"id": "destroy",
 					"objectClass": "CardOnExtraReveal",
@@ -77,6 +505,24 @@
 					"parameters": {
 						"text": "\"Choose Champion\""
 					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 362893069939845,
+					"parameters": {
+						"group-name": "\"Reveal extra\"",
+						"state": "activated"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 731615500786977,
+					"parameters": {
+						"variable": "statusAction",
+						"value": "\"chooseChampion\""
+					}
 				}
 			],
 			"sid": 967703181789763,
@@ -110,6 +556,16 @@
 								"instance-variable": "I_CardType",
 								"comparison": 0,
 								"value": "\"champion\""
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "CardOnExtra",
+							"sid": 329058982961783,
+							"parameters": {
+								"instance-variable": "I_CardLevel",
+								"comparison": 0,
+								"value": "Level"
 							}
 						}
 					],
@@ -247,6 +703,15 @@
 								"transform-z-elevation": true,
 								"transform-visibility": false,
 								"destroy-with-parent": false
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "CardOnExtraReveal",
+							"sid": 711165458307936,
+							"parameters": {
+								"instance-variable": "IsSelected",
+								"value": "false"
 							}
 						}
 					],

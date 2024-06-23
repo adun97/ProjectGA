@@ -148,6 +148,28 @@
 			},
 			"uid": 38,
 			"instanceVariables": {}
+		},
+		{
+			"type": "Dict_player1",
+			"properties": {},
+			"uid": 81,
+			"instanceVariables": {}
+		},
+		{
+			"type": "Dict_player2",
+			"properties": {},
+			"uid": 85,
+			"instanceVariables": {}
+		},
+		{
+			"type": "Array_card_selected",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 87,
+			"instanceVariables": {}
 		}
 	],
 	"effectTypes": [],

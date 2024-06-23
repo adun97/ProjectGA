@@ -167,11 +167,10 @@
 	"objectTypes": {
 		"items": [
 			"Board_c1bde9cdfd",
-			"txt_test",
 			"btnShuffle",
 			"bg_reveal",
 			"btnReveal",
-			"txt_title_reveal"
+			"btn_play_card"
 		],
 		"subfolders": [
 			{
@@ -199,7 +198,8 @@
 							"Array_handSize",
 							"Array_deck_player1",
 							"Array_deck_player2",
-							"Array_deck_id_random"
+							"Array_deck_id_random",
+							"Array_card_selected"
 						],
 						"subfolders": [],
 						"name": "Array"
@@ -208,7 +208,9 @@
 						"items": [
 							"Dict_card_image",
 							"Dict_save",
-							"Dict_card_id"
+							"Dict_card_id",
+							"Dict_player1",
+							"Dict_player2"
 						],
 						"subfolders": [],
 						"name": "Dictionary"
@@ -238,7 +240,9 @@
 					"txtCek",
 					"txt_atk",
 					"txt_hp",
-					"txtNotif"
+					"txtNotif",
+					"txt_test",
+					"txt_title_reveal"
 				],
 				"subfolders": [],
 				"name": "Text"

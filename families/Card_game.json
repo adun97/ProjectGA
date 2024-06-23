@@ -44,6 +44,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 551876000065775
+		},
+		{
+			"name": "IsSelected",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 444773759632602
 		}
 	],
 	"behaviorTypes": [],

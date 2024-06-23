@@ -287,6 +287,14 @@
 							}
 						},
 						{
+							"id": "set-selection",
+							"objectClass": "ListSortDeck",
+							"sid": 416918692649282,
+							"parameters": {
+								"index": "0"
+							}
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 103735599559801,
@@ -2210,6 +2218,14 @@
 										"uri": "\"data:image/\"&V_IMG_FORMAT&\";base64,\"&Dict_Card_image.Get(CardOnDeck.I_CardImage)",
 										"size": "keep-current-size",
 										"cross-origin": "anonymous"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "CardOnDeck",
+									"sid": 576532379399012,
+									"parameters": {
+										"visibility": "invisible"
 									}
 								}
 							],
@@ -6316,6 +6332,22 @@
 									]
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "CardOnDeck",
+									"sid": 319493266535874,
+									"disabled": true,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 341956235634220
 						}
 					]
 				},
@@ -7364,6 +7396,114 @@
 							]
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-effect-enabled",
+							"objectClass": "CardOnDeck",
+							"sid": 272764191016260,
+							"parameters": {
+								"effect": "\"BetterOutlineFamily\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "CardOnDeck",
+							"sid": 278522591617669,
+							"parameters": {
+								"scale": "0.4"
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "CardOnDeck",
+							"sid": 861734315165534
+						}
+					],
+					"sid": 779702551210941
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-effect-enabled",
+							"objectClass": "CardOnDeck",
+							"sid": 295605964911419,
+							"parameters": {
+								"effect": "\"BetterOutlineFamily\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "CardOnDeck",
+							"sid": 662497829028154,
+							"parameters": {
+								"scale": "0.3"
+							}
+						}
+					],
+					"sid": 903217774473961
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-effect-enabled",
+							"objectClass": "CardOnExtra",
+							"sid": 747691565514550,
+							"parameters": {
+								"effect": "\"BetterOutlineFamily\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "CardOnExtra",
+							"sid": 545569951940073,
+							"parameters": {
+								"scale": "0.4"
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "CardOnExtra",
+							"sid": 469615572053716
+						}
+					],
+					"sid": 322590823674676
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-effect-enabled",
+							"objectClass": "CardOnExtra",
+							"sid": 450283128190018,
+							"parameters": {
+								"effect": "\"BetterOutlineFamily\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "CardOnExtra",
+							"sid": 773223826631709,
+							"parameters": {
+								"scale": "0.3"
+							}
+						}
+					],
+					"sid": 408594137876169
 				}
 			],
 			"sid": 345486951554934
@@ -9028,6 +9168,14 @@
 							"sid": 616275416691160
 						},
 						{
+							"id": "set-visible",
+							"objectClass": "loading",
+							"sid": 852310859298674,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 790909645851246,
@@ -9050,9 +9198,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 814009820735413,
+							"sid": 255697600277416,
 							"parameters": {
-								"seconds": "0.0001"
+								"seconds": "1"
 							}
 						},
 						{
@@ -9066,18 +9214,63 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 477091464057966,
+							"sid": 289249465604016,
+							"disabled": true,
 							"parameters": {
-								"seconds": "0.0001"
+								"seconds": "0.5"
 							}
 						},
 						{
 							"callFunction": "F_sort_deck",
-							"sid": 880467241957742,
+							"sid": 277080955474016,
 							"parameters": [
 								"ListSortDeck.SelectedText",
 								"\"extra\""
 							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 310193690637744,
+							"disabled": true,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"callFunction": "F_sort_deck",
+							"sid": 539129221126867,
+							"disabled": true,
+							"parameters": [
+								"ListSortDeck.SelectedText",
+								"\"main\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 587693661731162,
+							"disabled": true,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"callFunction": "F_sort_deck",
+							"sid": 753583261415010,
+							"disabled": true,
+							"parameters": [
+								"ListSortDeck.SelectedText",
+								"\"extra\""
+							]
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "loading",
+							"sid": 561092160662509,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						}
 					],
 					"sid": 357557554197207
